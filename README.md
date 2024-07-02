@@ -4,9 +4,9 @@ Materials for the "Unlocking Dynamic Reproducible Documents: A Quarto Tutorial f
 
 ## Info
 
-Date: July 8, 2024
-Time: 08:00 - 12:00 US/Pacific
-Location: Room 316
+🗓️ Date: July 8, 2024  
+🕗 Time: 08:00 - 12:00 US/Pacific  
+🏨 Location: Room 316
 
 ## Abstract
 
