@@ -1,0 +1,54 @@
+---
+title: "Unlocking Dynamic Reproducible Documents"
+subtitle: "A Quarto Tutorial for Scientific Communication"
+---
+
+🗓️ Date: July 8, 2024  
+🕗 Time: 08:00 - 12:00 US/Pacific  
+🏨 Location: Room 316
+
+## Abstract
+
+Quarto is an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and plain text markdown documents. Quarto provides data scientists with a seamless way to publish their work in a high-quality format that is reproducible, accessible, and shareable. With Quarto, researchers can turn their Jupyter Notebooks and literate plain text markdown documents into professional-looking publications in various formats. This workshop will demonstrate how Quarto enables data scientists to turn their work products into professional, high-quality documents, slides, websites, scientific manuscripts, and other shareable artifacts.
+
+## Overview
+
+Sharing knowledge through writing is a critical aspect of scientific activity, including data science. It allows researchers to communicate their findings and insights to a broader audience, build upon existing work, and collaborate with others in their field. Quarto, an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and plain text markdown documents, provides data scientists with a seamless way to publish their work in a high-quality format that is easily accessible, shareable, and reproducible. With Quarto, researchers and data professionals can turn their notebooks into professional-looking publications in various formats, including web pages, books, slides, dashboards, and scientific manuscripts. This workshop will demonstrate how Quarto enables data scientists to turn their work products into professional, high-quality publications.
+
+The learning outcomes for the workshop include:
+
+- Author documents in plain text markdown or Jupyter notebooks with equations, citations, crossrefs, figure panels, callouts, and advanced layouts.
+- Learn how to author content in IPython/Jupyter and the Quarto VS Code extension.
+- Leverage Quarto for creating different types of publications, including webpages/blogs, slides, dashboards, books, websites, and scientific manuscripts.
+- Customize execution and content with a rich array of code cell options, filters, and extensions.
+- Host websites and publications on platforms such as GitHub Pages, QuartoPub, and Netlify.
+
+## Schedule
+
++-------------------+------------------------------------------------+
+| Time              | Module                                         |
++===================+================================================+
+| 09:00 - 10:30     | [Hello Quarto](1-hello-quarto/index.qmd)       |
++-------------------+------------------------------------------------+
+| 10:30 - 11:00     | Break ☕                                       |
++-------------------+------------------------------------------------+
+| 11:00 - 12:30     | [Documents](2-documents/index.qmd)             |
++-------------------+------------------------------------------------+
+| 12:30 - 13:30     | Lunch 🍽️                                       |
++-------------------+------------------------------------------------+
+| 13:30 - 15:00     | [Presentations](3-presentations/index.qmd)     |
++-------------------+------------------------------------------------+
+| 15:00 - 15:30     | Break ☕                                       |
++-------------------+------------------------------------------------+
+| 15:30 - 17:00     | [Websites](4-websites/index.qmd)               |
+|                   |                                                |
+|                   | Time permitting: Journal articles              |
++-------------------+------------------------------------------------+
+
+## Instructor
+
+[Mine Çetinkaya-Rundel](https://mine-cr.com/) is Professor of the Practice at Duke University and Developer Educator at Posit. Mine's work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. Mine is a Fellow of the ASA and Elected Member of the ISI as well as the winner of the 2021 Robert V. Hogg Award for For Excellence in Teaching Introductory Statistics.
+
+------------------------------------------------------------------------
+
+![](https://i.creativecommons.org/l/by/4.0/88x31.png) This work is licensed under a [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
