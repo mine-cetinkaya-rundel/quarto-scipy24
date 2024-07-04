@@ -1,0 +1,67 @@
+project:
+  type: website
+  resources:
+    - exercises.zip
+
+website:
+  page-navigation: true
+  title: "Unlocking Dynamic Reproducible Documents"
+  description: "A Quarto Tutorial for Scientific Communication on Quarto at SciPy 2024"
+
+  repo-url: https://github.com/mine-cetinkaya-rundel/quarto-scipy24
+  repo-actions: [edit, issue]
+
+  open-graph: true
+  twitter-card:
+    creator: "@minebocek"
+
+  sidebar:
+    background: "#D1D9E3"
+    logo: "images/quarto-scipy24.png"
+    pinned: true
+    align: center
+    tools:
+      - icon: github
+        href: https://github.com/mine-cetinkaya-rundel/quarto-scipy24
+        text: "GitHub organization"
+      - icon: code-square
+        href: https://code.visualstudio.com/
+        text: "Posit Cloud"
+
+    style: docked
+    search: true
+    collapse-level: 2
+    contents:
+      - href: index.qmd
+        text: Home
+      - href: pre-work.qmd
+        text: Pre-work
+      - section: "Modules"
+        contents:
+          - href: 1-hello-quarto/index.qmd
+            text: Hello Quarto
+          - href: 2-documents/index.qmd
+            text: Documents
+          - href: 3-presentations/index.qmd
+            text: Presentations
+          - href: 4-websites/index.qmd
+            text: Websites
+
+  page-footer:
+    right: "This page is built with 💚 and [Quarto](https://quarto.org/)."
+    left: "&copy; Copyright 2024, Mine Çetinkaya-Rundel"
+    background: "#D1D9E3" # Arylide Yellow
+
+format:
+  html:
+    theme:
+      light: [cosmo, style/quarto-scipy24.scss]
+      dark: [cosmo, style/quarto-scipy24.scss, style/dark.scss]
+    linkcolor: "#58779b"
+    toc: true
+    code-copy: true
+    code-overflow: wrap
+    mainfont: "Atkinson Hyperlegible"
+
+execute:
+  freeze: auto
