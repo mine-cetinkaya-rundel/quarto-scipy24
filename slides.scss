@@ -1,0 +1,104 @@
+/*-- scss:defaults --*/
+
+// fonts
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
+
+
+$font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
+$font-family-monospace: "Source Code Pro", monospace;
+
+$primary-color: #e19451;
+$secondary-color: #39729E; 
+$link-color: $secondary-color;
+$presentation-heading-color: $secondary-color;
+$code-color: $secondary-color;
+$code-block-font-size: 0.7em;
+$presentation-h2-font-size: 1.4em !default;
+$presentation-font-size-root: 36px !default;
+
+/*-- scss:rules --*/
+
+details>summary {
+  font-size: 0.75em;
+}
+
+#title-slide .title {
+  color: $secondary-color;
+  background-color: #FFFFFF;
+}
+
+#title-slide .institute {
+  padding-bottom: 200px;
+}
+
+.small {
+  font-size: 0.75em;
+}
+
+.smallest {
+  font-size: 0.5em;
+}
+
+.large {
+  font-size: 1.3em;
+}
+
+.huge-hand {
+  font-size: 2.5em;
+  font-family: 'Gochi Hand', cursive;
+}
+
+.medium {
+  font-size: 0.9em;
+}
+
+.center-align {
+  text-align: center;
+}
+
+.reveal .slide figure>figcaption, .reveal .slide img.stretch+p.caption, .reveal .slide img.r-stretch+p.caption {
+  font-size: 0.6em;
+  color: gray;
+}
+
+.reveal .hand {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 1.2em
+}
+
+.reveal .hand-blue {
+  font-family: 'Gochi Hand', cursive;
+  color: $secondary-color;
+  font-size: 1.2em
+}
+
+.reveal .hand-blue-large {
+  font-family: 'Gochi Hand', cursive;
+  color: $secondary-color;
+  font-size: 3em
+}
+
+.reveal .slide .task {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  border-left: solid 5px $primary-color;
+  background-color: lighten($primary-color, 20%);
+}
+
+.reveal .slide .demo {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  border-left: solid 5px $secondary-color;
+  background-color: lighten($secondary-color, 50%);
+}
