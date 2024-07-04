@@ -1,0 +1,18 @@
+---
+title: "Pre-workshop instructions"
+---
+
+**1. Tools:** Have VS Code (with Jupyter and Quarto extensions) ready to go
+
+**2. Software:** Download and install Python and the pre-release version of Quarto:
+
+-   Python 3: <https://www.python.org/downloads/>
+-   Quarto 1.5.53: <https://quarto.org/docs/get-started/>
+
+**3. Packages:** Install the following packages:
+
+``` {.bash filename="Terminal"}
+python3 -m pip install tabulate pandas seaborn palmerpenguins great_tables plotnine jupyter
+```
+
+**4. Exercises:** Go to [`bit.ly/quarto-scipy24-exercises`](https://bit.ly/quarto-scipy24-exercises), click on "Use this template" then "Create a new repository". Once your repository is created, clone it locally and navigate to the repo folder.
