@@ -8,8 +8,8 @@
 <link href="../site_libs/quarto-html/light-border.css" rel="stylesheet">
 <link href="../site_libs/quarto-html/quarto-html.min.css" rel="stylesheet" data-mode="light">
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.js"></script>
-<link href="../site_libs/quarto-contrib/quarto-timer-1.0.0/timer.css" rel="stylesheet"><meta charset="utf-8">
+<script src="../site_libs/quarto-contrib/countdown-0.5.0/countdown.js"></script>
+<link href="../site_libs/quarto-contrib/countdown-0.5.0/countdown.css" rel="stylesheet"><meta charset="utf-8">
   <meta name="generator" content="quarto-1.5.53">
 
   <meta name="author" content="Mine Çetinkaya Rundel">
@@ -440,39 +440,34 @@ Mine Çetinkaya Rundel
 <h2>Literate programming</h2>
 <p>Literate programming is writing out the program logic in a human language with included (separated by a primitive markup) code snippets and macros.</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="co">---</span></span>
-<span id="cb1-2"><a></a><span class="an">title:</span><span class="co"> "plotnine demo"</span></span>
-<span id="cb1-3"><a></a><span class="an">date:</span><span class="co"> "7/8/2024"</span></span>
+<span id="cb1-2"><a></a><span class="an">title:</span><span class="co"> plotnine demo</span></span>
+<span id="cb1-3"><a></a><span class="an">date:</span><span class="co"> 7/8/2024</span></span>
 <span id="cb1-4"><a></a><span class="an">format:</span><span class="co"> html</span></span>
 <span id="cb1-5"><a></a><span class="co">---</span></span>
 <span id="cb1-6"><a></a></span>
-<span id="cb1-7"><a></a><span class="fu">## MPG</span></span>
+<span id="cb1-7"><a></a>There is a relationship between flipper length and body mass.</span>
 <span id="cb1-8"><a></a></span>
-<span id="cb1-9"><a></a>There is a relationship between city and highway mileage.</span>
-<span id="cb1-10"><a></a></span>
-<span id="cb1-11"><a></a><span class="in">```{python}</span></span>
-<span id="cb1-12"><a></a><span class="in">#| label: fig-mpg</span></span>
-<span id="cb1-13"><a></a><span class="in">import plotnine as p9</span></span>
-<span id="cb1-14"><a></a><span class="in">from palmerpenguins import load_penguins</span></span>
+<span id="cb1-9"><a></a><span class="in">```{python}</span></span>
+<span id="cb1-10"><a></a><span class="in">#| label: fig-penguins</span></span>
+<span id="cb1-11"><a></a><span class="in">import plotnine as p9</span></span>
+<span id="cb1-12"><a></a><span class="in">from palmerpenguins import load_penguins</span></span>
+<span id="cb1-13"><a></a></span>
+<span id="cb1-14"><a></a><span class="in">penguins = load_penguins()</span></span>
 <span id="cb1-15"><a></a></span>
-<span id="cb1-16"><a></a><span class="in">penguins = load_penguins()</span></span>
-<span id="cb1-17"><a></a></span>
-<span id="cb1-18"><a></a><span class="in">(</span></span>
-<span id="cb1-19"><a></a><span class="in">    p9.ggplot(</span></span>
-<span id="cb1-20"><a></a><span class="in">        penguins, </span></span>
-<span id="cb1-21"><a></a><span class="in">        p9.aes(x="flipper_length_mm", y="body_mass_g", color="species")</span></span>
-<span id="cb1-22"><a></a><span class="in">    )</span></span>
-<span id="cb1-23"><a></a><span class="in">    + p9.geom_point()</span></span>
-<span id="cb1-24"><a></a><span class="in">    + p9.stat_smooth(method="lm")</span></span>
-<span id="cb1-25"><a></a><span class="in">    + p9.scale_color_manual(values = ["#FF8C00","#159090","#A034F0"]) </span></span>
-<span id="cb1-26"><a></a><span class="in">    + p9.theme_minimal()</span></span>
-<span id="cb1-27"><a></a><span class="in">    + p9.labs(</span></span>
-<span id="cb1-28"><a></a><span class="in">        x = "Flipper length (mm)", </span></span>
-<span id="cb1-29"><a></a><span class="in">        y = "Body mass (g)", </span></span>
-<span id="cb1-30"><a></a><span class="in">        color = "Species", </span></span>
-<span id="cb1-31"><a></a><span class="in">        title = "Body mass vs. flipper length of Palmer Penguins"</span></span>
-<span id="cb1-32"><a></a><span class="in">    )</span></span>
-<span id="cb1-33"><a></a><span class="in">)</span></span>
-<span id="cb1-34"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-16"><a></a><span class="in">(</span></span>
+<span id="cb1-17"><a></a><span class="in">    p9.ggplot(</span></span>
+<span id="cb1-18"><a></a><span class="in">        penguins, </span></span>
+<span id="cb1-19"><a></a><span class="in">        p9.aes(x = "flipper_length_mm", y = "body_mass_g")</span></span>
+<span id="cb1-20"><a></a><span class="in">    )</span></span>
+<span id="cb1-21"><a></a><span class="in">    + p9.geom_point()</span></span>
+<span id="cb1-22"><a></a><span class="in">    + p9.stat_smooth(method="lm")</span></span>
+<span id="cb1-23"><a></a><span class="in">    + p9.labs(</span></span>
+<span id="cb1-24"><a></a><span class="in">        x = "Flipper length (mm)", </span></span>
+<span id="cb1-25"><a></a><span class="in">        y = "Body mass (g)", </span></span>
+<span id="cb1-26"><a></a><span class="in">        title = "Body mass vs. flipper length of Palmer Penguins"</span></span>
+<span id="cb1-27"><a></a><span class="in">    )</span></span>
+<span id="cb1-28"><a></a><span class="in">)</span></span>
+<span id="cb1-29"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 <aside><div>
 <p>Source: <a href="https://en.wikipedia.org/wiki/Literate_programming" class="uri">https://en.wikipedia.org/wiki/Literate_programming</a></p>
@@ -580,9 +575,9 @@ Mine Çetinkaya Rundel
 <p><br></p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><img data-src="images/lint-rstudio.png"></p>
+<p><img data-src="images/lint-vscode-1.png"></p>
 </div><div class="column" style="width:50%;">
-<p><img data-src="images/lint-vscode.png"></p>
+<p><img data-src="images/lint-vscode-2.png"></p>
 </div></div>
 
 <aside><div>
@@ -590,7 +585,7 @@ Mine Çetinkaya Rundel
 </div></aside></section>
 <section id="quarto-yaml-intelligence" class="slide level2">
 <h2>Quarto YAML Intelligence</h2>
-<p>RStudio + VSCode provide rich tab-completion - start a word and tab to complete, or <kbd><code>Ctrl + space</code></kbd> to see all available options.</p>
+<p>VS Code provides rich tab-completion - start a word and tab to complete, or <kbd><code>Ctrl + space</code></kbd> to see all available options.</p>
 <p><br></p>
 
 <img data-src="images/quarto-tab-complete.png" class="quarto-figure quarto-figure-center r-stretch" width="600"></section>
@@ -604,13 +599,13 @@ Mine Çetinkaya Rundel
 <li>You can use the <a href="https://quarto.org/docs/reference/formats/html.html">HTML reference</a> as needed.</li>
 </ul>
 </div>
-                    <div id="UNIQUE-ID"></div>
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            initializeTimer("UNIQUE-ID", 180, "slide");
-                        });
-                    </script>
-                
+<div id="timer_2c3f12841d898d2f903fb37812503f151582d791" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section>
 <section id="list-of-valid-yaml-fields" class="slide level2">
 <h2>List of valid YAML fields</h2>
@@ -634,8 +629,8 @@ Mine Çetinkaya Rundel
 </colgroup>
 <thead>
 <tr class="header">
-<th>Markdown Syntax</th>
-<th>Output</th>
+<th>Markdown syntax:</th>
+<th>Output:</th>
 </tr>
 </thead>
 <tbody>
@@ -667,8 +662,8 @@ Mine Çetinkaya Rundel
 </colgroup>
 <thead>
 <tr class="header">
-<th>Markdown Syntax</th>
-<th>Output</th>
+<th>Markdown syntax:</th>
+<th>Output:</th>
 </tr>
 </thead>
 <tbody>
@@ -703,30 +698,36 @@ Mine Çetinkaya Rundel
 <h2>Links</h2>
 <p>There are several types of “links” or hyperlinks.</p>
 <div class="columns">
-<div class="column" style="width:60%;">
-<p><strong>Markdown</strong></p>
+<div class="column fragment" style="width:60%;">
+<p><strong>Markdown syntax:</strong></p>
 <div class="sourceCode" id="cb27"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb27-1"><a></a>You can embed <span class="co">[</span><span class="ot">named hyperlinks</span><span class="co">](https://quarto.org/)</span>,</span>
 <span id="cb27-2"><a></a>direct urls like <span class="ot">&lt;https://quarto.org/&gt;</span>, and links to </span>
 <span id="cb27-3"><a></a><span class="co">[</span><span class="ot">other places</span><span class="co">](#quarto-anatomy)</span> in </span>
-<span id="cb27-4"><a></a>the document. The syntax is similar for embedding an</span>
-<span id="cb27-5"><a></a>inline image: <span class="al">![Penguins playing with ball](images/penguins-quarto-ball.png)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb27-4"><a></a>the document. </span>
+<span id="cb27-5"><a></a></span>
+<span id="cb27-6"><a></a>The syntax is similar for embedding an</span>
+<span id="cb27-7"><a></a>inline image: </span>
+<span id="cb27-8"><a></a></span>
+<span id="cb27-9"><a></a><span class="al">![Penguins playing with ball](images/penguins-quarto-ball.png)</span>.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:40%;">
-<p><strong>Output</strong></p>
-<p>You can embed <a href="https://quarto.org/">named hyperlinks</a>, direct urls like <a href="https://quarto.org/" class="uri">https://quarto.org/</a>, and links to <a href="#/quarto-anatomy">other places</a> in the document. The syntax is similar for embedding an inline image: <img data-src="images/penguins-quarto-ball.png" style="width:250px;" alt="Penguins playing with ball">.</p>
+<p><strong>Output:</strong></p>
+<p>You can embed <a href="https://quarto.org/">named hyperlinks</a>, direct urls like <a href="https://quarto.org/" class="uri">https://quarto.org/</a>, and links to <a href="#/quarto-anatomy">other places</a> in the document.</p>
+<p>The syntax is similar for embedding an inline image:</p>
+<p><img data-src="images/penguins-quarto-ball.png" alt="Penguins playing with ball">.</p>
 </div></div>
 </section>
 <section id="lists" class="slide level2 smaller">
 <h2>Lists</h2>
 <p>Unordered list:</p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Markdown:</strong></p>
+<div class="column fragment" data-fragment-index="1" style="width:50%;">
+<p><strong>Markdown syntax:</strong></p>
 <div class="sourceCode" id="cb28"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb28-1"><a></a><span class="ss">-   </span>unordered list         </span>
 <span id="cb28-2"><a></a><span class="ss">    -   </span>sub-item 1         </span>
 <span id="cb28-3"><a></a><span class="ss">    -   </span>sub-item 1         </span>
-<span id="cb28-4"><a></a><span class="ss">        -   </span>sub-sub-item 1 </span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column fragment" data-fragment-index="1" style="width:50%;">
-<p><strong>Output</strong></p>
+<span id="cb28-4"><a></a><span class="ss">        -   </span>sub-sub-item 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" data-fragment-index="2" style="width:50%;">
+<p><strong>Output:</strong></p>
 <ul>
 <li>unordered list
 <ul>
@@ -741,14 +742,14 @@ Mine Çetinkaya Rundel
 </div></div>
 <p>Ordered list:</p>
 <div class="columns">
-<div class="column" style="width:50%;">
-<p><strong>Markdown:</strong></p>
+<div class="column fragment" data-fragment-index="3" style="width:50%;">
+<p><strong>Markdown syntax:</strong></p>
 <div class="sourceCode" id="cb29"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb29-1"><a></a><span class="ss">1. </span>ordered list            </span>
 <span id="cb29-2"><a></a><span class="ss">2. </span>item 2                  </span>
 <span id="cb29-3"><a></a>    i. sub-item 1          </span>
 <span id="cb29-4"><a></a>         A.  sub-sub-item 1</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column fragment" data-fragment-index="2" style="width:50%;">
-<p><strong>Output</strong></p>
+</div><div class="column fragment" data-fragment-index="4" style="width:50%;">
+<p><strong>Output:</strong></p>
 <ol type="1">
 <li>ordered list<br>
 </li>
@@ -762,85 +763,87 @@ Mine Çetinkaya Rundel
 </ol>
 </div></div>
 </section>
-<section id="quotes" class="slide level2">
+<section id="quotes" class="slide level2 smaller">
 <h2>Quotes</h2>
-<p><strong>Markdown:</strong></p>
+<div class="columns">
+<div class="column fragment" style="width:50%;">
+<p><strong>Markdown syntax:</strong></p>
 <div class="sourceCode" id="cb30"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb30-1"><a></a><span class="at">&gt; Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. </span></span>
-<span id="cb30-2"><a></a><span class="at">&gt; - Donald Knuth, Literate Programming</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="fragment">
+<span id="cb30-2"><a></a><span class="at">&gt;</span></span>
+<span id="cb30-3"><a></a><span class="at">&gt; Donald Knuth, Literate Programming</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" style="width:50%;">
 <p><strong>Output:</strong></p>
 <blockquote>
-<p>Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. - Donald Knuth, Literate Programming</p>
+<p>Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.</p>
+<p>Donald Knuth, Literate Programming</p>
 </blockquote>
+</div></div>
 
-</div>
 <aside><div>
 <p>“Literate Programming”, The Computer Journal 27 (1984), p.&nbsp;97. (Reprinted in Literate Programming, 1992, p.&nbsp;99.) Literate Programming (1984)</p>
 </div></aside></section>
-<section id="divs-and-spans" class="slide level2 smaller">
-<h2>Divs and spans</h2>
-<p>Pandoc, and therefore Quarto, can parse <a href="https://pandoc.org/MANUAL.html#divs-and-spans">“fenced div blocks”</a>:</p>
-<div class="fragment">
-<ul>
-<li>You can think of a <code>:::</code> <strong>div</strong> as a HTML <code>&lt;div&gt;</code> but it can also apply in specific situations to content in PDF:</li>
-</ul>
-<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a></a>::: {style="border-left:10px solid red"}</span>
-<span id="cb31-2"><a></a>This content can be styled with a border</span>
+<section id="divs" class="slide level2">
+<h2>Divs</h2>
+<p>Pandoc, and therefore Quarto, can parse <a href="https://pandoc.org/MANUAL.html#divs-and-spans">fenced div blocks</a>:</p>
+<p>You can think of a <code>:::</code> <strong>div</strong> as a HTML <code>&lt;div&gt;</code> but it can also apply in specific situations to content in PDF or other formats:</p>
+<div class="columns">
+<div class="column fragment" style="width:50%;">
+<p><strong>Markdown syntax:</strong></p>
+<div class="sourceCode" id="cb31"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb31-1"><a></a>::: {style="border-left:10px solid red;padding-left:5px"}</span>
+<span id="cb31-2"><a></a>This content is styled with a thick red border and some padding next to it.</span>
 <span id="cb31-3"><a></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div style="border-left:10px solid red">
-<p>This content can be styled with a border</p>
+</div><div class="column fragment" style="width:50%;">
+<p><strong>Output:</strong></p>
+<div style="border-left:10px solid red;padding-left:5px">
+<p>This content is styled with a thick red border and some padding next to it.</p>
 </div>
-</div>
-<div class="fragment">
-<ul>
-<li><code>[text]{.class}</code> <strong>span</strong>s can be thought of a <code>&lt;span .class&gt;Text&lt;/span&gt;</code> but again are a bit more transferable if using Pandoc/Quarto native attributes.</li>
-</ul>
-<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a></a>This is text with <span class="co">[</span><span class="ot">special</span><span class="co">]</span>{style="color:red;"} formatting.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<p>This is text with <span style="color:red;">special</span> formatting.</p>
-</div>
+</div></div>
 </section>
 <section id="divs-with-pre-defined-classes" class="slide level2">
 <h2>Divs with pre-defined classes</h2>
 <p>These can often apply between formats:</p>
-<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a></a>::: {.unnumbered .unlisted}</span>
-<span id="cb33-2"><a></a>Text</span>
-<span id="cb33-3"><a></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb32"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb32-1"><a></a>::: {.unnumbered .unlisted}</span>
+<span id="cb32-2"><a></a>Text</span>
+<span id="cb32-3"><a></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="spans" class="slide level2">
+<h2>Spans</h2>
+<p><code>[text]{.class}</code> <strong>span</strong>s can be thought of a <code>&lt;span .class&gt;Text&lt;/span&gt;</code>, but again are a bit more transferable if using Pandoc/Quarto native attributes.</p>
+<div class="columns">
+<div class="column fragment" style="width:50%;">
+<p><strong>Markdown syntax:</strong></p>
+<div class="sourceCode" id="cb33"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb33-1"><a></a>This is text is colored <span class="co">[</span><span class="ot">red</span><span class="co">]</span>{style="color:red;"}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" style="width:50%;">
+<p><strong>Output:</strong></p>
+<p>This is text is colored <span style="color:red;">red</span>.</p>
+</div></div>
 </section>
 <section id="your-turn-1" class="slide level2">
 <h2>Your turn</h2>
 <div class="task">
 <ul>
-<li>Open <code>markdown-syntax.qmd</code> in RStudio.</li>
+<li>Open <code>markdown-syntax.qmd</code> in VS Code.</li>
 <li>Follow the instructions in the document, then exchange one new thing you’ve learned with your neighbor.</li>
 </ul>
 </div>
-                    <div id=""></div>
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            initializeTimer("", 300, "slide");
-                        });
-                    </script>
-                
+<div id="timer_2c3f12841d898d2f903fb37812503f151582d791" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section>
 <section id="callouts" class="slide level2">
 <h2>Callouts</h2>
-<pre><code>::: callout-note
-Note that there are five types of callouts, including: 
-`note`, `tip`, `warning`, `caution`, and `important`.
-:::</code></pre>
-<div class="callout callout-note callout-titled callout-style-default">
-<div class="callout-body">
-<div class="callout-title">
-<div class="callout-icon-container">
-<i class="callout-icon"></i>
-</div>
-<p><strong>Note</strong></p>
-</div>
-<div class="callout-content">
-<p>Note that there are five types of callouts, including: <code>note</code>, <code>tip</code>, <code>warning</code>, <code>caution</code>, and <code>important</code>.</p>
-</div>
-</div>
-</div>
+<div class="columns">
+<div class="column fragment" style="width:50%;">
+<p><strong>Markdown syntax:</strong></p>
+<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a></a>This is text is colored <span class="co">[</span><span class="ot">red</span><span class="co">]</span>{style="color:red;"}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" style="width:50%;">
+<p><strong>Output:</strong></p>
+<p>This is text is colored <span style="color:red;">red</span>.</p>
+</div></div>
 </section>
 <section id="more-callouts" class="slide level2">
 <h2>More callouts</h2>
@@ -908,37 +911,47 @@ Note that there are five types of callouts, including:
 <li>Change the format to PDF and re-render.</li>
 </ul>
 </div>
-                    <div id=""></div>
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            initializeTimer("", 180, "slide");
-                        });
-                    </script>
-                
+<div id="timer_2c3f12841d898d2f903fb37812503f151582d791" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">03</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section>
 <section id="footnotes" class="slide level2">
 <h2>Footnotes</h2>
-<p>Pandoc supports numbering and formatting footnotes.</p>
+<ul>
+<li><p>Pandoc supports numbering and formatting footnotes.</p></li>
+<li><p>In Quarto, the footnote is placed at the bottom of the slide in presentations, whereas in a document it’s hoverable or at the end of the document.</p></li>
+</ul>
 </section>
 <section id="inline-footnotes" class="slide level2">
 <h2>Inline footnotes</h2>
-<pre><code>Here is an inline note.^[Inlines notes are easier to write,
-since you don't have to pick an identifier and move down to
-type the note.]</code></pre>
+<div class="columns">
+<div class="column fragment" style="width:50%;">
+<p><strong>Markdown syntax:</strong></p>
+<div class="sourceCode" id="cb35"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb35-1"><a></a>Here is an inline note.^[Inlines notes are easier to write,</span>
+<span id="cb35-2"><a></a>since you don't have to pick an identifier and move down to</span>
+<span id="cb35-3"><a></a>type the note.]</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" style="width:50%;">
+<p><strong>Output:</strong></p>
 <p>Here is an inline note.<sup>1</sup></p>
+</div></div>
 <aside><ol class="aside-footnotes"><li id="fn1"><p>Inlines notes are easier to write, since you don’t have to pick an identifier and move down to type the note.</p></li></ol></aside></section>
-<section id="inline-footnotes-1" class="slide level2">
-<h2>Inline footnotes</h2>
-<pre><code>Here is an footnore reference[^1]
-
-[^1]: This can be easy in some situations when you have a really long note or
-don't want to inline complex outputs.</code></pre>
-<div class="fragment">
-<p>Here is an footnote reference<sup>1</sup></p>
-</div>
-<div class="fragment">
-<p>Notice in both situations that the footnote is placed at the bottom of the page in presentations, whereas in a document it would be hoverable or at the end of the document.</p>
-</div>
+<section id="numbered-footnotes" class="slide level2">
+<h2>Numbered footnotes</h2>
+<div class="columns">
+<div class="column fragment" style="width:50%;">
+<p><strong>Markdown syntax:</strong></p>
+<div class="sourceCode" id="cb36"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb36-1"><a></a>Here is an footnore reference<span class="ot">[^1]</span></span>
+<span id="cb36-2"><a></a></span>
+<span id="cb36-3"><a></a><span class="ot">[^1]: </span>This can be easy in some situations when you have a really long note or</span>
+<span id="cb36-4"><a></a>don't want to inline complex outputs.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div><div class="column fragment" style="width:50%;">
+<p><strong>Output:</strong></p>
+<p>Here is an footnore reference<sup>1</sup></p>
+</div></div>
 <aside><ol class="aside-footnotes"><li id="fn2"><p>This can be easy in some situations when you have a really long note or don’t want to inline complex outputs.</p></li></ol></aside></section></section>
 <section>
 <section id="code" class="title-slide slide level1 center">
@@ -986,7 +999,7 @@ don't want to inline complex outputs.</code></pre>
 <h2>Code</h2>
 <p>If you simply want code formatting but don’t want to execute the code:</p>
 <ul>
-<li>Option 1: Use 3x back ticks + the language <code>```r</code></li>
+<li>Option 1: Use 3x back ticks + the language <code>```python</code></li>
 </ul>
 <pre><code>```python
 penguins.head()
@@ -995,7 +1008,7 @@ penguins.head()
 <ul>
 <li>Option 2: Add <code>eval: false</code> as chunk option</li>
 </ul>
-<div id="0d35d161" class="cell" data-execution_count="2">
+<div id="4fbc20c9" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb40-1"><a></a><span class="in">```{python}</span></span>
 <span id="cb40-2"><a></a><span class="in">#| eval: false</span></span>
 <span id="cb40-3"><a></a></span>
@@ -1010,7 +1023,7 @@ penguins.head()
 <li><p>The <code>echo</code> option shows the code when set to <code>true</code> and hides it when set to <code>false</code>.</p></li>
 <li><p>If you want to both execute the code and return the full code including backticks (like in a teaching scenario) <code>echo: fenced</code> is your friend!</p></li>
 </ul>
-<div id="cdc15954" class="cell" data-execution_count="3">
+<div id="77d5f6ad" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb41-1"><a></a><span class="in">```{python}</span></span>
 <span id="cb41-2"><a></a><span class="in">1 + 1</span></span>
 <span id="cb41-3"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
@@ -1033,7 +1046,7 @@ penguins.head()
 </section>
 <section id="markdown-tables" class="slide level2">
 <h2>Markdown tables</h2>
-<p><strong>Markdown:</strong></p>
+<p><strong>Markdown syntax:</strong></p>
 <div class="sourceCode" id="cb43"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb43-1"><a></a>| Right | Left | Default | Center |</span>
 <span id="cb43-2"><a></a>|------:|:-----|---------|:------:|</span>
 <span id="cb43-3"><a></a>|   12  |  12  |    12   |    12  |</span>
@@ -1075,7 +1088,7 @@ penguins.head()
 </section>
 <section id="grid-tables" class="slide level2">
 <h2>Grid tables</h2>
-<p><strong>Markdown:</strong></p>
+<p><strong>Markdown syntax:</strong></p>
 <div class="sourceCode" id="cb44"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb44-1"><a></a>+---------------+---------------+--------------------+</span>
 <span id="cb44-2"><a></a>| Fruit         | Price         | Advantages         |</span>
 <span id="cb44-3"><a></a>+===============+===============+====================+</span>
@@ -1154,7 +1167,8 @@ penguins.head()
 <section id="tables-from-code" class="slide level2 smaller">
 <h2>Tables from code</h2>
 <p>If you are using pandas to work with your data, you can convert a pandas DataFrame to an HTML table using the <code>DataFrame.to_html()</code> method:</p>
-<div id="4ab1fc72" class="cell" data-execution_count="4">
+<div class="scrolling">
+<div id="af7f3753" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a></a>penguins.to_html(index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-display" data-execution_count="3">
 <table border="1" class="dataframe">
@@ -13590,11 +13604,12 @@ female
 </table>
 </div>
 </div>
+</div>
 </section>
 <section id="tables-from-code-1" class="slide level2 smaller">
 <h2>Tables from code</h2>
 <p>If you want fancier tables, try the <strong>great_tables</strong> package and <a href="https://posit-dev.github.io/great-tables/">all that it offers</a>!</p>
-<div id="584a88b6" class="cell columns column-output-location" data-execution_count="5">
+<div id="a6ef67ec" class="cell columns column-output-location" data-execution_count="5">
 <div class="column">
 <div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a></a><span class="im">import</span> great_tables <span class="im">as</span> gt</span>
 <span id="cb48-2"><a></a></span>
@@ -13613,51 +13628,51 @@ female
 <span id="cb48-15"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
 <div class="cell-output cell-output-display" data-execution_count="4">
-<div id="xgbtstffdb" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="uurvfkaxsd" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>
-#xgbtstffdb table {
+#uurvfkaxsd table {
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
         }
 
-#xgbtstffdb thead, tbody, tfoot, tr, td, th { border-style: none; }
+#uurvfkaxsd thead, tbody, tfoot, tr, td, th { border-style: none; }
  tr { background-color: transparent; }
-#xgbtstffdb p { margin: 0; padding: 0; }
- #xgbtstffdb .gt_table { display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; }
- #xgbtstffdb .gt_caption { padding-top: 4px; padding-bottom: 4px; }
- #xgbtstffdb .gt_title { color: #333333; font-size: 125%; font-weight: initial; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; border-bottom-color: #FFFFFF; border-bottom-width: 0; }
- #xgbtstffdb .gt_subtitle { color: #333333; font-size: 85%; font-weight: initial; padding-top: 3px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; border-top-color: #FFFFFF; border-top-width: 0; }
- #xgbtstffdb .gt_heading { background-color: #FFFFFF; text-align: center; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
- #xgbtstffdb .gt_bottom_border { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
- #xgbtstffdb .gt_col_headings { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
- #xgbtstffdb .gt_col_heading { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; }
- #xgbtstffdb .gt_column_spanner_outer { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; padding-top: 0; padding-bottom: 0; padding-left: 4px; padding-right: 4px; }
- #xgbtstffdb .gt_column_spanner_outer:first-child { padding-left: 0; }
- #xgbtstffdb .gt_column_spanner_outer:last-child { padding-right: 0; }
- #xgbtstffdb .gt_column_spanner { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; overflow-x: hidden; display: inline-block; width: 100%; }
- #xgbtstffdb .gt_spanner_row { border-bottom-style: hidden; }
- #xgbtstffdb .gt_group_heading { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; text-align: left; }
- #xgbtstffdb .gt_empty_group_heading { padding: 0.5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: middle; }
- #xgbtstffdb .gt_from_md> :first-child { margin-top: 0; }
- #xgbtstffdb .gt_from_md> :last-child { margin-bottom: 0; }
- #xgbtstffdb .gt_row { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; }
- #xgbtstffdb .gt_stub { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; }
- #xgbtstffdb .gt_stub_row_group { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; vertical-align: top; }
- #xgbtstffdb .gt_row_group_first td { border-top-width: 2px; }
- #xgbtstffdb .gt_row_group_first th { border-top-width: 2px; }
- #xgbtstffdb .gt_table_body { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
- #xgbtstffdb .gt_sourcenotes { color: #333333; background-color: #FFFFFF; border-bottom-style: none; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; }
- #xgbtstffdb .gt_sourcenote { font-size: 90%; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; text-align: left; }
- #xgbtstffdb .gt_left { text-align: left; }
- #xgbtstffdb .gt_center { text-align: center; }
- #xgbtstffdb .gt_right { text-align: right; font-variant-numeric: tabular-nums; }
- #xgbtstffdb .gt_font_normal { font-weight: normal; }
- #xgbtstffdb .gt_font_bold { font-weight: bold; }
- #xgbtstffdb .gt_font_italic { font-style: italic; }
- #xgbtstffdb .gt_super { font-size: 65%; }
- #xgbtstffdb .gt_footnote_marks { font-size: 75%; vertical-align: 0.4em; position: initial; }
- #xgbtstffdb .gt_asterisk { font-size: 100%; vertical-align: 0; }
+#uurvfkaxsd p { margin: 0; padding: 0; }
+ #uurvfkaxsd .gt_table { display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; }
+ #uurvfkaxsd .gt_caption { padding-top: 4px; padding-bottom: 4px; }
+ #uurvfkaxsd .gt_title { color: #333333; font-size: 125%; font-weight: initial; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; border-bottom-color: #FFFFFF; border-bottom-width: 0; }
+ #uurvfkaxsd .gt_subtitle { color: #333333; font-size: 85%; font-weight: initial; padding-top: 3px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; border-top-color: #FFFFFF; border-top-width: 0; }
+ #uurvfkaxsd .gt_heading { background-color: #FFFFFF; text-align: center; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
+ #uurvfkaxsd .gt_bottom_border { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
+ #uurvfkaxsd .gt_col_headings { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
+ #uurvfkaxsd .gt_col_heading { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; }
+ #uurvfkaxsd .gt_column_spanner_outer { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; padding-top: 0; padding-bottom: 0; padding-left: 4px; padding-right: 4px; }
+ #uurvfkaxsd .gt_column_spanner_outer:first-child { padding-left: 0; }
+ #uurvfkaxsd .gt_column_spanner_outer:last-child { padding-right: 0; }
+ #uurvfkaxsd .gt_column_spanner { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; overflow-x: hidden; display: inline-block; width: 100%; }
+ #uurvfkaxsd .gt_spanner_row { border-bottom-style: hidden; }
+ #uurvfkaxsd .gt_group_heading { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; text-align: left; }
+ #uurvfkaxsd .gt_empty_group_heading { padding: 0.5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: middle; }
+ #uurvfkaxsd .gt_from_md> :first-child { margin-top: 0; }
+ #uurvfkaxsd .gt_from_md> :last-child { margin-bottom: 0; }
+ #uurvfkaxsd .gt_row { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; }
+ #uurvfkaxsd .gt_stub { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; }
+ #uurvfkaxsd .gt_stub_row_group { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; vertical-align: top; }
+ #uurvfkaxsd .gt_row_group_first td { border-top-width: 2px; }
+ #uurvfkaxsd .gt_row_group_first th { border-top-width: 2px; }
+ #uurvfkaxsd .gt_table_body { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
+ #uurvfkaxsd .gt_sourcenotes { color: #333333; background-color: #FFFFFF; border-bottom-style: none; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; }
+ #uurvfkaxsd .gt_sourcenote { font-size: 90%; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; text-align: left; }
+ #uurvfkaxsd .gt_left { text-align: left; }
+ #uurvfkaxsd .gt_center { text-align: center; }
+ #uurvfkaxsd .gt_right { text-align: right; font-variant-numeric: tabular-nums; }
+ #uurvfkaxsd .gt_font_normal { font-weight: normal; }
+ #uurvfkaxsd .gt_font_bold { font-weight: bold; }
+ #uurvfkaxsd .gt_font_italic { font-style: italic; }
+ #uurvfkaxsd .gt_super { font-size: 65%; }
+ #uurvfkaxsd .gt_footnote_marks { font-size: 75%; vertical-align: 0.4em; position: initial; }
+ #uurvfkaxsd .gt_asterisk { font-size: 100%; vertical-align: 0; }
  
 </style>
 
@@ -13761,7 +13776,7 @@ female
 </section>
 <section id="subfigures" class="slide level2">
 <h2>Subfigures</h2>
-<p><strong>Markdown:</strong></p>
+<p><strong>Markdown syntax:</strong></p>
 <pre><code>::: {#fig-penguins layout-ncol=2}
 
 ![Blue penguin](images/blue-penguin.png){#fig-blue width="250px"}
@@ -13813,7 +13828,7 @@ Figure&nbsp;1: Two penguins
 </section>
 <section id="figure-divs" class="slide level2">
 <h2>Figure divs</h2>
-<p><strong>Markdown:</strong></p>
+<p><strong>Markdown syntax:</strong></p>
 <div class="sourceCode" id="cb53"><pre class="sourceCode numberSource code number-lines code-with-copy"><code class="sourceCode"><span id="cb53-1"><a></a>::: {#fig-penguin}</span>
 <span id="cb53-2"><a></a></span>
 <span id="cb53-3"><a></a>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/q3uXXh1sHcI"&gt;&lt;/iframe&gt;</span>
@@ -13863,7 +13878,7 @@ Figure&nbsp;2: Baby penguin tries to make friends
 </section>
 <section id="figures-from-code" class="slide level2">
 <h2>Figures from code</h2>
-<div id="737c2f27" class="cell" data-fig-asp="0.618" data-fig-width="6" data-execution_count="6">
+<div id="07e03b3a" class="cell" data-fig-asp="0.618" data-fig-width="6" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb54-1"><a></a><span class="in">```{python}</span></span>
 <span id="cb54-2"><a></a><span class="in">import plotnine as p9</span></span>
 <span id="cb54-3"><a></a></span>
@@ -13903,7 +13918,7 @@ Figure&nbsp;2: Baby penguin tries to make friends
 <p>The presence of the caption (<code>Blue penguin</code>) and label (<code>#fig-blue-penguin</code>) make this figure referenceable:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Markdown:</strong></p>
+<p><strong>Markdown syntax:</strong></p>
 <div class="sourceCode" id="cb55"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb55-1"><a></a>See @fig-blue-penguin for a cute blue penguin.</span>
 <span id="cb55-2"><a></a><span class="al">![Blue penguin](images/blue-penguin.png)</span>{#fig-blue-penguin}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column" style="width:50%;">
@@ -13926,7 +13941,7 @@ Figure&nbsp;3: Blue penguin
 <p>The presence of the caption (<code>A few penguins</code>) and label (<code>#tbl-penguins</code>) make this table referenceable:</p>
 <div class="columns">
 <div class="column" style="width:50%;">
-<p><strong>Markdown:</strong></p>
+<p><strong>Markdown syntax:</strong></p>
 <div class="sourceCode" id="cb56"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb56-1"><a></a>See @tbl-penguins for data on a few penguins.</span>
 <span id="cb56-2"><a></a></span>
 <span id="cb56-3"><a></a><span class="in">```{python}</span></span>
@@ -13947,51 +13962,51 @@ Table&nbsp;1: A few penguins
 </figcaption>
 <div aria-describedby="tbl-penguins-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 <div class="cell-output cell-output-display" data-execution_count="6">
-<div id="ynjatjnpnz" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div id="zesxlsmmnf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>
-#ynjatjnpnz table {
+#zesxlsmmnf table {
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
         }
 
-#ynjatjnpnz thead, tbody, tfoot, tr, td, th { border-style: none; }
+#zesxlsmmnf thead, tbody, tfoot, tr, td, th { border-style: none; }
  tr { background-color: transparent; }
-#ynjatjnpnz p { margin: 0; padding: 0; }
- #ynjatjnpnz .gt_table { display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; }
- #ynjatjnpnz .gt_caption { padding-top: 4px; padding-bottom: 4px; }
- #ynjatjnpnz .gt_title { color: #333333; font-size: 125%; font-weight: initial; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; border-bottom-color: #FFFFFF; border-bottom-width: 0; }
- #ynjatjnpnz .gt_subtitle { color: #333333; font-size: 85%; font-weight: initial; padding-top: 3px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; border-top-color: #FFFFFF; border-top-width: 0; }
- #ynjatjnpnz .gt_heading { background-color: #FFFFFF; text-align: center; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
- #ynjatjnpnz .gt_bottom_border { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
- #ynjatjnpnz .gt_col_headings { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
- #ynjatjnpnz .gt_col_heading { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; }
- #ynjatjnpnz .gt_column_spanner_outer { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; padding-top: 0; padding-bottom: 0; padding-left: 4px; padding-right: 4px; }
- #ynjatjnpnz .gt_column_spanner_outer:first-child { padding-left: 0; }
- #ynjatjnpnz .gt_column_spanner_outer:last-child { padding-right: 0; }
- #ynjatjnpnz .gt_column_spanner { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; overflow-x: hidden; display: inline-block; width: 100%; }
- #ynjatjnpnz .gt_spanner_row { border-bottom-style: hidden; }
- #ynjatjnpnz .gt_group_heading { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; text-align: left; }
- #ynjatjnpnz .gt_empty_group_heading { padding: 0.5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: middle; }
- #ynjatjnpnz .gt_from_md> :first-child { margin-top: 0; }
- #ynjatjnpnz .gt_from_md> :last-child { margin-bottom: 0; }
- #ynjatjnpnz .gt_row { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; }
- #ynjatjnpnz .gt_stub { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; }
- #ynjatjnpnz .gt_stub_row_group { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; vertical-align: top; }
- #ynjatjnpnz .gt_row_group_first td { border-top-width: 2px; }
- #ynjatjnpnz .gt_row_group_first th { border-top-width: 2px; }
- #ynjatjnpnz .gt_table_body { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
- #ynjatjnpnz .gt_sourcenotes { color: #333333; background-color: #FFFFFF; border-bottom-style: none; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; }
- #ynjatjnpnz .gt_sourcenote { font-size: 90%; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; text-align: left; }
- #ynjatjnpnz .gt_left { text-align: left; }
- #ynjatjnpnz .gt_center { text-align: center; }
- #ynjatjnpnz .gt_right { text-align: right; font-variant-numeric: tabular-nums; }
- #ynjatjnpnz .gt_font_normal { font-weight: normal; }
- #ynjatjnpnz .gt_font_bold { font-weight: bold; }
- #ynjatjnpnz .gt_font_italic { font-style: italic; }
- #ynjatjnpnz .gt_super { font-size: 65%; }
- #ynjatjnpnz .gt_footnote_marks { font-size: 75%; vertical-align: 0.4em; position: initial; }
- #ynjatjnpnz .gt_asterisk { font-size: 100%; vertical-align: 0; }
+#zesxlsmmnf p { margin: 0; padding: 0; }
+ #zesxlsmmnf .gt_table { display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; }
+ #zesxlsmmnf .gt_caption { padding-top: 4px; padding-bottom: 4px; }
+ #zesxlsmmnf .gt_title { color: #333333; font-size: 125%; font-weight: initial; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; border-bottom-color: #FFFFFF; border-bottom-width: 0; }
+ #zesxlsmmnf .gt_subtitle { color: #333333; font-size: 85%; font-weight: initial; padding-top: 3px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; border-top-color: #FFFFFF; border-top-width: 0; }
+ #zesxlsmmnf .gt_heading { background-color: #FFFFFF; text-align: center; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
+ #zesxlsmmnf .gt_bottom_border { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
+ #zesxlsmmnf .gt_col_headings { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
+ #zesxlsmmnf .gt_col_heading { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; }
+ #zesxlsmmnf .gt_column_spanner_outer { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; padding-top: 0; padding-bottom: 0; padding-left: 4px; padding-right: 4px; }
+ #zesxlsmmnf .gt_column_spanner_outer:first-child { padding-left: 0; }
+ #zesxlsmmnf .gt_column_spanner_outer:last-child { padding-right: 0; }
+ #zesxlsmmnf .gt_column_spanner { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; overflow-x: hidden; display: inline-block; width: 100%; }
+ #zesxlsmmnf .gt_spanner_row { border-bottom-style: hidden; }
+ #zesxlsmmnf .gt_group_heading { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; text-align: left; }
+ #zesxlsmmnf .gt_empty_group_heading { padding: 0.5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: middle; }
+ #zesxlsmmnf .gt_from_md> :first-child { margin-top: 0; }
+ #zesxlsmmnf .gt_from_md> :last-child { margin-bottom: 0; }
+ #zesxlsmmnf .gt_row { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; }
+ #zesxlsmmnf .gt_stub { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; }
+ #zesxlsmmnf .gt_stub_row_group { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; vertical-align: top; }
+ #zesxlsmmnf .gt_row_group_first td { border-top-width: 2px; }
+ #zesxlsmmnf .gt_row_group_first th { border-top-width: 2px; }
+ #zesxlsmmnf .gt_table_body { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
+ #zesxlsmmnf .gt_sourcenotes { color: #333333; background-color: #FFFFFF; border-bottom-style: none; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; }
+ #zesxlsmmnf .gt_sourcenote { font-size: 90%; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; text-align: left; }
+ #zesxlsmmnf .gt_left { text-align: left; }
+ #zesxlsmmnf .gt_center { text-align: center; }
+ #zesxlsmmnf .gt_right { text-align: right; font-variant-numeric: tabular-nums; }
+ #zesxlsmmnf .gt_font_normal { font-weight: normal; }
+ #zesxlsmmnf .gt_font_bold { font-weight: bold; }
+ #zesxlsmmnf .gt_font_italic { font-style: italic; }
+ #zesxlsmmnf .gt_super { font-size: 65%; }
+ #zesxlsmmnf .gt_footnote_marks { font-size: 75%; vertical-align: 0.4em; position: initial; }
+ #zesxlsmmnf .gt_asterisk { font-size: 100%; vertical-align: 0; }
  
 </style>
 
@@ -14080,13 +14095,13 @@ Table&nbsp;1: A few penguins
 <li>Follow the instructions in the document, then exchange one new thing you’ve learned with your neighbor.</li>
 </ul>
 </div>
-                    <div id=""></div>
-                    <script>
-                        document.addEventListener("DOMContentLoaded", function () {
-                            initializeTimer("", 600, "slide");
-                        });
-                    </script>
-                
+<div id="timer_2c3f12841d898d2f903fb37812503f151582d791" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+  <div class="countdown-controls">
+    <button class="countdown-bump-down">−</button>
+    <button class="countdown-bump-up">+</button>
+ </div>
+ <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
+ </div>
 </section></section>
 <section>
 <section id="wrap-up" class="title-slide slide level1 center">
@@ -14100,7 +14115,7 @@ Table&nbsp;1: A few penguins
 </div>
 
 <div class="quarto-auto-generated-content">
-<p><img src="images/quarto-icon.svg" class="slide-logo"></p>
+<p><img src="../images/quarto-icon.svg" class="slide-logo"></p>
 <div class="footer footer-default">
 <p>🔗 <a href="https://bit.ly/quarto-scipy24">bit.ly/quarto-scipy24</a></p>
 </div>

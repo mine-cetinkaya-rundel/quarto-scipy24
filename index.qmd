@@ -25,6 +25,9 @@ The learning outcomes for the workshop include:
 
 ## Schedule
 
+To be posted.
+
+<!--
 +-------------------+------------------------------------------------+
 | Time              | Module                                         |
 +===================+================================================+
@@ -44,6 +47,7 @@ The learning outcomes for the workshop include:
 |                   |                                                |
 |                   | Time permitting: Journal articles              |
 +-------------------+------------------------------------------------+
+-->
 
 ## Instructor
 

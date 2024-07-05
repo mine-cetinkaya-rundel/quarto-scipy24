@@ -9,10 +9,10 @@ format:
     transition: fade
     slide-number: true
     chalkboard: true
-    logo: images/quarto-icon.svg
+    logo: ../images/quarto-icon.svg
     theme: ../style/slides.scss
 filters: 
-  - timer
+  - countdown
 execute:
   freeze: auto
   echo: true
@@ -38,17 +38,15 @@ Literate programming is writing out the program logic in a human language with i
 
 ````         
 ---
-title: "plotnine demo"
-date: "7/8/2024"
+title: plotnine demo
+date: 7/8/2024
 format: html
 ---
 
-## MPG
-
-There is a relationship between city and highway mileage.
+There is a relationship between flipper length and body mass.
 
 ```{{python}}
-#| label: fig-mpg
+#| label: fig-penguins
 import plotnine as p9
 from palmerpenguins import load_penguins
 
@@ -57,16 +55,13 @@ penguins = load_penguins()
 (
     p9.ggplot(
         penguins, 
-        p9.aes(x="flipper_length_mm", y="body_mass_g", color="species")
+        p9.aes(x = "flipper_length_mm", y = "body_mass_g")
     )
     + p9.geom_point()
     + p9.stat_smooth(method="lm")
-    + p9.scale_color_manual(values = ["#FF8C00","#159090","#A034F0"]) 
-    + p9.theme_minimal()
     + p9.labs(
         x = "Flipper length (mm)", 
         y = "Body mass (g)", 
-        color = "Species", 
         title = "Body mass vs. flipper length of Palmer Penguins"
     )
 )
@@ -219,11 +214,11 @@ Lint, or a linter, is a static code analysis tool used to flag programming error
 
 ::::: columns
 ::: {.column width="50%"}
-![](images/lint-rstudio.png)
+![](images/lint-vscode-1.png)
 :::
 
 ::: {.column width="50%"}
-![](images/lint-vscode.png)
+![](images/lint-vscode-2.png)
 :::
 :::::
 
@@ -233,7 +228,7 @@ Source: <https://en.wikipedia.org/wiki/Lint_(software)>
 
 ## Quarto YAML Intelligence
 
-RStudio + VSCode provide rich tab-completion - start a word and tab to complete, or <kbd>`Ctrl + space`</kbd> to see all available options.
+VS Code provides rich tab-completion - start a word and tab to complete, or <kbd>`Ctrl + space`</kbd> to see all available options.
 
 <br>
 
@@ -248,8 +243,7 @@ RStudio + VSCode provide rich tab-completion - start a word and tab to complete,
 -   You can use the [HTML reference](https://quarto.org/docs/reference/formats/html.html) as needed.
 :::
 
-::: {#UNIQUE-ID .timer seconds="180" starton="slide"}
-:::
+{{< countdown minutes=3 >}}
 
 ## List of valid YAML fields
 
@@ -264,7 +258,7 @@ RStudio + VSCode provide rich tab-completion - start a word and tab to complete,
 ## Text Formatting
 
 +-------------------------------+-------------------------------+
-| Markdown Syntax               | Output                        |
+| Markdown syntax:              | Output:                       |
 +===============================+===============================+
 | ```                           | *italics* and **bold**        |
 | *italics* and **bold**        |                               |
@@ -288,7 +282,7 @@ RStudio + VSCode provide rich tab-completion - start a word and tab to complete,
 ## Headings {.smaller}
 
 +-----------------+-----------------+
-| Markdown Syntax | Output          |
+| Markdown syntax:| Output:         |
 +=================+=================+
 | ```             | # Header 1      |
 | # Header 1      |                 |
@@ -322,22 +316,18 @@ RStudio + VSCode provide rich tab-completion - start a word and tab to complete,
 There are several types of "links" or hyperlinks.
 
 ::::: columns
-::: {.column width="60%"}
-**Markdown**
+::: {.column .fragment width="60%"}
+**Markdown syntax:**
 
 ``` markdown
-You can embed [named hyperlinks](https://quarto.org/),
-direct urls like <https://quarto.org/>, and links to 
-[other places](#quarto-anatomy) in 
-the document. The syntax is similar for embedding an
-inline image: ![Penguins playing with ball](images/penguins-quarto-ball.png).
+{{< include _links.qmd >}}
 ```
 :::
 
 ::: {.column .fragment width="40%"}
-**Output**
+**Output:**
 
-You can embed [named hyperlinks](https://quarto.org/), direct urls like <https://quarto.org/>, and links to [other places](#quarto-anatomy) in the document. The syntax is similar for embedding an inline image: ![Penguins playing with ball](images/penguins-quarto-ball.png){style="width:250px;"}.
+{{< include _links.qmd >}}
 :::
 :::::
 
@@ -346,97 +336,80 @@ You can embed [named hyperlinks](https://quarto.org/), direct urls like <https:/
 Unordered list:
 
 ::::: columns
-::: {.column width="50%"}
-**Markdown:**
+::: {.column .fragment width="50%" fragment-index="1"}
+**Markdown syntax:**
 
 ``` markdown
--   unordered list         
-    -   sub-item 1         
-    -   sub-item 1         
-        -   sub-sub-item 1 
+{{< include _unordered-lists.qmd >}}
 ```
 :::
 
-::: {.column .fragment width="50%" fragment-index="1"}
-**Output**
+::: {.column .fragment width="50%" fragment-index="2"}
+**Output:**
 
--   unordered list
-    -   sub-item 1\
-    -   sub-item 1
-        -   sub-sub-item 1
+{{< include _unordered-lists.qmd >}}
 :::
 :::::
 
 Ordered list:
 
 ::::: columns
-::: {.column width="50%"}
-**Markdown:**
+::: {.column .fragment width="50%" fragment-index="3"}
+**Markdown syntax:**
 
 ``` markdown
-1. ordered list            
-2. item 2                  
-    i. sub-item 1          
-         A.  sub-sub-item 1
+{{< include _ordered-lists.qmd >}}
 ```
 :::
 
-::: {.column .fragment width="50%" fragment-index="2"}
-**Output**
+::: {.column .fragment width="50%" fragment-index="4"}
+**Output:**
 
-1.  ordered list\
-2.  item 2
-    i.  sub-item 1
-        A.  sub-sub-item 1
+{{< include _ordered-lists.qmd >}}
 :::
 :::::
 
-## Quotes
+## Quotes {.smaller}
 
-**Markdown:**
+:::: columns
+::: {.column .fragment width="50%"}
+**Markdown syntax:**
 
 ``` markdown
-> Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. 
-> - Donald Knuth, Literate Programming
+{{< include _quotes.qmd >}}
 ```
-
-. . .
-
+:::
+::: {.column .fragment width="50%"}
 **Output:**
 
-> Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. - Donald Knuth, Literate Programming
+{{< include _quotes.qmd >}}
+:::
+::::
 
 ::: aside
 "Literate Programming", The Computer Journal 27 (1984), p. 97. (Reprinted in Literate Programming, 1992, p. 99.) Literate Programming (1984)
 :::
 
-## Divs and spans {.smaller}
+## Divs
 
-Pandoc, and therefore Quarto, can parse ["fenced div blocks"](https://pandoc.org/MANUAL.html#divs-and-spans):
+Pandoc, and therefore Quarto, can parse [fenced div blocks](https://pandoc.org/MANUAL.html#divs-and-spans):
 
-. . .
+You can think of a `:::` **div** as a HTML `<div>` but it can also apply in specific situations to content in PDF or other formats:
 
--   You can think of a `:::` **div** as a HTML `<div>` but it can also apply in specific situations to content in PDF:
-
-``` markdown
-::: {style="border-left:10px solid red"}
-This content can be styled with a border
-:::
-```
-
-::: {style="border-left:10px solid red"}
-This content can be styled with a border
-:::
-
-. . .
-
--   `[text]{.class}` **span**s can be thought of a `<span .class>Text</span>` but again are a bit more transferable if using Pandoc/Quarto native attributes.
+:::: columns
+::: {.column .fragment width="50%"}
+**Markdown syntax:**
 
 ``` markdown
-This is text with [special]{style="color:red;"} formatting.
+{{< include _divs.qmd >}}
 ```
+:::
+::: {.column .fragment width="50%"}
+**Output:**
 
-This is text with [special]{style="color:red;"} formatting.
+{{< include _divs.qmd >}}
+:::
+::::
 
 ## Divs with pre-defined classes
 
@@ -448,28 +421,50 @@ Text
 :::
 ```
 
+## Spans
+
+`[text]{.class}` **span**s can be thought of a `<span .class>Text</span>`, but again are a bit more transferable if using Pandoc/Quarto native attributes.
+
+:::: columns
+::: {.column .fragment width="50%"}
+**Markdown syntax:**
+
+``` markdown
+{{< include _spans.qmd >}}
+```
+:::
+::: {.column .fragment width="50%"}
+**Output:**
+
+{{< include _spans.qmd >}}
+:::
+::::
+
 ## Your turn
 
 ::: task
--   Open `markdown-syntax.qmd` in RStudio.
+-   Open `markdown-syntax.qmd` in VS Code.
 -   Follow the instructions in the document, then exchange one new thing you've learned with your neighbor.
 :::
 
-::: {.timer seconds="300" starton="slide"}
-:::
+{{< countdown minutes=5 >}}
 
 ## Callouts
 
-```         
-::: callout-note
-Note that there are five types of callouts, including: 
-`note`, `tip`, `warning`, `caution`, and `important`.
-:::
-```
+:::: columns
+::: {.column .fragment width="50%"}
+**Markdown syntax:**
 
-::: callout-note
-Note that there are five types of callouts, including: `note`, `tip`, `warning`, `caution`, and `important`.
+``` markdown        
+{{< include _spans.qmd >}}
+```
 :::
+::: {.column .fragment width="50%"}
+**Output:**
+
+{{< include _spans.qmd >}}
+:::
+::::
 
 ## More callouts
 
@@ -501,43 +496,43 @@ Tip with caption.
 -   Change the format to PDF and re-render.
 :::
 
-::: {.timer seconds="180" starton="slide"}
-:::
+{{< countdown minutes=3 >}}
 
 ## Footnotes
 
-Pandoc supports numbering and formatting footnotes.
+- Pandoc supports numbering and formatting footnotes.
+
+- In Quarto, the footnote is placed at the bottom of the slide in presentations, whereas in a document it's hoverable or at the end of the document.
 
 ## Inline footnotes
 
-```         
-Here is an inline note.^[Inlines notes are easier to write,
-since you don't have to pick an identifier and move down to
-type the note.]
+:::: columns
+::: {.column .fragment width="50%"}
+**Markdown syntax:**
+``` markdown        
+{{< include _inline-footnotes.qmd >}}
 ```
+:::
+::: {.column .fragment width="50%"}
+**Output:**
+{{< include _inline-footnotes.qmd >}}
+:::
+::::
 
-Here is an inline note.[^1]
+## Numbered footnotes
 
-[^1]: Inlines notes are easier to write, since you don't have to pick an identifier and move down to type the note.
-
-## Inline footnotes
-
-```         
-Here is an footnore reference[^1]
-
-[^1]: This can be easy in some situations when you have a really long note or
-don't want to inline complex outputs.
+:::: columns
+::: {.column .fragment width="50%"}
+**Markdown syntax:**
+``` markdown        
+{{< include _numbered-footnotes.qmd >}}
 ```
-
-. . .
-
-Here is an footnote reference[^2]
-
-[^2]: This can be easy in some situations when you have a really long note or don't want to inline complex outputs.
-
-. . .
-
-Notice in both situations that the footnote is placed at the bottom of the page in presentations, whereas in a document it would be hoverable or at the end of the document.
+:::
+::: {.column .fragment width="50%"}
+**Output:**
+{{< include _numbered-footnotes.qmd >}}
+:::
+::::
 
 # Code
 
@@ -578,7 +573,7 @@ penguins["species"].unique()
 
 If you simply want code formatting but don't want to execute the code:
 
--   Option 1: Use 3x back ticks + the language ```` ```r ````
+-   Option 1: Use 3x back ticks + the language ```` ```python ````
 
 ````         
 ```python
@@ -619,7 +614,7 @@ penguins.head()
 
 ## Markdown tables
 
-**Markdown:**
+**Markdown syntax:**
 
 ``` markdown
 | Right | Left | Default | Center |
@@ -641,7 +636,7 @@ penguins.head()
 
 ## Grid tables
 
-**Markdown:**
+**Markdown syntax:**
 
 ``` markdown
 +---------------+---------------+--------------------+
@@ -705,9 +700,11 @@ penguins.head()
 
 If you are using pandas to work with your data, you can convert a pandas DataFrame to an HTML table using the `DataFrame.to_html()` method:
 
+::: {.scrolling}
 ```{python}
 penguins.to_html(index=False)
 ```
+:::
 
 ## Tables from code {.smaller}
 
@@ -765,7 +762,7 @@ import great_tables as gt
 
 ## Subfigures
 
-**Markdown:**
+**Markdown syntax:**
 
 ```         
 ::: {#fig-penguins layout-ncol=2}
@@ -793,7 +790,7 @@ Two penguins
 
 ## Figure divs
 
-**Markdown:**
+**Markdown syntax:**
 
 ``` code
 ::: {#fig-penguin}
@@ -868,7 +865,7 @@ The presence of the caption (`Blue penguin`) and label (`#fig-blue-penguin`) mak
 
 ::::: columns
 ::: {.column width="50%"}
-**Markdown:**
+**Markdown syntax:**
 
 ``` markdown
 See @fig-blue-penguin for a cute blue penguin.
@@ -891,7 +888,7 @@ The presence of the caption (`A few penguins`) and label (`#tbl-penguins`) make 
 
 ::::: columns
 ::: {.column width="50%"}
-**Markdown:**
+**Markdown syntax:**
 
 ```` markdown
 See @tbl-penguins for data on a few penguins.
@@ -926,8 +923,7 @@ gt.GT(penguins.head())
 -   Follow the instructions in the document, then exchange one new thing you've learned with your neighbor.
 :::
 
-::: {.timer seconds="600" starton="slide"}
-:::
+{{< countdown minutes=10 >}}
 
 # Wrap up
 

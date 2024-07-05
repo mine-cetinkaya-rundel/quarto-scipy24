@@ -2,6 +2,7 @@
 
 // fonts
 @import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Atkinson+Hyperlegible:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&display=swap');
 
@@ -80,4 +81,9 @@ details>summary {
   margin-top: 6px;
   border-left: solid 5px #F1DE67;
   background-color: #F1DE6750;
+}
+
+.scrolling {
+  max-height: 500px;
+  overflow-y: auto;
 }

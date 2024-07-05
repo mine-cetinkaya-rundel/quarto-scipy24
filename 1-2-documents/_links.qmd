@@ -1,0 +1,9 @@
+You can embed [named hyperlinks](https://quarto.org/),
+direct urls like <https://quarto.org/>, and links to 
+[other places](#quarto-anatomy) in 
+the document. 
+
+The syntax is similar for embedding an
+inline image: 
+
+![Penguins playing with ball](images/penguins-quarto-ball.png).

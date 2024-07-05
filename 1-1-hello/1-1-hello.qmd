@@ -12,7 +12,7 @@ format:
     logo: images/quarto-icon.svg
     theme: ../style/slides.scss
 filters: 
-  - timer
+  - countdown
 ---
 
 # Pre-workshop
@@ -87,8 +87,7 @@ Please share
 -   What do you hope to get out of this tutorial?
 :::
 
-::: {#UNIQUE-ID .timer seconds="180" starton="slide"}
-:::
+{{< countdown minutes=3 >}}
 
 ## Meeting you where you are
 
@@ -393,8 +392,7 @@ In VS Code, open the `hello-penquins.qmd` file. Render the document to HTML.
 -   Change the html theme to `sketchy`. (See <https://quarto.org/docs/output-formats/html-themes.html> for documentation on HTML theming.)
 :::
 
-::: {.timer seconds="600" starton="slide"}
-:::
+{{< countdown minutes=10 >}}
 
 ## Questions
 
