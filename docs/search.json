@@ -1,0 +1,573 @@
+[
+  {
+    "objectID": "1-1-hello/1-1-hello.html#setup",
+    "href": "1-1-hello/1-1-hello.html#setup",
+    "title": "Hello, Quarto!",
+    "section": "Setup",
+    "text": "Setup\n\n1. Tools: Have VS Code (with Jupyter and Quarto extensions) ready to go\n2. Software: Download and install Python and the pre-release version of Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.53: https://quarto.org/docs/get-started/\n\n3. Packages: Install the following packages:\n\n\nTerminal\n\npython3 -m pip install tabulate pandas seaborn palmerpenguins great_tables plotnine jupyter\n\n4. Exercises: Go to bit.ly/quarto-scipy24-exercises, click on “Use this template” then “Create a new repository”. Once your repository is created, clone it locally and navigate to the repo folder."
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#code-of-conduct",
+    "href": "1-1-hello/1-1-hello.html#code-of-conduct",
+    "title": "Hello, Quarto!",
+    "section": "Code of Conduct",
+    "text": "Code of Conduct\nAttendees at SciPy 2024 are subject to the NumFOCUS Code of Conduct.\nBe kind to others. Do not insult or put down others. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for NumFOCUS.\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery is not appropriate.\nNumFOCUS is dedicated to providing a harassment-free community for everyone, regardless of gender, sexual orientation, gender identity and expression, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of community members in any form.\nThank you for helping make this a welcoming, friendly community for all.\n\n\nFor more info and reporting a code of conduct incident"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#about-me",
+    "href": "1-1-hello/1-1-hello.html#about-me",
+    "title": "Hello, Quarto!",
+    "section": "About me",
+    "text": "About me\n\n\n\nProfessor of the Practice\nDepartment of Statistical Science\nDuke University\nDeveloper Educator, Posit\n\n\n\n\n\n\n\nMine Çetinkaya-Rundel\nmine-cr.com\n\n\nTeaching data analysis in computational notebooks for 10+ years\nTeaching and using Quarto for 3+ years"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#about-you",
+    "href": "1-1-hello/1-1-hello.html#about-you",
+    "title": "Hello, Quarto!",
+    "section": "About you",
+    "text": "About you\n\nPlease share\n\nName\nProfessional affiliation\nWhat do you hope to get out of this tutorial?"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#meeting-you-where-you-are",
+    "href": "1-1-hello/1-1-hello.html#meeting-you-where-you-are",
+    "title": "Hello, Quarto!",
+    "section": "Meeting you where you are",
+    "text": "Meeting you where you are\n\n\n\nThese materials are pitched at someone who:\n\nknows some Python + Markdown\nhas worked in VS Code and/or Jupyter Lab\nwants to learn about Quarto\n\n\n\n\nI’ll teach you\n\nMore Markdown\nNew Quarto formats\nNew Quarto projects"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#workshop-structure",
+    "href": "1-1-hello/1-1-hello.html#workshop-structure",
+    "title": "Hello, Quarto!",
+    "section": "Workshop structure",
+    "text": "Workshop structure\n\n\nMy turn\n\nLecture segments\nFeel free to just watch, take notes, browse docs, or tinker around with the code\n\n\n\nOur turn\n\nLecture segments + live coding\nFollow along with live coding\n\n\n\n\nYour turn\n\nPractice exercises for you\nWork on your own or with the person next to you"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#getting-help",
+    "href": "1-1-hello/1-1-hello.html#getting-help",
+    "title": "Hello, Quarto!",
+    "section": "Getting help",
+    "text": "Getting help\n\nDuring my turn and your turn segments – raise your hand\nDuring our turn segments – also feel free to raise your hand for questions but if your question seems specific to your setup, I might come around and help during the next your turn break"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#setup-1",
+    "href": "1-1-hello/1-1-hello.html#setup-1",
+    "title": "Hello, Quarto!",
+    "section": "Setup",
+    "text": "Setup\n\n1. Tools: Have VS Code (with Jupyter and Quarto extensions) ready to go\n2. Software: Download and install Python and the pre-release version of Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.53: https://quarto.org/docs/get-started/\n\n3. Packages: Install the following packages:\n\n\nTerminal\n\npython3 -m pip install tabulate pandas seaborn palmerpenguins great_tables plotnine\n\n4. Exercises: Go to bit.ly/quarto-scipy24-exercises, click on “Use this template” then “Create a new repository”. Once your repository is created, clone it locally and navigate to the repo folder.\n\n\n\nLet’s get started!"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#quarto",
+    "href": "1-1-hello/1-1-hello.html#quarto",
+    "title": "Hello, Quarto!",
+    "section": "Quarto …",
+    "text": "Quarto …\nis an innovative, open-source scientific and technical publishing system compatible with Jupyter notebooks and all your favorite plain text markdown editors\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#with-quarto",
+    "href": "1-1-hello/1-1-hello.html#with-quarto",
+    "title": "Hello, Quarto!",
+    "section": "With Quarto …",
+    "text": "With Quarto …\nyou can weave together narrative and code to produce elegantly formatted output as documents, web pages, blog posts, books and more, with…\n\n\nconsistent implementation of attractive and handy features across outputs: tabsets, code-folding, syntax highlighting, etc.\ndefaults that meet accessibility guidelines as well as features that enable good practices for producing accessible documents\nnative multi-lingual support for multiple languages like Python, R, Julia, Observable, and more via the Jupyter engine for executable code chunks"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#a-tour-of-quarto",
+    "href": "1-1-hello/1-1-hello.html#a-tour-of-quarto",
+    "title": "Hello, Quarto!",
+    "section": "A tour of Quarto",
+    "text": "A tour of Quarto\n\nSit back and enjoy!\n\n\n\nRendering a document\nCustomizing formats: pdf, docx\nInserting images\nCustomizing output format options: code-fold, toc\nCode cells: labels, alt-text, execution options\nCross referencing figures and tables\nLightbox effect\nConverting between Jupyter Notebooks and plain text markdown documents\n\n\n\n… or follow along with 1-1-hello-penguins.qmd."
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#revisit-what-is-quarto",
+    "href": "1-1-hello/1-1-hello.html#revisit-what-is-quarto",
+    "title": "Hello, Quarto!",
+    "section": "Revisit: What is Quarto?",
+    "text": "Revisit: What is Quarto?\nQuarto is a command line interface (CLI) that renders plain text formats (.qmd, .rmd, .md) OR mixed formats (.ipynb/Jupyter notebook) into static PDF/Word/HTML reports, books, websites, presentations and more.\n\n#| eval: false\n#| echo: true\n#| code-line-numbers: \"|1|2|10|15|16\"\nUsage:   quarto\nVersion: 1.5.53\n\nDescription:\n\n  Quarto CLI\n\nOptions:\n\n  -h, --help     - Show this help.                            \n  -V, --version  - Show the version number for this program.  \n\nCommands:\n\n  render     [input] [args...]     - Render files or projects to various document types.\n  preview    [file] [args...]      - Render and preview a document or website project.  \n  serve      [input]               - Serve a Shiny interactive document.                \n  create     [type] [commands...]  - Create a Quarto project or extension               \n  use        &lt;type&gt; [target]       - Automate document or project setup tasks.          \n  add        &lt;extension&gt;           - Add an extension to this folder or project         \n  update     [target...]           - Updates an extension or global dependency.         \n  remove     [target...]           - Removes an extension.                              \n  convert    &lt;input&gt;               - Convert documents to alternate representations.    \n  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.  \n  typst      [args...]             - Run the version of Typst embedded within Quarto.   \n  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.        \n  install    [target...]           - Installs a global dependency (TinyTex or Chromium).\n  uninstall  [tool]                - Removes an extension.                              \n  tools                            - Display the status of Quarto installed dependencies\n  publish    [provider] [path]     - Publish a document or project to a provider.       \n  check      [target]              - Verify correct functioning of Quarto installation. \n  help       [command]             - Show this help or the help of a sub-command."
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#under-the-hood",
+    "href": "1-1-hello/1-1-hello.html#under-the-hood",
+    "title": "Hello, Quarto!",
+    "section": "Under the hood",
+    "text": "Under the hood\n\n\n\njupyter evaluates Python code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#under-the-hood-1",
+    "href": "1-1-hello/1-1-hello.html#under-the-hood-1",
+    "title": "Hello, Quarto!",
+    "section": "Under the hood",
+    "text": "Under the hood\nwith a wider lens…\n\n\n\njupyter or knitr evaluates Python, Julia, R, or Observable code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#aside-lua-filters",
+    "href": "1-1-hello/1-1-hello.html#aside-lua-filters",
+    "title": "Hello, Quarto!",
+    "section": "Aside: Lua filters",
+    "text": "Aside: Lua filters\n\nHere is an example of a Lua filter that converts strong emphasis to small caps, from https://pandoc.org/lua-filters.html:\n\nreturn {\n  {\n    Strong = function (elem)\n      return pandoc.SmallCaps(elem.c)\n    end,\n  }\n}\n\n\nLua filters written by R/Python/Julia developers should be interchangeable between formats - not language specific!\n\n\n\n\nWe won’t go into the details of writing Lua filters in this workshop, and you don’t need to worry about learning about Lua filters unless you’re working on extending Quarto."
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#from-the-comfort-of-your-own-homeworkspace",
+    "href": "1-1-hello/1-1-hello.html#from-the-comfort-of-your-own-homeworkspace",
+    "title": "Hello, Quarto!",
+    "section": "From the comfort of your own homeworkspace",
+    "text": "From the comfort of your own homeworkspace"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#rendering",
+    "href": "1-1-hello/1-1-hello.html#rendering",
+    "title": "Hello, Quarto!",
+    "section": "Rendering",
+    "text": "Rendering\nin VS Code\nwith the Quarto extension installed and enabled\n\nOption 1: In the Terminal via quarto render\nOption 2: Using the Quarto Extension and clicking on Preview\n\n\nin JupyterLab\nIn the Terminal via quarto render:\n\n\nTerminal\n\nquarto render document.qmd # defaults to html\nquarto render document.qmd --to pdf\nquarto render document.qmd --to docx"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#one-install-batteries-included",
+    "href": "1-1-hello/1-1-hello.html#one-install-batteries-included",
+    "title": "Hello, Quarto!",
+    "section": "One install, “Batteries included”",
+    "text": "One install, “Batteries included”\n\nQuarto comes “batteries included” straight out of the box:\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\nManuscripts\n…\n\n\n\n\nAny language, exact same approach and syntax"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#many-quarto-formats",
+    "href": "1-1-hello/1-1-hello.html#many-quarto-formats",
+    "title": "Hello, Quarto!",
+    "section": "Many Quarto formats",
+    "text": "Many Quarto formats\n\n\n\n\n\n\n\nFeature\nQuarto\n\n\n\n\nBasic Formats\nhtml, pdf, docx, typst\n\n\nBeamer\nbeamer\n\n\nPowerPoint\npptx\n\n\nHTML Slides\nrevealjs\n\n\nAdvanced Layout\nQuarto Article Layout\n\n\nCross References\nQuarto Crossrefs\n\n\nWebsites & Blogs\nQuarto Websites, Quarto Blogs\n\n\nBooks\nQuarto Books\n\n\nInteractivity\nQuarto Interactive Documents\n\n\nJournal Articles\nJournal Articles\n\n\nDashboards\nQuarto Dashboards"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#your-turn",
+    "href": "1-1-hello/1-1-hello.html#your-turn",
+    "title": "Hello, Quarto!",
+    "section": "Your turn",
+    "text": "Your turn\n\nIn VS Code, open the hello-penquins.qmd file. Render the document to HTML.\n\nIn the YAML: Add an author field and add your name.\nAdd some text and style it with bold, italics, etc.\nModify the figure to add units to the axis labels: grams for body weight and mm (milimeters) for flipper length. Make sure the changes are reflected in the HTML output.\nChange the html theme to sketchy. (See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.)"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#questions",
+    "href": "1-1-hello/1-1-hello.html#questions",
+    "title": "Hello, Quarto!",
+    "section": "Questions",
+    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello.html#a-pause",
+    "href": "1-1-hello/1-1-hello.html#a-pause",
+    "title": "Hello, Quarto!",
+    "section": "A pause",
+    "text": "A pause\n\nWhere does the name “Quarto” come from?\n\n\n\n\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Quarto"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#components",
+    "href": "1-2-documents/1-2-documents.html#components",
+    "title": "Documents",
+    "section": "Components",
+    "text": "Components\n\nMetadata: YAML\nText: Markdown\nCode: Executed via knitr or jupyter\n\n\nWeave it all together, and you have beautiful, powerful, and useful outputs!"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#literate-programming",
+    "href": "1-2-documents/1-2-documents.html#literate-programming",
+    "title": "Documents",
+    "section": "Literate programming",
+    "text": "Literate programming\nLiterate programming is writing out the program logic in a human language with included (separated by a primitive markup) code snippets and macros.\n---\ntitle: \"plotnine demo\"\ndate: \"7/8/2024\"\nformat: html\n---\n\n## MPG\n\nThere is a relationship between city and highway mileage.\n\n```{python}\n#| label: fig-mpg\nimport plotnine as p9\nfrom palmerpenguins import load_penguins\n\npenguins = load_penguins()\n\n(\n    p9.ggplot(\n        penguins, \n        p9.aes(x=\"flipper_length_mm\", y=\"body_mass_g\", color=\"species\")\n    )\n    + p9.geom_point()\n    + p9.stat_smooth(method=\"lm\")\n    + p9.scale_color_manual(values = [\"#FF8C00\",\"#159090\",\"#A034F0\"]) \n    + p9.theme_minimal()\n    + p9.labs(\n        x = \"Flipper length (mm)\", \n        y = \"Body mass (g)\", \n        color = \"Species\", \n        title = \"Body mass vs. flipper length of Palmer Penguins\"\n    )\n)\n```\n\n\nSource: https://en.wikipedia.org/wiki/Literate_programming"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#yaml",
+    "href": "1-2-documents/1-2-documents.html#yaml",
+    "title": "Documents",
+    "section": "YAML",
+    "text": "YAML\n“Yet Another Markup Language” or “YAML Ain’t Markup Language” is used to provide document level metadata.\n---\nkey: value\n---"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#output-options",
+    "href": "1-2-documents/1-2-documents.html#output-options",
+    "title": "Documents",
+    "section": "Output options",
+    "text": "Output options\n---\nformat: something\n---\n\n\n---\nformat: html\n---\n---\nformat: pdf\n---\n---\nformat: revealjs\n---"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#output-option-arguments",
+    "href": "1-2-documents/1-2-documents.html#output-option-arguments",
+    "title": "Documents",
+    "section": "Output option arguments",
+    "text": "Output option arguments\nIndentation matters!\n---\nformat: \n  html:\n    toc: true\n    code-fold: true\n---"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#yaml-validation",
+    "href": "1-2-documents/1-2-documents.html#yaml-validation",
+    "title": "Documents",
+    "section": "YAML validation",
+    "text": "YAML validation\n\nInvalid: No space after :\n\n---\nformat:html\n---\n\nInvalid: Read as missing\n\n---\nformat:\nhtml\n---\n\nValid, but needs next object\n\n---\nformat: \n  html:\n---"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#yaml-validation-1",
+    "href": "1-2-documents/1-2-documents.html#yaml-validation-1",
+    "title": "Documents",
+    "section": "YAML validation",
+    "text": "YAML validation\nThere are multiple ways of formatting valid YAML:\n\nValid: There’s a space after :\n\nformat: html\n\nValid: There are 2 spaces a new line and no trailing :\n\nformat:\n  html\n\nValid: format: html with selections made with proper indentation\n\nformat: \n  html:\n    toc: true"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#why-yaml",
+    "href": "1-2-documents/1-2-documents.html#why-yaml",
+    "title": "Documents",
+    "section": "Why YAML?",
+    "text": "Why YAML?\nTo avoid manually typing out all the options, every time when rendering via the CLI:\n\nquarto render document.qmd --to html\n\n\n\nquarto render document.qmd --to html -M code-fold:true\n\n\n\nquarto render document.qmd --to html -M code-fold:true -P alpha:0.2 -P ratio:0.3"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#quarto-linting",
+    "href": "1-2-documents/1-2-documents.html#quarto-linting",
+    "title": "Documents",
+    "section": "Quarto linting",
+    "text": "Quarto linting\nLint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.\n\n\n\n\n\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Lint_(software)"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#quarto-yaml-intelligence",
+    "href": "1-2-documents/1-2-documents.html#quarto-yaml-intelligence",
+    "title": "Documents",
+    "section": "Quarto YAML Intelligence",
+    "text": "Quarto YAML Intelligence\nRStudio + VSCode provide rich tab-completion - start a word and tab to complete, or Ctrl + space to see all available options."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#your-turn",
+    "href": "1-2-documents/1-2-documents.html#your-turn",
+    "title": "Documents",
+    "section": "Your turn",
+    "text": "Your turn\n\n\nOpen hello-penguins.qmd in RStudio.\nTry Ctrl + space to see the available YAML options.\nTry out the tab-completion of any options you remember.\nYou can use the HTML reference as needed."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#list-of-valid-yaml-fields",
+    "href": "1-2-documents/1-2-documents.html#list-of-valid-yaml-fields",
+    "title": "Documents",
+    "section": "List of valid YAML fields",
+    "text": "List of valid YAML fields\n\nMany YAML fields are common across various outputs\nBut also each output type has its own set of valid YAML fields and options\nDefinitive list: quarto.org/docs/reference/formats/html"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#text-formatting",
+    "href": "1-2-documents/1-2-documents.html#text-formatting",
+    "title": "Documents",
+    "section": "Text Formatting",
+    "text": "Text Formatting\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n*italics* and **bold**\nitalics and bold\n\n\nsuperscript^2^ / subscript~2~\nsuperscript2 / subscript2\n\n\n~~strikethrough~~\nstrikethrough\n\n\n`verbatim code`\nverbatim code"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#headings",
+    "href": "1-2-documents/1-2-documents.html#headings",
+    "title": "Documents",
+    "section": "Headings",
+    "text": "Headings\n\n\n\n\n\n\n\nMarkdown Syntax\nOutput\n\n\n\n\n# Header 1\nHeader 1\n\n\n## Header 2\nHeader 2\n\n\n### Header 3\nHeader 3\n\n\n#### Header 4\nHeader 4\n\n\n##### Header 5\nHeader 5\n\n\n###### Header 6\nHeader 6"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#links",
+    "href": "1-2-documents/1-2-documents.html#links",
+    "title": "Documents",
+    "section": "Links",
+    "text": "Links\nThere are several types of “links” or hyperlinks.\n\n\nMarkdown\nYou can embed [named hyperlinks](https://quarto.org/),\ndirect urls like &lt;https://quarto.org/&gt;, and links to \n[other places](#quarto-anatomy) in \nthe document. The syntax is similar for embedding an\ninline image: ![Penguins playing with ball](images/penguins-quarto-ball.png).\n\nOutput\nYou can embed named hyperlinks, direct urls like https://quarto.org/, and links to other places in the document. The syntax is similar for embedding an inline image: ."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#lists",
+    "href": "1-2-documents/1-2-documents.html#lists",
+    "title": "Documents",
+    "section": "Lists",
+    "text": "Lists\nUnordered list:\n\n\nMarkdown:\n-   unordered list         \n    -   sub-item 1         \n    -   sub-item 1         \n        -   sub-sub-item 1 \n\nOutput\n\nunordered list\n\nsub-item 1\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\nOrdered list:\n\n\nMarkdown:\n1. ordered list            \n2. item 2                  \n    i. sub-item 1          \n         A.  sub-sub-item 1\n\nOutput\n\nordered list\n\nitem 2\n\nsub-item 1\n\nsub-sub-item 1"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#quotes",
+    "href": "1-2-documents/1-2-documents.html#quotes",
+    "title": "Documents",
+    "section": "Quotes",
+    "text": "Quotes\nMarkdown:\n&gt; Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. \n&gt; - Donald Knuth, Literate Programming\n\nOutput:\n\nLet us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. - Donald Knuth, Literate Programming\n\n\n\n\n“Literate Programming”, The Computer Journal 27 (1984), p. 97. (Reprinted in Literate Programming, 1992, p. 99.) Literate Programming (1984)"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#divs-and-spans",
+    "href": "1-2-documents/1-2-documents.html#divs-and-spans",
+    "title": "Documents",
+    "section": "Divs and spans",
+    "text": "Divs and spans\nPandoc, and therefore Quarto, can parse “fenced div blocks”:\n\n\nYou can think of a ::: div as a HTML &lt;div&gt; but it can also apply in specific situations to content in PDF:\n\n::: {style=\"border-left:10px solid red\"}\nThis content can be styled with a border\n:::\n\nThis content can be styled with a border\n\n\n\n\n[text]{.class} spans can be thought of a &lt;span .class&gt;Text&lt;/span&gt; but again are a bit more transferable if using Pandoc/Quarto native attributes.\n\nThis is text with [special]{style=\"color:red;\"} formatting.\nThis is text with special formatting."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#divs-with-pre-defined-classes",
+    "href": "1-2-documents/1-2-documents.html#divs-with-pre-defined-classes",
+    "title": "Documents",
+    "section": "Divs with pre-defined classes",
+    "text": "Divs with pre-defined classes\nThese can often apply between formats:\n::: {.unnumbered .unlisted}\nText\n:::"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#your-turn-1",
+    "href": "1-2-documents/1-2-documents.html#your-turn-1",
+    "title": "Documents",
+    "section": "Your turn",
+    "text": "Your turn\n\n\nOpen markdown-syntax.qmd in RStudio.\nFollow the instructions in the document, then exchange one new thing you’ve learned with your neighbor."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#callouts",
+    "href": "1-2-documents/1-2-documents.html#callouts",
+    "title": "Documents",
+    "section": "Callouts",
+    "text": "Callouts\n::: callout-note\nNote that there are five types of callouts, including: \n`note`, `tip`, `warning`, `caution`, and `important`.\n:::\n\n\n\n\n\n\nNote\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#more-callouts",
+    "href": "1-2-documents/1-2-documents.html#more-callouts",
+    "title": "Documents",
+    "section": "More callouts",
+    "text": "More callouts\n\n\n\n\n\n\nWarning\n\n\nCallouts provide a simple way to attract attention, for example, to this warning.\n\n\n\n\n\n\n\n\n\nImportant\n\n\nDanger, callouts will really improve your writing.\n\n\n\n\n\n\n\n\n\nCaution\n\n\nHere is something under construction.\n\n\n\n\n\n\n\n\n\nCaption\n\n\nTip with caption."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#your-turn-2",
+    "href": "1-2-documents/1-2-documents.html#your-turn-2",
+    "title": "Documents",
+    "section": "Your turn",
+    "text": "Your turn\n\n\nOpen callout-boxes.qmd and render the document.\nUsing the visual editor, change the type of the first callouts box and then re-render. Also play with the options to change its appearance.\nAdd a caption to the second callout box.\nMake the third callout box collapsible. Then, switch over to the source editor to inspect the markdown code.\nChange the format to PDF and re-render."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#footnotes",
+    "href": "1-2-documents/1-2-documents.html#footnotes",
+    "title": "Documents",
+    "section": "Footnotes",
+    "text": "Footnotes\nPandoc supports numbering and formatting footnotes."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#inline-footnotes",
+    "href": "1-2-documents/1-2-documents.html#inline-footnotes",
+    "title": "Documents",
+    "section": "Inline footnotes",
+    "text": "Inline footnotes\nHere is an inline note.^[Inlines notes are easier to write,\nsince you don't have to pick an identifier and move down to\ntype the note.]\nHere is an inline note.1\nInlines notes are easier to write, since you don’t have to pick an identifier and move down to type the note."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#inline-footnotes-1",
+    "href": "1-2-documents/1-2-documents.html#inline-footnotes-1",
+    "title": "Documents",
+    "section": "Inline footnotes",
+    "text": "Inline footnotes\nHere is an footnore reference[^1]\n\n[^1]: This can be easy in some situations when you have a really long note or\ndon't want to inline complex outputs.\n\nHere is an footnote reference1\n\n\nNotice in both situations that the footnote is placed at the bottom of the page in presentations, whereas in a document it would be hoverable or at the end of the document.\n\nThis can be easy in some situations when you have a really long note or don’t want to inline complex outputs."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#anatomy-of-a-code-chunk",
+    "href": "1-2-documents/1-2-documents.html#anatomy-of-a-code-chunk",
+    "title": "Documents",
+    "section": "Anatomy of a code chunk",
+    "text": "Anatomy of a code chunk\n\n\n\n```{python}\n#| label: penguins\n\nimport pandas as pd\nfrom palmerpenguins import load_penguins\n\npenguins = load_penguins()\n\npenguins[\"species\"].unique()\n```\n\narray(['Adelie', 'Gentoo', 'Chinstrap'], dtype=object)\n\n\n\n\nHas 3x backticks on each end\nEngine (python) is indicated between curly braces {python}\nOptions stated with the #| (hashpipe): #| option1: value"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#code-who-is-it-for",
+    "href": "1-2-documents/1-2-documents.html#code-who-is-it-for",
+    "title": "Documents",
+    "section": "Code, who is it for?",
+    "text": "Code, who is it for?\n\n\nThe way you display code is very different for different contexts.\nIn a teaching scenario like today, I really want to display code.\nIn a business, you may want to have a data-science facing output which displays the source code AND a stakeholder-facing output which hides the code."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#code-1",
+    "href": "1-2-documents/1-2-documents.html#code-1",
+    "title": "Documents",
+    "section": "Code",
+    "text": "Code\nIf you simply want code formatting but don’t want to execute the code:\n\nOption 1: Use 3x back ticks + the language ```r\n\n```python\npenguins.head()\n```\n\n\nOption 2: Add eval: false as chunk option\n\n\n```{python}\n#| eval: false\n\npenguins.head()\n```"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#showing-and-hiding-code-with-echo",
+    "href": "1-2-documents/1-2-documents.html#showing-and-hiding-code-with-echo",
+    "title": "Documents",
+    "section": "Showing and hiding code with echo",
+    "text": "Showing and hiding code with echo\n\nThe echo option shows the code when set to true and hides it when set to false.\nIf you want to both execute the code and return the full code including backticks (like in a teaching scenario) echo: fenced is your friend!\n\n\n```{python}\n1 + 1\n```\n\n2"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#tables-and-figures",
+    "href": "1-2-documents/1-2-documents.html#tables-and-figures",
+    "title": "Documents",
+    "section": "Tables and figures",
+    "text": "Tables and figures\n\nIn reproducible reports and manuscripts, the most commonly included code outputs are tables and figures.\nSo they get their own special sections in our deep dive!"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#markdown-tables",
+    "href": "1-2-documents/1-2-documents.html#markdown-tables",
+    "title": "Documents",
+    "section": "Markdown tables",
+    "text": "Markdown tables\nMarkdown:\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\n\nOutput:\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#grid-tables",
+    "href": "1-2-documents/1-2-documents.html#grid-tables",
+    "title": "Documents",
+    "section": "Grid tables",
+    "text": "Grid tables\nMarkdown:\n+---------------+---------------+--------------------+\n| Fruit         | Price         | Advantages         |\n+===============+===============+====================+\n| Bananas       | $1.34         | - built-in wrapper |\n|               |               | - bright color     |\n+---------------+---------------+--------------------+\n| Oranges       | $2.10         | - cures scurvy     |\n|               |               | - tasty            |\n+---------------+---------------+--------------------+\n\n: Sample grid table."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#grid-tables-1",
+    "href": "1-2-documents/1-2-documents.html#grid-tables-1",
+    "title": "Documents",
+    "section": "Grid tables",
+    "text": "Grid tables\nOutput:\n\nSample grid table.\n\n\n\n\n\n\n\nFruit\nPrice\nAdvantages\n\n\n\n\nBananas\n$1.34\n\nbuilt-in wrapper\nbright color\n\n\n\nOranges\n$2.10\n\ncures scurvy\ntasty"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#grid-tables-alignment",
+    "href": "1-2-documents/1-2-documents.html#grid-tables-alignment",
+    "title": "Documents",
+    "section": "Grid tables: Alignment",
+    "text": "Grid tables: Alignment\n\nAlignments can be specified as with pipe tables, by putting colons at the boundaries of the separator line after the header:\n\n+---------------+---------------+--------------------+\n| Right         | Left          | Centered           |\n+==============:+:==============+:==================:+\n| Bananas       | $1.34         | built-in wrapper   |\n+---------------+---------------+--------------------+\n\n\nFor headerless tables, the colons go on the top line instead:\n\n+--------------:+:--------------+:------------------:+\n| Right         | Left          | Centered           |\n+---------------+---------------+--------------------+"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#grid-tables-authoring",
+    "href": "1-2-documents/1-2-documents.html#grid-tables-authoring",
+    "title": "Documents",
+    "section": "Grid tables: Authoring",
+    "text": "Grid tables: Authoring\n\nNote that grid tables are quite awkward to write with a plain text editor because unlike pipe tables, the column indicators must align.\nThe Visual Editor can assist in making these tables!"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#tables-from-code",
+    "href": "1-2-documents/1-2-documents.html#tables-from-code",
+    "title": "Documents",
+    "section": "Tables from code",
+    "text": "Tables from code\nIf you are using pandas to work with your data, you can convert a pandas DataFrame to an HTML table using the DataFrame.to_html() method:\n\npenguins.to_html(index=False)\n\n\n\n\n\n\n\n\nspecies\n\n\n\nisland\n\n\n\nbill_length_mm\n\n\n\nbill_depth_mm\n\n\n\nflipper_length_mm\n\n\n\nbody_mass_g\n\n\n\nsex\n\n\n\nyear\n\n\n\n\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n39.1\n\n\n\n18.7\n\n\n\n181.0\n\n\n\n3750.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n39.5\n\n\n\n17.4\n\n\n\n186.0\n\n\n\n3800.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n40.3\n\n\n\n18.0\n\n\n\n195.0\n\n\n\n3250.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\nNaN\n\n\n\nNaN\n\n\n\nNaN\n\n\n\nNaN\n\n\n\nNaN\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n36.7\n\n\n\n19.3\n\n\n\n193.0\n\n\n\n3450.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n39.3\n\n\n\n20.6\n\n\n\n190.0\n\n\n\n3650.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n38.9\n\n\n\n17.8\n\n\n\n181.0\n\n\n\n3625.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n39.2\n\n\n\n19.6\n\n\n\n195.0\n\n\n\n4675.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n34.1\n\n\n\n18.1\n\n\n\n193.0\n\n\n\n3475.0\n\n\n\nNaN\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n42.0\n\n\n\n20.2\n\n\n\n190.0\n\n\n\n4250.0\n\n\n\nNaN\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n37.8\n\n\n\n17.1\n\n\n\n186.0\n\n\n\n3300.0\n\n\n\nNaN\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n37.8\n\n\n\n17.3\n\n\n\n180.0\n\n\n\n3700.0\n\n\n\nNaN\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n41.1\n\n\n\n17.6\n\n\n\n182.0\n\n\n\n3200.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n38.6\n\n\n\n21.2\n\n\n\n191.0\n\n\n\n3800.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n34.6\n\n\n\n21.1\n\n\n\n198.0\n\n\n\n4400.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n36.6\n\n\n\n17.8\n\n\n\n185.0\n\n\n\n3700.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n38.7\n\n\n\n19.0\n\n\n\n195.0\n\n\n\n3450.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n42.5\n\n\n\n20.7\n\n\n\n197.0\n\n\n\n4500.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n34.4\n\n\n\n18.4\n\n\n\n184.0\n\n\n\n3325.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n46.0\n\n\n\n21.5\n\n\n\n194.0\n\n\n\n4200.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n37.8\n\n\n\n18.3\n\n\n\n174.0\n\n\n\n3400.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n37.7\n\n\n\n18.7\n\n\n\n180.0\n\n\n\n3600.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n35.9\n\n\n\n19.2\n\n\n\n189.0\n\n\n\n3800.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n38.2\n\n\n\n18.1\n\n\n\n185.0\n\n\n\n3950.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n38.8\n\n\n\n17.2\n\n\n\n180.0\n\n\n\n3800.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n35.3\n\n\n\n18.9\n\n\n\n187.0\n\n\n\n3800.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n40.6\n\n\n\n18.6\n\n\n\n183.0\n\n\n\n3550.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n40.5\n\n\n\n17.9\n\n\n\n187.0\n\n\n\n3200.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n37.9\n\n\n\n18.6\n\n\n\n172.0\n\n\n\n3150.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n40.5\n\n\n\n18.9\n\n\n\n180.0\n\n\n\n3950.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n39.5\n\n\n\n16.7\n\n\n\n178.0\n\n\n\n3250.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n37.2\n\n\n\n18.1\n\n\n\n178.0\n\n\n\n3900.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n39.5\n\n\n\n17.8\n\n\n\n188.0\n\n\n\n3300.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n40.9\n\n\n\n18.9\n\n\n\n184.0\n\n\n\n3900.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n36.4\n\n\n\n17.0\n\n\n\n195.0\n\n\n\n3325.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n39.2\n\n\n\n21.1\n\n\n\n196.0\n\n\n\n4150.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n38.8\n\n\n\n20.0\n\n\n\n190.0\n\n\n\n3950.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n42.2\n\n\n\n18.5\n\n\n\n180.0\n\n\n\n3550.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n37.6\n\n\n\n19.3\n\n\n\n181.0\n\n\n\n3300.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n39.8\n\n\n\n19.1\n\n\n\n184.0\n\n\n\n4650.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n36.5\n\n\n\n18.0\n\n\n\n182.0\n\n\n\n3150.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n40.8\n\n\n\n18.4\n\n\n\n195.0\n\n\n\n3900.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n36.0\n\n\n\n18.5\n\n\n\n186.0\n\n\n\n3100.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n44.1\n\n\n\n19.7\n\n\n\n196.0\n\n\n\n4400.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n37.0\n\n\n\n16.9\n\n\n\n185.0\n\n\n\n3000.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n39.6\n\n\n\n18.8\n\n\n\n190.0\n\n\n\n4600.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n41.1\n\n\n\n19.0\n\n\n\n182.0\n\n\n\n3425.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n37.5\n\n\n\n18.9\n\n\n\n179.0\n\n\n\n2975.0\n\n\n\nNaN\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n36.0\n\n\n\n17.9\n\n\n\n190.0\n\n\n\n3450.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n42.3\n\n\n\n21.2\n\n\n\n191.0\n\n\n\n4150.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n39.6\n\n\n\n17.7\n\n\n\n186.0\n\n\n\n3500.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n40.1\n\n\n\n18.9\n\n\n\n188.0\n\n\n\n4300.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n35.0\n\n\n\n17.9\n\n\n\n190.0\n\n\n\n3450.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n42.0\n\n\n\n19.5\n\n\n\n200.0\n\n\n\n4050.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n34.5\n\n\n\n18.1\n\n\n\n187.0\n\n\n\n2900.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n41.4\n\n\n\n18.6\n\n\n\n191.0\n\n\n\n3700.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n39.0\n\n\n\n17.5\n\n\n\n186.0\n\n\n\n3550.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n40.6\n\n\n\n18.8\n\n\n\n193.0\n\n\n\n3800.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n36.5\n\n\n\n16.6\n\n\n\n181.0\n\n\n\n2850.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n37.6\n\n\n\n19.1\n\n\n\n194.0\n\n\n\n3750.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n35.7\n\n\n\n16.9\n\n\n\n185.0\n\n\n\n3150.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n41.3\n\n\n\n21.1\n\n\n\n195.0\n\n\n\n4400.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n37.6\n\n\n\n17.0\n\n\n\n185.0\n\n\n\n3600.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n41.1\n\n\n\n18.2\n\n\n\n192.0\n\n\n\n4050.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n36.4\n\n\n\n17.1\n\n\n\n184.0\n\n\n\n2850.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n41.6\n\n\n\n18.0\n\n\n\n192.0\n\n\n\n3950.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n35.5\n\n\n\n16.2\n\n\n\n195.0\n\n\n\n3350.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n41.1\n\n\n\n19.1\n\n\n\n188.0\n\n\n\n4100.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n35.9\n\n\n\n16.6\n\n\n\n190.0\n\n\n\n3050.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n41.8\n\n\n\n19.4\n\n\n\n198.0\n\n\n\n4450.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n33.5\n\n\n\n19.0\n\n\n\n190.0\n\n\n\n3600.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n39.7\n\n\n\n18.4\n\n\n\n190.0\n\n\n\n3900.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n39.6\n\n\n\n17.2\n\n\n\n196.0\n\n\n\n3550.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n45.8\n\n\n\n18.9\n\n\n\n197.0\n\n\n\n4150.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n35.5\n\n\n\n17.5\n\n\n\n190.0\n\n\n\n3700.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n42.8\n\n\n\n18.5\n\n\n\n195.0\n\n\n\n4250.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n40.9\n\n\n\n16.8\n\n\n\n191.0\n\n\n\n3700.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n37.2\n\n\n\n19.4\n\n\n\n184.0\n\n\n\n3900.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n36.2\n\n\n\n16.1\n\n\n\n187.0\n\n\n\n3550.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n42.1\n\n\n\n19.1\n\n\n\n195.0\n\n\n\n4000.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n34.6\n\n\n\n17.2\n\n\n\n189.0\n\n\n\n3200.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n42.9\n\n\n\n17.6\n\n\n\n196.0\n\n\n\n4700.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n36.7\n\n\n\n18.8\n\n\n\n187.0\n\n\n\n3800.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n35.1\n\n\n\n19.4\n\n\n\n193.0\n\n\n\n4200.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n37.3\n\n\n\n17.8\n\n\n\n191.0\n\n\n\n3350.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n41.3\n\n\n\n20.3\n\n\n\n194.0\n\n\n\n3550.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n36.3\n\n\n\n19.5\n\n\n\n190.0\n\n\n\n3800.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n36.9\n\n\n\n18.6\n\n\n\n189.0\n\n\n\n3500.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n38.3\n\n\n\n19.2\n\n\n\n189.0\n\n\n\n3950.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n38.9\n\n\n\n18.8\n\n\n\n190.0\n\n\n\n3600.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n35.7\n\n\n\n18.0\n\n\n\n202.0\n\n\n\n3550.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n41.1\n\n\n\n18.1\n\n\n\n205.0\n\n\n\n4300.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n34.0\n\n\n\n17.1\n\n\n\n185.0\n\n\n\n3400.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n39.6\n\n\n\n18.1\n\n\n\n186.0\n\n\n\n4450.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n36.2\n\n\n\n17.3\n\n\n\n187.0\n\n\n\n3300.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n40.8\n\n\n\n18.9\n\n\n\n208.0\n\n\n\n4300.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n38.1\n\n\n\n18.6\n\n\n\n190.0\n\n\n\n3700.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n40.3\n\n\n\n18.5\n\n\n\n196.0\n\n\n\n4350.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n33.1\n\n\n\n16.1\n\n\n\n178.0\n\n\n\n2900.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n43.2\n\n\n\n18.5\n\n\n\n192.0\n\n\n\n4100.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n35.0\n\n\n\n17.9\n\n\n\n192.0\n\n\n\n3725.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n41.0\n\n\n\n20.0\n\n\n\n203.0\n\n\n\n4725.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n37.7\n\n\n\n16.0\n\n\n\n183.0\n\n\n\n3075.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n37.8\n\n\n\n20.0\n\n\n\n190.0\n\n\n\n4250.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n37.9\n\n\n\n18.6\n\n\n\n193.0\n\n\n\n2925.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n39.7\n\n\n\n18.9\n\n\n\n184.0\n\n\n\n3550.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n38.6\n\n\n\n17.2\n\n\n\n199.0\n\n\n\n3750.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n38.2\n\n\n\n20.0\n\n\n\n190.0\n\n\n\n3900.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n38.1\n\n\n\n17.0\n\n\n\n181.0\n\n\n\n3175.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n43.2\n\n\n\n19.0\n\n\n\n197.0\n\n\n\n4775.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n38.1\n\n\n\n16.5\n\n\n\n198.0\n\n\n\n3825.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n45.6\n\n\n\n20.3\n\n\n\n191.0\n\n\n\n4600.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n39.7\n\n\n\n17.7\n\n\n\n193.0\n\n\n\n3200.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n42.2\n\n\n\n19.5\n\n\n\n197.0\n\n\n\n4275.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n39.6\n\n\n\n20.7\n\n\n\n191.0\n\n\n\n3900.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nBiscoe\n\n\n\n42.7\n\n\n\n18.3\n\n\n\n196.0\n\n\n\n4075.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n38.6\n\n\n\n17.0\n\n\n\n188.0\n\n\n\n2900.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n37.3\n\n\n\n20.5\n\n\n\n199.0\n\n\n\n3775.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n35.7\n\n\n\n17.0\n\n\n\n189.0\n\n\n\n3350.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n41.1\n\n\n\n18.6\n\n\n\n189.0\n\n\n\n3325.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n36.2\n\n\n\n17.2\n\n\n\n187.0\n\n\n\n3150.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n37.7\n\n\n\n19.8\n\n\n\n198.0\n\n\n\n3500.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n40.2\n\n\n\n17.0\n\n\n\n176.0\n\n\n\n3450.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n41.4\n\n\n\n18.5\n\n\n\n202.0\n\n\n\n3875.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n35.2\n\n\n\n15.9\n\n\n\n186.0\n\n\n\n3050.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n40.6\n\n\n\n19.0\n\n\n\n199.0\n\n\n\n4000.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n38.8\n\n\n\n17.6\n\n\n\n191.0\n\n\n\n3275.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n41.5\n\n\n\n18.3\n\n\n\n195.0\n\n\n\n4300.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n39.0\n\n\n\n17.1\n\n\n\n191.0\n\n\n\n3050.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n44.1\n\n\n\n18.0\n\n\n\n210.0\n\n\n\n4000.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n38.5\n\n\n\n17.9\n\n\n\n190.0\n\n\n\n3325.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nTorgersen\n\n\n\n43.1\n\n\n\n19.2\n\n\n\n197.0\n\n\n\n3500.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n36.8\n\n\n\n18.5\n\n\n\n193.0\n\n\n\n3500.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n37.5\n\n\n\n18.5\n\n\n\n199.0\n\n\n\n4475.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n38.1\n\n\n\n17.6\n\n\n\n187.0\n\n\n\n3425.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n41.1\n\n\n\n17.5\n\n\n\n190.0\n\n\n\n3900.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n35.6\n\n\n\n17.5\n\n\n\n191.0\n\n\n\n3175.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n40.2\n\n\n\n20.1\n\n\n\n200.0\n\n\n\n3975.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n37.0\n\n\n\n16.5\n\n\n\n185.0\n\n\n\n3400.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n39.7\n\n\n\n17.9\n\n\n\n193.0\n\n\n\n4250.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n40.2\n\n\n\n17.1\n\n\n\n193.0\n\n\n\n3400.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n40.6\n\n\n\n17.2\n\n\n\n187.0\n\n\n\n3475.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n32.1\n\n\n\n15.5\n\n\n\n188.0\n\n\n\n3050.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n40.7\n\n\n\n17.0\n\n\n\n190.0\n\n\n\n3725.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n37.3\n\n\n\n16.8\n\n\n\n192.0\n\n\n\n3000.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n39.0\n\n\n\n18.7\n\n\n\n185.0\n\n\n\n3650.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n39.2\n\n\n\n18.6\n\n\n\n190.0\n\n\n\n4250.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n36.6\n\n\n\n18.4\n\n\n\n184.0\n\n\n\n3475.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n36.0\n\n\n\n17.8\n\n\n\n195.0\n\n\n\n3450.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n37.8\n\n\n\n18.1\n\n\n\n193.0\n\n\n\n3750.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n36.0\n\n\n\n17.1\n\n\n\n187.0\n\n\n\n3700.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nAdelie\n\n\n\nDream\n\n\n\n41.5\n\n\n\n18.5\n\n\n\n201.0\n\n\n\n4000.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.1\n\n\n\n13.2\n\n\n\n211.0\n\n\n\n4500.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n50.0\n\n\n\n16.3\n\n\n\n230.0\n\n\n\n5700.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n48.7\n\n\n\n14.1\n\n\n\n210.0\n\n\n\n4450.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n50.0\n\n\n\n15.2\n\n\n\n218.0\n\n\n\n5700.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n47.6\n\n\n\n14.5\n\n\n\n215.0\n\n\n\n5400.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.5\n\n\n\n13.5\n\n\n\n210.0\n\n\n\n4550.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.4\n\n\n\n14.6\n\n\n\n211.0\n\n\n\n4800.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.7\n\n\n\n15.3\n\n\n\n219.0\n\n\n\n5200.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n43.3\n\n\n\n13.4\n\n\n\n209.0\n\n\n\n4400.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.8\n\n\n\n15.4\n\n\n\n215.0\n\n\n\n5150.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n40.9\n\n\n\n13.7\n\n\n\n214.0\n\n\n\n4650.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n49.0\n\n\n\n16.1\n\n\n\n216.0\n\n\n\n5550.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.5\n\n\n\n13.7\n\n\n\n214.0\n\n\n\n4650.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n48.4\n\n\n\n14.6\n\n\n\n213.0\n\n\n\n5850.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.8\n\n\n\n14.6\n\n\n\n210.0\n\n\n\n4200.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n49.3\n\n\n\n15.7\n\n\n\n217.0\n\n\n\n5850.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n42.0\n\n\n\n13.5\n\n\n\n210.0\n\n\n\n4150.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n49.2\n\n\n\n15.2\n\n\n\n221.0\n\n\n\n6300.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.2\n\n\n\n14.5\n\n\n\n209.0\n\n\n\n4800.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n48.7\n\n\n\n15.1\n\n\n\n222.0\n\n\n\n5350.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n50.2\n\n\n\n14.3\n\n\n\n218.0\n\n\n\n5700.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.1\n\n\n\n14.5\n\n\n\n215.0\n\n\n\n5000.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.5\n\n\n\n14.5\n\n\n\n213.0\n\n\n\n4400.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.3\n\n\n\n15.8\n\n\n\n215.0\n\n\n\n5050.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n42.9\n\n\n\n13.1\n\n\n\n215.0\n\n\n\n5000.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.1\n\n\n\n15.1\n\n\n\n215.0\n\n\n\n5100.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n44.5\n\n\n\n14.3\n\n\n\n216.0\n\n\n\n4100.0\n\n\n\nNaN\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n47.8\n\n\n\n15.0\n\n\n\n215.0\n\n\n\n5650.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n48.2\n\n\n\n14.3\n\n\n\n210.0\n\n\n\n4600.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n50.0\n\n\n\n15.3\n\n\n\n220.0\n\n\n\n5550.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n47.3\n\n\n\n15.3\n\n\n\n222.0\n\n\n\n5250.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n42.8\n\n\n\n14.2\n\n\n\n209.0\n\n\n\n4700.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.1\n\n\n\n14.5\n\n\n\n207.0\n\n\n\n5050.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n59.6\n\n\n\n17.0\n\n\n\n230.0\n\n\n\n6050.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n49.1\n\n\n\n14.8\n\n\n\n220.0\n\n\n\n5150.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n48.4\n\n\n\n16.3\n\n\n\n220.0\n\n\n\n5400.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n42.6\n\n\n\n13.7\n\n\n\n213.0\n\n\n\n4950.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n44.4\n\n\n\n17.3\n\n\n\n219.0\n\n\n\n5250.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n44.0\n\n\n\n13.6\n\n\n\n208.0\n\n\n\n4350.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n48.7\n\n\n\n15.7\n\n\n\n208.0\n\n\n\n5350.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n42.7\n\n\n\n13.7\n\n\n\n208.0\n\n\n\n3950.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n49.6\n\n\n\n16.0\n\n\n\n225.0\n\n\n\n5700.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.3\n\n\n\n13.7\n\n\n\n210.0\n\n\n\n4300.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n49.6\n\n\n\n15.0\n\n\n\n216.0\n\n\n\n4750.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n50.5\n\n\n\n15.9\n\n\n\n222.0\n\n\n\n5550.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n43.6\n\n\n\n13.9\n\n\n\n217.0\n\n\n\n4900.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.5\n\n\n\n13.9\n\n\n\n210.0\n\n\n\n4200.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n50.5\n\n\n\n15.9\n\n\n\n225.0\n\n\n\n5400.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n44.9\n\n\n\n13.3\n\n\n\n213.0\n\n\n\n5100.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.2\n\n\n\n15.8\n\n\n\n215.0\n\n\n\n5300.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.6\n\n\n\n14.2\n\n\n\n210.0\n\n\n\n4850.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n48.5\n\n\n\n14.1\n\n\n\n220.0\n\n\n\n5300.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.1\n\n\n\n14.4\n\n\n\n210.0\n\n\n\n4400.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n50.1\n\n\n\n15.0\n\n\n\n225.0\n\n\n\n5000.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.5\n\n\n\n14.4\n\n\n\n217.0\n\n\n\n4900.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.0\n\n\n\n15.4\n\n\n\n220.0\n\n\n\n5050.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n43.8\n\n\n\n13.9\n\n\n\n208.0\n\n\n\n4300.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.5\n\n\n\n15.0\n\n\n\n220.0\n\n\n\n5000.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n43.2\n\n\n\n14.5\n\n\n\n208.0\n\n\n\n4450.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n50.4\n\n\n\n15.3\n\n\n\n224.0\n\n\n\n5550.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.3\n\n\n\n13.8\n\n\n\n208.0\n\n\n\n4200.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.2\n\n\n\n14.9\n\n\n\n221.0\n\n\n\n5300.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.7\n\n\n\n13.9\n\n\n\n214.0\n\n\n\n4400.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n54.3\n\n\n\n15.7\n\n\n\n231.0\n\n\n\n5650.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.8\n\n\n\n14.2\n\n\n\n219.0\n\n\n\n4700.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n49.8\n\n\n\n16.8\n\n\n\n230.0\n\n\n\n5700.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.2\n\n\n\n14.4\n\n\n\n214.0\n\n\n\n4650.0\n\n\n\nNaN\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n49.5\n\n\n\n16.2\n\n\n\n229.0\n\n\n\n5800.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n43.5\n\n\n\n14.2\n\n\n\n220.0\n\n\n\n4700.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n50.7\n\n\n\n15.0\n\n\n\n223.0\n\n\n\n5550.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n47.7\n\n\n\n15.0\n\n\n\n216.0\n\n\n\n4750.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.4\n\n\n\n15.6\n\n\n\n221.0\n\n\n\n5000.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n48.2\n\n\n\n15.6\n\n\n\n221.0\n\n\n\n5100.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.5\n\n\n\n14.8\n\n\n\n217.0\n\n\n\n5200.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.4\n\n\n\n15.0\n\n\n\n216.0\n\n\n\n4700.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n48.6\n\n\n\n16.0\n\n\n\n230.0\n\n\n\n5800.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n47.5\n\n\n\n14.2\n\n\n\n209.0\n\n\n\n4600.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n51.1\n\n\n\n16.3\n\n\n\n220.0\n\n\n\n6000.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.2\n\n\n\n13.8\n\n\n\n215.0\n\n\n\n4750.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.2\n\n\n\n16.4\n\n\n\n223.0\n\n\n\n5950.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n49.1\n\n\n\n14.5\n\n\n\n212.0\n\n\n\n4625.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n52.5\n\n\n\n15.6\n\n\n\n221.0\n\n\n\n5450.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n47.4\n\n\n\n14.6\n\n\n\n212.0\n\n\n\n4725.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n50.0\n\n\n\n15.9\n\n\n\n224.0\n\n\n\n5350.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n44.9\n\n\n\n13.8\n\n\n\n212.0\n\n\n\n4750.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n50.8\n\n\n\n17.3\n\n\n\n228.0\n\n\n\n5600.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n43.4\n\n\n\n14.4\n\n\n\n218.0\n\n\n\n4600.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n51.3\n\n\n\n14.2\n\n\n\n218.0\n\n\n\n5300.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n47.5\n\n\n\n14.0\n\n\n\n212.0\n\n\n\n4875.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n52.1\n\n\n\n17.0\n\n\n\n230.0\n\n\n\n5550.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n47.5\n\n\n\n15.0\n\n\n\n218.0\n\n\n\n4950.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n52.2\n\n\n\n17.1\n\n\n\n228.0\n\n\n\n5400.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.5\n\n\n\n14.5\n\n\n\n212.0\n\n\n\n4750.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n49.5\n\n\n\n16.1\n\n\n\n224.0\n\n\n\n5650.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n44.5\n\n\n\n14.7\n\n\n\n214.0\n\n\n\n4850.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n50.8\n\n\n\n15.7\n\n\n\n226.0\n\n\n\n5200.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n49.4\n\n\n\n15.8\n\n\n\n216.0\n\n\n\n4925.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.9\n\n\n\n14.6\n\n\n\n222.0\n\n\n\n4875.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n48.4\n\n\n\n14.4\n\n\n\n203.0\n\n\n\n4625.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n51.1\n\n\n\n16.5\n\n\n\n225.0\n\n\n\n5250.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n48.5\n\n\n\n15.0\n\n\n\n219.0\n\n\n\n4850.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n55.9\n\n\n\n17.0\n\n\n\n228.0\n\n\n\n5600.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n47.2\n\n\n\n15.5\n\n\n\n215.0\n\n\n\n4975.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n49.1\n\n\n\n15.0\n\n\n\n228.0\n\n\n\n5500.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n47.3\n\n\n\n13.8\n\n\n\n216.0\n\n\n\n4725.0\n\n\n\nNaN\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.8\n\n\n\n16.1\n\n\n\n215.0\n\n\n\n5500.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n41.7\n\n\n\n14.7\n\n\n\n210.0\n\n\n\n4700.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n53.4\n\n\n\n15.8\n\n\n\n219.0\n\n\n\n5500.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n43.3\n\n\n\n14.0\n\n\n\n208.0\n\n\n\n4575.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n48.1\n\n\n\n15.1\n\n\n\n209.0\n\n\n\n5500.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n50.5\n\n\n\n15.2\n\n\n\n216.0\n\n\n\n5000.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n49.8\n\n\n\n15.9\n\n\n\n229.0\n\n\n\n5950.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n43.5\n\n\n\n15.2\n\n\n\n213.0\n\n\n\n4650.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n51.5\n\n\n\n16.3\n\n\n\n230.0\n\n\n\n5500.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.2\n\n\n\n14.1\n\n\n\n217.0\n\n\n\n4375.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n55.1\n\n\n\n16.0\n\n\n\n230.0\n\n\n\n5850.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n44.5\n\n\n\n15.7\n\n\n\n217.0\n\n\n\n4875.0\n\n\n\nNaN\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n48.8\n\n\n\n16.2\n\n\n\n222.0\n\n\n\n6000.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n47.2\n\n\n\n13.7\n\n\n\n214.0\n\n\n\n4925.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\nNaN\n\n\n\nNaN\n\n\n\nNaN\n\n\n\nNaN\n\n\n\nNaN\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n46.8\n\n\n\n14.3\n\n\n\n215.0\n\n\n\n4850.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n50.4\n\n\n\n15.7\n\n\n\n222.0\n\n\n\n5750.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n45.2\n\n\n\n14.8\n\n\n\n212.0\n\n\n\n5200.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nGentoo\n\n\n\nBiscoe\n\n\n\n49.9\n\n\n\n16.1\n\n\n\n213.0\n\n\n\n5400.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n46.5\n\n\n\n17.9\n\n\n\n192.0\n\n\n\n3500.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n50.0\n\n\n\n19.5\n\n\n\n196.0\n\n\n\n3900.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n51.3\n\n\n\n19.2\n\n\n\n193.0\n\n\n\n3650.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n45.4\n\n\n\n18.7\n\n\n\n188.0\n\n\n\n3525.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n52.7\n\n\n\n19.8\n\n\n\n197.0\n\n\n\n3725.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n45.2\n\n\n\n17.8\n\n\n\n198.0\n\n\n\n3950.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n46.1\n\n\n\n18.2\n\n\n\n178.0\n\n\n\n3250.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n51.3\n\n\n\n18.2\n\n\n\n197.0\n\n\n\n3750.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n46.0\n\n\n\n18.9\n\n\n\n195.0\n\n\n\n4150.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n51.3\n\n\n\n19.9\n\n\n\n198.0\n\n\n\n3700.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n46.6\n\n\n\n17.8\n\n\n\n193.0\n\n\n\n3800.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n51.7\n\n\n\n20.3\n\n\n\n194.0\n\n\n\n3775.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n47.0\n\n\n\n17.3\n\n\n\n185.0\n\n\n\n3700.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n52.0\n\n\n\n18.1\n\n\n\n201.0\n\n\n\n4050.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n45.9\n\n\n\n17.1\n\n\n\n190.0\n\n\n\n3575.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n50.5\n\n\n\n19.6\n\n\n\n201.0\n\n\n\n4050.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n50.3\n\n\n\n20.0\n\n\n\n197.0\n\n\n\n3300.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n58.0\n\n\n\n17.8\n\n\n\n181.0\n\n\n\n3700.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n46.4\n\n\n\n18.6\n\n\n\n190.0\n\n\n\n3450.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n49.2\n\n\n\n18.2\n\n\n\n195.0\n\n\n\n4400.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n42.4\n\n\n\n17.3\n\n\n\n181.0\n\n\n\n3600.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n48.5\n\n\n\n17.5\n\n\n\n191.0\n\n\n\n3400.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n43.2\n\n\n\n16.6\n\n\n\n187.0\n\n\n\n2900.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n50.6\n\n\n\n19.4\n\n\n\n193.0\n\n\n\n3800.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n46.7\n\n\n\n17.9\n\n\n\n195.0\n\n\n\n3300.0\n\n\n\nfemale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n52.0\n\n\n\n19.0\n\n\n\n197.0\n\n\n\n4150.0\n\n\n\nmale\n\n\n\n2007\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n50.5\n\n\n\n18.4\n\n\n\n200.0\n\n\n\n3400.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n49.5\n\n\n\n19.0\n\n\n\n200.0\n\n\n\n3800.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n46.4\n\n\n\n17.8\n\n\n\n191.0\n\n\n\n3700.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n52.8\n\n\n\n20.0\n\n\n\n205.0\n\n\n\n4550.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n40.9\n\n\n\n16.6\n\n\n\n187.0\n\n\n\n3200.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n54.2\n\n\n\n20.8\n\n\n\n201.0\n\n\n\n4300.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n42.5\n\n\n\n16.7\n\n\n\n187.0\n\n\n\n3350.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n51.0\n\n\n\n18.8\n\n\n\n203.0\n\n\n\n4100.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n49.7\n\n\n\n18.6\n\n\n\n195.0\n\n\n\n3600.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n47.5\n\n\n\n16.8\n\n\n\n199.0\n\n\n\n3900.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n47.6\n\n\n\n18.3\n\n\n\n195.0\n\n\n\n3850.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n52.0\n\n\n\n20.7\n\n\n\n210.0\n\n\n\n4800.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n46.9\n\n\n\n16.6\n\n\n\n192.0\n\n\n\n2700.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n53.5\n\n\n\n19.9\n\n\n\n205.0\n\n\n\n4500.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n49.0\n\n\n\n19.5\n\n\n\n210.0\n\n\n\n3950.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n46.2\n\n\n\n17.5\n\n\n\n187.0\n\n\n\n3650.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n50.9\n\n\n\n19.1\n\n\n\n196.0\n\n\n\n3550.0\n\n\n\nmale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n45.5\n\n\n\n17.0\n\n\n\n196.0\n\n\n\n3500.0\n\n\n\nfemale\n\n\n\n2008\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n50.9\n\n\n\n17.9\n\n\n\n196.0\n\n\n\n3675.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n50.8\n\n\n\n18.5\n\n\n\n201.0\n\n\n\n4450.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n50.1\n\n\n\n17.9\n\n\n\n190.0\n\n\n\n3400.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n49.0\n\n\n\n19.6\n\n\n\n212.0\n\n\n\n4300.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n51.5\n\n\n\n18.7\n\n\n\n187.0\n\n\n\n3250.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n49.8\n\n\n\n17.3\n\n\n\n198.0\n\n\n\n3675.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n48.1\n\n\n\n16.4\n\n\n\n199.0\n\n\n\n3325.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n51.4\n\n\n\n19.0\n\n\n\n201.0\n\n\n\n3950.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n45.7\n\n\n\n17.3\n\n\n\n193.0\n\n\n\n3600.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n50.7\n\n\n\n19.7\n\n\n\n203.0\n\n\n\n4050.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n42.5\n\n\n\n17.3\n\n\n\n187.0\n\n\n\n3350.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n52.2\n\n\n\n18.8\n\n\n\n197.0\n\n\n\n3450.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n45.2\n\n\n\n16.6\n\n\n\n191.0\n\n\n\n3250.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n49.3\n\n\n\n19.9\n\n\n\n203.0\n\n\n\n4050.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n50.2\n\n\n\n18.8\n\n\n\n202.0\n\n\n\n3800.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n45.6\n\n\n\n19.4\n\n\n\n194.0\n\n\n\n3525.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n51.9\n\n\n\n19.5\n\n\n\n206.0\n\n\n\n3950.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n46.8\n\n\n\n16.5\n\n\n\n189.0\n\n\n\n3650.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n45.7\n\n\n\n17.0\n\n\n\n195.0\n\n\n\n3650.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n55.8\n\n\n\n19.8\n\n\n\n207.0\n\n\n\n4000.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n43.5\n\n\n\n18.1\n\n\n\n202.0\n\n\n\n3400.0\n\n\n\nfemale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n49.6\n\n\n\n18.2\n\n\n\n193.0\n\n\n\n3775.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n50.8\n\n\n\n19.0\n\n\n\n210.0\n\n\n\n4100.0\n\n\n\nmale\n\n\n\n2009\n\n\n\n\n\n\n\nChinstrap\n\n\n\nDream\n\n\n\n50.2\n\n\n\n18.7\n\n\n\n198.0\n\n\n\n3775.0\n\n\n\nfemale\n\n\n\n2009"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#tables-from-code-1",
+    "href": "1-2-documents/1-2-documents.html#tables-from-code-1",
+    "title": "Documents",
+    "section": "Tables from code",
+    "text": "Tables from code\nIf you want fancier tables, try the great_tables package and all that it offers!\n\n\nimport great_tables as gt\n\n(\n    gt.GT(penguins.head())\n    .tab_style(\n        style = [\n            gt.style.fill(color = \"pink\"),\n            gt.style.text(weight = \"italic\")\n        ],\n        locations = gt.loc.body(\n          columns= \"bill_length_mm\",\n          rows = list(penguins[penguins[\"bill_length_mm\"] &gt; 40].index)\n        )\n    )\n)\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\nAdelie\nTorgersen\n\n\n\n\n\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#markdown-figures",
+    "href": "1-2-documents/1-2-documents.html#markdown-figures",
+    "title": "Documents",
+    "section": "Markdown figures",
+    "text": "Markdown figures\n![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png)\n\nPenguins playing with a Quarto ball"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#markdown-figures-with-options",
+    "href": "1-2-documents/1-2-documents.html#markdown-figures-with-options",
+    "title": "Documents",
+    "section": "Markdown figures with options",
+    "text": "Markdown figures with options\n\n\n![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png){fig-align=\"left\"}\n\n\n![](images/penguins-quarto-ball.png){fig-align=\"right\" fig-alt=\"Illustration of two penguins playing with a Quarto ball.\"}"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#subfigures",
+    "href": "1-2-documents/1-2-documents.html#subfigures",
+    "title": "Documents",
+    "section": "Subfigures",
+    "text": "Subfigures\nMarkdown:\n::: {#fig-penguins layout-ncol=2}\n\n![Blue penguin](images/blue-penguin.png){#fig-blue width=\"250px\"}\n\n![Orange penguin](images/orange-penguin.png){#fig-orange width=\"250px\"}\n\nTwo penguins\n\n:::"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#subfigures-1",
+    "href": "1-2-documents/1-2-documents.html#subfigures-1",
+    "title": "Documents",
+    "section": "Subfigures",
+    "text": "Subfigures\nOutput:\n\n\n\n\n\n\n\n\n\n\n\n(a) Blue penguin\n\n\n\n\n\n\n\n\n\n\n\n(b) Orange penguin\n\n\n\n\n\n\n\nFigure 1: Two penguins"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#figure-divs",
+    "href": "1-2-documents/1-2-documents.html#figure-divs",
+    "title": "Documents",
+    "section": "Figure divs",
+    "text": "Figure divs\nMarkdown:\n::: {#fig-penguin}\n\n&lt;iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/q3uXXh1sHcI\"&gt;&lt;/iframe&gt;\n\nBaby penguin tries to make friends\n:::"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#figure-divs-1",
+    "href": "1-2-documents/1-2-documents.html#figure-divs-1",
+    "title": "Documents",
+    "section": "Figure divs",
+    "text": "Figure divs\nOutput:\n\n\n\n\n\n\n\nFigure 2: Baby penguin tries to make friends\n\n\n\n\n\n\nLast paragraph in the div block is used as the figure caption."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#finding-the-figures-to-include",
+    "href": "1-2-documents/1-2-documents.html#finding-the-figures-to-include",
+    "title": "Documents",
+    "section": "Finding the figures to include",
+    "text": "Finding the figures to include\nIn places like markdown, YAML, or the command line/shell/terminal, you’ll need to use absolute or relative file paths:\n\n\nAbsolute = BAD: \"/Users/mine/quarto-asa-nebraska\" - Whose computer will this work on?\n\n\n\n\nRelative = BETTER:\n\n\"../ = up one directory, ../../ = up two directories, etc.\n/.. or / = start from root directory of your current computer"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#figures-from-code",
+    "href": "1-2-documents/1-2-documents.html#figures-from-code",
+    "title": "Documents",
+    "section": "Figures from code",
+    "text": "Figures from code\n\n```{python}\nimport plotnine as p9\n\n(\n  p9.ggplot(penguins, p9.aes(x = \"species\", fill = \"species\")) \n  + p9.geom_bar(show_legend = None)\n)\n```"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#cross-references-1",
+    "href": "1-2-documents/1-2-documents.html#cross-references-1",
+    "title": "Documents",
+    "section": "Cross references",
+    "text": "Cross references\n\nHelp readers to navigate your document with numbered references and hyperlinks to entities like figures and tables.\nCross referencing steps:\n\nAdd a caption to your figure or table.\nGive an id to your figure or table, starting with fig- or tbl-.\nRefer to it with @fig-... or @tbl-...."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#figure-cross-references",
+    "href": "1-2-documents/1-2-documents.html#figure-cross-references",
+    "title": "Documents",
+    "section": "Figure cross references",
+    "text": "Figure cross references\nThe presence of the caption (Blue penguin) and label (#fig-blue-penguin) make this figure referenceable:\n\n\nMarkdown:\nSee @fig-blue-penguin for a cute blue penguin.\n![Blue penguin](images/blue-penguin.png){#fig-blue-penguin}\n\nOutput:\nSee Figure 3 for a cute blue penguin.\n\n\n\n\n\n\nFigure 3: Blue penguin"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#table-cross-references",
+    "href": "1-2-documents/1-2-documents.html#table-cross-references",
+    "title": "Documents",
+    "section": "Table cross references",
+    "text": "Table cross references\nThe presence of the caption (A few penguins) and label (#tbl-penguins) make this table referenceable:\n\n\nMarkdown:\nSee @tbl-penguins for data on a few penguins.\n\n```{python}\n#| label: tbl-penguins\n#| tbl-cap: A few penguins\n\ngt.GT(penguins.head())\n```\n\nOutput:\nSee Table 1 for data on a few penguins.\n\ngt.GT(penguins.head())\n\n\n\nTable 1: A few penguins\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\nAdelie\nTorgersen\n\n\n\n\n\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#your-turn-3",
+    "href": "1-2-documents/1-2-documents.html#your-turn-3",
+    "title": "Documents",
+    "section": "Your turn",
+    "text": "Your turn\n\n\nOpen tables-figures.qmd.\nFollow the instructions in the document, then exchange one new thing you’ve learned with your neighbor."
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents.html#questions",
+    "href": "1-2-documents/1-2-documents.html#questions",
+    "title": "Documents",
+    "section": "Questions",
+    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
+  },
+  {
+    "objectID": "pre-work.html",
+    "href": "pre-work.html",
+    "title": "Pre-workshop instructions",
+    "section": "",
+    "text": "1. Tools: Have VS Code (with Jupyter and Quarto extensions) ready to go\n2. Software: Download and install Python and the pre-release version of Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.53: https://quarto.org/docs/get-started/\n\n3. Packages: Install the following packages:\n\n\nTerminal\n\npython3 -m pip install tabulate pandas seaborn palmerpenguins great_tables plotnine jupyter\n\n4. Exercises: Go to bit.ly/quarto-scipy24-exercises, click on “Use this template” then “Create a new repository”. Once your repository is created, clone it locally and navigate to the repo folder.",
+    "crumbs": [
+      "Pre-work"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Unlocking Dynamic Reproducible Documents",
+    "section": "",
+    "text": "🗓️ Date: July 8, 2024\n🕗 Time: 08:00 - 12:00 US/Pacific\n🏨 Location: Room 316",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#abstract",
+    "href": "index.html#abstract",
+    "title": "Unlocking Dynamic Reproducible Documents",
+    "section": "Abstract",
+    "text": "Abstract\nQuarto is an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and plain text markdown documents. Quarto provides data scientists with a seamless way to publish their work in a high-quality format that is reproducible, accessible, and shareable. With Quarto, researchers can turn their Jupyter Notebooks and literate plain text markdown documents into professional-looking publications in various formats. This workshop will demonstrate how Quarto enables data scientists to turn their work products into professional, high-quality documents, slides, websites, scientific manuscripts, and other shareable artifacts.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Unlocking Dynamic Reproducible Documents",
+    "section": "Overview",
+    "text": "Overview\nSharing knowledge through writing is a critical aspect of scientific activity, including data science. It allows researchers to communicate their findings and insights to a broader audience, build upon existing work, and collaborate with others in their field. Quarto, an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and plain text markdown documents, provides data scientists with a seamless way to publish their work in a high-quality format that is easily accessible, shareable, and reproducible. With Quarto, researchers and data professionals can turn their notebooks into professional-looking publications in various formats, including web pages, books, slides, dashboards, and scientific manuscripts. This workshop will demonstrate how Quarto enables data scientists to turn their work products into professional, high-quality publications.\nThe learning outcomes for the workshop include:\n\nAuthor documents in plain text markdown or Jupyter notebooks with equations, citations, crossrefs, figure panels, callouts, and advanced layouts.\nLearn how to author content in IPython/Jupyter and the Quarto VS Code extension.\nLeverage Quarto for creating different types of publications, including webpages/blogs, slides, dashboards, books, websites, and scientific manuscripts.\nCustomize execution and content with a rich array of code cell options, filters, and extensions.\nHost websites and publications on platforms such as GitHub Pages, QuartoPub, and Netlify.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Unlocking Dynamic Reproducible Documents",
+    "section": "Schedule",
+    "text": "Schedule\n\n\n\nTime\nModule\n\n\n\n\n09:00 - 10:30\nHello Quarto\n\n\n10:30 - 11:00\nBreak ☕\n\n\n11:00 - 12:30\nDocuments\n\n\n12:30 - 13:30\nLunch 🍽️ |\n\n\n13:30 - 15:00\nPresentations\n\n\n15:00 - 15:30\nBreak ☕\n\n\n15:30 - 17:00\nWebsites\nTime permitting: Journal articles",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "Unlocking Dynamic Reproducible Documents",
+    "section": "Instructor",
+    "text": "Instructor\nMine Çetinkaya-Rundel is Professor of the Practice at Duke University and Developer Educator at Posit. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. Mine is a Fellow of the ASA and Elected Member of the ISI as well as the winner of the 2021 Robert V. Hogg Award for For Excellence in Teaching Introductory Statistics.\n\n This work is licensed under a Creative Commons Attribution 4.0 International License.",
+    "crumbs": [
+      "Home"
+    ]
+  }
+]
