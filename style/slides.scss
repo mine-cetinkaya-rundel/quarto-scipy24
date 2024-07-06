@@ -11,6 +11,7 @@ $font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
 $font-family-monospace: "Source Code Pro", monospace;
 $presentation-heading-color: #58779b; /* Quarto Blue */
 $link-color: #58779b;
+$hover-color: #143765;
 $code-color: #58779b;
 $code-block-font-size: 0.7em;
 $presentation-h2-font-size: 1.4em !default;
@@ -79,8 +80,8 @@ details>summary {
   padding-bottom: 3px;
   margin-bottom: 6px;
   margin-top: 6px;
-  border-left: solid 5px #F1DE67;
-  background-color: #F1DE6750;
+  border-left: solid 5px #159470;
+  background-color: #15947050;
 }
 
 .reveal .slide .our-turn {
