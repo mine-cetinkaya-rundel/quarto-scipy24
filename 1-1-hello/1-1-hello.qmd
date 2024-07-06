@@ -21,12 +21,16 @@ filters:
 ## Setup {.smaller}
 
 ::: your-turn
-**1. Tools:** Have VS Code (with Jupyter and Quarto extensions) ready to go
-
-**2. Software:** Download and install Python and the pre-release version of Quarto:
+**1. Software:** Download and install Python and Quarto:
 
 -   Python 3: <https://www.python.org/downloads/>
 -   Quarto 1.5.53: <https://quarto.org/docs/get-started/>
+
+**2. Tools:** Dowload and install VS Code and Jupyter and Quarto extensions.
+
+-   VS Code: <https://code.visualstudio.com/>
+-   Quarto Extension: <https://marketplace.visualstudio.com/items?itemName=quarto.quarto>
+-   Jupyter Extension: <https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter>
 
 **3. Packages:** Install the following packages:
 
@@ -34,7 +38,9 @@ filters:
 python3 -m pip install tabulate pandas seaborn palmerpenguins great_tables plotnine jupyter
 ```
 
+<!--
 **4. Exercises:** Go to [`bit.ly/quarto-scipy24-exercises`](https://bit.ly/quarto-scipy24-exercises), click on "Use this template" then "Create a new repository". Once your repository is created, clone it locally and navigate to the repo folder.
+-->
 :::
 
 # Welcome
@@ -156,20 +162,26 @@ I'll teach you
 ## Setup {.smaller}
 
 ::: your-turn
-**1. Tools:** Have VS Code (with Jupyter and Quarto extensions) ready to go
-
-**2. Software:** Download and install Python and the pre-release version of Quarto:
+**1. Software:** Download and install Python and Quarto:
 
 -   Python 3: <https://www.python.org/downloads/>
 -   Quarto 1.5.53: <https://quarto.org/docs/get-started/>
 
+**2. Tools:** Dowload and install VS Code and Jupyter and Quarto extensions.
+
+-   VS Code: <https://code.visualstudio.com/>
+-   Quarto Extension: <https://marketplace.visualstudio.com/items?itemName=quarto.quarto>
+-   Jupyter Extension: <https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter>
+
 **3. Packages:** Install the following packages:
 
 ``` {.bash filename="Terminal"}
-python3 -m pip install tabulate pandas seaborn palmerpenguins great_tables plotnine
+python3 -m pip install tabulate pandas seaborn palmerpenguins great_tables plotnine jupyter
 ```
 
+<!--
 **4. Exercises:** Go to [`bit.ly/quarto-scipy24-exercises`](https://bit.ly/quarto-scipy24-exercises), click on "Use this template" then "Create a new repository". Once your repository is created, clone it locally and navigate to the repo folder.
+-->
 :::
 
 . . .

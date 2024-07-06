@@ -2,12 +2,16 @@
 title: "Pre-workshop instructions"
 ---
 
-**1. Tools:** Have VS Code (with Jupyter and Quarto extensions) ready to go
-
-**2. Software:** Download and install Python and the pre-release version of Quarto:
+**1. Software:** Download and install Python and Quarto:
 
 -   Python 3: <https://www.python.org/downloads/>
 -   Quarto 1.5.53: <https://quarto.org/docs/get-started/>
+
+**2. Tools:** Dowload and install VS Code and Jupyter and Quarto extensions.
+
+-   VS Code: <https://code.visualstudio.com/>
+-   Quarto Extension: <https://marketplace.visualstudio.com/items?itemName=quarto.quarto>
+-   Jupyter Extension: <https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter>
 
 **3. Packages:** Install the following packages:
 
