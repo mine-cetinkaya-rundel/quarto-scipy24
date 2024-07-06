@@ -1,0 +1,15 @@
+---
+title: "Websites and blogs"
+---
+
+## Slides
+
+[View slides in full screen](2-1-websites-reveal.html)
+
+```{=html}
+<iframe class="slide-deck" src="2-1-websites-reveal.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+```
+
+## Exercises
+
+To be posted.

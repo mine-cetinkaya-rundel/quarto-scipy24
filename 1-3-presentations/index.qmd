@@ -1,0 +1,15 @@
+---
+title: "Presentations"
+---
+
+## Slides
+
+[View slides in full screen](1-3-presentations-reveal.html)
+
+```{=html}
+<iframe class="slide-deck" src="1-3-presentations-reveal.html" height="420" width="747" style="border: 1px solid #2e3846;"></iframe>
+```
+
+## Exercises
+
+To be posted.

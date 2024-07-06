@@ -6,11 +6,12 @@ institute: "Duke University + Posit PBC"
 footer: "🔗 [bit.ly/quarto-scipy24](https://bit.ly/quarto-scipy24)"
 format:
   revealjs:
+    output-file: 1-2-documents-reveal.html
     transition: fade
     slide-number: true
     chalkboard: true
-    logo: ../../images/quarto-icon.svg
-    theme: ../../style/slides.scss
+    logo: ../images/quarto-icon.svg
+    theme: ../style/slides.scss
 filters: 
   - countdown
 execute:
