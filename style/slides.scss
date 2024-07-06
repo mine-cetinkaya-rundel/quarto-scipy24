@@ -72,7 +72,7 @@ details>summary {
   font-size: 3em
 }
 
-.reveal .slide .task {
+.reveal .slide .your-turn {
   padding-right: 10px;
   padding-left: 10px;
   padding-top: 3px;
@@ -81,6 +81,17 @@ details>summary {
   margin-top: 6px;
   border-left: solid 5px #F1DE67;
   background-color: #F1DE6750;
+}
+
+.reveal .slide .our-turn {
+  padding-right: 10px;
+  padding-left: 10px;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-bottom: 6px;
+  margin-top: 6px;
+  border-left: solid 5px #5A799D;
+  background-color: #5A799D50;
 }
 
 .scrolling {

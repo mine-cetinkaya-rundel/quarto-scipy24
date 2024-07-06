@@ -1,0 +1,98 @@
+---
+title: "Presentations"
+subtitle: "Unlocking Dynamic Reproducible Documents<br>A Quarto Tutorial for Scientific Communication"
+author: "Mine Çetinkaya Rundel"
+institute: "Duke University + Posit PBC"
+footer: "🔗 [bit.ly/quarto-scipy24](https://bit.ly/quarto-scipy24)"
+format:
+  revealjs:
+    transition: fade
+    slide-number: true
+    chalkboard: true
+    logo: ../../images/quarto-icon.svg
+    theme: ../../style/slides.scss
+filters: 
+  - countdown
+execute:
+  freeze: auto
+  echo: true
+---
+
+# Anatomy of a Quarto presentation
+
+## Components
+
+1.  Metadata: YAML
+
+2.  Text: Markdown
+
+3.  Code: Executed via `knitr` or `jupyter`
+
+. . .
+
+**Weave it all together**, and you have a beautiful, functional slide deck!
+
+## Our turn {.smaller}
+
+::: our-turn
+Let's build a presentation together from `hello-penguins-slides.qmd` and showcase the following features of Quarto presentations:
+
+-   Hierarchy, headers, and document outline
+
+-   Incremental lists
+
+-   Columns
+
+-   Code, output location, code highlighting
+
+-   Logo and footer
+
+-   Making things fit on a slide
+
+-   Chalkboard
+
+-   Multiplex
+
+-   Publishing your presentation to Quarto Pub
+:::
+
+## Your turn
+
+::: your-turn
+Pick up where we left off and
+
+-   Change the [transition style](https://quarto.org/docs/presentations/revealjs/advanced.html#slide-transitions) between slides
+
+-   Change the [slide size](https://quarto.org/docs/presentations/revealjs/advanced.html#presentation-size)
+
+-   Add [slide numbers](https://quarto.org/docs/presentations/revealjs/presenting.html#slide-numbers)
+:::
+
+{{< countdown minutes=10 >}}
+
+## Our turn
+
+::: your-turn
+Let's continue building our a presentation together from `hello-penguins-slides.qmd` and showcase the following features of Quarto presentations:
+
+
+-   Fragments
+
+-   Title slide attributes
+:::
+
+# Wrap up
+
+## Quarto presentation formats
+
+-   [`revealjs`](https://quarto.org/docs/presentations/revealjs) - essentially the replacement for `xaringan`, but with Pandoc-native syntax
+
+-   `beamer` for LaTeX slides
+
+-   PowerPoint for when you *have to* collaborate via MS Office
+
+## Questions
+
+::: your-turn
+Any questions / anything you'd like to review before we wrap up this module?
+:::
