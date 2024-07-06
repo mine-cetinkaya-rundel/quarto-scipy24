@@ -19,7 +19,7 @@ filters:
 
 ## Setup {.smaller}
 
-::: task
+::: your-turn
 **1. Tools:** Have VS Code (with Jupyter and Quarto extensions) ready to go
 
 **2. Software:** Download and install Python and the pre-release version of Quarto:
@@ -79,7 +79,7 @@ Thank you for helping make this a welcoming, friendly community for all.
 
 ## About you
 
-::: task
+::: your-turn
 Please share
 
 -   Name
@@ -119,7 +119,7 @@ I'll teach you
 
 ## Workshop structure
 
-:::::::: columns
+:::: columns
 ::: {.column .fragment width="33%"}
 **My turn**
 
@@ -127,24 +127,24 @@ I'll teach you
 -   Feel free to just watch, take notes, browse docs, or tinker around with the code
 :::
 
-:::: {.column .fragment width="33%"}
-::: demo
+::: {.column .fragment width="33%"}
+::: our-turn
 **Our turn**
 
 -   Lecture segments + live coding
 -   Follow along with live coding
 :::
-::::
+:::
 
-:::: {.column .fragment width="33%"}
-::: task
+::: {.column .fragment width="33%"}
+::: your-turn
 **Your turn**
 
 -   Practice exercises for you
 -   Work on your own or with the person next to you
 :::
+:::
 ::::
-::::::::
 
 ## Getting help
 
@@ -154,7 +154,7 @@ I'll teach you
 
 ## Setup {.smaller}
 
-::: task
+::: your-turn
 **1. Tools:** Have VS Code (with Jupyter and Quarto extensions) ready to go
 
 **2. Software:** Download and install Python and the pre-release version of Quarto:
@@ -199,9 +199,10 @@ you can **weave** together **narrative** and **code** to produce elegantly forma
 
 ::: {.hand-blue-large style="text-align: center;"}
 Sit back and enjoy!
+... or follow along with `1-1-hello-penguins.qmd`.
 :::
 
-::: demo
+::: our-turn
 -   Rendering a document
 -   Customizing formats: `pdf`, `docx`
 -   Inserting images
@@ -210,10 +211,6 @@ Sit back and enjoy!
 -   Cross referencing figures and tables
 -   Lightbox effect
 -   Converting between Jupyter Notebooks and plain text markdown documents
-:::
-
-::: task
-... or follow along with `1-1-hello-penguins.qmd`.
 :::
 
 # How it Works
@@ -380,7 +377,7 @@ quarto render document.qmd --to docx
 
 ## Your turn
 
-::: task
+::: your-turn
 In VS Code, open the `hello-penquins.qmd` file. Render the document to HTML.
 
 -   In the YAML: Add an `author` field and add your name.
@@ -396,13 +393,13 @@ In VS Code, open the `hello-penquins.qmd` file. Render the document to HTML.
 
 ## Questions
 
-::: task
+::: your-turn
 Any questions / anything you’d like to review before we wrap up this module?
 :::
 
 ## A pause
 
-::: task
+::: your-turn
 Where does the name "Quarto" come from?
 :::
 

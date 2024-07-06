@@ -236,7 +236,7 @@ VS Code provides rich tab-completion - start a word and tab to complete, or <kbd
 
 ## Your turn
 
-::: task
+::: your-turn
 -   Open `hello-penguins.qmd` in RStudio.
 -   Try <kbd>`Ctrl + space`</kbd> to see the available YAML options.
 -   Try out the tab-completion of any options you remember.
@@ -442,7 +442,7 @@ Text
 
 ## Your turn
 
-::: task
+::: your-turn
 -   Open `markdown-syntax.qmd` in VS Code.
 -   Follow the instructions in the document, then exchange one new thing you've learned with your neighbor.
 :::
@@ -488,7 +488,7 @@ Tip with caption.
 
 ## Your turn
 
-::: task
+::: your-turn
 -   Open `callout-boxes.qmd` and render the document.
 -   Using the visual editor, change the type of the first callouts box and then re-render. Also play with the options to change its appearance.
 -   Add a caption to the second callout box.
@@ -918,7 +918,7 @@ gt.GT(penguins.head())
 
 ## Your turn
 
-::: task
+::: your-turn
 -   Open `tables-figures.qmd`.
 -   Follow the instructions in the document, then exchange one new thing you've learned with your neighbor.
 :::
@@ -929,6 +929,6 @@ gt.GT(penguins.head())
 
 ## Questions
 
-::: task
+::: your-turn
 Any questions / anything you'd like to review before we wrap up this module?
 :::
