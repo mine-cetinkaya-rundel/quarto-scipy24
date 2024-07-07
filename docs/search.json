@@ -140,18 +140,18 @@
     "text": "Your turn\n\nIn VS Code, open the hello-penquins.qmd file. Render the document to HTML.\n\nIn the YAML: Add an author field and add your name.\nAdd some text and style it with bold, italics, etc.\nModify the figure to add units to the axis labels: grams for body weight and mm (milimeters) for flipper length. Make sure the changes are reflected in the HTML output.\nChange the html theme to sketchy. (See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.)\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#questions",
-    "href": "1-1-hello/1-1-hello-reveal.html#questions",
-    "title": "Hello, Quarto!",
-    "section": "Questions",
-    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?"
-  },
-  {
     "objectID": "1-1-hello/1-1-hello-reveal.html#a-pause",
     "href": "1-1-hello/1-1-hello-reveal.html#a-pause",
     "title": "Hello, Quarto!",
     "section": "A pause",
-    "text": "A pause\n\nWhere does the name “Quarto” come from?\n\n\n\n\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Quarto"
+    "text": "A pause\n\nWhere does the name “Quarto” come from?\n\n\n\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Quarto"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#learning-more-questions",
+    "href": "1-1-hello/1-1-hello-reveal.html#learning-more-questions",
+    "title": "Hello, Quarto!",
+    "section": "Learning more & questions",
+    "text": "Learning more & questions\n\n\nhttps://quarto.org/docs/guide/ &gt; Authoring & Computations\n\n\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
   },
   {
     "objectID": "index.html",
@@ -369,6 +369,146 @@
     ]
   },
   {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#components",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#components",
+    "title": "Dashboards",
+    "section": "Components",
+    "text": "Components\n\nMetadata: YAML\nText: Markdown, likely placed in cards\nCode: Executed via jupyter, automatically placed in cards\n\n\nWeave it all together, and you have a beautiful, functional dashboard!"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#out-turn-dashing-through-the-snow",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#out-turn-dashing-through-the-snow",
+    "title": "Dashboards",
+    "section": "Out turn: Dashing through the snow",
+    "text": "Out turn: Dashing through the snow\n\nLet’s review!\n\nDashboard: https://mine.quarto.pub/dashing-through-snow-py\nCode: https://github.com/mine-cetinkaya-rundel/dashing-through-snow"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#notebook-dashboard",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#notebook-dashboard",
+    "title": "Dashboards",
+    "section": "Notebook ➝ Dashboard",
+    "text": "Notebook ➝ Dashboard\n\n\nsnowdash.ipynb\n\n---\ntitle: \"Dashing through the snow ❄️\"\nformat: dashboard\n---\n\n# notebook content goes here..."
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#dashboard-components",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#dashboard-components",
+    "title": "Dashboards",
+    "section": "Dashboard Components",
+    "text": "Dashboard Components\n\nNavigation Bar and Pages — Icon, title, and author along with links to sub-pages (if more than one page is defined).\nSidebars, Rows & Columns, and Tabsets — Rows and columns using markdown heading (with optional attributes to control height, width, etc.). Sidebars for interactive inputs. Tabsets to further divide content.\nCards (Plots, Tables, Value Boxes, Content) — Cards are containers for cell outputs and free form markdown text. The content of cards typically maps to cells in your notebook or source document.\n\n\nAll of these components can be authored and customized within notebook UI or plain text qmd."
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#navigation-bar-and-pages",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#navigation-bar-and-pages",
+    "title": "Dashboards",
+    "section": "Navigation Bar and Pages",
+    "text": "Navigation Bar and Pages\n\n\n--- \ntitle: \"Palmer Penguins\"\nauthor: \"Cobblepot Analytics\"\nformat: \n  dashboard:\n    logo: images/penguins.png\n    nav-buttons: [linkedin, twitter, github]\n---\n\n# Bills\n\n# Flippers\n\n# Data"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#sidebars-page-level",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#sidebars-page-level",
+    "title": "Dashboards",
+    "section": "Sidebars: Page Level",
+    "text": "Sidebars: Page Level\n\n\n---\ntitle: \"Sidebar\"\nformat: dashboard\n---\n    \n# Page 1\n\n## {.sidebar}\n\n```{python}\n```\n\n## Column \n\n```{python}\n```\n\n```{python}\n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#sidebars-global",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#sidebars-global",
+    "title": "Dashboards",
+    "section": "Sidebars: Global",
+    "text": "Sidebars: Global\n\n\n---\ntitle: \"Global Sidebar\"\nformat: dashboard\n---\n    \n# {.sidebar}\n\nSidebar content (e.g. inputs)\n\n# Plot\n\n```{python}\n```\n\n# Data\n\n```{python}\n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#layout-rows",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#layout-rows",
+    "title": "Dashboards",
+    "section": "Layout: Rows",
+    "text": "Layout: Rows\n\n\n---\ntitle: \"Focal (Top)\"\nformat: dashboard\n---\n    \n## Row {height=70%}\n\n```{python}\n```\n\n## Row {height=30%}\n\n```{python}\n```\n\n```{python}\n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#layout-columns",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#layout-columns",
+    "title": "Dashboards",
+    "section": "Layout: Columns",
+    "text": "Layout: Columns\n\n\n---\ntitle: \"Focal (Top)\"\nformat: \n  dashboard:\n    orientation: columns\n---\n    \n## Column {width=60%}\n\n```{python}\n```\n\n## Column {width=40%}\n\n```{python}\n```\n\n```{python}\n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#tabsets",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#tabsets",
+    "title": "Dashboards",
+    "section": "Tabsets",
+    "text": "Tabsets\n\n\n---\ntitle: \"Palmer Penguins\"\nformat: dashboard\n---\n    \n## Row\n\n```{python}\n```\n\n## Row {.tabset}\n\n```{python}\n#| title: Chart 2\n```\n\n```{python}\n#| title: Chart 3\n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#plots",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#plots",
+    "title": "Dashboards",
+    "section": "Plots",
+    "text": "Plots\n\n\nplotly\n```{python}\n#| title: GDP and Life Expectancy\nimport plotly.express as px\ndf = px.data.gapminder()\npx.scatter(\n  df, x=\"gdpPercap\", y=\"lifeExp\", \n  animation_frame=\"year\", animation_group=\"country\",\n  size=\"pop\", color=\"continent\", hover_name=\"country\", \n  facet_col=\"continent\", log_x=True, size_max=45, \n  range_x=[100,100000], range_y=[25,90]\n)\n```\n\n\n\n\n\nipyleaflet\n```{python}\n#| title: \"World Map\"\n#| padding: 0px\nfrom ipyleaflet import Map, basemaps, basemap_to_tiles\nMap(basemap=basemap_to_tiles(basemaps.OpenStreetMap.Mapnik),\n    center=(48.204793, 350.121558), zoom=2)\n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#component-tables",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#component-tables",
+    "title": "Dashboards",
+    "section": "Tables",
+    "text": "Tables\n\n\ntabulate\n```{python}\nfrom tabulate import tabulate\nfrom IPython.display import Markdown\nMarkdown(tabulate(penguins, showindex=False)}\n```\n\n\n\n\n\nitables\n```{python}\nfrom itables import show\nshow(penguins)\n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#value-box-component",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#value-box-component",
+    "title": "Dashboards",
+    "section": "Value Boxes",
+    "text": "Value Boxes\n\n\n## Row\n\n```{python}\n#| component: valuebox\n#| title: \"Current Price\"\ndict(icon = \"currency-dollar\",\n     color = \"secondary\",\n     value = get_price(data))\n```\n\n```{python}\n#| component: valuebox\n#| title: \"Change\"\nchange = get_change(data)\ndict(value = change['amount'],\n     icon = change['icon'],\n     color = change['color']) \n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#text-content",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#text-content",
+    "title": "Dashboards",
+    "section": "Text Content",
+    "text": "Text Content\n\n\n## Column\n\n```{python}\n#| title: Population\npx.area(df, x=\"year\", y=\"pop\", \n        color=\"continent\", \n        line_group=\"country\")\n```\n\n```{python}\n#| title: Life Expectancy\npx.line(df, x=\"year\", y=\"lifeExp\", \n        color=\"continent\", \n        line_group=\"country\")\n```\n\n::: {.card}\nGapminder combines data from multiple sources\ninto unique coherent time-series that can’t be\nfound elsewhere. Learn more about the Gampminder\ndataset at &lt;https://www.gapminder.org/data/&gt;.\n:::"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#expanding-cards",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#expanding-cards",
+    "title": "Dashboards",
+    "section": "Expanding Cards",
+    "text": "Expanding Cards\nCards provide an Expand button which appears at bottom right on hover:"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#dashboard-deployment",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#dashboard-deployment",
+    "title": "Dashboards",
+    "section": "Dashboard Deployment",
+    "text": "Dashboard Deployment\nDashboards are typically just static HTML pages so can be deployed to any web server or web host.\n\n\n\n\n\n\n\nStatic\nRendered a single time (e.g. when underlying data won’t ever change)\n\n\nScheduled\nRendered on a schedule (e.g. via cron job) to accommodate changing data.\n\n\nParameterized\nVariations of static or scheduled dashboards based on parameters.\n\n\nInteractive\nFully interactive dashboard using Shiny (requires a server for deployment)."
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#parameterized-dashboards",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#parameterized-dashboards",
+    "title": "Dashboards",
+    "section": "Parameterized Dashboards",
+    "text": "Parameterized Dashboards\n\n\n\n\nAdd a parameters tag to the first cell (based on papermill) :\n```{python}\n#| tags: [parameters]\nticker = \"BA\"\n```\nUse the -P command line option to vary the parameter:\nquarto render dashboard.qmd -P ticker:GOOG"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#interactive-dashboards",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#interactive-dashboards",
+    "title": "Dashboards",
+    "section": "Interactive Dashboards",
+    "text": "Interactive Dashboards\nhttps://quarto.org/docs/dashboards/interactivity/shiny-python/\n\n\n\nFor interactive exploration, some dashboards can benefit from a live Python backend\nTo do this with Quarto Dashboards, add interactive Shiny components\nDeploy with or without a server!"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#deployment-of-interactive-dashboards",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#deployment-of-interactive-dashboards",
+    "title": "Dashboards",
+    "section": "Deployment of Interactive Dashboards",
+    "text": "Deployment of Interactive Dashboards\n\n\nServer\n\nCloud\n\nshinyapps.io\nHugging Face\nRoll your own\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (commercial)\nRoll your own\n\n\n\nServerless\nUsing Pyodide\n[Example]"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#learning-more-questions",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#learning-more-questions",
+    "title": "Dashboards",
+    "section": "Learning more & questions",
+    "text": "Learning more & questions\n\n\nhttps://quarto.org/docs/dashboards\n\n\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
+  },
+  {
     "objectID": "pre-work.html",
     "href": "pre-work.html",
     "title": "Pre-workshop instructions",
@@ -414,11 +554,11 @@
     "text": "Quarto presentation formats\n\nrevealjs - essentially the replacement for xaringan, but with Pandoc-native syntax\nbeamer for LaTeX slides\nPowerPoint for when you have to collaborate via MS Office"
   },
   {
-    "objectID": "1-3-presentations/1-3-presentations-reveal.html#questions",
-    "href": "1-3-presentations/1-3-presentations-reveal.html#questions",
+    "objectID": "1-3-presentations/1-3-presentations-reveal.html#learning-more-questions",
+    "href": "1-3-presentations/1-3-presentations-reveal.html#learning-more-questions",
     "title": "Presentations",
-    "section": "Questions",
-    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
+    "section": "Learning more & questions",
+    "text": "Learning more & questions\n\n\nhttps://quarto.org/docs/presentations/\n\n\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
   },
   {
     "objectID": "2-1-websites/index.html",
@@ -811,11 +951,11 @@
     "text": "Your turn\n\n\nOpen tables-figures.qmd.\nFollow the instructions in the document, then exchange one new thing you’ve learned with your neighbor.\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
-    "objectID": "1-2-documents/1-2-documents-reveal.html#questions",
-    "href": "1-2-documents/1-2-documents-reveal.html#questions",
+    "objectID": "1-2-documents/1-2-documents-reveal.html#learning-more-questions",
+    "href": "1-2-documents/1-2-documents-reveal.html#learning-more-questions",
     "title": "Documents",
-    "section": "Questions",
-    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
+    "section": "Learning more & questions",
+    "text": "Learning more & questions\n\n\nhttps://quarto.org/docs/guide/ &gt; Documents\n\n\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
   },
   {
     "objectID": "1-1-hello/index.html",
