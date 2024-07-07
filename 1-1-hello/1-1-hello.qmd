@@ -1,6 +1,6 @@
 ---
 title: "Hello, Quarto!"
-subtitle: "Unlocking Dynamic Reproducible Documents<br>A Quarto Tutorial for Scientific Communication"
+subtitle: "SciPy 2024: Unlocking Dynamic Reproducible Documents<br>A Quarto Tutorial for Scientific Communication"
 author: "Mine Çetinkaya Rundel"
 institute: "Duke University + Posit PBC"
 footer: "🔗 [bit.ly/quarto-scipy24](https://bit.ly/quarto-scipy24)"
