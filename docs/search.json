@@ -74,7 +74,7 @@
     "href": "1-1-hello/1-1-hello-reveal.html#a-tour-of-quarto",
     "title": "Hello, Quarto!",
     "section": "A tour of Quarto",
-    "text": "A tour of Quarto\n\nSit back and enjoy! … or follow along with hello-penguins.qmd.\n\n\n\nRunning individual cells\nRendering a document\nEditing with source editor and visual editor\nInserting images and lightbox effect\nCustomizing formats: pdf, docx, revealjs\nCustomizing format options: code-fold, toc\nCode cells: labels, alt-text, execution options\nCross referencing figures and tables\nConverting between Jupyter Notebooks and plain text markdown documents"
+    "text": "A tour of Quarto\n\nSit back and enjoy! … or follow along with hello-penguins.qmd.\n\n\n\nRunning individual cells\nRendering a document\nEditing with source editor and visual editor\nInserting images and lightbox effect\nInserting tables\nCustomizing formats: pdf, docx, revealjs\nCustomizing format options: code-fold, toc\nCode cells: labels, alt-text, execution options (echo, warning)\nCross referencing figures and tables, with and without the visual editor\nConverting between Jupyter Notebooks and plain text markdown documents"
   },
   {
     "objectID": "1-1-hello/1-1-hello-reveal.html#revisit-what-is-quarto",
@@ -112,11 +112,18 @@
     "text": "From the comfort of your own homeworkspace"
   },
   {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#rendering",
-    "href": "1-1-hello/1-1-hello-reveal.html#rendering",
+    "objectID": "1-1-hello/1-1-hello-reveal.html#render-and-preview",
+    "href": "1-1-hello/1-1-hello-reveal.html#render-and-preview",
     "title": "Hello, Quarto!",
-    "section": "Rendering",
-    "text": "Rendering\nin VS Code\nwith the Quarto extension installed and enabled\n\nOption 1: In the Terminal via quarto render\nOption 2: Using the Quarto Extension and clicking on Preview\n\n\nin JupyterLab\nIn the Terminal via quarto render:\n\n\nTerminal\n\nquarto render document.qmd # defaults to html\nquarto render document.qmd --to pdf\nquarto render document.qmd --to docx"
+    "section": "Render and preview",
+    "text": "Render and preview\nin the Terminal in VS Code or JupyterLab\nRender to output formats:\n# ipynb notebook\nquarto render notebook.ipynb\nquarto render notebook.ipynb --to docx\n\n# plain text qmd\nquarto render notebook.qmd \nquarto render notebook.qmd --to pdf\nLive preview server (re-render on save):\n# ipynb notebook\nquarto preview notebook.ipynb\nquarto preview notebook.ipynb --to docx\n\n# plain text qmd\nquarto preview notebook.qmd \nquarto preview notebook.qmd --to pdf"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#render-and-preview-1",
+    "href": "1-1-hello/1-1-hello-reveal.html#render-and-preview-1",
+    "title": "Hello, Quarto!",
+    "section": "Render and preview",
+    "text": "Render and preview\nin the Editor in VS Code\n\nInstall and enable the Quarto extension\nClicking on Preview or Cmd + Shift + K"
   },
   {
     "objectID": "1-1-hello/1-1-hello-reveal.html#one-install-batteries-included",
@@ -137,7 +144,7 @@
     "href": "1-1-hello/1-1-hello-reveal.html#your-turn",
     "title": "Hello, Quarto!",
     "section": "Your turn",
-    "text": "Your turn\n\nIn VS Code, open the hello-penquins.qmd file. Render the document to HTML.\n\nAdd an author field in the YAML and add your name.\nAdd some text and style it with bold, italics, etc. using the source editor as well as the visual editor.\nModify the figure to add units to the axis labels: grams for body weight and mm (milimeters) for flipper length. Render or preview the document and make sure the changes are reflected in the HTML output.\nChange the html theme to sketchy. (See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.)\n\n\n\n  \n    −\n    +\n \n 10:00"
+    "text": "Your turn\n\nIn VS Code, open the hello-penquins.qmd file. Render the document to HTML.\n\nAdd an author field in the YAML and add your name.\nAdd some text and style it with bold, italics, etc. using the source editor as well as the visual editor.\nModify the figure to add units to the axis labels: grams for body weight and mm (milimeters) for flipper length. Render or preview the document and make sure the changes are reflected in the HTML output.\nChange the html theme to sketchy. See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.\n\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
     "objectID": "1-1-hello/1-1-hello-reveal.html#a-pause",
@@ -1276,26 +1283,5 @@
       "Part 1",
       "Hello"
     ]
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#render",
-    "href": "1-1-hello/1-1-hello-reveal.html#render",
-    "title": "Hello, Quarto!",
-    "section": "Render",
-    "text": "Render\nin VS Code\nwith the Quarto extension installed and enabled\n\nOption 1: In the Terminal via quarto render\nOption 2: Using the Quarto Extension and clicking on Preview\n\n\nin JupyterLab\nIn the Terminal via quarto render:\n\n\nTerminal\n\nquarto render document.qmd # defaults to html\nquarto render document.qmd --to pdf\nquarto render document.qmd --to docx\n\nquarto preview document.qmd # defaults to html\nquarto preview document.qmd --to pdf\nquarto preview document.qmd --to docx"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#render-and-preview",
-    "href": "1-1-hello/1-1-hello-reveal.html#render-and-preview",
-    "title": "Hello, Quarto!",
-    "section": "Render and preview",
-    "text": "Render and preview\nin the Terminal in VS Code or JupyterLab\nRender to output formats:\n# ipynb notebook\nquarto render notebook.ipynb\nquarto render notebook.ipynb --to docx\n\n# plain text qmd\nquarto render notebook.qmd \nquarto render notebook.qmd --to pdf\nLive preview server (re-render on save):\n# ipynb notebook\nquarto preview notebook.ipynb\nquarto preview notebook.ipynb --to docx\n\n# plain text qmd\nquarto preview notebook.qmd \nquarto preview notebook.qmd --to pdf"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#render-and-preview-1",
-    "href": "1-1-hello/1-1-hello-reveal.html#render-and-preview-1",
-    "title": "Hello, Quarto!",
-    "section": "Render and preview",
-    "text": "Render and preview\nin the Editor in VS Code\n\nInstall and enable the Quarto extension\nClicking on Preview or Cmd + Shift + K"
   }
 ]

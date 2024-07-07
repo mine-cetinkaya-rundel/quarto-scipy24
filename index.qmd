@@ -3,7 +3,7 @@ title: "Unlocking Dynamic Reproducible Documents"
 subtitle: "A Quarto Tutorial for Scientific Communication"
 ---
 
-::: callout-caution
+::: callout-warning
 ## Work in progress
 
 This page and workshop materials are works in progress until the workshop date and time specified below. For latest version of the materials, please revisit when the workshop begins.
