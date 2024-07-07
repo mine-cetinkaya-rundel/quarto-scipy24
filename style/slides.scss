@@ -13,9 +13,9 @@ $presentation-heading-color: #58779b; /* Quarto Blue */
 $link-color: #58779b;
 $hover-color: #143765;
 $code-color: #58779b;
-$code-block-font-size: 0.7em;
+$code-block-font-size: 0.6em;
 $presentation-h2-font-size: 1.4em !default;
-$presentation-font-size-root: 36px !default;
+$presentation-font-size-root: 30px !default;
 
 /*-- scss:rules --*/
 
@@ -98,4 +98,15 @@ details>summary {
 .scrolling {
   max-height: 500px;
   overflow-y: auto;
+}
+
+/* Code */
+
+.reveal pre.sourceCode code {
+  max-height: 650px;
+}
+
+.reveal pre.sourceCode code.bash,
+.reveal div.sourceCode pre code.markdown {
+  padding: 15px;
 }
