@@ -19,4 +19,557 @@ execute:
   echo: true
 ---
 
-To be posted.
+# Anatomy of a Quarto presentation
+
+## Components
+
+1.  Metadata: YAML
+
+2.  Text: Markdown, likely placed in cards
+
+3.  Code: Executed via `jupyter`, automatically placed in cards
+
+. . .
+
+**Weave it all together**, and you have a beautiful, functional dashboard!
+
+##  {.no-line background-image="images/dashboards/dashing-through-snow.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/customer-churn.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/mynorfolk.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/earthquakes.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/model-card.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/shiny-penguins.png" background-size="contain"}
+
+##  {.no-line background-image="images/dashboards/gapminder.png" background-size="contain"}
+
+## Out turn: Dashing through the snow
+
+::: our-turn
+Let's review!
+
+- Dashboard: <https://mine.quarto.pub/dashing-through-snow-py>
+
+- Code: <https://github.com/mine-cetinkaya-rundel/dashing-through-snow>
+:::
+
+## Notebook ➝ Dashboard
+
+```` {.markdown filename="snowdash.ipynb" style="overflow-y: hidden" code-line-numbers="|3"}
+---
+title: "Dashing through the snow ❄️"
+format: dashboard
+---
+
+# notebook content goes here...
+````
+
+## Dashboard Components
+
+1)  **Navigation Bar and Pages** --- Icon, title, and author along with links to sub-pages (if more than one page is defined).
+
+2)  **Sidebars, Rows & Columns, and Tabsets** --- Rows and columns using markdown heading (with optional attributes to control height, width, etc.). Sidebars for interactive inputs. Tabsets to further divide content.
+
+3)  **Cards (Plots, Tables, Value Boxes, Content)** --- Cards are containers for cell outputs and free form markdown text. The content of cards typically maps to *cells* in your notebook or source document.
+
+::: fragment
+*All of these components can be authored and customized within notebook UI or plain text qmd.*
+:::
+
+## Navigation Bar and Pages
+
+![](images/navigation-toolbar.png)
+
+::: {style="margin-top: 0.7em;"}
+``` {.python .pymd}
+--- 
+title: "Palmer Penguins"
+author: "Cobblepot Analytics"
+format: 
+  dashboard:
+    logo: images/penguins.png
+    nav-buttons: [linkedin, twitter, github]
+---
+
+# Bills
+
+# Flippers
+
+# Data
+```
+:::
+
+## Sidebars: Page Level {.component-slide}
+
+::: columns
+::: column
+```` {.python .pymd style="margin-top: 45px;"}
+---
+title: "Sidebar"
+format: dashboard
+---
+    
+# Page 1
+
+## {.sidebar}
+
+```{{python}}
+```
+
+## Column 
+
+```{{python}}
+```
+
+```{{python}}
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/chart-input-sidebar.png)
+:::
+:::
+
+## Sidebars: Global {.compontent-slide}
+
+::: columns
+::: column
+```` {.python .pymd style="margin-top: 45px;"}
+---
+title: "Global Sidebar"
+format: dashboard
+---
+    
+# {.sidebar}
+
+Sidebar content (e.g. inputs)
+
+# Plot
+
+```{{python}}
+```
+
+# Data
+
+```{{python}}
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/global-sidebar.png){width="80%"}
+:::
+:::
+
+## Layout: Rows {.component-slide}
+
+::: columns
+::: {.column style="margin-top: 65px;"}
+```` {.python .pymd}
+---
+title: "Focal (Top)"
+format: dashboard
+---
+    
+## Row {height=70%}
+
+```{{python}}
+```
+
+## Row {height=30%}
+
+```{{python}}
+```
+
+```{{python}}
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/chart-focal-top.png){width="90%"}
+:::
+:::
+
+##  {.no-line background-image="images/dashboards/customer-churn.png" background-size="contain"}
+
+## Layout: Columns {.component-slide}
+
+::: columns
+::: {.column style="margin-top: 40px;"}
+```` {.python .pymd}
+---
+title: "Focal (Top)"
+format: 
+  dashboard:
+    orientation: columns
+---
+    
+## Column {width=60%}
+
+```{{python}}
+```
+
+## Column {width=40%}
+
+```{{python}}
+```
+
+```{{python}}
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/chart-focal-left.png)
+:::
+:::
+
+##  {.no-line background-image="images/dashboards/housing-market.png" background-size="contain"}
+
+## Tabsets {.component-slide}
+
+::: columns
+::: {.column style="margin-top: 45px;"}
+```` {.python .pymd}
+---
+title: "Palmer Penguins"
+format: dashboard
+---
+    
+## Row
+
+```{{python}}
+```
+
+## Row {.tabset}
+
+```{{python}}
+#| title: Chart 2
+```
+
+```{{python}}
+#| title: Chart 3
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/chart-tabset-row.png){width="87%"}
+:::
+:::
+
+##  {.no-line background-image="images/dashboards/mynorfolk.png" background-size="contain"}
+
+## Plots {.component-slide}
+
+::: columns
+::: {.column .fragment .smaller}
+[plotly](https://plotly.com/python/)
+
+```` python
+```{{python}}
+#| title: GDP and Life Expectancy
+import plotly.express as px
+df = px.data.gapminder()
+px.scatter(
+  df, x="gdpPercap", y="lifeExp", 
+  animation_frame="year", animation_group="country",
+  size="pop", color="continent", hover_name="country", 
+  facet_col="continent", log_x=True, size_max=45, 
+  range_x=[100,100000], range_y=[25,90]
+)
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/plotly-interactive.png){width="85%"}
+:::
+:::
+
+::: columns
+::: {.column .fragment .smaller}
+[ipyleaflet](https://ipyleaflet.readthedocs.io)
+
+```` python
+```{{python}}
+#| title: "World Map"
+#| padding: 0px
+from ipyleaflet import Map, basemaps, basemap_to_tiles
+Map(basemap=basemap_to_tiles(basemaps.OpenStreetMap.Mapnik),
+    center=(48.204793, 350.121558), zoom=2)
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/leaflet-card-title-padding.png){width="85%"}
+:::
+:::
+
+## Tables {#component-tables .component-slide}
+
+::: columns
+::: {.column .fragment}
+[tabulate](https://pypi.org/project/tabulate/)
+
+```` python
+```{{python}}
+from tabulate import tabulate
+from IPython.display import Markdown
+Markdown(tabulate(penguins, showindex=False)}
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/tabulate.png)
+:::
+:::
+
+::: columns
+::: {.column .fragment}
+[itables](https://pypi.org/project/itables/)
+
+```` python
+```{{python}}
+from itables import show
+show(penguins)
+```
+````
+:::
+
+::: {.column .fragment}
+![](images/itables-scrolling.png)
+:::
+:::
+
+```{=html}
+<style type="text/css">
+.component-slide .column > p {
+  margin-top: 0;
+}
+.component-slide .column > p > img {
+  margin-top: -8px;
+}
+#component-tables .column > div.sourceCode {
+  margin-top: 30px;
+}
+</style>
+```
+## Value Boxes {#value-box-component .component-slide}
+
+::: columns
+::: {.column width="45%"}
+```` {.python .pymd style="margin-top: 45px;" code-line-numbers="|3-9|14-17|"}
+## Row
+
+```{{python}}
+#| component: valuebox
+#| title: "Current Price"
+dict(icon = "currency-dollar",
+     color = "secondary",
+     value = get_price(data))
+```
+
+```{{python}}
+#| component: valuebox
+#| title: "Change"
+change = get_change(data)
+dict(value = change['amount'],
+     icon = change['icon'],
+     color = change['color']) 
+```
+````
+:::
+
+::: {.column .fragment width="55%"}
+![](images/value-box-app.png){.border width="80%"}
+:::
+:::
+
+```{=html}
+<style type="text/css">
+#value-box-component pre.sourceCode code {
+  max-height: 750px;
+}
+</style>
+```
+## Text Content {.component-slide}
+
+::: columns
+::: {.column width="55%"}
+```` {.python .pymd code-line-numbers="|17-22|"}
+## Column
+
+```{{python}}
+#| title: Population
+px.area(df, x="year", y="pop", 
+        color="continent", 
+        line_group="country")
+```
+
+```{{python}}
+#| title: Life Expectancy
+px.line(df, x="year", y="lifeExp", 
+        color="continent", 
+        line_group="country")
+```
+
+::: {.card}
+Gapminder combines data from multiple sources
+into unique coherent time-series that can’t be
+found elsewhere. Learn more about the Gampminder
+dataset at <https://www.gapminder.org/data/>.
+:::
+````
+:::
+
+::: {.column .fragment width="45%"}
+![](images/text-content-column.png){width="100%"}
+:::
+:::
+
+## Expanding Cards
+
+Cards provide an **Expand** button which appears at bottom right on hover:
+
+![](images/expanding-cards.png)
+
+##  {.no-line background-image="images/expanding-cards-expanded.png" background-size="contain"}
+
+## Dashboard Deployment
+
+Dashboards are typically just static HTML pages so can be deployed to any web server or web host.
+
+```{=html}
+<table id="deployment-table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 65%">
+</colgroup>
+<tbody>
+<tr class="odd fragment">
+<td>Static</td>
+<td><span>Rendered a single time (e.g.&nbsp;when underlying data won’t ever change)</span></td>
+</tr>
+<tr class="even fragment">
+<td>Scheduled</td>
+<td><span>Rendered on a schedule (e.g.&nbsp;via <code>cron</code> job) to accommodate changing data.</span></td>
+</tr>
+<tr class="odd fragment">
+<td>Parameterized</td>
+<td><span>Variations of static or scheduled dashboards based on parameters.</span></td>
+</tr>
+<tr class="even fragment">
+<td>Interactive</td>
+<td><span>Fully interactive dashboard using Shiny (requires a server for deployment).</span></td>
+</tr>
+</tbody>
+</table>
+
+<style type="text/css">
+#deployment-table td {
+  border-bottom: none;
+}
+#deployment-table td:first-of-type {
+  font-weight: 800;
+}
+</style>
+```
+## Parameterized Dashboards
+
+::: columns
+::: column
+![](images/stock-explorer-dashboard.png)
+:::
+
+::: column
+Add a parameters tag to the first cell (based on [papermill](https://papermill.readthedocs.io/en/latest/usage-parameterize.html)) :
+
+```` python
+```{{python}}
+#| tags: [parameters]
+ticker = "BA"
+```
+````
+
+Use the `-P` command line option to vary the parameter:
+
+``` bash
+quarto render dashboard.qmd -P ticker:GOOG
+```
+:::
+:::
+
+## Interactive Dashboards
+
+<https://quarto.org/docs/dashboards/interactivity/shiny-python/>
+
+::: columns
+::: {.column width="40%"}
+-   For interactive exploration, some dashboards can benefit from a live Python backend
+
+-   To do this with Quarto Dashboards, add interactive [Shiny](https://shiny.posit.co/py/) components
+
+-   Deploy with or without a server!
+:::
+
+::: {.column width="60%"}
+![](images/shiny-homepage.png){.border}
+:::
+:::
+
+##  {.no-line background-image="images/dashboards/shiny-penguins.png" background-size="contain"}
+
+## Deployment of Interactive Dashboards
+
+::: columns
+::: {.column width="60%"}
+### Server
+::: {.column width="40%"}
+#### Cloud
+
+-   [shinyapps.io](https://shiny.posit.co/py/docs/deploy.html#deploy-to-shinyapps.io-cloud-hosting)
+-   [Hugging Face](https://huggingface.co/docs/hub/spaces-sdks-docker-shiny)
+-   [Roll your own](https://shiny.posit.co/py/docs/deploy.html#other-hosting-options)
+:::
+
+::: {.column width="50%"}
+#### On-Prem
+
+-   [Shiny Server](https://shiny.posit.co/py/docs/deploy.html#deploy-to-shiny-server-open-source) (open source)
+-   [Posit Connect](https://shiny.posit.co/py/docs/deploy.html#deploy-to-posit-connect-commercial) (commercial)
+-   [Roll your own](https://shiny.posit.co/py/docs/deploy.html#other-hosting-options)
+:::
+:::
+::: {.column width="40%" .fragment}
+### Serverless
+
+Using [Pyodide](https://pyodide.org/)
+
+[[Example](https://wch.github.io/retirement-simulation-dashboard/)]
+:::
+:::
+
+# Wrap up
+
+## Learning more & questions
+
+<br>
+
+::: {.center-align .large}
+<https://quarto.org/docs/dashboards>
+:::
+
+<br>
+
+::: your-turn
+Any questions / anything you'd like to review before we wrap up this module?
+:::
