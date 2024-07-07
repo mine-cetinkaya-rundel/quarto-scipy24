@@ -404,11 +404,7 @@ In VS Code, open the `hello-penquins.qmd` file. Render the document to HTML.
 
 {{< countdown minutes=10 >}}
 
-## Questions
-
-::: your-turn
-Any questions / anything you’d like to review before we wrap up this module?
-:::
+# Wrap up
 
 ## A pause
 
@@ -424,4 +420,18 @@ Where does the name "Quarto" come from?
 
 ::: aside
 Source: <https://en.wikipedia.org/wiki/Quarto>
+:::
+
+## Learning more & questions
+
+<br>
+
+::: {.center-align .large}
+<https://quarto.org/docs/guide/> > Authoring & Computations
+:::
+
+<br>
+
+::: your-turn
+Any questions / anything you'd like to review before we wrap up this module?
 :::

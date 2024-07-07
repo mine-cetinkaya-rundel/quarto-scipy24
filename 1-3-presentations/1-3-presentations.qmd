@@ -92,7 +92,17 @@ Let's continue building our a presentation together from `hello-penguins-slides.
 
 -   PowerPoint for when you *have to* collaborate via MS Office
 
-## Questions
+# Wrap up
+
+## Learning more & questions
+
+<br>
+
+::: {.center-align .large}
+<https://quarto.org/docs/presentations/>
+:::
+
+<br>
 
 ::: your-turn
 Any questions / anything you'd like to review before we wrap up this module?

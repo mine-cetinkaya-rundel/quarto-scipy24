@@ -928,7 +928,15 @@ gt.GT(penguins.head())
 
 # Wrap up
 
-## Questions
+## Learning more & questions
+
+<br>
+
+::: {.center-align .large}
+<https://quarto.org/docs/guide/> > Documents
+:::
+
+<br>
 
 ::: your-turn
 Any questions / anything you'd like to review before we wrap up this module?
