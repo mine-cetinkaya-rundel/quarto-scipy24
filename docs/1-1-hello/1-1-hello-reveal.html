@@ -472,7 +472,7 @@ Mine Çetinkaya Rundel
 <li><p>Professor of the Practice<br>
 Department of Statistical Science<br>
 Duke University</p></li>
-<li><p>Developer Educator, Posit</p></li>
+<li><p>Developer Educator, Posit PBC</p></li>
 </ul>
 </div><div class="column" style="text-align: center;">
 <div class="quarto-figure quarto-figure-center">
@@ -491,14 +491,14 @@ Duke University</p></li>
 <section id="about-you" class="slide level2">
 <h2>About you</h2>
 <div class="your-turn">
-<p>Please share</p>
+<p>Please share with the person next to you…</p>
 <ul>
-<li>Name</li>
-<li>Professional affiliation</li>
-<li>What do you hope to get out of this tutorial?</li>
+<li>Your name</li>
+<li>Your professional affiliation</li>
+<li>What you hope to get out of this tutorial</li>
 </ul>
 </div>
-<div id="timer_aa03933deea61a59c0c18be9b0ef497d23a66967" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_8ecf6a32dce0b2994b7d5054133a806d554171f5" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -543,7 +543,7 @@ Duke University</p></li>
 <p><strong>Our turn</strong></p>
 <ul>
 <li>Lecture segments + live coding</li>
-<li>Follow along with live coding</li>
+<li>(Optionally) follow along with live coding</li>
 </ul>
 </div>
 </div><div class="column fragment" style="width:33%;">
@@ -618,65 +618,65 @@ Duke University</p></li>
 <section id="a-tour-of-quarto" class="slide level2 smaller">
 <h2>A tour of Quarto</h2>
 <div class="hand-blue-large" style="text-align: center;">
-<p>Sit back and enjoy! … or follow along with <code>1-1-hello-penguins.qmd</code>.</p>
+<p>Sit back and enjoy! … or follow along with <code>hello-penguins.qmd</code>.</p>
 </div>
 <div class="our-turn">
 <ul>
+<li>Running individual cells</li>
 <li>Rendering a document</li>
-<li>Customizing formats: <code>pdf</code>, <code>docx</code></li>
-<li>Inserting images</li>
-<li>Customizing output format options: <code>code-fold</code>, <code>toc</code></li>
+<li>Editing with source editor and visual editor</li>
+<li>Inserting images and lightbox effect</li>
+<li>Customizing formats: <code>pdf</code>, <code>docx</code>, <code>revealjs</code></li>
+<li>Customizing format options: <code>code-fold</code>, <code>toc</code></li>
 <li>Code cells: labels, alt-text, execution options</li>
 <li>Cross referencing figures and tables</li>
-<li>Lightbox effect</li>
 <li>Converting between Jupyter Notebooks and plain text markdown documents</li>
 </ul>
 </div>
 </section></section>
 <section>
 <section id="how-it-works" class="title-slide slide level1 center">
-<h1>How it Works</h1>
+<h1>How it works</h1>
 
 </section>
 <section id="revisit-what-is-quarto" class="slide level2 smaller">
 <h2>Revisit: What is Quarto?</h2>
 <p>Quarto is a command line interface (<strong>CLI</strong>) that renders plain text formats (<code>.qmd</code>, <code>.rmd</code>, <code>.md</code>) OR mixed formats (<code>.ipynb</code>/Jupyter notebook) into static PDF/Word/HTML reports, books, websites, presentations and more.</p>
 <div class="fragment">
-<div class="sourceCode" id="cb3"><pre class="sourceCode numberSource {bash} number-lines code-with-copy"><code class="sourceCode"><span id="cb3-1"><a></a>#| eval: false</span>
-<span id="cb3-2"><a></a>#| echo: true</span>
-<span id="cb3-3"><a></a>#| code-line-numbers: "|1|2|10|15|16"</span>
-<span id="cb3-4"><a></a>Usage:   quarto</span>
-<span id="cb3-5"><a></a>Version: 1.5.53</span>
-<span id="cb3-6"><a></a></span>
-<span id="cb3-7"><a></a>Description:</span>
-<span id="cb3-8"><a></a></span>
-<span id="cb3-9"><a></a>  Quarto CLI</span>
-<span id="cb3-10"><a></a></span>
-<span id="cb3-11"><a></a>Options:</span>
+<div id="0aac9a0d" class="cell" data-execution_count="1">
+<div class="sourceCode cell-code" id="cb3" data-code-line-numbers="|1|2|10|15|16"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb3-1"><a></a>Usage:   quarto</span>
+<span id="cb3-2"><a></a>Version: <span class="fl">1.5.53</span></span>
+<span id="cb3-3"><a></a></span>
+<span id="cb3-4"><a></a>Description:</span>
+<span id="cb3-5"><a></a></span>
+<span id="cb3-6"><a></a>  Quarto CLI</span>
+<span id="cb3-7"><a></a></span>
+<span id="cb3-8"><a></a>Options:</span>
+<span id="cb3-9"><a></a></span>
+<span id="cb3-10"><a></a>  <span class="op">-</span>h, <span class="op">--</span><span class="bu">help</span>     <span class="op">-</span> Show this <span class="bu">help</span>.                            </span>
+<span id="cb3-11"><a></a>  <span class="op">-</span>V, <span class="op">--</span>version  <span class="op">-</span> Show the version number <span class="cf">for</span> this program.  </span>
 <span id="cb3-12"><a></a></span>
-<span id="cb3-13"><a></a>  -h, --help     - Show this help.                            </span>
-<span id="cb3-14"><a></a>  -V, --version  - Show the version number for this program.  </span>
-<span id="cb3-15"><a></a></span>
-<span id="cb3-16"><a></a>Commands:</span>
-<span id="cb3-17"><a></a></span>
-<span id="cb3-18"><a></a>  render     [input] [args...]     - Render files or projects to various document types.</span>
-<span id="cb3-19"><a></a>  preview    [file] [args...]      - Render and preview a document or website project.  </span>
-<span id="cb3-20"><a></a>  serve      [input]               - Serve a Shiny interactive document.                </span>
-<span id="cb3-21"><a></a>  create     [type] [commands...]  - Create a Quarto project or extension               </span>
-<span id="cb3-22"><a></a>  use        &lt;type&gt; [target]       - Automate document or project setup tasks.          </span>
-<span id="cb3-23"><a></a>  add        &lt;extension&gt;           - Add an extension to this folder or project         </span>
-<span id="cb3-24"><a></a>  update     [target...]           - Updates an extension or global dependency.         </span>
-<span id="cb3-25"><a></a>  remove     [target...]           - Removes an extension.                              </span>
-<span id="cb3-26"><a></a>  convert    &lt;input&gt;               - Convert documents to alternate representations.    </span>
-<span id="cb3-27"><a></a>  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.  </span>
-<span id="cb3-28"><a></a>  typst      [args...]             - Run the version of Typst embedded within Quarto.   </span>
-<span id="cb3-29"><a></a>  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.        </span>
-<span id="cb3-30"><a></a>  install    [target...]           - Installs a global dependency (TinyTex or Chromium).</span>
-<span id="cb3-31"><a></a>  uninstall  [tool]                - Removes an extension.                              </span>
-<span id="cb3-32"><a></a>  tools                            - Display the status of Quarto installed dependencies</span>
-<span id="cb3-33"><a></a>  publish    [provider] [path]     - Publish a document or project to a provider.       </span>
-<span id="cb3-34"><a></a>  check      [target]              - Verify correct functioning of Quarto installation. </span>
-<span id="cb3-35"><a></a>  help       [command]             - Show this help or the help of a sub-command.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb3-13"><a></a>Commands:</span>
+<span id="cb3-14"><a></a></span>
+<span id="cb3-15"><a></a>  render     [<span class="bu">input</span>] [args...]     <span class="op">-</span> Render files <span class="kw">or</span> projects to various document types.</span>
+<span id="cb3-16"><a></a>  preview    [<span class="bu">file</span>] [args...]      <span class="op">-</span> Render <span class="kw">and</span> preview a document <span class="kw">or</span> website project.  </span>
+<span id="cb3-17"><a></a>  serve      [<span class="bu">input</span>]               <span class="op">-</span> Serve a Shiny interactive document.                </span>
+<span id="cb3-18"><a></a>  create     [<span class="bu">type</span>] [commands...]  <span class="op">-</span> Create a Quarto project <span class="kw">or</span> extension               </span>
+<span id="cb3-19"><a></a>  use        <span class="op">&lt;</span><span class="bu">type</span><span class="op">&gt;</span> [target]       <span class="op">-</span> Automate document <span class="kw">or</span> project setup tasks.          </span>
+<span id="cb3-20"><a></a>  add        <span class="op">&lt;</span>extension<span class="op">&gt;</span>           <span class="op">-</span> Add an extension to this folder <span class="kw">or</span> project         </span>
+<span id="cb3-21"><a></a>  update     [target...]           <span class="op">-</span> Updates an extension <span class="kw">or</span> <span class="kw">global</span> dependency.         </span>
+<span id="cb3-22"><a></a>  remove     [target...]           <span class="op">-</span> Removes an extension.                              </span>
+<span id="cb3-23"><a></a>  convert    <span class="op">&lt;</span><span class="bu">input</span><span class="op">&gt;</span>               <span class="op">-</span> Convert documents to alternate representations.    </span>
+<span id="cb3-24"><a></a>  pandoc     [args...]             <span class="op">-</span> Run the version of Pandoc embedded within Quarto.  </span>
+<span id="cb3-25"><a></a>  typst      [args...]             <span class="op">-</span> Run the version of Typst embedded within Quarto.   </span>
+<span id="cb3-26"><a></a>  run        [script] [args...]    <span class="op">-</span> Run a TypeScript, R, Python, <span class="kw">or</span> Lua script.        </span>
+<span id="cb3-27"><a></a>  install    [target...]           <span class="op">-</span> Installs a <span class="kw">global</span> dependency (TinyTex <span class="kw">or</span> Chromium).</span>
+<span id="cb3-28"><a></a>  uninstall  [tool]                <span class="op">-</span> Removes an extension.                              </span>
+<span id="cb3-29"><a></a>  tools                            <span class="op">-</span> Display the status of Quarto installed dependencies</span>
+<span id="cb3-30"><a></a>  publish    [provider] [path]     <span class="op">-</span> Publish a document <span class="kw">or</span> project to a provider.       </span>
+<span id="cb3-31"><a></a>  check      [target]              <span class="op">-</span> Verify correct functioning of Quarto installation. </span>
+<span id="cb3-32"><a></a>  <span class="bu">help</span>       [command]             <span class="op">-</span> Show this <span class="bu">help</span> <span class="kw">or</span> the <span class="bu">help</span> of a sub<span class="op">-</span>command.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</div>
 </div>
 </section>
 <section id="under-the-hood" class="slide level2">
@@ -731,25 +731,33 @@ Duke University</p></li>
 <p><img data-src="https://quarto.org/docs/tools/images/rstudio-preview.png" class="fragment" alt="A screenshot of a Quarto document rendered inside RStudio" width="1200"></p>
 </div>
 </section>
-<section id="rendering" class="slide level2">
-<h2>Rendering</h2>
-<p><strong>in VS Code</strong></p>
-<p>with the Quarto extension installed and enabled</p>
+<section id="render-and-preview" class="slide level2">
+<h2>Render and preview</h2>
+<p><strong>in the Terminal</strong> in VS Code or JupyterLab</p>
+<p>Render to output formats:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode numberSource {bash} number-lines code-with-copy"><code class="sourceCode"><span id="cb5-1"><a></a># ipynb notebook</span>
+<span id="cb5-2"><a></a>quarto render notebook.ipynb</span>
+<span id="cb5-3"><a></a>quarto render notebook.ipynb --to docx</span>
+<span id="cb5-4"><a></a></span>
+<span id="cb5-5"><a></a># plain text qmd</span>
+<span id="cb5-6"><a></a>quarto render notebook.qmd </span>
+<span id="cb5-7"><a></a>quarto render notebook.qmd --to pdf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Live preview server (re-render on save):</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode numberSource {bash} number-lines code-with-copy"><code class="sourceCode"><span id="cb6-1"><a></a># ipynb notebook</span>
+<span id="cb6-2"><a></a>quarto preview notebook.ipynb</span>
+<span id="cb6-3"><a></a>quarto preview notebook.ipynb --to docx</span>
+<span id="cb6-4"><a></a></span>
+<span id="cb6-5"><a></a># plain text qmd</span>
+<span id="cb6-6"><a></a>quarto preview notebook.qmd </span>
+<span id="cb6-7"><a></a>quarto preview notebook.qmd --to pdf</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+</section>
+<section id="render-and-preview-1" class="slide level2">
+<h2>Render and preview</h2>
+<p><strong>in the Editor</strong> in VS Code</p>
 <ul>
-<li><p>Option 1: In the Terminal via <code>quarto render</code></p></li>
-<li><p>Option 2: Using the Quarto Extension and clicking on Preview</p></li>
+<li><p>Install and enable the Quarto extension</p></li>
+<li><p>Clicking on Preview or Cmd + Shift + K</p></li>
 </ul>
-<p><br></p>
-<p><strong>in JupyterLab</strong></p>
-<p>In the Terminal via <code>quarto render</code>:</p>
-<div class="code-with-filename">
-<div class="code-with-filename-file">
-<pre><strong>Terminal</strong></pre>
-</div>
-<div class="sourceCode" id="cb5" data-filename="Terminal"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a></a><span class="ex">quarto</span> render document.qmd <span class="co"># defaults to html</span></span>
-<span id="cb5-2"><a></a><span class="ex">quarto</span> render document.qmd <span class="at">--to</span> pdf</span>
-<span id="cb5-3"><a></a><span class="ex">quarto</span> render document.qmd <span class="at">--to</span> docx</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div>
 </section></section>
 <section>
 <section id="quarto-formats" class="title-slide slide level1 center">
@@ -842,13 +850,13 @@ Duke University</p></li>
 <div class="your-turn">
 <p>In VS Code, open the <code>hello-penquins.qmd</code> file. Render the document to HTML.</p>
 <ul>
-<li><p>In the YAML: Add an <code>author</code> field and add your name.</p></li>
-<li><p>Add some text and style it with bold, italics, etc.</p></li>
-<li><p>Modify the figure to add units to the axis labels: <strong>g</strong>rams for body weight and <strong>mm</strong> (milimeters) for flipper length. Make sure the changes are reflected in the HTML output.</p></li>
+<li><p>Add an <code>author</code> field in the YAML and add your name.</p></li>
+<li><p>Add some text and style it with bold, italics, etc. using the source editor as well as the visual editor.</p></li>
+<li><p>Modify the figure to add units to the axis labels: <strong>g</strong>rams for body weight and <strong>mm</strong> (milimeters) for flipper length. Render or preview the document and make sure the changes are reflected in the HTML output.</p></li>
 <li><p>Change the html theme to <code>sketchy</code>. (See <a href="https://quarto.org/docs/output-formats/html-themes.html" class="uri">https://quarto.org/docs/output-formats/html-themes.html</a> for documentation on HTML theming.)</p></li>
 </ul>
 </div>
-<div id="timer_aa03933deea61a59c0c18be9b0ef497d23a66967" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_8ecf6a32dce0b2994b7d5054133a806d554171f5" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -879,7 +887,8 @@ Duke University</p></li>
 <div class="center-align large">
 <p><a href="https://quarto.org/docs/guide/%3E">quarto.org/docs/guide</a> &gt; Authoring &amp; Computations</p>
 </div>
-<iframe src="https://quarto.org/docs/guide" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Guide"></iframe>
+<iframe src="https://quarto.org/docs/guide" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Guide">
+</iframe>
 </section>
 <section id="questions" class="slide level2">
 <h2>Questions</h2>

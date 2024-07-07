@@ -69,7 +69,7 @@ Thank you for helping make this a welcoming, friendly community for all.
     Department of Statistical Science\
     Duke University
 
--   Developer Educator, Posit
+-   Developer Educator, Posit PBC
 :::
 
 ::: {.column width="50%" style="text-align: center;"}
@@ -87,11 +87,11 @@ Thank you for helping make this a welcoming, friendly community for all.
 ## About you
 
 ::: your-turn
-Please share
+Please share with the person next to you...
 
--   Name
--   Professional affiliation
--   What do you hope to get out of this tutorial?
+-   Your name
+-   Your professional affiliation
+-   What you hope to get out of this tutorial
 :::
 
 {{< countdown minutes=3 >}}
@@ -126,7 +126,7 @@ I'll teach you
 
 ## Workshop structure
 
-:::: columns
+:::::::: columns
 ::: {.column .fragment width="33%"}
 **My turn**
 
@@ -134,24 +134,24 @@ I'll teach you
 -   Feel free to just watch, take notes, browse docs, or tinker around with the code
 :::
 
-::: {.column .fragment width="33%"}
+:::: {.column .fragment width="33%"}
 ::: our-turn
 **Our turn**
 
 -   Lecture segments + live coding
--   Follow along with live coding
+-   (Optionally) follow along with live coding
 :::
-:::
+::::
 
-::: {.column .fragment width="33%"}
+:::: {.column .fragment width="33%"}
 ::: your-turn
 **Your turn**
 
 -   Practice exercises for you
 -   Work on your own or with the person next to you
 :::
-:::
 ::::
+::::::::
 
 ## Getting help
 
@@ -211,22 +211,22 @@ you can **weave** together **narrative** and **code** to produce elegantly forma
 ## A tour of Quarto {.smaller}
 
 ::: {.hand-blue-large style="text-align: center;"}
-Sit back and enjoy!
-... or follow along with `1-1-hello-penguins.qmd`.
+Sit back and enjoy! ... or follow along with `hello-penguins.qmd`.
 :::
 
 ::: our-turn
+-   Running individual cells
 -   Rendering a document
--   Customizing formats: `pdf`, `docx`
--   Inserting images
--   Customizing output format options: `code-fold`, `toc`
+-   Editing with source editor and visual editor
+-   Inserting images and lightbox effect
+-   Customizing formats: `pdf`, `docx`, `revealjs`
+-   Customizing format options: `code-fold`, `toc`
 -   Code cells: labels, alt-text, execution options
 -   Cross referencing figures and tables
--   Lightbox effect
 -   Converting between Jupyter Notebooks and plain text markdown documents
 :::
 
-# How it Works
+# How it works
 
 ## Revisit: What is Quarto? {.smaller}
 
@@ -234,10 +234,11 @@ Quarto is a command line interface (**CLI**) that renders plain text formats (`.
 
 . . .
 
-```{bash}
+```{python}
 #| eval: false
 #| echo: true
 #| code-line-numbers: "|1|2|10|15|16"
+
 Usage:   quarto
 Version: 1.5.53
 
@@ -324,27 +325,41 @@ return {
 ![](https://quarto.org/docs/tools/images/rstudio-preview.png){.fragment fig-alt="A screenshot of a Quarto document rendered inside RStudio" width="1200"}
 :::
 
-## Rendering
+## Render and preview
 
-**in VS Code**
+**in the Terminal** in VS Code or JupyterLab
 
-with the Quarto extension installed and enabled
+Render to output formats:
 
--   Option 1: In the Terminal via `quarto render`
+```{bash}
+# ipynb notebook
+quarto render notebook.ipynb
+quarto render notebook.ipynb --to docx
 
--   Option 2: Using the Quarto Extension and clicking on Preview
-
-<br>
-
-**in JupyterLab**
-
-In the Terminal via `quarto render`:
-
-``` {.bash filename="Terminal"}
-quarto render document.qmd # defaults to html
-quarto render document.qmd --to pdf
-quarto render document.qmd --to docx
+# plain text qmd
+quarto render notebook.qmd 
+quarto render notebook.qmd --to pdf
 ```
+
+Live preview server (re-render on save):
+
+```{bash}
+# ipynb notebook
+quarto preview notebook.ipynb
+quarto preview notebook.ipynb --to docx
+
+# plain text qmd
+quarto preview notebook.qmd 
+quarto preview notebook.qmd --to pdf
+```
+
+## Render and preview
+
+**in the Editor** in VS Code
+
+-   Install and enable the Quarto extension
+
+-   Clicking on Preview or Cmd + Shift + K
 
 # Quarto formats
 
@@ -393,11 +408,11 @@ quarto render document.qmd --to docx
 ::: your-turn
 In VS Code, open the `hello-penquins.qmd` file. Render the document to HTML.
 
--   In the YAML: Add an `author` field and add your name.
+-   Add an `author` field in the YAML and add your name.
 
--   Add some text and style it with bold, italics, etc.
+-   Add some text and style it with bold, italics, etc. using the source editor as well as the visual editor. 
 
--   Modify the figure to add units to the axis labels: **g**rams for body weight and **mm** (milimeters) for flipper length. Make sure the changes are reflected in the HTML output.
+-   Modify the figure to add units to the axis labels: **g**rams for body weight and **mm** (milimeters) for flipper length. Render or preview the document and make sure the changes are reflected in the HTML output.
 
 -   Change the html theme to `sketchy`. (See <https://quarto.org/docs/output-formats/html-themes.html> for documentation on HTML theming.)
 :::
@@ -425,12 +440,10 @@ Source: <https://en.wikipedia.org/wiki/Quarto>
 ## Learn more
 
 ::: {.center-align .large}
-[quarto.org/docs/guide](https://quarto.org/docs/guide/>) > Authoring & Computations
+[quarto.org/docs/guide](https://quarto.org/docs/guide/%3E) \> Authoring & Computations
 :::
 
-```{=html}
 <iframe src="https://quarto.org/docs/guide" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Guide"></iframe>
-```
 
 ## Questions
 
