@@ -560,15 +560,17 @@ Using [Pyodide](https://pyodide.org/)
 
 # Wrap up
 
-## Learning more & questions
-
-<br>
+## Learn more
 
 ::: {.center-align .large}
-<https://quarto.org/docs/dashboards>
+[quarto.org/docs/dashboards](https://quarto.org/docs/dashboards/>)
 :::
 
-<br>
+```{=html}
+<iframe src="https://quarto.org/docs/dashboards" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Dashboards"></iframe>
+```
+
+## Questions
 
 ::: your-turn
 Any questions / anything you'd like to review before we wrap up this module?

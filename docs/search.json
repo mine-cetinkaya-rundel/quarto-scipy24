@@ -147,18 +147,25 @@
     "text": "A pause\n\nWhere does the name “Quarto” come from?\n\n\n\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Quarto"
   },
   {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#learning-more-questions",
-    "href": "1-1-hello/1-1-hello-reveal.html#learning-more-questions",
+    "objectID": "1-1-hello/1-1-hello-reveal.html#learn-more",
+    "href": "1-1-hello/1-1-hello-reveal.html#learn-more",
     "title": "Hello, Quarto!",
-    "section": "Learning more & questions",
-    "text": "Learning more & questions\n\n\nhttps://quarto.org/docs/guide/ &gt; Authoring & Computations\n\n\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/guide &gt; Authoring & Computations"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#questions",
+    "href": "1-1-hello/1-1-hello-reveal.html#questions",
+    "title": "Hello, Quarto!",
+    "section": "Questions",
+    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
   },
   {
     "objectID": "index.html",
     "href": "index.html",
     "title": "Unlocking Dynamic Reproducible Documents",
     "section": "",
-    "text": "🗓️ Date: July 8, 2024\n🕗 Time: 08:00 - 12:00 US/Pacific\n🏨 Location: Room 316",
+    "text": "Work in progress\n\n\n\nThis page and workshop materials are works in progress until the workshop date and time specified below. For latest version of the materials, please revisit when the workshop begins.\n🗓️ Date: July 8, 2024\n🕗 Time: 08:00 - 12:00 US/Pacific\n🏨 Location: Room 316",
     "crumbs": [
       "Home"
     ]
@@ -268,6 +275,167 @@
       "Part 1",
       "Documents"
     ]
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#quarto-projects",
+    "href": "2-1-websites/2-1-websites-reveal.html#quarto-projects",
+    "title": "Websites and blogs",
+    "section": "Quarto projects",
+    "text": "Quarto projects\n\nQuarto projects have a _quarto.yml file\nThe type field in this file indicates the type of project:\n\ndefault: Collection of documents\nwebsite: Websites (and blogs)\nbooks: Books\nmanuscript: Journal manuscript with embedded computing and JATS bundle"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#components",
+    "href": "2-1-websites/2-1-websites-reveal.html#components",
+    "title": "Websites and blogs",
+    "section": "Components",
+    "text": "Components\n\n\nA Quarto Project is a directory that contains a file called _quarto.yml.\n\n\n\n\n\n\nThis is a Quarto Project.\nmy-folder/\n├── _quarto.yml\n├── my-document.ipynb\n\nThis is not.\nmy-folder/\n├── my-document.ipynb"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#quarto.yml",
+    "href": "2-1-websites/2-1-websites-reveal.html#quarto.yml",
+    "title": "Websites and blogs",
+    "section": "_quarto.yml",
+    "text": "_quarto.yml\nA YAML file with particular keys and values that Quarto recognizes. Unrecognized keys are ignored.\n\n\n_quarto.yml\n\nproject:\n  title: \"A Barebones Project\""
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#quarto.yml-1",
+    "href": "2-1-websites/2-1-websites-reveal.html#quarto.yml-1",
+    "title": "Websites and blogs",
+    "section": "_quarto.yml",
+    "text": "_quarto.yml\nA YAML file with particular keys and values that Quarto recognizes. Unrecognized keys are ignored.\n\n\n_quarto.yml\n\nTO DO: ADD LONG YAML"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#quarto-websites",
+    "href": "2-1-websites/2-1-websites-reveal.html#quarto-websites",
+    "title": "Websites and blogs",
+    "section": "Quarto websites",
+    "text": "Quarto websites\n\n\nWebsites are essentially format: html + a Quarto Project file\nBut a website is different than format: html in that it has multiple pages\nWebsites and books are very similar in that they associate multiple pages/resources into a connected resource\n\nIn books, you can cross-reference between pages (chapters), but (currently), you can’t cross-reference between pages in websites"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#our-turn",
+    "href": "2-1-websites/2-1-websites-reveal.html#our-turn",
+    "title": "Websites and blogs",
+    "section": "Our turn",
+    "text": "Our turn\n\nLet’s build a website that features the notebook we worked on and highlight the following features of Quarto websites:\n\nAdd a _quarto.yml\nCreate a landing page: index.qmd\nExplore navigation options: navbar, sidebar\nApply themes, including a light and dark theme toggle\nPublish to GitHub Pages with quarto publish\nAn aspect of the workshop webpage that you fancy?"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#your-turn",
+    "href": "2-1-websites/2-1-websites-reveal.html#your-turn",
+    "title": "Websites and blogs",
+    "section": "Your turn",
+    "text": "Your turn\n\n\nAdd one more notebook that has at least one executable code cell and add it to the navigation list in _quarto.yml and render your site.\n\nNot inspired to generate content? Feel free to copy the contents of https://github.com/mine-cetinkaya-rundel/quarto-pydata-website-completed/blob/main/posts/islands-species.ipynb.\n\nAdd an about page, about.qmd, personalize it, and add it to the navigation list in _quarto.yml and render your site.\nRe-publish on GitHub pages with quarto publish.\n\n\n\n  \n    −\n    +\n \n 10:00"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#listings-1",
+    "href": "2-1-websites/2-1-websites-reveal.html#listings-1",
+    "title": "Websites and blogs",
+    "section": "Listings",
+    "text": "Listings\n\nListings enable you to automatically generate the contents of a page (or region of a page) from a list of Quarto documents or other custom data\nUseful for creating blogs, providing navigation for large numbers of documents, or any other scenario where you’d like the contents of a page to be automatically updated as documents are added, updated, and removed"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#blogs",
+    "href": "2-1-websites/2-1-websites-reveal.html#blogs",
+    "title": "Websites and blogs",
+    "section": "Blogs",
+    "text": "Blogs\n\nLet’s now add a blog component to our website:\n\nMove your two notebook files into a new a folder called posts.\nCollect these notebooks in a new blog page using the listings feature.\n\nDon’t forget to make corresponding changes in your _quarto.yml file."
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#customizing-your-blog",
+    "href": "2-1-websites/2-1-websites-reveal.html#customizing-your-blog",
+    "title": "Websites and blogs",
+    "section": "Customizing your blog",
+    "text": "Customizing your blog\n\nExperiment with the style of listings and choose one you like.\n\n\n  \n    −\n    +\n \n 05:00"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#when-should-code-be-re-run",
+    "href": "2-1-websites/2-1-websites-reveal.html#when-should-code-be-re-run",
+    "title": "Websites and blogs",
+    "section": "When should code be re-run?",
+    "text": "When should code be re-run?\n\n\nYou might have a reason to re-run all code in a Quarto website (every single cell in every single document) every time you render the website.\nBut, chances are, that’s not what you want.\n\nJust playing around styling – you probably don’t want to run the code again\nChanged some code in a document – you probably want to re-run the code in that document, but not necessarily others\nMade a big change affecting computations on many or all pages – you probably want to re-run all code\n\nfreeze and cache options give you fine control over these decisions"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#freeze",
+    "href": "2-1-websites/2-1-websites-reveal.html#freeze",
+    "title": "Websites and blogs",
+    "section": "Freeze",
+    "text": "Freeze\n\nThe freeze option controls when/if computational documents be re-rendered during a global project render:\n\nexecute:\n  freeze: true  # never re-render during project render\nexecute:\n  freeze: auto  # re-render only when source changes\nexecute:\n  freeze: false  # always re-render\n\nThe freeze option is typically added to a _metadata.yml file within a specific directory, affecting all files in that directory.\nFor blogs, set feeze in _metadata.yml at the root of the posts directory.\nYou can have it only within specific subdirectories for more complex sites."
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#freeze-and-jupyter-notebooks",
+    "href": "2-1-websites/2-1-websites-reveal.html#freeze-and-jupyter-notebooks",
+    "title": "Websites and blogs",
+    "section": "Freeze and Jupyter notebooks",
+    "text": "Freeze and Jupyter notebooks\n\nWhen rendering an .ipynb, Quarto will not execute the cells within the notebook by default, assuming that you have already executed them while editing the notebook\nTo execute the cells, pass the --execute flag to render:\n\n\n\nTerminal\n\nquarto render notebook.ipynb --execute\n\n\nOr specify this behavior within the notebook’s YAML front matter:\n\n---\nexecute:\n  enabled: true\n---"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#cache",
+    "href": "2-1-websites/2-1-websites-reveal.html#cache",
+    "title": "Websites and blogs",
+    "section": "Cache",
+    "text": "Cache\n\nCache stores the results of computations for a specific file\nCache invalidation is triggered by changes in chunk source code (or other cache attributes you’ve defined)\ncache can also be set at the chunk level, particularly useful for computationally expensive chunks"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#freeze-vs.-cache",
+    "href": "2-1-websites/2-1-websites-reveal.html#freeze-vs.-cache",
+    "title": "Websites and blogs",
+    "section": "Freeze vs. cache",
+    "text": "Freeze vs. cache\n\nFreeze option is typically set\n\nfor the whole website in _quarto.yml, or\nfor files within a directory in _metadata.yml in that directory\n\n\nexecute: \n  freeze: auto\n\nCache option is typically set for a given file or for individual chunk(s) in a file.\n\nexecute:\n  cache: true\nor\n\n```{python}\n1 + 1\n```\n\n2"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#freezing",
+    "href": "2-1-websites/2-1-websites-reveal.html#freezing",
+    "title": "Websites and blogs",
+    "section": "Freezing",
+    "text": "Freezing\n\nAdd a _metadata.yml file to the posts directory of your website and update the YAML front matter of your blog posts to execute the cells when quarto rendering."
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#your-turn-1",
+    "href": "2-1-websites/2-1-websites-reveal.html#your-turn-1",
+    "title": "Websites and blogs",
+    "section": "Your turn",
+    "text": "Your turn\n\nPick up where we left off and\n\nAdd an about page.\nAdd a folder called posts and create a few minimal blog post entries. Then, using the listings feature, create a blog page for your website.\n\n\n\n  \n    −\n    +\n \n 10:00"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#freeze-1",
+    "href": "2-1-websites/2-1-websites-reveal.html#freeze-1",
+    "title": "Websites and blogs",
+    "section": "Freeze",
+    "text": "Freeze\n\nThe freeze option controls when/if computational documents be re-rendered during a global project render:\n\nexecute:\n  freeze: true  # never re-render during project render\nexecute:\n  freeze: auto  # re-render only when source changes\nexecute:\n  freeze: false  # always re-render\n\nThe freeze option is typically added to a _metadata.yml file within a specific directory, affecting all files in that directory.\nFor blogs, set feeze in _metadata.yml at the root of the posts directory.\nYou can have it only within specific subdirectories for more complex sites."
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#freeze-vs.-cache-1",
+    "href": "2-1-websites/2-1-websites-reveal.html#freeze-vs.-cache-1",
+    "title": "Websites and blogs",
+    "section": "Freeze vs. cache",
+    "text": "Freeze vs. cache\n\nCache stores the results of computations for a specific file.\nCache invalidation is triggered by changes in chunk source code (or other cache attributes you’ve defined).\ncache can also be set at the chunk level. Consider using the cache for computationally expensive chunks."
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#publishing",
+    "href": "2-1-websites/2-1-websites-reveal.html#publishing",
+    "title": "Websites and blogs",
+    "section": "Publishing",
+    "text": "Publishing\nSee https://quarto.org/docs/publishing for publishing options other than Quarto Pub."
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#links-for-reviewing-tutorial-materials",
+    "href": "2-1-websites/2-1-websites-reveal.html#links-for-reviewing-tutorial-materials",
+    "title": "Websites and blogs",
+    "section": "Links for reviewing tutorial materials",
+    "text": "Links for reviewing tutorial materials\n\nSlides: https://bit.ly/quarto-pydata\n\nIf you’re interested, source code for slides: https://github.com/mine-cetinkaya-rundel/quarto-pydata-slides\n\nStarter repo: https://github.com/mine-cetinkaya-rundel/quarto-pydata-website\nComplete repo: https://github.com/mine-cetinkaya-rundel/quarto-pydata-website-completed\n\nPublished website: https://mine-cetinkaya-rundel.github.io/quarto-pydata-website-completed"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#learn-more",
+    "href": "2-1-websites/2-1-websites-reveal.html#learn-more",
+    "title": "Websites and blogs",
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/websites"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#questions",
+    "href": "2-1-websites/2-1-websites-reveal.html#questions",
+    "title": "Websites and blogs",
+    "section": "Questions",
+    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
   },
   {
     "objectID": "1-3-presentations/index.html",
@@ -502,11 +670,18 @@
     "text": "Deployment of Interactive Dashboards\n\n\nServer\n\nCloud\n\nshinyapps.io\nHugging Face\nRoll your own\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (commercial)\nRoll your own\n\n\n\nServerless\nUsing Pyodide\n[Example]"
   },
   {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#learning-more-questions",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#learning-more-questions",
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#learn-more",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#learn-more",
     "title": "Dashboards",
-    "section": "Learning more & questions",
-    "text": "Learning more & questions\n\n\nhttps://quarto.org/docs/dashboards\n\n\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/dashboards"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#questions",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#questions",
+    "title": "Dashboards",
+    "section": "Questions",
+    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
   },
   {
     "objectID": "pre-work.html",
@@ -517,6 +692,69 @@
     "crumbs": [
       "Pre-work"
     ]
+  },
+  {
+    "objectID": "2-2-books/2-2-books-reveal.html#quarto-books",
+    "href": "2-2-books/2-2-books-reveal.html#quarto-books",
+    "title": "Books",
+    "section": "Quarto books",
+    "text": "Quarto books\n\nBooks are also essentially format: html + a Quarto Project\nBut a book is different than format: html in that it has multiple pages\nBooks and websites are very similar in that they associate multiple pages/resources into a connected resource\nBooks and websites are different in how they treat components: pages vs. cross-referencable chapters for website and books, respectively"
+  },
+  {
+    "objectID": "2-2-books/2-2-books-reveal.html#our-turn",
+    "href": "2-2-books/2-2-books-reveal.html#our-turn",
+    "title": "Books",
+    "section": "Our turn",
+    "text": "Our turn\n\nLet’s build a book together from all of the documents we’ve created so far and highlight the following features of Quarto websites:\n\n_quarto.yml\nindex.qmd / landing page / change landing page\nCallouts\nCross references\nUnnumbered chapters\nSections\nAppendices"
+  },
+  {
+    "objectID": "2-2-books/2-2-books-reveal.html#your-turn",
+    "href": "2-2-books/2-2-books-reveal.html#your-turn",
+    "title": "Books",
+    "section": "Your turn",
+    "text": "Your turn\n\nPick up where we left off and\n\nGive a title to your book.\nAdd a numbered figure and cross-reference it.\nAdd a numbered figure to another chapter, cross-reference it, and observe the numbering scheme\n\n\n\n  \n    −\n    +\n \n 10:00"
+  },
+  {
+    "objectID": "2-2-books/2-2-books-reveal.html#quartopub",
+    "href": "2-2-books/2-2-books-reveal.html#quartopub",
+    "title": "Books",
+    "section": "QuartoPub",
+    "text": "QuartoPub\n\nQuarto Pub is a free publishing service for content created with Quarto. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites.\nPublish with quarto publish:\n\n\n\nTerminal\n\nquarto publish quarto-pub\n\n\nGain a _publish.yml that is safe to check into version control."
+  },
+  {
+    "objectID": "2-2-books/2-2-books-reveal.html#other-venues",
+    "href": "2-2-books/2-2-books-reveal.html#other-venues",
+    "title": "Books",
+    "section": "Other venues",
+    "text": "Other venues\n\nGitHub Pages\nPosit Connect\nNetlify\nMore venues"
+  },
+  {
+    "objectID": "2-2-books/2-2-books-reveal.html#computations",
+    "href": "2-2-books/2-2-books-reveal.html#computations",
+    "title": "Books",
+    "section": "Computations",
+    "text": "Computations\nSame freeze and cache ideas for websites apply to books."
+  },
+  {
+    "objectID": "2-2-books/2-2-books-reveal.html#publishing-1",
+    "href": "2-2-books/2-2-books-reveal.html#publishing-1",
+    "title": "Books",
+    "section": "Publishing",
+    "text": "Publishing\nSame publishing options for websites apply to books as well."
+  },
+  {
+    "objectID": "2-2-books/2-2-books-reveal.html#learn-more",
+    "href": "2-2-books/2-2-books-reveal.html#learn-more",
+    "title": "Books",
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/books"
+  },
+  {
+    "objectID": "2-2-books/2-2-books-reveal.html#questions",
+    "href": "2-2-books/2-2-books-reveal.html#questions",
+    "title": "Books",
+    "section": "Questions",
+    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
   },
   {
     "objectID": "1-3-presentations/1-3-presentations-reveal.html#components",
@@ -554,11 +792,18 @@
     "text": "Quarto presentation formats\n\nrevealjs - essentially the replacement for xaringan, but with Pandoc-native syntax\nbeamer for LaTeX slides\nPowerPoint for when you have to collaborate via MS Office"
   },
   {
-    "objectID": "1-3-presentations/1-3-presentations-reveal.html#learning-more-questions",
-    "href": "1-3-presentations/1-3-presentations-reveal.html#learning-more-questions",
+    "objectID": "1-3-presentations/1-3-presentations-reveal.html#learn-more",
+    "href": "1-3-presentations/1-3-presentations-reveal.html#learn-more",
     "title": "Presentations",
-    "section": "Learning more & questions",
-    "text": "Learning more & questions\n\n\nhttps://quarto.org/docs/presentations/\n\n\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/presentations"
+  },
+  {
+    "objectID": "1-3-presentations/1-3-presentations-reveal.html#questions",
+    "href": "1-3-presentations/1-3-presentations-reveal.html#questions",
+    "title": "Presentations",
+    "section": "Questions",
+    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
   },
   {
     "objectID": "2-1-websites/index.html",
@@ -951,11 +1196,53 @@
     "text": "Your turn\n\n\nOpen tables-figures.qmd.\nFollow the instructions in the document, then exchange one new thing you’ve learned with your neighbor.\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
-    "objectID": "1-2-documents/1-2-documents-reveal.html#learning-more-questions",
-    "href": "1-2-documents/1-2-documents-reveal.html#learning-more-questions",
+    "objectID": "1-2-documents/1-2-documents-reveal.html#learn-more",
+    "href": "1-2-documents/1-2-documents-reveal.html#learn-more",
     "title": "Documents",
-    "section": "Learning more & questions",
-    "text": "Learning more & questions\n\n\nhttps://quarto.org/docs/guide/ &gt; Documents\n\n\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/guide &gt; Documents"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents-reveal.html#questions",
+    "href": "1-2-documents/1-2-documents-reveal.html#questions",
+    "title": "Documents",
+    "section": "Questions",
+    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#time-permitting",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#time-permitting",
+    "title": "Manuscripts",
+    "section": "Time permitting",
+    "text": "Time permitting\n\nDemo journal articles with Quarto with the ACM template!"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-cli",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-cli",
+    "title": "Manuscripts",
+    "section": "Quarto CLI…",
+    "text": "Quarto CLI…\norchestrates each step of rendering\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#learning-more",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#learning-more",
+    "title": "Manuscripts",
+    "section": "Learning more",
+    "text": "Learning more\nhttps://quarto.org"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#follow-up-with",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#follow-up-with",
+    "title": "Manuscripts",
+    "section": "Follow up with…",
+    "text": "Follow up with…\nthe Quarto Blog: https://quarto.org/docs/blog"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#thank-you",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#thank-you",
+    "title": "Manuscripts",
+    "section": "Thank you!",
+    "text": "Thank you!\n🐘 https://fosstodon.org/@minecr\n🐦 @minebocek\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
   },
   {
     "objectID": "1-1-hello/index.html",

@@ -422,15 +422,17 @@ Where does the name "Quarto" come from?
 Source: <https://en.wikipedia.org/wiki/Quarto>
 :::
 
-## Learning more & questions
-
-<br>
+## Learn more
 
 ::: {.center-align .large}
-<https://quarto.org/docs/guide/> > Authoring & Computations
+[quarto.org/docs/guide](https://quarto.org/docs/guide/>) > Authoring & Computations
 :::
 
-<br>
+```{=html}
+<iframe src="https://quarto.org/docs/guide" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Guide"></iframe>
+```
+
+## Questions
 
 ::: your-turn
 Any questions / anything you'd like to review before we wrap up this module?

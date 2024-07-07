@@ -3,8 +3,14 @@ title: "Unlocking Dynamic Reproducible Documents"
 subtitle: "A Quarto Tutorial for Scientific Communication"
 ---
 
-🗓️ Date: July 8, 2024  
-🕗 Time: 08:00 - 12:00 US/Pacific  
+::: callout-caution
+## Work in progress
+
+This page and workshop materials are works in progress until the workshop date and time specified below. For latest version of the materials, please revisit when the workshop begins.
+:::
+
+🗓️ Date: July 8, 2024\
+🕗 Time: 08:00 - 12:00 US/Pacific\
 🏨 Location: Room 316
 
 ## Abstract
@@ -17,11 +23,11 @@ Sharing knowledge through writing is a critical aspect of scientific activity, i
 
 The learning outcomes for the workshop include:
 
-- Author documents in plain text markdown or Jupyter notebooks with equations, citations, crossrefs, figure panels, callouts, and advanced layouts.
-- Learn how to author content in IPython/Jupyter and the Quarto VS Code extension.
-- Leverage Quarto for creating different types of publications, including webpages/blogs, slides, dashboards, books, websites, and scientific manuscripts.
-- Customize execution and content with a rich array of code cell options, filters, and extensions.
-- Host websites and publications on platforms such as GitHub Pages, QuartoPub, and Netlify.
+-   Author documents in plain text markdown or Jupyter notebooks with equations, citations, crossrefs, figure panels, callouts, and advanced layouts.
+-   Learn how to author content in IPython/Jupyter and the Quarto VS Code extension.
+-   Leverage Quarto for creating different types of publications, including webpages/blogs, slides, dashboards, books, websites, and scientific manuscripts.
+-   Customize execution and content with a rich array of code cell options, filters, and extensions.
+-   Host websites and publications on platforms such as GitHub Pages, QuartoPub, and Netlify.
 
 ## Schedule
 

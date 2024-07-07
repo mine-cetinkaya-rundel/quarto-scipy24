@@ -19,4 +19,308 @@ execute:
   echo: true
 ---
 
-To be posted.
+# Anatomy of a Quarto project
+
+## Quarto projects
+
+-   Quarto projects have a `_quarto.yml` file
+
+-   The `type` field in this file indicates the type of project:
+
+    -   `default`: Collection of documents
+
+    -   `website`: Websites (and blogs)
+
+    -   `books`: Books
+
+    -   `manuscript`: Journal manuscript with embedded computing and JATS bundle
+
+## Components
+
+::: r-fit-text
+> [A Quarto Project is a directory]{.fragment} [that contains a file called `_quarto.yml`.]{.fragment}
+:::
+
+\
+
+::::: columns
+::: {.column .fragment .fade-right width="50%"}
+This is a Quarto Project.
+
+```         
+my-folder/
+├── _quarto.yml
+├── my-document.ipynb
+```
+:::
+
+::: {.column .fragment .fade-left width="50%"}
+This is not.
+
+```         
+my-folder/
+├── my-document.ipynb
+```
+:::
+:::::
+
+## \_quarto.yml {auto-animate="true"}
+
+A YAML file with particular keys and values that Quarto recognizes. Unrecognized keys are ignored.
+
+``` {.yaml .fragment filename="_quarto.yml"}
+project:
+  title: "A Barebones Project"
+```
+
+## \_quarto.yml {auto-animate="true"}
+
+A YAML file with particular keys and values that Quarto recognizes. Unrecognized keys are ignored.
+
+``` {.yaml filename="_quarto.yml" code-line-numbers="1-20|528-548"}
+TO DO: ADD LONG YAML
+```
+
+## Quarto websites
+
+::: incremental
+-   Websites are essentially `format: html` + a Quarto Project file
+
+-   But a website is different than `format: html` in that it has multiple pages
+
+-   Websites and books are very similar in that they associate multiple pages/resources into a connected resource
+
+    -   In books, you can cross-reference between pages (chapters), but (currently), you can't cross-reference between pages in websites
+:::
+
+
+## Our turn
+
+::: our-turn
+Let's build a website that features the notebook we worked on and highlight the following features of Quarto websites:
+
+-   Add a `_quarto.yml`
+-   Create a landing page: `index.qmd`
+-   Explore navigation options: `navbar`, `sidebar`
+-   Apply themes, including a light and dark theme toggle
+-   Publish to GitHub Pages with `quarto publish`
+-   An aspect of the workshop webpage that you fancy?
+:::
+
+## Your turn
+
+::: task
+-   Add one more notebook that has at least one executable code cell and add it to the navigation list in `_quarto.yml` and render your site.
+    -   Not inspired to generate content? Feel free to copy the contents of <https://github.com/mine-cetinkaya-rundel/quarto-pydata-website-completed/blob/main/posts/islands-species.ipynb>.
+-   Add an [about page](https://quarto.org/docs/websites/website-about.html), `about.qmd`, personalize it, and add it to the navigation list in `_quarto.yml` and render your site.
+-   Re-publish on GitHub pages with `quarto publish`.
+:::
+
+{{< countdown minutes=10 >}}
+
+# Listings
+
+## Listings
+
+-   Listings enable you to automatically generate the contents of a page (or region of a page) from a list of Quarto documents or other custom data
+
+-   Useful for creating blogs, providing navigation for large numbers of documents, or any other scenario where you’d like the contents of a page to be automatically updated as documents are added, updated, and removed
+
+## Blogs
+
+::: demo
+Let's now add a blog component to our website:
+
+-   Move your two notebook files into a new a folder called `posts`.
+-   Collect these notebooks in a new blog page using the [listings feature](https://quarto.org/docs/websites/website-listings.html).
+    -   Don't forget to make corresponding changes in your `_quarto.yml` file.
+:::
+
+## Customizing your blog
+
+::: task
+Experiment with the style of listings and choose one you like.
+:::
+
+{{< countdown minutes=5 >}}
+
+# Computations
+
+## When should code be re-run? {.smaller}
+
+::: incremental
+-   You might have a reason to re-run all code in a Quarto website (every single cell in every single document) every time you render the website.
+
+-   But, chances are, that's not what you want.
+
+    -   Just playing around styling -- you probably don't want to run the code again
+
+    -   Changed some code in a document -- you probably want to re-run the code in that document, but not necessarily others
+
+    -   Made a big change affecting computations on many or all pages -- you probably want to re-run all code
+
+-   `freeze` and `cache` options give you fine control over these decisions
+:::
+
+## Freeze {.smaller}
+
+-   The `freeze` option controls when/if computational documents be re-rendered during a global project render:
+
+``` yaml
+execute:
+  freeze: true  # never re-render during project render
+```
+
+``` yaml
+execute:
+  freeze: auto  # re-render only when source changes
+```
+
+``` yaml
+execute:
+  freeze: false  # always re-render
+```
+
+-   The `freeze` option is typically added to a `_metadata.yml` file within a specific directory, affecting all files in that directory.
+
+-   For blogs, set `feeze` in `_metadata.yml` at the root of the `posts` directory.
+
+-   You can have it only within specific subdirectories for more complex sites.
+
+## Freeze and Jupyter notebooks
+
+-   When rendering an `.ipynb`, Quarto will not execute the cells within the notebook by default, assuming that you have already executed them while editing the notebook
+
+-   To execute the cells, pass the `--execute` flag to render:
+
+``` {.bash filename="Terminal"}
+quarto render notebook.ipynb --execute
+```
+
+-   Or specify this behavior within the notebook’s YAML front matter:
+
+``` yaml
+---
+execute:
+  enabled: true
+---
+```
+
+## Cache
+
+-   Cache stores the results of computations for a specific file
+
+-   Cache invalidation is triggered by changes in chunk source code (or other cache attributes you've defined)
+
+-   `cache` can also be set at the chunk level, particularly useful for computationally expensive chunks
+
+## Freeze vs. cache {.smaller}
+
+-   Freeze option is typically set
+
+    -   for the whole website in `_quarto.yml`, or
+
+    -   for files within a directory in `_metadata.yml` in that directory
+
+``` yaml
+execute: 
+  freeze: auto
+```
+
+-   Cache option is typically set for a given file or for individual chunk(s) in a file.
+
+``` yaml
+execute:
+  cache: true
+```
+
+or
+
+```{python}
+#| echo: fenced
+#| cache: true
+
+1 + 1
+```
+
+## Freezing
+
+::: our-turn
+Add a `_metadata.yml` file to the `posts` directory of your website and update the YAML front matter of your blog posts to execute the cells when `quarto render`ing.
+:::
+
+## Your turn
+
+::: your-turn
+Pick up where we left off and
+
+-   Add an [about page](https://quarto.org/docs/websites/website-about.html).
+-   Add a folder called `posts` and create a few minimal blog post entries. Then, using the [listings feature](https://quarto.org/docs/websites/website-listings.html), create a blog page for your website.
+:::
+
+{{< countdown minutes=10 >}}
+
+# Wrap up
+
+## Freeze {.smaller}
+
+-   The `freeze` option controls when/if computational documents be re-rendered during a global project render:
+
+``` yaml
+execute:
+  freeze: true  # never re-render during project render
+```
+
+``` yaml
+execute:
+  freeze: auto  # re-render only when source changes
+```
+
+``` yaml
+execute:
+  freeze: false  # always re-render
+```
+
+-   The `freeze` option is typically added to a `_metadata.yml` file within a specific directory, affecting all files in that directory.
+
+-   For blogs, set `feeze` in `_metadata.yml` at the root of the `posts` directory.
+
+-   You can have it only within specific subdirectories for more complex sites.
+
+## Freeze vs. cache
+
+-   Cache stores the results of computations for a specific file.
+
+-   Cache invalidation is triggered by changes in chunk source code (or other cache attributes you've defined).
+
+-   `cache` can also be set at the chunk level. Consider using the cache for computationally expensive chunks.
+
+## Publishing
+
+See <https://quarto.org/docs/publishing> for publishing options other than Quarto Pub.
+
+## Links for reviewing tutorial materials
+
+-   Slides: <https://bit.ly/quarto-pydata>
+    -   If you're interested, source code for slides: <https://github.com/mine-cetinkaya-rundel/quarto-pydata-slides>
+-   Starter repo: <https://github.com/mine-cetinkaya-rundel/quarto-pydata-website>
+-   Complete repo: <https://github.com/mine-cetinkaya-rundel/quarto-pydata-website-completed>
+    -   Published website: <https://mine-cetinkaya-rundel.github.io/quarto-pydata-website-completed>
+
+# Wrap up
+
+## Learn more
+
+::: {.center-align .large}
+[quarto.org/docs/websites](https://quarto.org/docs/websites/>)
+:::
+
+```{=html}
+<iframe src="https://quarto.org/docs/websites" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Websites"></iframe>
+```
+
+## Questions
+
+::: your-turn
+Any questions / anything you'd like to review before we wrap up this module?
+:::

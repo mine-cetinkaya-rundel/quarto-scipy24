@@ -19,4 +19,38 @@ execute:
   echo: true
 ---
 
-To be posted.
+## Time permitting
+
+::: your-turn
+Demo journal articles with Quarto with the ACM template!
+:::
+
+# Parting remarks
+
+## Quarto CLI...
+
+orchestrates each step of rendering
+
+![Artwork from "Hello, Quarto" keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst.](images/horst_qmd_render_schema.png){fig-alt="A schematic representing rendering of Quarto documents from .qmd, to knitr or jupyter, to plain text markdown, then converted by pandoc into any number of output types including html, PDF, or Word document."}
+
+## Learning more
+
+[https://quarto.org](https://quarto.org/)
+
+```{=html}
+<iframe src="https://quarto.org/" width="100%" height="600" title="Quarto Website"></iframe>
+```
+## Follow up with...
+
+the Quarto Blog: <https://quarto.org/docs/blog>
+
+```{=html}
+<iframe src="https://quarto.org/docs/blog/" width="100%" height="600" title="Quarto 1.3 Pre-release notes"></iframe>
+```
+## Thank you! {background-image="images/thank-you.png"}
+
+🐘 [https://fosstodon.org/\@minecr](https://fosstodon.org/@minecr)
+
+🐦 [\@minebocek](https://twitter.com/minebocek)
+
+
