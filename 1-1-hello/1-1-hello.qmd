@@ -219,10 +219,11 @@ Sit back and enjoy! ... or follow along with `hello-penguins.qmd`.
 -   Rendering a document
 -   Editing with source editor and visual editor
 -   Inserting images and lightbox effect
+-   Inserting tables
 -   Customizing formats: `pdf`, `docx`, `revealjs`
--   Customizing format options: `code-fold`, `toc`
--   Code cells: labels, alt-text, execution options
--   Cross referencing figures and tables
+-   Customizing format options:  `code-fold`, `toc`
+-   Code cells: labels, alt-text, execution options (`echo`, `warning`)
+-   Cross referencing figures and tables, with and without the visual editor
 -   Converting between Jupyter Notebooks and plain text markdown documents
 :::
 
@@ -414,10 +415,10 @@ In VS Code, open the `hello-penquins.qmd` file. Render the document to HTML.
 
 -   Modify the figure to add units to the axis labels: **g**rams for body weight and **mm** (milimeters) for flipper length. Render or preview the document and make sure the changes are reflected in the HTML output.
 
--   Change the html theme to `sketchy`. (See <https://quarto.org/docs/output-formats/html-themes.html> for documentation on HTML theming.)
+-   Change the html theme to `sketchy`. See <https://quarto.org/docs/output-formats/html-themes.html> for documentation on HTML theming.
 :::
 
-{{< countdown minutes=10 >}}
+{{< countdown minutes=5 >}}
 
 # Wrap up
 
