@@ -10,7 +10,7 @@ format:
     transition: fade
     slide-number: true
     chalkboard: true
-    logo: ../images/quarto-icon.svg
+    logo: ../images/quarto-scipy24-slide-logo.png
     theme: ../style/slides.scss
 filters: 
   - countdown
