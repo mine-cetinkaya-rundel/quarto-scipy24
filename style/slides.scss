@@ -10,7 +10,7 @@
 $font-family-sans-serif: "Atkinson Hyperlegible", sans-serif;
 $font-family-monospace: "Source Code Pro", monospace;
 $presentation-heading-color: #58779b; /* Quarto Blue */
-$link-color: #58779b;
+$link-color: #58779b; 
 $hover-color: #143765;
 $code-color: #58779b;
 $code-block-font-size: 0.6em;
@@ -24,12 +24,20 @@ details>summary {
 }
 
 #title-slide .title {
-  color: #5A799D;
+  color: #159470; /* SciPy 24 Green */
+  text-align: left;
 }
 
 #title-slide .subtitle {
   color: #5A799D;
   font-weight: bold;
+  text-align: left;
+}
+
+.reveal .quarto-title-block .quarto-title-authors {
+  display: flex;
+  justify-content: right;
+  text-align: right;
 }
 
 #title-slide .institute {
