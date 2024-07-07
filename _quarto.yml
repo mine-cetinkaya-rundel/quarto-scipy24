@@ -18,7 +18,7 @@ website:
 
   sidebar:
     background: "#D1D9E3"
-    logo: "images/quarto-scipy24.png"
+    logo: "images/quarto-scipy24-site-logo.png"
     pinned: true
     align: center
     tools:
