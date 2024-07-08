@@ -3,15 +3,9 @@ title: Unlocking Dynamic Reproducible Documents
 subtitle: A Quarto Tutorial for Scientific Communication
 ---
 
-::: callout-warning
-## Work in progress
-
-This page and workshop materials are works in progress until the workshop date and time specified below. For latest version of the materials, please revisit when the workshop begins.
-:::
-
 🗓️ Date: July 8, 2024\
 🕗 Time: 08:00 - 12:00 US/Pacific\
-🏨 Location: Room 316
+🏨 Location: Room 315
 
 ## Abstract
 
