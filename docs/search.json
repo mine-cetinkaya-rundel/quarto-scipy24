@@ -677,7 +677,7 @@
     "href": "2-2-books/2-2-books-reveal.html#our-turn",
     "title": "Books",
     "section": "Our turn",
-    "text": "Our turn\n\nLet’s build a book together from some of the documents we’ve created so far and highlight the following features of Quarto websites:\n\n_quarto.yml\nindex.qmd / landing page / change landing page\nCross references\nSections\nAppendices"
+    "text": "Our turn\n\nLet’s build a book together from some of the documents we’ve created so far and highlight the following features of Quarto websites:\n\n_quarto.yml\nindex.qmd / landing page\nCross references\nSections\nAppendices"
   },
   {
     "objectID": "2-2-books/2-2-books-reveal.html#your-turn",
@@ -1154,18 +1154,165 @@
     "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
   },
   {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#time-permitting",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#time-permitting",
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#simplest",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#simplest",
     "title": "Manuscripts",
-    "section": "Time permitting",
-    "text": "Time permitting\n\nDemo journal articles with Quarto with the ACM template!"
+    "section": "Simplest",
+    "text": "Simplest\nCan run all code in a single file, and don’t mind running it over and over again with each edit.\n\n\n\n \n\n\n\n \n\n\n\n\n\n\ne.g. Data Science 101 - HW 1, Stat 101 - Final project, a blog post, a tutorial, a not-too-extensive consulting report, etc."
   },
   {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-cli",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-cli",
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#simple",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#simple",
     "title": "Manuscripts",
-    "section": "Quarto CLI…",
-    "text": "Quarto CLI…\norchestrates each step of rendering\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+    "section": "Simple",
+    "text": "Simple\nCan run all code in a single file, and don’t mind running it over and over again with each edit, and need an output that conforms to journal style.\n\n\n\n \n+ Quarto Journal Articles Extension\n\n\n\n \n\n\n\n or \n\n\nformatted with journal style\n\n\ne.g., a not-too-computational journal article."
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#but-science-is-rarely-simple",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#but-science-is-rarely-simple",
+    "title": "Manuscripts",
+    "section": "but science is rarely simple…",
+    "text": "but science is rarely simple…\n\n\nmultiple collaborators, each with their favorite computing language and code editor\nmultiple stages of a project, each with their own level of feasibility of what can be re-run with each edit and what needs to be cached"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#more-complex",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#more-complex",
+    "title": "Manuscripts",
+    "section": "More complex",
+    "text": "More complex\n\n\n\n\n\n\n\n\n   \n\n\n\n\n \n\n\n\n or"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#even-more-complex",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#even-more-complex",
+    "title": "Manuscripts",
+    "section": "Even more complex",
+    "text": "Even more complex\n\n\n\n\n      \n \n\n\n\n \n\n\n\n or"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#aside-what-is-in-a-notebook",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#aside-what-is-in-a-notebook",
+    "title": "Manuscripts",
+    "section": "Aside: What is in a notebook?",
+    "text": "Aside: What is in a notebook?\nA notebook is a document that contains both code and narrative:\n\nJupyter notebooks (.ipynb)\nQuarto documents (.qmd) – a potential mindshift"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#current-state-of-affairs",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#current-state-of-affairs",
+    "title": "Manuscripts",
+    "section": "Current state of affairs",
+    "text": "Current state of affairs\nMost computational science is born in notebooks\n\n\nPeer-review and publication workflows don’t support notebooks as research outputs\nThe more complex scenarios involve a lot of manual finagling to bring the project to journal submission stage\nOften during this process reproducibility is lost, or takes second seat to the formatting requirements\nFinal submission rarely captures all computations, which are, at best, relegated to supplementary materials\n\n\nand dies ends in PDF or Word documents"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#roadmap-to-fully-reproducible-scientific-manuscripts",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#roadmap-to-fully-reproducible-scientific-manuscripts",
+    "title": "Manuscripts",
+    "section": "Roadmap to fully reproducible scientific manuscripts",
+    "text": "Roadmap to fully reproducible scientific manuscripts\nthat are not just PDFs that are the outputs of a single qmd file\n\n An end-to-end scholarly publishing workflow that treats Jupyter and Quarto notebooks as a primary element of the scientific record.\n\n\n A publication process that elevates transparent and reproducible work by authors, where data and software, together with narrative, are documented, shared, and archived.\n\n\n New forms of credit to the wider research community, including research software engineers or rsearch software engineers."
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-can",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-can",
+    "title": "Manuscripts",
+    "section": "Quarto can…",
+    "text": "Quarto can…\n\n\nbe authored in your favorite code editor\nrender from qmd or Jupyter notebook to PDF, Word, HTML, etc.\nexecute code in Python, R, and more\napply journal styles to your outputs with Quarto extensions\npublish to GitHub Pages, Netlify, and more\norchestrate multiple inputs and outputs with embedded computing using a new Quarto project type: manuscript"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-manuscript",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-manuscript",
+    "title": "Manuscripts",
+    "section": "Quarto manuscript",
+    "text": "Quarto manuscript\nQuarto manuscripts, in addition to doing everything you can do with journal articles, can\n\nproduce manuscripts in multiple formats (including LaTeX or MS Word formats required by journals), and give readers easy access to all of the formats through a website\npublish computations from one or more notebooks alongside the manuscript, allowing readers to dive into your code and view it or interact with it in a virtual environment"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#getting-started",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#getting-started",
+    "title": "Manuscripts",
+    "section": "Getting started",
+    "text": "Getting started\n\nApproach 1: Start from scratch\n\nCreating a Quarto manuscript\n\nVS Code: In the Command Palette – Quarto: Create Project &gt; Manuscript Project\nquarto create project manuscript &lt;name&gt;\n\nAdd manuscript content\n\nApproach 2: Start with a sample from https://quarto.org/docs/manuscripts\n\n\n\n\n\n\n\nManuscripts ♥️ Git + GitHub\n\n\nTrack your project with Git and host on GitHub for easy publishing."
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#a-finished-product",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#a-finished-product",
+    "title": "Manuscripts",
+    "section": "A finished product",
+    "text": "A finished product"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#multiple-formats-from-one-source",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#multiple-formats-from-one-source",
+    "title": "Manuscripts",
+    "section": "Multiple formats from one source",
+    "text": "Multiple formats from one source"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#multiple-formats-from-one-source-1",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#multiple-formats-from-one-source-1",
+    "title": "Manuscripts",
+    "section": "Multiple formats from one source",
+    "text": "Multiple formats from one source\nIn quarto.yml of the project:\n---\nformat:\n  html:\n    theme: cosmo\n    toc-location: left\n    comments: \n      hypothesis: true\n    citations-hover: true\n    crossrefs-hover: true\n  agu-pdf: default\n  docx: default\n  jats: default\n---"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter",
+    "title": "Manuscripts",
+    "section": "Rich front matter",
+    "text": "Rich front matter\nIn index.qmd of the project:\n---\ntitle: La Palma Earthquakes\nauthor:\n  - name: Steve Purves\n    orcid: 0000-0002-0760-5497\n    corresponding: true\n    email: steve@curvenote.com\n    roles:\n      - Investigation\n      - Project administration\n      - Software\n      - Visualization\n    affiliations:\n      - Curvenote\n  - name: Rowan Cockett\n    orcid: 0000-0002-7859-8394\n    corresponding: false\n    roles: []\n    affiliations:\n      - Curvenote\nlicense: CC BY-SA 4.0\nkeywords:\n  - La Palma\n  - Earthquakes\ndate: '2022-05-11'\nabstract: |\n  In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). We have created an accessible dataset from this and completed preliminary data analysis which shows seismicity originating at two distinct depths, consistent with the model of a two reservoir system feeding the currently very active volcano.\nkeypoints:\n  - You may specify 1 to 3 keypoints for this PDF template\n  - These keypoints are complete sentences and less than or equal to 140 characters\n  - 'They are specific to this PDF template, so they will not appear in other exports'\ncitation:\n  container-title: Notebooks Now!\ndraft: false\nbibliography: references.bib\necho: false\n---"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter-1",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter-1",
+    "title": "Manuscripts",
+    "section": "Rich front matter",
+    "text": "Rich front matter\nfrom source \\(\\rightarrow\\) only relevant / required metadata in manuscript:"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter-2",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter-2",
+    "title": "Manuscripts",
+    "section": "Rich front matter",
+    "text": "Rich front matter\nfrom source \\(\\rightarrow\\) only relevant / required metadata in manuscript:"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#embedded-computations",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#embedded-computations",
+    "title": "Manuscripts",
+    "section": "Embedded computations",
+    "text": "Embedded computations"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#actually-dive-into-the-code",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#actually-dive-into-the-code",
+    "title": "Manuscripts",
+    "section": "Actually dive into the code",
+    "text": "Actually dive into the code\n\nWe’ve seen that you can peruse the code underlying the figures and tables in the manuscript\nWhat if you wanted to interact with the code – in a computational environment that’s just a click away and that has all the software and packages needed to reproduce the manuscript?"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#binder-with-quarto",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#binder-with-quarto",
+    "title": "Manuscripts",
+    "section": "Binder with Quarto",
+    "text": "Binder with Quarto\nwith quarto use binder:"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#binder-with-quarto-1",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#binder-with-quarto-1",
+    "title": "Manuscripts",
+    "section": "Binder with Quarto",
+    "text": "Binder with Quarto"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#learn-more",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#learn-more",
+    "title": "Manuscripts",
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/manuscripts"
+  },
+  {
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#questions",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#questions",
+    "title": "Manuscripts",
+    "section": "Questions",
+    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?"
   },
   {
     "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#learning-more",
@@ -1186,7 +1333,7 @@
     "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#thank-you",
     "title": "Manuscripts",
     "section": "Thank you!",
-    "text": "Thank you!\n🐘 https://fosstodon.org/@minecr\n🐦 @minebocek\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
+    "text": "Thank you!\n🐘 https://fosstodon.org/@minecr\n☁️ @minecr.bsky.social\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
   },
   {
     "objectID": "1-1-hello/index.html",
