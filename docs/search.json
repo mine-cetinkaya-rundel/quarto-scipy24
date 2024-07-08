@@ -36,7 +36,7 @@
     "href": "1-1-hello/index.html#exercises",
     "title": "Hello, Quarto!",
     "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
+    "text": "Exercises\nSee https://github.com/mine-cetinkaya-rundel/quarto-scipy24-exercises.",
     "crumbs": [
       "Part 1 - Single documents",
       "Hello"
@@ -608,7 +608,7 @@
     "href": "2-1-websites/index.html#exercises",
     "title": "Websites and blogs",
     "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
+    "text": "Exercises\nSee https://github.com/mine-cetinkaya-rundel/quarto-scipy24-exercises.",
     "crumbs": [
       "Part 2 - Multiple documents",
       "Websites and blogs"
@@ -739,7 +739,7 @@
     "href": "1-4-dashboards/index.html#exercises",
     "title": "Dashboards",
     "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
+    "text": "Exercises\nSee https://github.com/mine-cetinkaya-rundel/quarto-scipy24-exercises.",
     "crumbs": [
       "Part 1 - Single documents",
       "Dashboards"
@@ -919,7 +919,7 @@
     "href": "2-2-books/index.html#exercises",
     "title": "Books",
     "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
+    "text": "Exercises\nSee https://github.com/mine-cetinkaya-rundel/quarto-scipy24-exercises.",
     "crumbs": [
       "Part 2 - Multiple documents",
       "Books"
@@ -952,7 +952,7 @@
     "href": "1-3-presentations/index.html#exercises",
     "title": "Presentations",
     "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
+    "text": "Exercises\nSee https://github.com/mine-cetinkaya-rundel/quarto-scipy24-exercises.",
     "crumbs": [
       "Part 1 - Single documents",
       "Presentations"
@@ -1111,7 +1111,7 @@
     "href": "1-2-documents/index.html#exercises",
     "title": "Documents",
     "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
+    "text": "Exercises\nSee https://github.com/mine-cetinkaya-rundel/quarto-scipy24-exercises.",
     "crumbs": [
       "Part 1 - Single documents",
       "Documents"
@@ -1144,7 +1144,7 @@
     "href": "2-3-manuscripts/index.html#exercises",
     "title": "Manuscripts",
     "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
+    "text": "Exercises\nSee https://github.com/mine-cetinkaya-rundel/quarto-scipy24-exercises.",
     "crumbs": [
       "Part 2 - Multiple documents",
       "Manuscripts"
@@ -1155,7 +1155,7 @@
     "href": "index.html",
     "title": "Unlocking Dynamic Reproducible Documents",
     "section": "",
-    "text": "Work in progress\n\n\n\nThis page and workshop materials are works in progress until the workshop date and time specified below. For latest version of the materials, please revisit when the workshop begins.\n🗓️ Date: July 8, 2024\n🕗 Time: 08:00 - 12:00 US/Pacific\n🏨 Location: Room 316",
+    "text": "🗓️ Date: July 8, 2024\n🕗 Time: 08:00 - 12:00 US/Pacific\n🏨 Location: Room 315",
     "crumbs": [
       "Home"
     ]
