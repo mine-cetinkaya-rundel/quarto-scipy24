@@ -34,17 +34,13 @@ execute:
 ## Our turn
 
 ::: our-turn
-Let's build a book together from all of the documents we've created so far and highlight the following features of Quarto websites:
+Let's build a book together from some of the documents we've created so far and highlight the following features of Quarto websites:
 
 -   `_quarto.yml`
 
 -   `index.qmd` / landing page / change landing page
 
--   Callouts
-
 -   Cross references
-
--   Unnumbered chapters
 
 -   Sections
 
@@ -58,31 +54,10 @@ Pick up where we left off and
 
 -   Give a title to your book.
 -   Add a numbered figure and cross-reference it.
--   Add a numbered figure to another chapter, cross-reference it, and observe the numbering scheme
+-   Add a numbered figure to another chapter, cross-reference it, and observe the numbering scheme.
 :::
 
 {{< countdown minutes=10 >}}
-
-# Publishing
-
-## QuartoPub
-
--   [Quarto Pub](https://quartopub.com/) is a free publishing service for content created with Quarto. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites.
-
--   Publish with `quarto publish`:
-
-``` {.bash filename="Terminal"}
-quarto publish quarto-pub
-```
-
--   Gain a `_publish.yml` that is safe to check into version control.
-
-## Other venues
-
--   GitHub Pages
--   Posit Connect
--   Netlify
--   [More venues](https://quarto.org/docs/publishing/other.html)
 
 # Wrap up
 
@@ -93,8 +68,6 @@ Same `freeze` and `cache` ideas for websites apply to books.
 ## Publishing
 
 Same publishing options for websites apply to books as well.
-
-# Wrap up
 
 ## Learn more
 
