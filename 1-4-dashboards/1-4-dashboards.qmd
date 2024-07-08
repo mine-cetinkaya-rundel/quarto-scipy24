@@ -50,18 +50,14 @@ execute:
 ## Out turn: Dashing through the snow
 
 ::: our-turn
-Let's review!
-
-- Dashboard: <https://mine.quarto.pub/dashing-through-snow-py>
-
-- Code: <https://github.com/mine-cetinkaya-rundel/dashing-through-snow>
+Let's review the components of `hello-penguins-dashboard.qmd`.
 :::
 
 ## Notebook ➝ Dashboard
 
-```` {.markdown filename="snowdash.ipynb" style="overflow-y: hidden" code-line-numbers="|3"}
+```` {.markdown filename="hello-penguins-dashboard.qmd" style="overflow-y: hidden" code-line-numbers="|3"}
 ---
-title: "Dashing through the snow ❄️"
+title: Hello, penguins!
 format: dashboard
 ---
 
@@ -87,19 +83,18 @@ format: dashboard
 ::: {style="margin-top: 0.7em;"}
 ``` {.python .pymd}
 --- 
-title: "Palmer Penguins"
-author: "Cobblepot Analytics"
+title: Hello, Penguins!
 format: 
   dashboard:
-    logo: images/penguins.png
-    nav-buttons: [linkedin, twitter, github]
+    logo: images/penguins-logo.png
+    nav-buttons:
+      - icon: github
+        href: https://github.com/mine-cetinkaya-rundel/quarto-scipy24-exercises
 ---
 
-# Bills
-
-# Flippers
-
 # Data
+
+# Analysis
 ```
 :::
 
@@ -442,8 +437,6 @@ Cards provide an **Expand** button which appears at bottom right on hover:
 
 ![](images/expanding-cards.png)
 
-##  {.no-line background-image="images/expanding-cards-expanded.png" background-size="contain"}
-
 ## Dashboard Deployment
 
 Dashboards are typically just static HTML pages so can be deployed to any web server or web host.
@@ -537,7 +530,7 @@ quarto render dashboard.qmd -P ticker:GOOG
 #### Cloud
 
 -   [shinyapps.io](https://shiny.posit.co/py/docs/deploy.html#deploy-to-shinyapps.io-cloud-hosting)
--   [Hugging Face](https://huggingface.co/docs/hub/spaces-sdks-docker-shiny)
+-   [HuggingFace Spaces](https://quarto.org/docs/publishing/hugging-face.html)
 -   [Roll your own](https://shiny.posit.co/py/docs/deploy.html#other-hosting-options)
 :::
 

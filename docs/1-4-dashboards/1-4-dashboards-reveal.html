@@ -455,21 +455,17 @@ Mine Çetinkaya Rundel
 <section id="out-turn-dashing-through-the-snow" class="slide level2">
 <h2>Out turn: Dashing through the snow</h2>
 <div class="our-turn">
-<p>Let’s review!</p>
-<ul>
-<li><p>Dashboard: <a href="https://mine.quarto.pub/dashing-through-snow-py" class="uri">https://mine.quarto.pub/dashing-through-snow-py</a></p></li>
-<li><p>Code: <a href="https://github.com/mine-cetinkaya-rundel/dashing-through-snow" class="uri">https://github.com/mine-cetinkaya-rundel/dashing-through-snow</a></p></li>
-</ul>
+<p>Let’s review the components of <code>hello-penguins-dashboard.qmd</code>.</p>
 </div>
 </section>
 <section id="notebook-dashboard" class="slide level2">
 <h2>Notebook ➝ Dashboard</h2>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
-<pre><strong>snowdash.ipynb</strong></pre>
+<pre><strong>hello-penguins-dashboard.qmd</strong></pre>
 </div>
-<div class="sourceCode" id="cb1" data-filename="snowdash.ipynb" style="overflow-y: hidden" data-code-line-numbers="|3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="co">---</span></span>
-<span id="cb1-2"><a></a><span class="an">title:</span><span class="co"> "Dashing through the snow ❄️"</span></span>
+<div class="sourceCode" id="cb1" data-filename="hello-penguins-dashboard.qmd" style="overflow-y: hidden" data-code-line-numbers="|3"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="co">---</span></span>
+<span id="cb1-2"><a></a><span class="an">title:</span><span class="co"> Hello, penguins!</span></span>
 <span id="cb1-3"><a></a><span class="an">format:</span><span class="co"> dashboard</span></span>
 <span id="cb1-4"><a></a><span class="co">---</span></span>
 <span id="cb1-5"><a></a></span>
@@ -492,19 +488,18 @@ Mine Çetinkaya Rundel
 
 <img data-src="images/navigation-toolbar.png" class="r-stretch"><div style="margin-top: 0.7em;">
 <div class="sourceCode" id="cb2"><pre class="sourceCode numberSource python pymd number-lines code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a></a><span class="op">---</span> </span>
-<span id="cb2-2"><a></a>title: <span class="st">"Palmer Penguins"</span></span>
-<span id="cb2-3"><a></a>author: <span class="st">"Cobblepot Analytics"</span></span>
-<span id="cb2-4"><a></a><span class="bu">format</span>: </span>
-<span id="cb2-5"><a></a>  dashboard:</span>
-<span id="cb2-6"><a></a>    logo: images<span class="op">/</span>penguins.png</span>
-<span id="cb2-7"><a></a>    nav<span class="op">-</span>buttons: [linkedin, twitter, github]</span>
-<span id="cb2-8"><a></a><span class="op">---</span></span>
-<span id="cb2-9"><a></a></span>
-<span id="cb2-10"><a></a><span class="co"># Bills</span></span>
-<span id="cb2-11"><a></a></span>
-<span id="cb2-12"><a></a><span class="co"># Flippers</span></span>
-<span id="cb2-13"><a></a></span>
-<span id="cb2-14"><a></a><span class="co"># Data</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-2"><a></a>title: Hello, Penguins<span class="op">!</span></span>
+<span id="cb2-3"><a></a><span class="bu">format</span>: </span>
+<span id="cb2-4"><a></a>  dashboard:</span>
+<span id="cb2-5"><a></a>    logo: images<span class="op">/</span>penguins<span class="op">-</span>logo.png</span>
+<span id="cb2-6"><a></a>    nav<span class="op">-</span>buttons:</span>
+<span id="cb2-7"><a></a>      <span class="op">-</span> icon: github</span>
+<span id="cb2-8"><a></a>        href: https:<span class="op">//</span>github.com<span class="op">/</span>mine<span class="op">-</span>cetinkaya<span class="op">-</span>rundel<span class="op">/</span>quarto<span class="op">-</span>scipy24<span class="op">-</span>exercises</span>
+<span id="cb2-9"><a></a><span class="op">---</span></span>
+<span id="cb2-10"><a></a></span>
+<span id="cb2-11"><a></a><span class="co"># Data</span></span>
+<span id="cb2-12"><a></a></span>
+<span id="cb2-13"><a></a><span class="co"># Analysis</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="sidebars-page-level" class="slide level2 component-slide">
@@ -783,9 +778,6 @@ Mine Çetinkaya Rundel
 <p>Cards provide an <strong>Expand</strong> button which appears at bottom right on hover:</p>
 
 <img data-src="images/expanding-cards.png" class="r-stretch"></section>
-<section id="section-10" class="slide level2 no-line" data-background-image="images/expanding-cards-expanded.png" data-background-size="contain">
-<h2></h2>
-</section>
 <section id="dashboard-deployment" class="slide level2">
 <h2>Dashboard Deployment</h2>
 <p>Dashboards are typically just static HTML pages so can be deployed to any web server or web host.</p>
@@ -853,7 +845,7 @@ Mine Çetinkaya Rundel
 <p><img data-src="images/shiny-homepage.png" class="border"></p>
 </div></div>
 </section>
-<section id="section-11" class="slide level2 no-line" data-background-image="images/dashboards/shiny-penguins.png" data-background-size="contain">
+<section id="section-10" class="slide level2 no-line" data-background-image="images/dashboards/shiny-penguins.png" data-background-size="contain">
 <h2></h2>
 </section>
 <section id="deployment-of-interactive-dashboards" class="slide level2">
@@ -865,7 +857,7 @@ Mine Çetinkaya Rundel
 <h4 id="cloud">Cloud</h4>
 <ul>
 <li><a href="https://shiny.posit.co/py/docs/deploy.html#deploy-to-shinyapps.io-cloud-hosting">shinyapps.io</a></li>
-<li><a href="https://huggingface.co/docs/hub/spaces-sdks-docker-shiny">Hugging Face</a></li>
+<li><a href="https://quarto.org/docs/publishing/hugging-face.html">HuggingFace Spaces</a></li>
 <li><a href="https://shiny.posit.co/py/docs/deploy.html#other-hosting-options">Roll your own</a></li>
 </ul>
 </div><div class="column" style="width:50%;">

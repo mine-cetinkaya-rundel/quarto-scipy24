@@ -555,14 +555,14 @@
     "href": "1-4-dashboards/1-4-dashboards-reveal.html#out-turn-dashing-through-the-snow",
     "title": "Dashboards",
     "section": "Out turn: Dashing through the snow",
-    "text": "Out turn: Dashing through the snow\n\nLet’s review!\n\nDashboard: https://mine.quarto.pub/dashing-through-snow-py\nCode: https://github.com/mine-cetinkaya-rundel/dashing-through-snow"
+    "text": "Out turn: Dashing through the snow\n\nLet’s review the components of hello-penguins-dashboard.qmd."
   },
   {
     "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#notebook-dashboard",
     "href": "1-4-dashboards/1-4-dashboards-reveal.html#notebook-dashboard",
     "title": "Dashboards",
     "section": "Notebook ➝ Dashboard",
-    "text": "Notebook ➝ Dashboard\n\n\nsnowdash.ipynb\n\n---\ntitle: \"Dashing through the snow ❄️\"\nformat: dashboard\n---\n\n# notebook content goes here..."
+    "text": "Notebook ➝ Dashboard\n\n\nhello-penguins-dashboard.qmd\n\n---\ntitle: Hello, penguins!\nformat: dashboard\n---\n\n# notebook content goes here..."
   },
   {
     "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#dashboard-components",
@@ -576,7 +576,7 @@
     "href": "1-4-dashboards/1-4-dashboards-reveal.html#navigation-bar-and-pages",
     "title": "Dashboards",
     "section": "Navigation Bar and Pages",
-    "text": "Navigation Bar and Pages\n\n\n--- \ntitle: \"Palmer Penguins\"\nauthor: \"Cobblepot Analytics\"\nformat: \n  dashboard:\n    logo: images/penguins.png\n    nav-buttons: [linkedin, twitter, github]\n---\n\n# Bills\n\n# Flippers\n\n# Data"
+    "text": "Navigation Bar and Pages\n\n\n--- \ntitle: Hello, Penguins!\nformat: \n  dashboard:\n    logo: images/penguins-logo.png\n    nav-buttons:\n      - icon: github\n        href: https://github.com/mine-cetinkaya-rundel/quarto-scipy24-exercises\n---\n\n# Data\n\n# Analysis"
   },
   {
     "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#sidebars-page-level",
@@ -674,7 +674,7 @@
     "href": "1-4-dashboards/1-4-dashboards-reveal.html#deployment-of-interactive-dashboards",
     "title": "Dashboards",
     "section": "Deployment of Interactive Dashboards",
-    "text": "Deployment of Interactive Dashboards\n\n\nServer\n\nCloud\n\nshinyapps.io\nHugging Face\nRoll your own\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (commercial)\nRoll your own\n\n\n\nServerless\nUsing Pyodide\n[Example]"
+    "text": "Deployment of Interactive Dashboards\n\n\nServer\n\nCloud\n\nshinyapps.io\nHuggingFace Spaces\nRoll your own\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (commercial)\nRoll your own\n\n\n\nServerless\nUsing Pyodide\n[Example]"
   },
   {
     "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#learn-more",
