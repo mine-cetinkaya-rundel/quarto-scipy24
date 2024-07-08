@@ -392,10 +392,6 @@
 <meta property="og:title" content="Websites and blogs – Unlocking Dynamic Reproducible Documents">
 <meta property="og:description" content="SciPy 2024: Unlocking Dynamic Reproducible DocumentsA Quarto Tutorial for Scientific Communication">
 <meta property="og:site_name" content="Unlocking Dynamic Reproducible Documents">
-<meta name="twitter:title" content="Websites and blogs – Unlocking Dynamic Reproducible Documents">
-<meta name="twitter:description" content="SciPy 2024: Unlocking Dynamic Reproducible DocumentsA Quarto Tutorial for Scientific Communication">
-<meta name="twitter:creator" content="@minebocek">
-<meta name="twitter:card" content="summary">
 </head>
 <body class="quarto-light">
   <div class="reveal">
@@ -474,7 +470,79 @@ Mine Çetinkaya Rundel
 <div class="code-with-filename-file">
 <pre><strong>_quarto.yml</strong></pre>
 </div>
-<div class="sourceCode" id="cb4" data-filename="_quarto.yml" data-code-line-numbers="1-20|528-548"><pre class="sourceCode numberSource yaml number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode yaml hljs"><span id="cb4-1" class="hljs-ln-code"><a></a><span class="fu">TO DO</span><span class="kw">:</span><span class="at"> ADD LONG YAML</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb4" data-filename="_quarto.yml" data-code-line-numbers="|31-53|71-73"><pre class="sourceCode numberSource yaml number-lines code-with-copy" data-id="quarto-animate-code"><code class="sourceCode yaml hljs"><span id="cb4-1" class="hljs-ln-code"><a></a><span class="fu">project</span><span class="kw">:</span></span>
+<span id="cb4-2" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">type</span><span class="kw">:</span><span class="at"> website</span></span>
+<span id="cb4-3" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">output-dir</span><span class="kw">:</span><span class="at"> docs</span></span>
+<span id="cb4-4" class="hljs-ln-code"><a></a></span>
+<span id="cb4-5" class="hljs-ln-code"><a></a><span class="fu">website</span><span class="kw">:</span></span>
+<span id="cb4-6" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">page-navigation</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-7" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">title</span><span class="kw">:</span><span class="at"> </span><span class="st">"Unlocking Dynamic Reproducible Documents"</span></span>
+<span id="cb4-8" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">description</span><span class="kw">:</span><span class="at"> </span><span class="st">"A Quarto Tutorial for Scientific Communication on Quarto at SciPy 2024"</span></span>
+<span id="cb4-9" class="hljs-ln-code"><a></a></span>
+<span id="cb4-10" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">repo-url</span><span class="kw">:</span><span class="at"> https://github.com/mine-cetinkaya-rundel/quarto-scipy24</span></span>
+<span id="cb4-11" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">repo-actions</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">edit</span><span class="kw">,</span><span class="at"> issue</span><span class="kw">]</span></span>
+<span id="cb4-12" class="hljs-ln-code"><a></a></span>
+<span id="cb4-13" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">open-graph</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-14" class="hljs-ln-code"><a></a></span>
+<span id="cb4-15" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">sidebar</span><span class="kw">:</span></span>
+<span id="cb4-16" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">background</span><span class="kw">:</span><span class="at"> </span><span class="st">"#D1D9E3"</span></span>
+<span id="cb4-17" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">logo</span><span class="kw">:</span><span class="at"> </span><span class="st">"images/quarto-scipy24-site-logo.png"</span></span>
+<span id="cb4-18" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">pinned</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-19" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">align</span><span class="kw">:</span><span class="at"> center</span></span>
+<span id="cb4-20" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">tools</span><span class="kw">:</span></span>
+<span id="cb4-21" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> github</span></span>
+<span id="cb4-22" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://github.com/mine-cetinkaya-rundel/quarto-scipy24</span></span>
+<span id="cb4-23" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> GitHub repo</span></span>
+<span id="cb4-24" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">icon</span><span class="kw">:</span><span class="at"> code-square</span></span>
+<span id="cb4-25" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">href</span><span class="kw">:</span><span class="at"> https://code.visualstudio.com/</span></span>
+<span id="cb4-26" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> VS Code</span></span>
+<span id="cb4-27" class="hljs-ln-code"><a></a></span>
+<span id="cb4-28" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">style</span><span class="kw">:</span><span class="at"> docked</span></span>
+<span id="cb4-29" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">search</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-30" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">collapse-level</span><span class="kw">:</span><span class="at"> </span><span class="dv">2</span></span>
+<span id="cb4-31" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb4-32" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> index.qmd</span></span>
+<span id="cb4-33" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Home</span></span>
+<span id="cb4-34" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> pre-work.qmd</span></span>
+<span id="cb4-35" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Pre-work</span></span>
+<span id="cb4-36" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> Part 1</span></span>
+<span id="cb4-37" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb4-38" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> 1-1-hello/index.qmd</span></span>
+<span id="cb4-39" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Hello</span></span>
+<span id="cb4-40" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> 1-2-documents/index.qmd</span></span>
+<span id="cb4-41" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Documents</span></span>
+<span id="cb4-42" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> 1-3-presentations/index.qmd</span></span>
+<span id="cb4-43" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Presentations</span></span>
+<span id="cb4-44" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> 1-4-dashboards/index.qmd</span></span>
+<span id="cb4-45" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Dashboards</span></span>
+<span id="cb4-46" class="hljs-ln-code"><a></a><span class="at">      </span><span class="kw">-</span><span class="at"> </span><span class="fu">section</span><span class="kw">:</span><span class="at"> Part 2</span></span>
+<span id="cb4-47" class="hljs-ln-code"><a></a><span class="at">        </span><span class="fu">contents</span><span class="kw">:</span></span>
+<span id="cb4-48" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> 2-1-websites/index.qmd</span></span>
+<span id="cb4-49" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Websites and blogs</span></span>
+<span id="cb4-50" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> 2-2-books/index.qmd</span></span>
+<span id="cb4-51" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Books</span></span>
+<span id="cb4-52" class="hljs-ln-code"><a></a><span class="at">          </span><span class="kw">-</span><span class="at"> </span><span class="fu">href</span><span class="kw">:</span><span class="at"> 2-3-manuscripts/index.qmd</span></span>
+<span id="cb4-53" class="hljs-ln-code"><a></a><span class="at">            </span><span class="fu">text</span><span class="kw">:</span><span class="at"> Manuscripts</span></span>
+<span id="cb4-54" class="hljs-ln-code"><a></a></span>
+<span id="cb4-55" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">page-footer</span><span class="kw">:</span></span>
+<span id="cb4-56" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">right</span><span class="kw">:</span><span class="at"> </span><span class="st">"This page is built with 💚 and [Quarto](https://quarto.org/)."</span></span>
+<span id="cb4-57" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">left</span><span class="kw">:</span><span class="at"> </span><span class="st">"&amp;copy; Copyright 2024, Mine Çetinkaya-Rundel"</span></span>
+<span id="cb4-58" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">background</span><span class="kw">:</span><span class="at"> </span><span class="st">"#D1D9E3"</span><span class="co"> # Arylide Yellow</span></span>
+<span id="cb4-59" class="hljs-ln-code"><a></a></span>
+<span id="cb4-60" class="hljs-ln-code"><a></a><span class="fu">format</span><span class="kw">:</span></span>
+<span id="cb4-61" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">html</span><span class="kw">:</span></span>
+<span id="cb4-62" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">theme</span><span class="kw">:</span></span>
+<span id="cb4-63" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">light</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">cosmo</span><span class="kw">,</span><span class="at"> style/quarto-scipy24.scss</span><span class="kw">]</span></span>
+<span id="cb4-64" class="hljs-ln-code"><a></a><span class="at">      </span><span class="fu">dark</span><span class="kw">:</span><span class="at"> </span><span class="kw">[</span><span class="at">cosmo</span><span class="kw">,</span><span class="at"> style/quarto-scipy24.scss</span><span class="kw">,</span><span class="at"> style/dark.scss</span><span class="kw">]</span></span>
+<span id="cb4-65" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">linkcolor</span><span class="kw">:</span><span class="at"> </span><span class="st">"#58779b"</span></span>
+<span id="cb4-66" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">toc</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-67" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">code-copy</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span>
+<span id="cb4-68" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">code-overflow</span><span class="kw">:</span><span class="at"> wrap</span></span>
+<span id="cb4-69" class="hljs-ln-code"><a></a><span class="at">    </span><span class="fu">mainfont</span><span class="kw">:</span><span class="at"> </span><span class="st">"Atkinson Hyperlegible"</span></span>
+<span id="cb4-70" class="hljs-ln-code"><a></a></span>
+<span id="cb4-71" class="hljs-ln-code"><a></a><span class="fu">execute</span><span class="kw">:</span></span>
+<span id="cb4-72" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">freeze</span><span class="kw">:</span><span class="at"> auto</span></span>
+<span id="cb4-73" class="hljs-ln-code"><a></a><span class="at">  </span><span class="fu">echo</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="quarto-websites" class="slide level2">
@@ -493,7 +561,7 @@ Mine Çetinkaya Rundel
 <section id="our-turn" class="slide level2">
 <h2>Our turn</h2>
 <div class="our-turn">
-<p>Let’s build a website that features the notebook we worked on and highlight the following features of Quarto websites:</p>
+<p>Let’s build a website that features a few of the notebooks we worked on and highlight the following features of Quarto websites:</p>
 <ul>
 <li>Add a <code>_quarto.yml</code></li>
 <li>Create a landing page: <code>index.qmd</code></li>
@@ -506,17 +574,14 @@ Mine Çetinkaya Rundel
 </section>
 <section id="your-turn" class="slide level2">
 <h2>Your turn</h2>
-<div class="task">
+<div class="your-turn">
 <ul>
-<li>Add one more notebook that has at least one executable code cell and add it to the navigation list in <code>_quarto.yml</code> and render your site.
-<ul>
-<li>Not inspired to generate content? Feel free to copy the contents of <a href="https://github.com/mine-cetinkaya-rundel/quarto-pydata-website-completed/blob/main/posts/islands-species.ipynb" class="uri">https://github.com/mine-cetinkaya-rundel/quarto-pydata-website-completed/blob/main/posts/islands-species.ipynb</a>.</li>
-</ul></li>
+<li>Add one more notebook that has at least one executable code cell and add it to the navigation list in <code>_quarto.yml</code> and render your site.</li>
 <li>Add an <a href="https://quarto.org/docs/websites/website-about.html">about page</a>, <code>about.qmd</code>, personalize it, and add it to the navigation list in <code>_quarto.yml</code> and render your site.</li>
 <li>Re-publish on GitHub pages with <code>quarto publish</code>.</li>
 </ul>
 </div>
-<div id="timer_b4929899480ccea53b77ab53e815629b8815d36d" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_3cdad20b6da1f52c03d3e54428bc6abf85b96638" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -538,36 +603,24 @@ Mine Çetinkaya Rundel
 </section>
 <section id="blogs" class="slide level2">
 <h2>Blogs</h2>
-<div class="demo">
+<div class="our-turn">
 <p>Let’s now add a blog component to our website:</p>
 <ul>
-<li>Move your two notebook files into a new a folder called <code>posts</code>.</li>
+<li>Move two of your notebook files into a new a folder called <code>posts</code>.</li>
 <li>Collect these notebooks in a new blog page using the <a href="https://quarto.org/docs/websites/website-listings.html">listings feature</a>.
 <ul>
 <li>Don’t forget to make corresponding changes in your <code>_quarto.yml</code> file.</li>
 </ul></li>
+<li>Experiment with the style of listings and choose one you like.</li>
 </ul>
 </div>
-</section>
-<section id="customizing-your-blog" class="slide level2">
-<h2>Customizing your blog</h2>
-<div class="task">
-<p>Experiment with the style of listings and choose one you like.</p>
-</div>
-<div id="timer_b4929899480ccea53b77ab53e815629b8815d36d" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
-  <div class="countdown-controls">
-    <button class="countdown-bump-down">−</button>
-    <button class="countdown-bump-up">+</button>
- </div>
- <code class="countdown-time"><span class="countdown-digits minutes">05</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
- </div>
 </section></section>
 <section>
 <section id="computations" class="title-slide slide level1 center">
 <h1>Computations</h1>
 
 </section>
-<section id="when-should-code-be-re-run" class="slide level2 smaller">
+<section id="when-should-code-be-re-run" class="slide level2">
 <h2>When should code be re-run?</h2>
 <div>
 <ul>
@@ -582,7 +635,7 @@ Mine Çetinkaya Rundel
 </ul>
 </div>
 </section>
-<section id="freeze" class="slide level2 smaller">
+<section id="freeze" class="slide level2">
 <h2>Freeze</h2>
 <ul>
 <li>The <code>freeze</code> option controls when/if computational documents be re-rendered during a global project render:</li>
@@ -627,7 +680,7 @@ Mine Çetinkaya Rundel
 <li><p><code>cache</code> can also be set at the chunk level, particularly useful for computationally expensive chunks</p></li>
 </ul>
 </section>
-<section id="freeze-vs.-cache" class="slide level2 smaller">
+<section id="freeze-vs.-cache" class="slide level2">
 <h2>Freeze vs.&nbsp;cache</h2>
 <ul>
 <li><p>Freeze option is typically set</p>
@@ -644,88 +697,17 @@ Mine Çetinkaya Rundel
 <div class="sourceCode" id="cb11"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb11-1"><a></a><span class="fu">execute</span><span class="kw">:</span></span>
 <span id="cb11-2"><a></a><span class="at">  </span><span class="fu">cache</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p>or</p>
-<div id="c5bb36df" class="cell" data-cache="true" data-execution_count="1">
+<div id="55ea424f" class="cell" data-cache="true" data-execution_count="1">
 <div class="sourceCode cell-code" id="cb12"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a></a><span class="in">```{python}</span></span>
 <span id="cb12-2"><a></a><span class="in">1 + 1</span></span>
 <span id="cb12-3"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="1">
+<div class="cell-output cell-output-display" data-execution_count="9">
 <pre><code>2</code></pre>
 </div>
 </div>
-</section>
-<section id="freezing" class="slide level2">
-<h2>Freezing</h2>
-<div class="our-turn">
-<p>Add a <code>_metadata.yml</code> file to the <code>posts</code> directory of your website and update the YAML front matter of your blog posts to execute the cells when <code>quarto render</code>ing.</p>
-</div>
-</section>
-<section id="your-turn-1" class="slide level2">
-<h2>Your turn</h2>
-<div class="your-turn">
-<p>Pick up where we left off and</p>
-<ul>
-<li>Add an <a href="https://quarto.org/docs/websites/website-about.html">about page</a>.</li>
-<li>Add a folder called <code>posts</code> and create a few minimal blog post entries. Then, using the <a href="https://quarto.org/docs/websites/website-listings.html">listings feature</a>, create a blog page for your website.</li>
-</ul>
-</div>
-<div id="timer_b4929899480ccea53b77ab53e815629b8815d36d" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
-  <div class="countdown-controls">
-    <button class="countdown-bump-down">−</button>
-    <button class="countdown-bump-up">+</button>
- </div>
- <code class="countdown-time"><span class="countdown-digits minutes">10</span><span class="countdown-digits colon">:</span><span class="countdown-digits seconds">00</span></code>
- </div>
 </section></section>
 <section>
 <section id="wrap-up" class="title-slide slide level1 center">
-<h1>Wrap up</h1>
-
-</section>
-<section id="freeze-1" class="slide level2 smaller">
-<h2>Freeze</h2>
-<ul>
-<li>The <code>freeze</code> option controls when/if computational documents be re-rendered during a global project render:</li>
-</ul>
-<div class="sourceCode" id="cb14"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb14-1"><a></a><span class="fu">execute</span><span class="kw">:</span></span>
-<span id="cb14-2"><a></a><span class="at">  </span><span class="fu">freeze</span><span class="kw">:</span><span class="at"> </span><span class="ch">true</span><span class="co">  # never re-render during project render</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb15"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb15-1"><a></a><span class="fu">execute</span><span class="kw">:</span></span>
-<span id="cb15-2"><a></a><span class="at">  </span><span class="fu">freeze</span><span class="kw">:</span><span class="at"> auto</span><span class="co">  # re-render only when source changes</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="sourceCode" id="cb16"><pre class="sourceCode numberSource yaml number-lines code-with-copy"><code class="sourceCode yaml"><span id="cb16-1"><a></a><span class="fu">execute</span><span class="kw">:</span></span>
-<span id="cb16-2"><a></a><span class="at">  </span><span class="fu">freeze</span><span class="kw">:</span><span class="at"> </span><span class="ch">false</span><span class="co">  # always re-render</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<ul>
-<li><p>The <code>freeze</code> option is typically added to a <code>_metadata.yml</code> file within a specific directory, affecting all files in that directory.</p></li>
-<li><p>For blogs, set <code>feeze</code> in <code>_metadata.yml</code> at the root of the <code>posts</code> directory.</p></li>
-<li><p>You can have it only within specific subdirectories for more complex sites.</p></li>
-</ul>
-</section>
-<section id="freeze-vs.-cache-1" class="slide level2">
-<h2>Freeze vs.&nbsp;cache</h2>
-<ul>
-<li><p>Cache stores the results of computations for a specific file.</p></li>
-<li><p>Cache invalidation is triggered by changes in chunk source code (or other cache attributes you’ve defined).</p></li>
-<li><p><code>cache</code> can also be set at the chunk level. Consider using the cache for computationally expensive chunks.</p></li>
-</ul>
-</section>
-<section id="publishing" class="slide level2">
-<h2>Publishing</h2>
-<p>See <a href="https://quarto.org/docs/publishing" class="uri">https://quarto.org/docs/publishing</a> for publishing options other than Quarto Pub.</p>
-</section>
-<section id="links-for-reviewing-tutorial-materials" class="slide level2">
-<h2>Links for reviewing tutorial materials</h2>
-<ul>
-<li>Slides: <a href="https://bit.ly/quarto-pydata" class="uri">https://bit.ly/quarto-pydata</a>
-<ul>
-<li>If you’re interested, source code for slides: <a href="https://github.com/mine-cetinkaya-rundel/quarto-pydata-slides" class="uri">https://github.com/mine-cetinkaya-rundel/quarto-pydata-slides</a></li>
-</ul></li>
-<li>Starter repo: <a href="https://github.com/mine-cetinkaya-rundel/quarto-pydata-website" class="uri">https://github.com/mine-cetinkaya-rundel/quarto-pydata-website</a></li>
-<li>Complete repo: <a href="https://github.com/mine-cetinkaya-rundel/quarto-pydata-website-completed" class="uri">https://github.com/mine-cetinkaya-rundel/quarto-pydata-website-completed</a>
-<ul>
-<li>Published website: <a href="https://mine-cetinkaya-rundel.github.io/quarto-pydata-website-completed" class="uri">https://mine-cetinkaya-rundel.github.io/quarto-pydata-website-completed</a></li>
-</ul></li>
-</ul>
-</section></section>
-<section>
-<section id="wrap-up-1" class="title-slide slide level1 center">
 <h1>Wrap up</h1>
 
 </section>
