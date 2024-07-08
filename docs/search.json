@@ -299,7 +299,7 @@
     "href": "1-2-documents/1-2-documents-reveal.html#your-turn",
     "title": "Documents",
     "section": "Your turn",
-    "text": "Your turn\n\n\nOpen hello-penguins.qmd in RStudio.\nTry Ctrl + space to see the available YAML options.\nTry out the tab-completion of any options you remember or use the HTML reference (https://quarto.org/docs/reference/formats/html.html) as needed.\n\n\n\n  \n    −\n    +\n \n 03:00"
+    "text": "Your turn\n\n\nOpen hello-penguins.qmd in VS Code.\nTry Ctrl + space to see the available YAML options.\nTry out the tab-completion of any options you remember or use the HTML reference (https://quarto.org/docs/reference/formats/html.html) as needed.\n\n\n\n  \n    −\n    +\n \n 03:00"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#list-of-valid-yaml-fields",

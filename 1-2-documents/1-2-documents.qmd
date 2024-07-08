@@ -80,7 +80,7 @@ Source: <https://en.wikipedia.org/wiki/Literate_programming>
 
 "Yet Another Markup Language" or "YAML Ain't Markup Language" is used to provide document level metadata.
 
-```yaml
+```
 ---
 key: value
 ---
@@ -88,7 +88,7 @@ key: value
 
 ## Output options
 
-```yaml
+```
 ---
 format: something
 ---
@@ -98,19 +98,19 @@ format: something
 
 <br>
 
-```yaml
+```
 ---
 format: html
 ---
 ```
 
-```yaml
+```
 ---
 format: pdf
 ---
 ```
 
-```yaml
+```
 ---
 format: revealjs
 ---
@@ -120,7 +120,7 @@ format: revealjs
 
 Indentation matters!
 
-```yaml
+```
 ---
 format: 
   html:
@@ -133,7 +133,7 @@ format:
 
 -   Invalid: No space after `:`
 
-```yaml
+```
 ---
 format:html
 ---
@@ -141,7 +141,7 @@ format:html
 
 -   Invalid: Read as missing
 
-```yaml
+```
 ---
 format:
 html
@@ -150,7 +150,7 @@ html
 
 -   Valid, but needs next object
 
-```yaml
+```
 ---
 format: 
   html:
@@ -163,20 +163,20 @@ There are multiple ways of formatting valid YAML:
 
 -   Valid: There's a space after `:`
 
-```yaml
+```
 format: html
 ```
 
 -   Valid: There are 2 spaces a new line and no trailing `:`
 
-```yaml
+```
 format:
   html
 ```
 
 -   Valid: `format: html` with selections made with proper indentation
 
-```yaml
+```
 format: 
   html:
     toc: true
@@ -245,7 +245,7 @@ VS Code provides rich tab-completion - start a word and tab to complete, or <kbd
 ## Your turn
 
 ::: your-turn
--   Open `hello-penguins.qmd` in RStudio.
+-   Open `hello-penguins.qmd` in VS Code.
 -   Try <kbd>`Ctrl + space`</kbd> to see the available YAML options.
 -   Try out the tab-completion of any options you remember or use the HTML reference (<https://quarto.org/docs/reference/formats/html.html>) as needed.
 :::
