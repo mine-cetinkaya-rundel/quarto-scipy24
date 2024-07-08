@@ -38,7 +38,7 @@ Let's build a book together from some of the documents we've created so far and 
 
 -   `_quarto.yml`
 
--   `index.qmd` / landing page / change landing page
+-   `index.qmd` / landing page
 
 -   Cross references
 
