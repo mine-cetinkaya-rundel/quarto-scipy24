@@ -1,8 +1,6 @@
 project:
   type: website
   output-dir: docs
-  resources:
-    - exercises.zip
 
 website:
   page-navigation: true
@@ -13,8 +11,6 @@ website:
   repo-actions: [edit, issue]
 
   open-graph: true
-  twitter-card:
-    creator: "@minebocek"
 
   sidebar:
     background: "#D1D9E3"
@@ -24,10 +20,10 @@ website:
     tools:
       - icon: github
         href: https://github.com/mine-cetinkaya-rundel/quarto-scipy24
-        text: "GitHub organization"
+        text: GitHub repo
       - icon: code-square
         href: https://code.visualstudio.com/
-        text: "Posit Cloud"
+        text: VS Code
 
     style: docked
     search: true
