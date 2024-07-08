@@ -27,7 +27,7 @@ execute:
 
 2.  Text: Markdown, likely placed in cards
 
-3.  Code: Executed via `jupyter`, automatically placed in cards
+3.  Code: Executed via `jupyter` (or `knitr`), automatically placed in cards
 
 . . .
 

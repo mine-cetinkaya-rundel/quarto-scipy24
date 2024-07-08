@@ -15,7 +15,6 @@ format:
 filters: 
   - countdown
 execute:
-  freeze: auto
   echo: true
 ---
 
@@ -27,7 +26,7 @@ execute:
 
 2.  Text: Markdown
 
-3.  Code: Executed via `knitr` or `jupyter`
+3.  Code: Executed via `jupyter` (or `knitr`)
 
 . . .
 
@@ -39,21 +38,13 @@ execute:
 Let's build a presentation together from `hello-penguins-slides.qmd` and showcase the following features of Quarto presentations:
 
 -   Hierarchy, headers, and document outline
-
 -   Incremental lists
-
 -   Columns
-
 -   Code, output location, code highlighting
-
 -   Logo and footer
-
 -   Making things fit on a slide
-
 -   Chalkboard
-
 -   Multiplex
-
 -   Publishing your presentation to Quarto Pub
 :::
 
@@ -63,23 +54,16 @@ Let's build a presentation together from `hello-penguins-slides.qmd` and showcas
 Pick up where we left off and
 
 -   Change the [transition style](https://quarto.org/docs/presentations/revealjs/advanced.html#slide-transitions) between slides
-
 -   Change the [slide size](https://quarto.org/docs/presentations/revealjs/advanced.html#presentation-size)
-
 -   Add [slide numbers](https://quarto.org/docs/presentations/revealjs/presenting.html#slide-numbers)
 :::
 
-{{< countdown minutes=10 >}}
+{{< countdown minutes=5 >}}
 
 ## Our turn
 
-::: your-turn
-Let's continue building our a presentation together from `hello-penguins-slides.qmd` and showcase the following features of Quarto presentations:
-
-
--   Fragments
-
--   Title slide attributes
+::: our-turn
+Let's continue building our a presentation together from `hello-penguins-slides.qmd` and showcase the fragments with `.fragment` and `fragment-index=n`.
 :::
 
 # Wrap up
