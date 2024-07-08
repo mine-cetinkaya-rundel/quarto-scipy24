@@ -1,800 +1,228 @@
 [
   {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#setup",
-    "href": "1-1-hello/1-1-hello-reveal.html#setup",
-    "title": "Hello, Quarto!",
-    "section": "Setup",
-    "text": "Setup\n\n\ntitle: “Pre-workshop instructions”\n\n1. Software: Download and install Python and Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.53: https://quarto.org/docs/get-started/\n\n2. Tools: Dowload and install VS Code and Jupyter and Quarto extensions.\n\nVS Code: https://code.visualstudio.com/\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter\n\n3. Exercises: Go to bit.ly/quarto-scipy24-exercises, click on “Use this template” then “Create a new repository”. Click on the green Code button and copy the URL of the repo.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then Python 3.12.4. Check the box for requirements.txt in the “Select dependencies to install” menu and hit OK.\n\n\n\n\n\n\nNote\n\n\nThe packages you need are as follows:\n\n\nrequirements.txt\n\ngreat_tables==0.9.0\nipykernel==6.29.5\njupyter==1.0.0\npalmerpenguins==0.1.4\npandas==2.2.2\nplotnine==0.13.6\n\nIf you have a different preferred way of managing your environment, you’re welcomed to do so. Just make sure you have these packages installed in order to be able to follow along with the examples."
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#code-of-conduct",
-    "href": "1-1-hello/1-1-hello-reveal.html#code-of-conduct",
-    "title": "Hello, Quarto!",
-    "section": "Code of Conduct",
-    "text": "Code of Conduct\nAttendees at SciPy 2024 are subject to the NumFOCUS Code of Conduct.\nBe kind to others. Do not insult or put down others. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for NumFOCUS.\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery is not appropriate.\nNumFOCUS is dedicated to providing a harassment-free community for everyone, regardless of gender, sexual orientation, gender identity and expression, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of community members in any form.\nThank you for helping make this a welcoming, friendly community for all.\n\n\nFor more info and reporting a code of conduct incident"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#about-me",
-    "href": "1-1-hello/1-1-hello-reveal.html#about-me",
-    "title": "Hello, Quarto!",
-    "section": "About me",
-    "text": "About me\n\n\n\nProfessor of the Practice\nDepartment of Statistical Science\nDuke University\nDeveloper Educator, Posit PBC\n\n\n\n\n\n\n\nMine Çetinkaya-Rundel\nmine-cr.com\n\n\nTeaching data analysis in computational notebooks for 10+ years\nTeaching and using Quarto for 3+ years"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#about-you",
-    "href": "1-1-hello/1-1-hello-reveal.html#about-you",
-    "title": "Hello, Quarto!",
-    "section": "About you",
-    "text": "About you\n\nPlease share with the person next to you…\n\nYour name\nYour professional affiliation\nWhat you hope to get out of this tutorial\n\n\n\n  \n    −\n    +\n \n 03:00"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#meeting-you-where-you-are",
-    "href": "1-1-hello/1-1-hello-reveal.html#meeting-you-where-you-are",
-    "title": "Hello, Quarto!",
-    "section": "Meeting you where you are",
-    "text": "Meeting you where you are\n\n\n\nThese materials are pitched at someone who:\n\nknows some Python + Markdown\nhas worked in VS Code and/or Jupyter Lab\nwants to learn about Quarto\n\n\n\n\nI’ll teach you\n\nMore Markdown\nNew Quarto formats\nNew Quarto projects"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#workshop-structure",
-    "href": "1-1-hello/1-1-hello-reveal.html#workshop-structure",
-    "title": "Hello, Quarto!",
-    "section": "Workshop structure",
-    "text": "Workshop structure\n\n\nMy turn\n\nLecture segments\nFeel free to just watch, take notes, browse docs, or tinker around with the code\n\n\n\nOur turn\n\nLecture segments + live coding\n(Optionally) follow along with live coding\n\n\n\n\nYour turn\n\nPractice exercises for you\nWork on your own or with the person next to you"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#getting-help",
-    "href": "1-1-hello/1-1-hello-reveal.html#getting-help",
-    "title": "Hello, Quarto!",
-    "section": "Getting help",
-    "text": "Getting help\n\nDuring my turn and your turn segments – raise your hand\nDuring our turn segments – also feel free to raise your hand for questions but if your question seems specific to your setup, I might come around and help during the next your turn break"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#setup-1",
-    "href": "1-1-hello/1-1-hello-reveal.html#setup-1",
-    "title": "Hello, Quarto!",
-    "section": "Setup",
-    "text": "Setup\n\n\ntitle: “Pre-workshop instructions”\n\n1. Software: Download and install Python and Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.53: https://quarto.org/docs/get-started/\n\n2. Tools: Dowload and install VS Code and Jupyter and Quarto extensions.\n\nVS Code: https://code.visualstudio.com/\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter\n\n3. Exercises: Go to bit.ly/quarto-scipy24-exercises, click on “Use this template” then “Create a new repository”. Click on the green Code button and copy the URL of the repo.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then Python 3.12.4. Check the box for requirements.txt in the “Select dependencies to install” menu and hit OK.\n\n\n\n\n\n\nNote\n\n\nThe packages you need are as follows:\n\n\nrequirements.txt\n\ngreat_tables==0.9.0\nipykernel==6.29.5\njupyter==1.0.0\npalmerpenguins==0.1.4\npandas==2.2.2\nplotnine==0.13.6\n\nIf you have a different preferred way of managing your environment, you’re welcomed to do so. Just make sure you have these packages installed in order to be able to follow along with the examples.\n\n\n\n\n\n\nLet’s get started!"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#quarto",
-    "href": "1-1-hello/1-1-hello-reveal.html#quarto",
-    "title": "Hello, Quarto!",
-    "section": "Quarto …",
-    "text": "Quarto …\nis an innovative, open-source scientific and technical publishing system compatible with Jupyter notebooks and all your favorite plain text markdown editors\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#with-quarto",
-    "href": "1-1-hello/1-1-hello-reveal.html#with-quarto",
-    "title": "Hello, Quarto!",
-    "section": "With Quarto …",
-    "text": "With Quarto …\nyou can weave together narrative and code to produce elegantly formatted output as documents, web pages, blog posts, books and more, with…\n\n\nconsistent implementation of attractive and handy features across outputs: tabsets, code-folding, syntax highlighting, etc.\ndefaults that meet accessibility guidelines as well as features that enable good practices for producing accessible documents\nnative multi-lingual support for multiple languages like Python, R, Julia, Observable, and more via the Jupyter engine for executable code chunks"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#a-tour-of-quarto",
-    "href": "1-1-hello/1-1-hello-reveal.html#a-tour-of-quarto",
-    "title": "Hello, Quarto!",
-    "section": "A tour of Quarto",
-    "text": "A tour of Quarto\n\nSit back and enjoy! … or follow along with hello-penguins.qmd.\n\n\n\nRunning individual cells\nRendering a document\nEditing with source editor and visual editor\nInserting images and lightbox effect\nInserting tables\nCustomizing formats: pdf, docx, revealjs\nCustomizing format options: code-fold, toc\nCode cells: labels, alt-text, execution options (echo, warning)\nCross referencing figures and tables, with and without the visual editor\nConverting between Jupyter Notebooks and plain text markdown documents"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#revisit-what-is-quarto",
-    "href": "1-1-hello/1-1-hello-reveal.html#revisit-what-is-quarto",
-    "title": "Hello, Quarto!",
-    "section": "Revisit: What is Quarto?",
-    "text": "Revisit: What is Quarto?\nQuarto is a command line interface (CLI) that renders plain text formats (.qmd, .rmd, .md) OR mixed formats (.ipynb/Jupyter notebook) into static PDF/Word/HTML reports, books, websites, presentations and more.\n\n\nUsage:   quarto\nVersion: 1.5.53\n\nDescription:\n\n  Quarto CLI\n\nOptions:\n\n  -h, --help     - Show this help.                            \n  -V, --version  - Show the version number for this program.  \n\nCommands:\n\n  render     [input] [args...]     - Render files or projects to various document types.\n  preview    [file] [args...]      - Render and preview a document or website project.  \n  serve      [input]               - Serve a Shiny interactive document.                \n  create     [type] [commands...]  - Create a Quarto project or extension               \n  use        &lt;type&gt; [target]       - Automate document or project setup tasks.          \n  add        &lt;extension&gt;           - Add an extension to this folder or project         \n  update     [target...]           - Updates an extension or global dependency.         \n  remove     [target...]           - Removes an extension.                              \n  convert    &lt;input&gt;               - Convert documents to alternate representations.    \n  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.  \n  typst      [args...]             - Run the version of Typst embedded within Quarto.   \n  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.        \n  install    [target...]           - Installs a global dependency (TinyTex or Chromium).\n  uninstall  [tool]                - Removes an extension.                              \n  tools                            - Display the status of Quarto installed dependencies\n  publish    [provider] [path]     - Publish a document or project to a provider.       \n  check      [target]              - Verify correct functioning of Quarto installation. \n  help       [command]             - Show this help or the help of a sub-command."
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#under-the-hood",
-    "href": "1-1-hello/1-1-hello-reveal.html#under-the-hood",
-    "title": "Hello, Quarto!",
-    "section": "Under the hood",
-    "text": "Under the hood\n\n\n\njupyter evaluates Python code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#under-the-hood-1",
-    "href": "1-1-hello/1-1-hello-reveal.html#under-the-hood-1",
-    "title": "Hello, Quarto!",
-    "section": "Under the hood",
-    "text": "Under the hood\nwith a wider lens…\n\n\n\njupyter or knitr evaluates Python, Julia, R, or Observable code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#aside-lua-filters",
-    "href": "1-1-hello/1-1-hello-reveal.html#aside-lua-filters",
-    "title": "Hello, Quarto!",
-    "section": "Aside: Lua filters",
-    "text": "Aside: Lua filters\n\nHere is an example of a Lua filter that converts strong emphasis to small caps, from https://pandoc.org/lua-filters.html:\n\nreturn {\n  {\n    Strong = function (elem)\n      return pandoc.SmallCaps(elem.c)\n    end,\n  }\n}\n\n\nLua filters written by R/Python/Julia developers should be interchangeable between formats - not language specific!\n\n\n\n\nWe won’t go into the details of writing Lua filters in this workshop, and you don’t need to worry about learning about Lua filters unless you’re working on extending Quarto."
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#from-the-comfort-of-your-own-homeworkspace",
-    "href": "1-1-hello/1-1-hello-reveal.html#from-the-comfort-of-your-own-homeworkspace",
-    "title": "Hello, Quarto!",
-    "section": "From the comfort of your own homeworkspace",
-    "text": "From the comfort of your own homeworkspace"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#render-and-preview",
-    "href": "1-1-hello/1-1-hello-reveal.html#render-and-preview",
-    "title": "Hello, Quarto!",
-    "section": "Render and preview",
-    "text": "Render and preview\nin the Terminal in VS Code or JupyterLab\nRender to output formats:\n# ipynb notebook\nquarto render notebook.ipynb\nquarto render notebook.ipynb --to docx\n\n# plain text qmd\nquarto render notebook.qmd \nquarto render notebook.qmd --to pdf\nLive preview server (re-render on save):\n# ipynb notebook\nquarto preview notebook.ipynb\nquarto preview notebook.ipynb --to docx\n\n# plain text qmd\nquarto preview notebook.qmd \nquarto preview notebook.qmd --to pdf"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#render-and-preview-1",
-    "href": "1-1-hello/1-1-hello-reveal.html#render-and-preview-1",
-    "title": "Hello, Quarto!",
-    "section": "Render and preview",
-    "text": "Render and preview\nin the Editor in VS Code\n\nInstall and enable the Quarto extension\nClicking on Preview or Cmd + Shift + K"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#one-install-batteries-included",
-    "href": "1-1-hello/1-1-hello-reveal.html#one-install-batteries-included",
-    "title": "Hello, Quarto!",
-    "section": "One install, “Batteries included”",
-    "text": "One install, “Batteries included”\n\nQuarto comes “batteries included” straight out of the box:\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\nManuscripts\n…\n\n\n\n\nAny language, exact same approach and syntax"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#many-quarto-formats",
-    "href": "1-1-hello/1-1-hello-reveal.html#many-quarto-formats",
-    "title": "Hello, Quarto!",
-    "section": "Many Quarto formats",
-    "text": "Many Quarto formats\n\n\n\n\n\n\n\nFeature\nQuarto\n\n\n\n\nBasic Formats\nhtml, pdf, docx, typst\n\n\nBeamer\nbeamer\n\n\nPowerPoint\npptx\n\n\nHTML Slides\nrevealjs\n\n\nAdvanced Layout\nQuarto Article Layout\n\n\nCross References\nQuarto Crossrefs\n\n\nWebsites & Blogs\nQuarto Websites, Quarto Blogs\n\n\nBooks\nQuarto Books\n\n\nInteractivity\nQuarto Interactive Documents\n\n\nJournal Articles\nJournal Articles\n\n\nDashboards\nQuarto Dashboards"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#your-turn",
-    "href": "1-1-hello/1-1-hello-reveal.html#your-turn",
-    "title": "Hello, Quarto!",
-    "section": "Your turn",
-    "text": "Your turn\n\nIn VS Code, open the hello-penquins.qmd file. Render the document to HTML.\n\nAdd an author field in the YAML and add your name.\nAdd some text and style it with bold, italics, etc. using the source editor as well as the visual editor.\nModify the figure to add units to the axis labels: grams for body weight and mm (milimeters) for flipper length. Render or preview the document and make sure the changes are reflected in the HTML output.\nChange the html theme to sketchy. See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.\n\n\n\n  \n    −\n    +\n \n 05:00"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#a-pause",
-    "href": "1-1-hello/1-1-hello-reveal.html#a-pause",
-    "title": "Hello, Quarto!",
-    "section": "A pause",
-    "text": "A pause\n\nWhere does the name “Quarto” come from?\n\n\n\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Quarto"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#learn-more",
-    "href": "1-1-hello/1-1-hello-reveal.html#learn-more",
-    "title": "Hello, Quarto!",
-    "section": "Learn more",
-    "text": "Learn more\n\nquarto.org/docs/guide &gt; Authoring & Computations"
-  },
-  {
-    "objectID": "1-1-hello/1-1-hello-reveal.html#questions",
-    "href": "1-1-hello/1-1-hello-reveal.html#questions",
-    "title": "Hello, Quarto!",
-    "section": "Questions",
-    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Unlocking Dynamic Reproducible Documents",
+    "objectID": "setup.html",
+    "href": "setup.html",
+    "title": "Setup instructions",
     "section": "",
-    "text": "Work in progress\n\n\n\nThis page and workshop materials are works in progress until the workshop date and time specified below. For latest version of the materials, please revisit when the workshop begins.\n🗓️ Date: July 8, 2024\n🕗 Time: 08:00 - 12:00 US/Pacific\n🏨 Location: Room 316",
+    "text": "1. Software: Download and install Python and Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.53: https://quarto.org/docs/get-started/\n\n2. Tools: Dowload and install VS Code and Jupyter and Quarto extensions.\n\nVS Code: https://code.visualstudio.com/\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter\n\n3. Exercises: Go to bit.ly/quarto-scipy24-exercises, click on “Use this template” then “Create a new repository”. Click on the green Code button and copy the URL of the repo.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then choose the (latest) Python version you have installed. Check the box for requirements.txt in the “Select dependencies to install” menu and hit OK.\n\n\n\n\n\n\nNote\n\n\n\nThe packages you need are as follows:\n\n\nrequirements.txt\n\ngreat_tables==0.9.0\nipykernel==6.29.5\njupyter==1.0.0\npalmerpenguins==0.1.4\npandas==2.2.2\nplotnine==0.13.6\n\nIf you have a different preferred way of managing your environment, you’re welcomed to do so. Just make sure you have these packages installed in order to be able to follow along with the examples.",
     "crumbs": [
-      "Home"
+      "Setup"
     ]
   },
   {
-    "objectID": "index.html#abstract",
-    "href": "index.html#abstract",
-    "title": "Unlocking Dynamic Reproducible Documents",
-    "section": "Abstract",
-    "text": "Abstract\nQuarto is an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and plain text markdown documents. Quarto provides data scientists with a seamless way to publish their work in a high-quality format that is reproducible, accessible, and shareable. With Quarto, researchers can turn their Jupyter Notebooks and literate plain text markdown documents into professional-looking publications in various formats. This workshop will demonstrate how Quarto enables data scientists to turn their work products into professional, high-quality documents, slides, websites, scientific manuscripts, and other shareable artifacts.",
+    "objectID": "1-1-hello/index.html",
+    "href": "1-1-hello/index.html",
+    "title": "Hello, Quarto!",
+    "section": "",
+    "text": "View slides in full screen",
     "crumbs": [
-      "Home"
+      "Part 1",
+      "Hello"
     ]
   },
   {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
-    "title": "Unlocking Dynamic Reproducible Documents",
-    "section": "Overview",
-    "text": "Overview\nSharing knowledge through writing is a critical aspect of scientific activity, including data science. It allows researchers to communicate their findings and insights to a broader audience, build upon existing work, and collaborate with others in their field. Quarto, an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and plain text markdown documents, provides data scientists with a seamless way to publish their work in a high-quality format that is easily accessible, shareable, and reproducible. With Quarto, researchers and data professionals can turn their notebooks into professional-looking publications in various formats, including web pages, books, slides, dashboards, and scientific manuscripts. This workshop will demonstrate how Quarto enables data scientists to turn their work products into professional, high-quality publications.\nThe learning outcomes for the workshop include:\n\nAuthor documents in plain text markdown or Jupyter notebooks with equations, citations, crossrefs, figure panels, callouts, and advanced layouts.\nLearn how to author content in IPython/Jupyter and the Quarto VS Code extension.\nLeverage Quarto for creating different types of publications, including webpages/blogs, slides, dashboards, books, websites, and scientific manuscripts.\nCustomize execution and content with a rich array of code cell options, filters, and extensions.\nHost websites and publications on platforms such as GitHub Pages, QuartoPub, and Netlify.",
+    "objectID": "1-1-hello/index.html#slides",
+    "href": "1-1-hello/index.html#slides",
+    "title": "Hello, Quarto!",
+    "section": "",
+    "text": "View slides in full screen",
     "crumbs": [
-      "Home"
+      "Part 1",
+      "Hello"
     ]
   },
   {
-    "objectID": "index.html#schedule",
-    "href": "index.html#schedule",
-    "title": "Unlocking Dynamic Reproducible Documents",
-    "section": "Schedule",
-    "text": "Schedule\nTo be posted.",
+    "objectID": "1-1-hello/index.html#exercises",
+    "href": "1-1-hello/index.html#exercises",
+    "title": "Hello, Quarto!",
+    "section": "Exercises",
+    "text": "Exercises\nTo be posted.",
     "crumbs": [
-      "Home"
+      "Part 1",
+      "Hello"
     ]
   },
   {
-    "objectID": "index.html#instructor",
-    "href": "index.html#instructor",
-    "title": "Unlocking Dynamic Reproducible Documents",
-    "section": "Instructor",
-    "text": "Instructor\nMine Çetinkaya-Rundel is Professor of the Practice at Duke University and Developer Educator at Posit. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. Mine is a Fellow of the ASA and Elected Member of the ISI as well as the winner of the 2021 Robert V. Hogg Award for For Excellence in Teaching Introductory Statistics.\n\n This work is licensed under a Creative Commons Attribution 4.0 International License.",
-    "crumbs": [
-      "Home"
-    ]
-  },
-  {
-    "objectID": "2-3-manuscripts/index.html",
-    "href": "2-3-manuscripts/index.html",
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#simplest",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#simplest",
     "title": "Manuscripts",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Part 2",
-      "Manuscripts"
-    ]
+    "section": "Simplest",
+    "text": "Simplest\nCan run all code in a single file, and don’t mind running it over and over again with each edit.\n\n\n\n \n\n\n\n \n\n\n\n\n\n\ne.g. Data Science 101 - HW 1, Stat 101 - Final project, a blog post, a tutorial, a not-too-extensive consulting report, etc."
   },
   {
-    "objectID": "2-3-manuscripts/index.html#slides",
-    "href": "2-3-manuscripts/index.html#slides",
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#simple",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#simple",
     "title": "Manuscripts",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Part 2",
-      "Manuscripts"
-    ]
+    "section": "Simple",
+    "text": "Simple\nCan run all code in a single file, and don’t mind running it over and over again with each edit, and need an output that conforms to journal style.\n\n\n\n \n+ Quarto Journal Articles Extension\n\n\n\n \n\n\n\n or \n\n\nformatted with journal style\n\n\ne.g., a not-too-computational journal article."
   },
   {
-    "objectID": "2-3-manuscripts/index.html#exercises",
-    "href": "2-3-manuscripts/index.html#exercises",
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#but-science-is-rarely-simple",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#but-science-is-rarely-simple",
     "title": "Manuscripts",
-    "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
-    "crumbs": [
-      "Part 2",
-      "Manuscripts"
-    ]
+    "section": "but science is rarely simple…",
+    "text": "but science is rarely simple…\n\n\nmultiple collaborators, each with their favorite computing language and code editor\nmultiple stages of a project, each with their own level of feasibility of what can be re-run with each edit and what needs to be cached"
   },
   {
-    "objectID": "1-2-documents/index.html",
-    "href": "1-2-documents/index.html",
-    "title": "Documents",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Part 1",
-      "Documents"
-    ]
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#more-complex",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#more-complex",
+    "title": "Manuscripts",
+    "section": "More complex",
+    "text": "More complex\n\n\n\n\n\n\n\n\n   \n\n\n\n\n \n\n\n\n or"
   },
   {
-    "objectID": "1-2-documents/index.html#slides",
-    "href": "1-2-documents/index.html#slides",
-    "title": "Documents",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Part 1",
-      "Documents"
-    ]
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#even-more-complex",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#even-more-complex",
+    "title": "Manuscripts",
+    "section": "Even more complex",
+    "text": "Even more complex\n\n\n\n\n      \n \n\n\n\n \n\n\n\n or"
   },
   {
-    "objectID": "1-2-documents/index.html#exercises",
-    "href": "1-2-documents/index.html#exercises",
-    "title": "Documents",
-    "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
-    "crumbs": [
-      "Part 1",
-      "Documents"
-    ]
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#aside-what-is-in-a-notebook",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#aside-what-is-in-a-notebook",
+    "title": "Manuscripts",
+    "section": "Aside: What is in a notebook?",
+    "text": "Aside: What is in a notebook?\nA notebook is a document that contains both code and narrative:\n\nJupyter notebooks (.ipynb)\nQuarto documents (.qmd) – a potential mindshift"
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#quarto-projects",
-    "href": "2-1-websites/2-1-websites-reveal.html#quarto-projects",
-    "title": "Websites and blogs",
-    "section": "Quarto projects",
-    "text": "Quarto projects\n\nQuarto projects have a _quarto.yml file\nThe type field in this file indicates the type of project:\n\ndefault: Collection of documents\nwebsite: Websites (and blogs)\nbooks: Books\nmanuscript: Journal manuscript with embedded computing and JATS bundle"
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#current-state-of-affairs",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#current-state-of-affairs",
+    "title": "Manuscripts",
+    "section": "Current state of affairs",
+    "text": "Current state of affairs\nMost computational science is born in notebooks\n\n\nPeer-review and publication workflows don’t support notebooks as research outputs\nThe more complex scenarios involve a lot of manual finagling to bring the project to journal submission stage\nOften during this process reproducibility is lost, or takes second seat to the formatting requirements\nFinal submission rarely captures all computations, which are, at best, relegated to supplementary materials\n\n\nand dies ends in PDF or Word documents"
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#components",
-    "href": "2-1-websites/2-1-websites-reveal.html#components",
-    "title": "Websites and blogs",
-    "section": "Components",
-    "text": "Components\n\n\nA Quarto Project is a directory that contains a file called _quarto.yml.\n\n\n\n\n\n\nThis is a Quarto Project.\nmy-folder/\n├── _quarto.yml\n├── my-document.ipynb\n\nThis is not.\nmy-folder/\n├── my-document.ipynb"
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#roadmap-to-fully-reproducible-scientific-manuscripts",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#roadmap-to-fully-reproducible-scientific-manuscripts",
+    "title": "Manuscripts",
+    "section": "Roadmap to fully reproducible scientific manuscripts",
+    "text": "Roadmap to fully reproducible scientific manuscripts\nthat are not just PDFs that are the outputs of a single qmd file\n\n An end-to-end scholarly publishing workflow that treats Jupyter and Quarto notebooks as a primary element of the scientific record.\n\n\n A publication process that elevates transparent and reproducible work by authors, where data and software, together with narrative, are documented, shared, and archived.\n\n\n New forms of credit to the wider research community, including research software engineers or rsearch software engineers."
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#quarto.yml",
-    "href": "2-1-websites/2-1-websites-reveal.html#quarto.yml",
-    "title": "Websites and blogs",
-    "section": "_quarto.yml",
-    "text": "_quarto.yml\nA YAML file with particular keys and values that Quarto recognizes. Unrecognized keys are ignored.\n\n\n_quarto.yml\n\nproject:\n  title: \"A Barebones Project\""
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-can",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-can",
+    "title": "Manuscripts",
+    "section": "Quarto can…",
+    "text": "Quarto can…\n\n\nbe authored in your favorite code editor\nrender from qmd or Jupyter notebook to PDF, Word, HTML, etc.\nexecute code in Python, R, and more\napply journal styles to your outputs with Quarto extensions\npublish to GitHub Pages, Netlify, and more\norchestrate multiple inputs and outputs with embedded computing using a new Quarto project type: manuscript"
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#quarto.yml-1",
-    "href": "2-1-websites/2-1-websites-reveal.html#quarto.yml-1",
-    "title": "Websites and blogs",
-    "section": "_quarto.yml",
-    "text": "_quarto.yml\nA YAML file with particular keys and values that Quarto recognizes. Unrecognized keys are ignored.\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs\n\nwebsite:\n  page-navigation: true\n  title: \"Unlocking Dynamic Reproducible Documents\"\n  description: \"A Quarto Tutorial for Scientific Communication on Quarto at SciPy 2024\"\n\n  repo-url: https://github.com/mine-cetinkaya-rundel/quarto-scipy24\n  repo-actions: [edit, issue]\n\n  open-graph: true\n\n  sidebar:\n    background: \"#D1D9E3\"\n    logo: \"images/quarto-scipy24-site-logo.png\"\n    pinned: true\n    align: center\n    tools:\n      - icon: github\n        href: https://github.com/mine-cetinkaya-rundel/quarto-scipy24\n        text: GitHub repo\n      - icon: code-square\n        href: https://code.visualstudio.com/\n        text: VS Code\n\n    style: docked\n    search: true\n    collapse-level: 2\n    contents:\n      - href: index.qmd\n        text: Home\n      - href: pre-work.qmd\n        text: Pre-work\n      - section: Part 1\n        contents:\n          - href: 1-1-hello/index.qmd\n            text: Hello\n          - href: 1-2-documents/index.qmd\n            text: Documents\n          - href: 1-3-presentations/index.qmd\n            text: Presentations\n          - href: 1-4-dashboards/index.qmd\n            text: Dashboards\n      - section: Part 2\n        contents:\n          - href: 2-1-websites/index.qmd\n            text: Websites and blogs\n          - href: 2-2-books/index.qmd\n            text: Books\n          - href: 2-3-manuscripts/index.qmd\n            text: Manuscripts\n\n  page-footer:\n    right: \"This page is built with 💚 and [Quarto](https://quarto.org/).\"\n    left: \"&copy; Copyright 2024, Mine Çetinkaya-Rundel\"\n    background: \"#D1D9E3\" # Arylide Yellow\n\nformat:\n  html:\n    theme:\n      light: [cosmo, style/quarto-scipy24.scss]\n      dark: [cosmo, style/quarto-scipy24.scss, style/dark.scss]\n    linkcolor: \"#58779b\"\n    toc: true\n    code-copy: true\n    code-overflow: wrap\n    mainfont: \"Atkinson Hyperlegible\"\n\nexecute:\n  freeze: auto\n  echo: true"
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-manuscript",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-manuscript",
+    "title": "Manuscripts",
+    "section": "Quarto manuscript",
+    "text": "Quarto manuscript\nQuarto manuscripts, in addition to doing everything you can do with journal articles, can\n\nproduce manuscripts in multiple formats (including LaTeX or MS Word formats required by journals), and give readers easy access to all of the formats through a website\npublish computations from one or more notebooks alongside the manuscript, allowing readers to dive into your code and view it or interact with it in a virtual environment"
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#quarto-websites",
-    "href": "2-1-websites/2-1-websites-reveal.html#quarto-websites",
-    "title": "Websites and blogs",
-    "section": "Quarto websites",
-    "text": "Quarto websites\n\n\nWebsites are essentially format: html + a Quarto Project file\nBut a website is different than format: html in that it has multiple pages\nWebsites and books are very similar in that they associate multiple pages/resources into a connected resource\n\nIn books, you can cross-reference between pages (chapters), but (currently), you can’t cross-reference between pages in websites"
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#getting-started",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#getting-started",
+    "title": "Manuscripts",
+    "section": "Getting started",
+    "text": "Getting started\n\nApproach 1: Start from scratch\n\nCreating a Quarto manuscript\n\nVS Code: In the Command Palette – Quarto: Create Project &gt; Manuscript Project\nquarto create project manuscript &lt;name&gt;\n\nAdd manuscript content\n\nApproach 2: Start with a sample from https://quarto.org/docs/manuscripts\n\n\n\n\n\n\n\nManuscripts ♥️ Git + GitHub\n\n\nTrack your project with Git and host on GitHub for easy publishing."
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#our-turn",
-    "href": "2-1-websites/2-1-websites-reveal.html#our-turn",
-    "title": "Websites and blogs",
-    "section": "Our turn",
-    "text": "Our turn\n\nLet’s build a website that features a few of the notebooks we worked on and highlight the following features of Quarto websites:\n\nAdd a _quarto.yml\nCreate a landing page: index.qmd\nExplore navigation options: navbar, sidebar\nApply themes, including a light and dark theme toggle\nPublish to QuartoPub with quarto publish\nAn aspect of the workshop webpage that you fancy?"
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#a-finished-product",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#a-finished-product",
+    "title": "Manuscripts",
+    "section": "A finished product",
+    "text": "A finished product"
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#your-turn",
-    "href": "2-1-websites/2-1-websites-reveal.html#your-turn",
-    "title": "Websites and blogs",
-    "section": "Your turn",
-    "text": "Your turn\n\n\nAdd one more notebook that has at least one executable code cell and add it to the navigation list in _quarto.yml and render your site.\nAdd an about page, about.qmd, personalize it, and add it to the navigation list in _quarto.yml and render your site.\nRe-publish on QuartoPub with quarto publish.\n\n\n\n  \n    −\n    +\n \n 10:00"
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#multiple-formats-from-one-source",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#multiple-formats-from-one-source",
+    "title": "Manuscripts",
+    "section": "Multiple formats from one source",
+    "text": "Multiple formats from one source"
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#listings-1",
-    "href": "2-1-websites/2-1-websites-reveal.html#listings-1",
-    "title": "Websites and blogs",
-    "section": "Listings",
-    "text": "Listings\n\nListings enable you to automatically generate the contents of a page (or region of a page) from a list of Quarto documents or other custom data\nUseful for creating blogs, providing navigation for large numbers of documents, or any other scenario where you’d like the contents of a page to be automatically updated as documents are added, updated, and removed"
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#multiple-formats-from-one-source-1",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#multiple-formats-from-one-source-1",
+    "title": "Manuscripts",
+    "section": "Multiple formats from one source",
+    "text": "Multiple formats from one source\nIn quarto.yml of the project:\n---\nformat:\n  html:\n    theme: cosmo\n    toc-location: left\n    comments: \n      hypothesis: true\n    citations-hover: true\n    crossrefs-hover: true\n  agu-pdf: default\n  docx: default\n  jats: default\n---"
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#blogs",
-    "href": "2-1-websites/2-1-websites-reveal.html#blogs",
-    "title": "Websites and blogs",
-    "section": "Blogs",
-    "text": "Blogs\n\nLet’s now add a blog component to our website:\n\nMove two of your notebook files into a new a folder called posts.\nCollect these notebooks in a new blog page using the listings feature.\n\nDon’t forget to make corresponding changes in your _quarto.yml file.\n\nExperiment with the style of listings and choose one you like."
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter",
+    "title": "Manuscripts",
+    "section": "Rich front matter",
+    "text": "Rich front matter\nIn index.qmd of the project:\n---\ntitle: La Palma Earthquakes\nauthor:\n  - name: Steve Purves\n    orcid: 0000-0002-0760-5497\n    corresponding: true\n    email: steve@curvenote.com\n    roles:\n      - Investigation\n      - Project administration\n      - Software\n      - Visualization\n    affiliations:\n      - Curvenote\n  - name: Rowan Cockett\n    orcid: 0000-0002-7859-8394\n    corresponding: false\n    roles: []\n    affiliations:\n      - Curvenote\nlicense: CC BY-SA 4.0\nkeywords:\n  - La Palma\n  - Earthquakes\ndate: '2022-05-11'\nabstract: |\n  In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). We have created an accessible dataset from this and completed preliminary data analysis which shows seismicity originating at two distinct depths, consistent with the model of a two reservoir system feeding the currently very active volcano.\nkeypoints:\n  - You may specify 1 to 3 keypoints for this PDF template\n  - These keypoints are complete sentences and less than or equal to 140 characters\n  - 'They are specific to this PDF template, so they will not appear in other exports'\ncitation:\n  container-title: Notebooks Now!\ndraft: false\nbibliography: references.bib\necho: false\n---"
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#when-should-code-be-re-run",
-    "href": "2-1-websites/2-1-websites-reveal.html#when-should-code-be-re-run",
-    "title": "Websites and blogs",
-    "section": "When should code be re-run?",
-    "text": "When should code be re-run?\n\n\nYou might have a reason to re-run all code in a Quarto website (every single cell in every single document) every time you render the website.\nBut, chances are, that’s not what you want.\n\nJust playing around styling – you probably don’t want to run the code again\nChanged some code in a document – you probably want to re-run the code in that document, but not necessarily others\nMade a big change affecting computations on many or all pages – you probably want to re-run all code\n\nfreeze and cache options give you fine control over these decisions"
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter-1",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter-1",
+    "title": "Manuscripts",
+    "section": "Rich front matter",
+    "text": "Rich front matter\nfrom source \\(\\rightarrow\\) only relevant / required metadata in manuscript:"
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#freeze",
-    "href": "2-1-websites/2-1-websites-reveal.html#freeze",
-    "title": "Websites and blogs",
-    "section": "Freeze",
-    "text": "Freeze\n\nThe freeze option controls when/if computational documents be re-rendered during a global project render:\n\nexecute:\n  freeze: true  # never re-render during project render\nexecute:\n  freeze: auto  # re-render only when source changes\nexecute:\n  freeze: false  # always re-render\n\nThe freeze option is typically added to a _metadata.yml file within a specific directory, affecting all files in that directory.\nFor blogs, set feeze in _metadata.yml at the root of the posts directory.\nYou can have it only within specific subdirectories for more complex sites."
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter-2",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter-2",
+    "title": "Manuscripts",
+    "section": "Rich front matter",
+    "text": "Rich front matter\nfrom source \\(\\rightarrow\\) only relevant / required metadata in manuscript:"
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#freeze-and-jupyter-notebooks",
-    "href": "2-1-websites/2-1-websites-reveal.html#freeze-and-jupyter-notebooks",
-    "title": "Websites and blogs",
-    "section": "Freeze and Jupyter notebooks",
-    "text": "Freeze and Jupyter notebooks\n\nWhen rendering an .ipynb, Quarto will not execute the cells within the notebook by default, assuming that you have already executed them while editing the notebook\nTo execute the cells, pass the --execute flag to render:\n\n\n\nTerminal\n\nquarto render notebook.ipynb --execute\n\n\nOr specify this behavior within the notebook’s YAML front matter:\n\n---\nexecute:\n  enabled: true\n---"
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#embedded-computations",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#embedded-computations",
+    "title": "Manuscripts",
+    "section": "Embedded computations",
+    "text": "Embedded computations"
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#cache",
-    "href": "2-1-websites/2-1-websites-reveal.html#cache",
-    "title": "Websites and blogs",
-    "section": "Cache",
-    "text": "Cache\n\nCache stores the results of computations for a specific file\nCache invalidation is triggered by changes in chunk source code (or other cache attributes you’ve defined)\ncache can also be set at the chunk level, particularly useful for computationally expensive chunks"
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#actually-dive-into-the-code",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#actually-dive-into-the-code",
+    "title": "Manuscripts",
+    "section": "Actually dive into the code",
+    "text": "Actually dive into the code\n\nWe’ve seen that you can peruse the code underlying the figures and tables in the manuscript\nWhat if you wanted to interact with the code – in a computational environment that’s just a click away and that has all the software and packages needed to reproduce the manuscript?"
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#freeze-vs.-cache",
-    "href": "2-1-websites/2-1-websites-reveal.html#freeze-vs.-cache",
-    "title": "Websites and blogs",
-    "section": "Freeze vs. cache",
-    "text": "Freeze vs. cache\n\nFreeze option is typically set\n\nfor the whole website in _quarto.yml, or\nfor files within a directory in _metadata.yml in that directory\n\n\nexecute: \n  freeze: auto\n\nCache option is typically set for a given file or for individual chunk(s) in a file.\n\nexecute:\n  cache: true\nor\n\n```{python}\n1 + 1\n```\n\n2"
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#binder-with-quarto",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#binder-with-quarto",
+    "title": "Manuscripts",
+    "section": "Binder with Quarto",
+    "text": "Binder with Quarto\nwith quarto use binder:"
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#quartopub",
-    "href": "2-1-websites/2-1-websites-reveal.html#quartopub",
-    "title": "Websites and blogs",
-    "section": "QuartoPub",
-    "text": "QuartoPub\n\nQuarto Pub is a free publishing service for content created with Quarto. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites.\nPublish with quarto publish:\n\n\n\nTerminal\n\nquarto publish quarto-pub\n\n\nGain a _publish.yml that is safe to check into version control."
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#binder-with-quarto-1",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#binder-with-quarto-1",
+    "title": "Manuscripts",
+    "section": "Binder with Quarto",
+    "text": "Binder with Quarto"
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#other-venues",
-    "href": "2-1-websites/2-1-websites-reveal.html#other-venues",
-    "title": "Websites and blogs",
-    "section": "Other venues",
-    "text": "Other venues\n\nGitHub Pages\nPosit Connect\nNetlify\nMore venues"
-  },
-  {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#learn-more",
-    "href": "2-1-websites/2-1-websites-reveal.html#learn-more",
-    "title": "Websites and blogs",
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#learn-more",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#learn-more",
+    "title": "Manuscripts",
     "section": "Learn more",
-    "text": "Learn more\n\nquarto.org/docs/websites"
+    "text": "Learn more\n\nquarto.org/docs/manuscripts"
   },
   {
-    "objectID": "2-1-websites/2-1-websites-reveal.html#questions",
-    "href": "2-1-websites/2-1-websites-reveal.html#questions",
-    "title": "Websites and blogs",
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#questions",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#questions",
+    "title": "Manuscripts",
     "section": "Questions",
-    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
+    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?"
   },
   {
-    "objectID": "1-3-presentations/index.html",
-    "href": "1-3-presentations/index.html",
-    "title": "Presentations",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Part 1",
-      "Presentations"
-    ]
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#learning-more",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#learning-more",
+    "title": "Manuscripts",
+    "section": "Learning more",
+    "text": "Learning more\nhttps://quarto.org"
   },
   {
-    "objectID": "1-3-presentations/index.html#slides",
-    "href": "1-3-presentations/index.html#slides",
-    "title": "Presentations",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Part 1",
-      "Presentations"
-    ]
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#follow-up-with",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#follow-up-with",
+    "title": "Manuscripts",
+    "section": "Follow up with…",
+    "text": "Follow up with…\nthe Quarto Blog: https://quarto.org/docs/blog"
   },
   {
-    "objectID": "1-3-presentations/index.html#exercises",
-    "href": "1-3-presentations/index.html#exercises",
-    "title": "Presentations",
-    "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
-    "crumbs": [
-      "Part 1",
-      "Presentations"
-    ]
-  },
-  {
-    "objectID": "2-2-books/index.html",
-    "href": "2-2-books/index.html",
-    "title": "Books",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Part 2",
-      "Books"
-    ]
-  },
-  {
-    "objectID": "2-2-books/index.html#slides",
-    "href": "2-2-books/index.html#slides",
-    "title": "Books",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Part 2",
-      "Books"
-    ]
-  },
-  {
-    "objectID": "2-2-books/index.html#exercises",
-    "href": "2-2-books/index.html#exercises",
-    "title": "Books",
-    "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
-    "crumbs": [
-      "Part 2",
-      "Books"
-    ]
-  },
-  {
-    "objectID": "1-4-dashboards/index.html",
-    "href": "1-4-dashboards/index.html",
-    "title": "Dashboards",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Part 1",
-      "Dashboards"
-    ]
-  },
-  {
-    "objectID": "1-4-dashboards/index.html#slides",
-    "href": "1-4-dashboards/index.html#slides",
-    "title": "Dashboards",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Part 1",
-      "Dashboards"
-    ]
-  },
-  {
-    "objectID": "1-4-dashboards/index.html#exercises",
-    "href": "1-4-dashboards/index.html#exercises",
-    "title": "Dashboards",
-    "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
-    "crumbs": [
-      "Part 1",
-      "Dashboards"
-    ]
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#components",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#components",
-    "title": "Dashboards",
-    "section": "Components",
-    "text": "Components\n\nMetadata: YAML\nText: Markdown, likely placed in cards\nCode: Executed via jupyter (or knitr), automatically placed in cards\n\n\nWeave it all together, and you have a beautiful, functional dashboard!"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#out-turn-dashing-through-the-snow",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#out-turn-dashing-through-the-snow",
-    "title": "Dashboards",
-    "section": "Out turn: Dashing through the snow",
-    "text": "Out turn: Dashing through the snow\n\nLet’s review the components of hello-penguins-dashboard.qmd."
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#notebook-dashboard",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#notebook-dashboard",
-    "title": "Dashboards",
-    "section": "Notebook ➝ Dashboard",
-    "text": "Notebook ➝ Dashboard\n\n\nhello-penguins-dashboard.qmd\n\n---\ntitle: Hello, penguins!\nformat: dashboard\n---\n\n# notebook content goes here..."
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#dashboard-components",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#dashboard-components",
-    "title": "Dashboards",
-    "section": "Dashboard Components",
-    "text": "Dashboard Components\n\nNavigation Bar and Pages — Icon, title, and author along with links to sub-pages (if more than one page is defined).\nSidebars, Rows & Columns, and Tabsets — Rows and columns using markdown heading (with optional attributes to control height, width, etc.). Sidebars for interactive inputs. Tabsets to further divide content.\nCards (Plots, Tables, Value Boxes, Content) — Cards are containers for cell outputs and free form markdown text. The content of cards typically maps to cells in your notebook or source document.\n\n\nAll of these components can be authored and customized within notebook UI or plain text qmd."
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#navigation-bar-and-pages",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#navigation-bar-and-pages",
-    "title": "Dashboards",
-    "section": "Navigation Bar and Pages",
-    "text": "Navigation Bar and Pages\n\n\n--- \ntitle: Hello, Penguins!\nformat: \n  dashboard:\n    logo: images/penguins-logo.png\n    nav-buttons:\n      - icon: github\n        href: https://github.com/mine-cetinkaya-rundel/quarto-scipy24-exercises\n---\n\n# Data\n\n# Analysis"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#sidebars-page-level",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#sidebars-page-level",
-    "title": "Dashboards",
-    "section": "Sidebars: Page Level",
-    "text": "Sidebars: Page Level\n\n\n---\ntitle: \"Sidebar\"\nformat: dashboard\n---\n    \n# Page 1\n\n## {.sidebar}\n\n```{python}\n```\n\n## Column \n\n```{python}\n```\n\n```{python}\n```"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#sidebars-global",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#sidebars-global",
-    "title": "Dashboards",
-    "section": "Sidebars: Global",
-    "text": "Sidebars: Global\n\n\n---\ntitle: \"Global Sidebar\"\nformat: dashboard\n---\n    \n# {.sidebar}\n\nSidebar content (e.g. inputs)\n\n# Plot\n\n```{python}\n```\n\n# Data\n\n```{python}\n```"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#layout-rows",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#layout-rows",
-    "title": "Dashboards",
-    "section": "Layout: Rows",
-    "text": "Layout: Rows\n\n\n---\ntitle: \"Focal (Top)\"\nformat: dashboard\n---\n    \n## Row {height=70%}\n\n```{python}\n```\n\n## Row {height=30%}\n\n```{python}\n```\n\n```{python}\n```"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#layout-columns",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#layout-columns",
-    "title": "Dashboards",
-    "section": "Layout: Columns",
-    "text": "Layout: Columns\n\n\n---\ntitle: \"Focal (Top)\"\nformat: \n  dashboard:\n    orientation: columns\n---\n    \n## Column {width=60%}\n\n```{python}\n```\n\n## Column {width=40%}\n\n```{python}\n```\n\n```{python}\n```"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#tabsets",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#tabsets",
-    "title": "Dashboards",
-    "section": "Tabsets",
-    "text": "Tabsets\n\n\n---\ntitle: \"Palmer Penguins\"\nformat: dashboard\n---\n    \n## Row\n\n```{python}\n```\n\n## Row {.tabset}\n\n```{python}\n#| title: Chart 2\n```\n\n```{python}\n#| title: Chart 3\n```"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#plots",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#plots",
-    "title": "Dashboards",
-    "section": "Plots",
-    "text": "Plots\n\n\nplotly\n```{python}\n#| title: GDP and Life Expectancy\nimport plotly.express as px\ndf = px.data.gapminder()\npx.scatter(\n  df, x=\"gdpPercap\", y=\"lifeExp\", \n  animation_frame=\"year\", animation_group=\"country\",\n  size=\"pop\", color=\"continent\", hover_name=\"country\", \n  facet_col=\"continent\", log_x=True, size_max=45, \n  range_x=[100,100000], range_y=[25,90]\n)\n```\n\n\n\n\n\nipyleaflet\n```{python}\n#| title: \"World Map\"\n#| padding: 0px\nfrom ipyleaflet import Map, basemaps, basemap_to_tiles\nMap(basemap=basemap_to_tiles(basemaps.OpenStreetMap.Mapnik),\n    center=(48.204793, 350.121558), zoom=2)\n```"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#component-tables",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#component-tables",
-    "title": "Dashboards",
-    "section": "Tables",
-    "text": "Tables\n\n\ntabulate\n```{python}\nfrom tabulate import tabulate\nfrom IPython.display import Markdown\nMarkdown(tabulate(penguins, showindex=False)}\n```\n\n\n\n\n\nitables\n```{python}\nfrom itables import show\nshow(penguins)\n```"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#value-box-component",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#value-box-component",
-    "title": "Dashboards",
-    "section": "Value Boxes",
-    "text": "Value Boxes\n\n\n## Row\n\n```{python}\n#| component: valuebox\n#| title: \"Current Price\"\ndict(icon = \"currency-dollar\",\n     color = \"secondary\",\n     value = get_price(data))\n```\n\n```{python}\n#| component: valuebox\n#| title: \"Change\"\nchange = get_change(data)\ndict(value = change['amount'],\n     icon = change['icon'],\n     color = change['color']) \n```"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#text-content",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#text-content",
-    "title": "Dashboards",
-    "section": "Text Content",
-    "text": "Text Content\n\n\n## Column\n\n```{python}\n#| title: Population\npx.area(df, x=\"year\", y=\"pop\", \n        color=\"continent\", \n        line_group=\"country\")\n```\n\n```{python}\n#| title: Life Expectancy\npx.line(df, x=\"year\", y=\"lifeExp\", \n        color=\"continent\", \n        line_group=\"country\")\n```\n\n::: {.card}\nGapminder combines data from multiple sources\ninto unique coherent time-series that can’t be\nfound elsewhere. Learn more about the Gampminder\ndataset at &lt;https://www.gapminder.org/data/&gt;.\n:::"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#expanding-cards",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#expanding-cards",
-    "title": "Dashboards",
-    "section": "Expanding Cards",
-    "text": "Expanding Cards\nCards provide an Expand button which appears at bottom right on hover:"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#dashboard-deployment",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#dashboard-deployment",
-    "title": "Dashboards",
-    "section": "Dashboard Deployment",
-    "text": "Dashboard Deployment\nDashboards are typically just static HTML pages so can be deployed to any web server or web host.\n\n\n\n\n\n\n\nStatic\nRendered a single time (e.g. when underlying data won’t ever change)\n\n\nScheduled\nRendered on a schedule (e.g. via cron job) to accommodate changing data.\n\n\nParameterized\nVariations of static or scheduled dashboards based on parameters.\n\n\nInteractive\nFully interactive dashboard using Shiny (requires a server for deployment)."
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#parameterized-dashboards",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#parameterized-dashboards",
-    "title": "Dashboards",
-    "section": "Parameterized Dashboards",
-    "text": "Parameterized Dashboards\n\n\n\n\nAdd a parameters tag to the first cell (based on papermill) :\n```{python}\n#| tags: [parameters]\nticker = \"BA\"\n```\nUse the -P command line option to vary the parameter:\nquarto render dashboard.qmd -P ticker:GOOG"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#interactive-dashboards",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#interactive-dashboards",
-    "title": "Dashboards",
-    "section": "Interactive Dashboards",
-    "text": "Interactive Dashboards\nhttps://quarto.org/docs/dashboards/interactivity/shiny-python/\n\n\n\nFor interactive exploration, some dashboards can benefit from a live Python backend\nTo do this with Quarto Dashboards, add interactive Shiny components\nDeploy with or without a server!"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#deployment-of-interactive-dashboards",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#deployment-of-interactive-dashboards",
-    "title": "Dashboards",
-    "section": "Deployment of Interactive Dashboards",
-    "text": "Deployment of Interactive Dashboards\n\n\nServer\n\nCloud\n\nshinyapps.io\nHuggingFace Spaces\nRoll your own\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (commercial)\nRoll your own\n\n\n\nServerless\nUsing Pyodide\n[Example]"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#learn-more",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#learn-more",
-    "title": "Dashboards",
-    "section": "Learn more",
-    "text": "Learn more\n\nquarto.org/docs/dashboards"
-  },
-  {
-    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#questions",
-    "href": "1-4-dashboards/1-4-dashboards-reveal.html#questions",
-    "title": "Dashboards",
-    "section": "Questions",
-    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
-  },
-  {
-    "objectID": "pre-work.html",
-    "href": "pre-work.html",
-    "title": "Pre-workshop instructions",
-    "section": "",
-    "text": "1. Software: Download and install Python and Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.53: https://quarto.org/docs/get-started/\n\n2. Tools: Dowload and install VS Code and Jupyter and Quarto extensions.\n\nVS Code: https://code.visualstudio.com/\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter\n\n3. Exercises: Go to bit.ly/quarto-scipy24-exercises, click on “Use this template” then “Create a new repository”. Click on the green Code button and copy the URL of the repo.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then Python 3.12.4. Check the box for requirements.txt in the “Select dependencies to install” menu and hit OK.\n\n\n\n\n\n\nNote\n\n\n\nThe packages you need are as follows:\n\n\nrequirements.txt\n\ngreat_tables==0.9.0\nipykernel==6.29.5\njupyter==1.0.0\npalmerpenguins==0.1.4\npandas==2.2.2\nplotnine==0.13.6\n\nIf you have a different preferred way of managing your environment, you’re welcomed to do so. Just make sure you have these packages installed in order to be able to follow along with the examples.",
-    "crumbs": [
-      "Pre-work"
-    ]
-  },
-  {
-    "objectID": "2-2-books/2-2-books-reveal.html#quarto-books",
-    "href": "2-2-books/2-2-books-reveal.html#quarto-books",
-    "title": "Books",
-    "section": "Quarto books",
-    "text": "Quarto books\n\nBooks are also essentially format: html + a Quarto Project\nBut a book is different than format: html in that it has multiple pages\nBooks and websites are very similar in that they associate multiple pages/resources into a connected resource\nBooks and websites are different in how they treat components: pages vs. cross-referencable chapters for website and books, respectively"
-  },
-  {
-    "objectID": "2-2-books/2-2-books-reveal.html#our-turn",
-    "href": "2-2-books/2-2-books-reveal.html#our-turn",
-    "title": "Books",
-    "section": "Our turn",
-    "text": "Our turn\n\nLet’s build a book together from some of the documents we’ve created so far and highlight the following features of Quarto websites:\n\n_quarto.yml\nindex.qmd / landing page\nCross references\nSections\nAppendices"
-  },
-  {
-    "objectID": "2-2-books/2-2-books-reveal.html#your-turn",
-    "href": "2-2-books/2-2-books-reveal.html#your-turn",
-    "title": "Books",
-    "section": "Your turn",
-    "text": "Your turn\n\nPick up where we left off and\n\nGive a title to your book.\nAdd a numbered figure and cross-reference it.\nAdd a numbered figure to another chapter, cross-reference it, and observe the numbering scheme.\n\n\n\n  \n    −\n    +\n \n 10:00"
-  },
-  {
-    "objectID": "2-2-books/2-2-books-reveal.html#computations",
-    "href": "2-2-books/2-2-books-reveal.html#computations",
-    "title": "Books",
-    "section": "Computations",
-    "text": "Computations\nSame freeze and cache ideas for websites apply to books."
-  },
-  {
-    "objectID": "2-2-books/2-2-books-reveal.html#publishing",
-    "href": "2-2-books/2-2-books-reveal.html#publishing",
-    "title": "Books",
-    "section": "Publishing",
-    "text": "Publishing\nSame publishing options for websites apply to books as well."
-  },
-  {
-    "objectID": "2-2-books/2-2-books-reveal.html#learn-more",
-    "href": "2-2-books/2-2-books-reveal.html#learn-more",
-    "title": "Books",
-    "section": "Learn more",
-    "text": "Learn more\n\nquarto.org/docs/books"
-  },
-  {
-    "objectID": "2-2-books/2-2-books-reveal.html#questions",
-    "href": "2-2-books/2-2-books-reveal.html#questions",
-    "title": "Books",
-    "section": "Questions",
-    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
-  },
-  {
-    "objectID": "1-3-presentations/1-3-presentations-reveal.html#components",
-    "href": "1-3-presentations/1-3-presentations-reveal.html#components",
-    "title": "Presentations",
-    "section": "Components",
-    "text": "Components\n\nMetadata: YAML\nText: Markdown\nCode: Executed via jupyter (or knitr)\n\n\nWeave it all together, and you have a beautiful, functional slide deck!"
-  },
-  {
-    "objectID": "1-3-presentations/1-3-presentations-reveal.html#our-turn",
-    "href": "1-3-presentations/1-3-presentations-reveal.html#our-turn",
-    "title": "Presentations",
-    "section": "Our turn",
-    "text": "Our turn\n\nLet’s build a presentation together from hello-penguins-slides.qmd and showcase the following features of Quarto presentations:\n\nHierarchy, headers, and document outline\nIncremental lists\nColumns\nCode, output location, code highlighting\nLogo and footer\nMaking things fit on a slide\nChalkboard\nMultiplex\nPublishing your presentation to Quarto Pub"
-  },
-  {
-    "objectID": "1-3-presentations/1-3-presentations-reveal.html#your-turn",
-    "href": "1-3-presentations/1-3-presentations-reveal.html#your-turn",
-    "title": "Presentations",
-    "section": "Your turn",
-    "text": "Your turn\n\nPick up where we left off and\n\nChange the transition style between slides\nChange the slide size\nAdd slide numbers\n\n\n\n  \n    −\n    +\n \n 05:00"
-  },
-  {
-    "objectID": "1-3-presentations/1-3-presentations-reveal.html#our-turn-1",
-    "href": "1-3-presentations/1-3-presentations-reveal.html#our-turn-1",
-    "title": "Presentations",
-    "section": "Our turn",
-    "text": "Our turn\n\nLet’s continue building our a presentation together from hello-penguins-slides.qmd and showcase the fragments with .fragment and fragment-index=n."
-  },
-  {
-    "objectID": "1-3-presentations/1-3-presentations-reveal.html#quarto-presentation-formats",
-    "href": "1-3-presentations/1-3-presentations-reveal.html#quarto-presentation-formats",
-    "title": "Presentations",
-    "section": "Quarto presentation formats",
-    "text": "Quarto presentation formats\n\nrevealjs - essentially the replacement for xaringan, but with Pandoc-native syntax\nbeamer for LaTeX slides\nPowerPoint for when you have to collaborate via MS Office"
-  },
-  {
-    "objectID": "1-3-presentations/1-3-presentations-reveal.html#learn-more",
-    "href": "1-3-presentations/1-3-presentations-reveal.html#learn-more",
-    "title": "Presentations",
-    "section": "Learn more",
-    "text": "Learn more\n\nquarto.org/docs/presentations"
-  },
-  {
-    "objectID": "1-3-presentations/1-3-presentations-reveal.html#questions",
-    "href": "1-3-presentations/1-3-presentations-reveal.html#questions",
-    "title": "Presentations",
-    "section": "Questions",
-    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
-  },
-  {
-    "objectID": "2-1-websites/index.html",
-    "href": "2-1-websites/index.html",
-    "title": "Websites and blogs",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Part 2",
-      "Websites and blogs"
-    ]
-  },
-  {
-    "objectID": "2-1-websites/index.html#slides",
-    "href": "2-1-websites/index.html#slides",
-    "title": "Websites and blogs",
-    "section": "",
-    "text": "View slides in full screen",
-    "crumbs": [
-      "Part 2",
-      "Websites and blogs"
-    ]
-  },
-  {
-    "objectID": "2-1-websites/index.html#exercises",
-    "href": "2-1-websites/index.html#exercises",
-    "title": "Websites and blogs",
-    "section": "Exercises",
-    "text": "Exercises\nTo be posted.",
-    "crumbs": [
-      "Part 2",
-      "Websites and blogs"
-    ]
+    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#thank-you",
+    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#thank-you",
+    "title": "Manuscripts",
+    "section": "Thank you!",
+    "text": "Thank you!\n🐘 https://fosstodon.org/@minecr\n☁️ @minecr.bsky.social\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#components",
@@ -1154,218 +582,790 @@
     "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
   },
   {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#simplest",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#simplest",
-    "title": "Manuscripts",
-    "section": "Simplest",
-    "text": "Simplest\nCan run all code in a single file, and don’t mind running it over and over again with each edit.\n\n\n\n \n\n\n\n \n\n\n\n\n\n\ne.g. Data Science 101 - HW 1, Stat 101 - Final project, a blog post, a tutorial, a not-too-extensive consulting report, etc."
+    "objectID": "2-1-websites/index.html",
+    "href": "2-1-websites/index.html",
+    "title": "Websites and blogs",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Part 2",
+      "Websites and blogs"
+    ]
   },
   {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#simple",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#simple",
-    "title": "Manuscripts",
-    "section": "Simple",
-    "text": "Simple\nCan run all code in a single file, and don’t mind running it over and over again with each edit, and need an output that conforms to journal style.\n\n\n\n \n+ Quarto Journal Articles Extension\n\n\n\n \n\n\n\n or \n\n\nformatted with journal style\n\n\ne.g., a not-too-computational journal article."
+    "objectID": "2-1-websites/index.html#slides",
+    "href": "2-1-websites/index.html#slides",
+    "title": "Websites and blogs",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Part 2",
+      "Websites and blogs"
+    ]
   },
   {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#but-science-is-rarely-simple",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#but-science-is-rarely-simple",
-    "title": "Manuscripts",
-    "section": "but science is rarely simple…",
-    "text": "but science is rarely simple…\n\n\nmultiple collaborators, each with their favorite computing language and code editor\nmultiple stages of a project, each with their own level of feasibility of what can be re-run with each edit and what needs to be cached"
+    "objectID": "2-1-websites/index.html#exercises",
+    "href": "2-1-websites/index.html#exercises",
+    "title": "Websites and blogs",
+    "section": "Exercises",
+    "text": "Exercises\nTo be posted.",
+    "crumbs": [
+      "Part 2",
+      "Websites and blogs"
+    ]
   },
   {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#more-complex",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#more-complex",
-    "title": "Manuscripts",
-    "section": "More complex",
-    "text": "More complex\n\n\n\n\n\n\n\n\n   \n\n\n\n\n \n\n\n\n or"
+    "objectID": "1-3-presentations/1-3-presentations-reveal.html#components",
+    "href": "1-3-presentations/1-3-presentations-reveal.html#components",
+    "title": "Presentations",
+    "section": "Components",
+    "text": "Components\n\nMetadata: YAML\nText: Markdown\nCode: Executed via jupyter (or knitr)\n\n\nWeave it all together, and you have a beautiful, functional slide deck!"
   },
   {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#even-more-complex",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#even-more-complex",
-    "title": "Manuscripts",
-    "section": "Even more complex",
-    "text": "Even more complex\n\n\n\n\n      \n \n\n\n\n \n\n\n\n or"
+    "objectID": "1-3-presentations/1-3-presentations-reveal.html#our-turn",
+    "href": "1-3-presentations/1-3-presentations-reveal.html#our-turn",
+    "title": "Presentations",
+    "section": "Our turn",
+    "text": "Our turn\n\nLet’s build a presentation together from hello-penguins-slides.qmd and showcase the following features of Quarto presentations:\n\nHierarchy, headers, and document outline\nIncremental lists\nColumns\nCode, output location, code highlighting\nLogo and footer\nMaking things fit on a slide\nChalkboard\nMultiplex\nPublishing your presentation to Quarto Pub"
   },
   {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#aside-what-is-in-a-notebook",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#aside-what-is-in-a-notebook",
-    "title": "Manuscripts",
-    "section": "Aside: What is in a notebook?",
-    "text": "Aside: What is in a notebook?\nA notebook is a document that contains both code and narrative:\n\nJupyter notebooks (.ipynb)\nQuarto documents (.qmd) – a potential mindshift"
+    "objectID": "1-3-presentations/1-3-presentations-reveal.html#your-turn",
+    "href": "1-3-presentations/1-3-presentations-reveal.html#your-turn",
+    "title": "Presentations",
+    "section": "Your turn",
+    "text": "Your turn\n\nPick up where we left off and\n\nChange the transition style between slides\nChange the slide size\nAdd slide numbers\n\n\n\n  \n    −\n    +\n \n 05:00"
   },
   {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#current-state-of-affairs",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#current-state-of-affairs",
-    "title": "Manuscripts",
-    "section": "Current state of affairs",
-    "text": "Current state of affairs\nMost computational science is born in notebooks\n\n\nPeer-review and publication workflows don’t support notebooks as research outputs\nThe more complex scenarios involve a lot of manual finagling to bring the project to journal submission stage\nOften during this process reproducibility is lost, or takes second seat to the formatting requirements\nFinal submission rarely captures all computations, which are, at best, relegated to supplementary materials\n\n\nand dies ends in PDF or Word documents"
+    "objectID": "1-3-presentations/1-3-presentations-reveal.html#our-turn-1",
+    "href": "1-3-presentations/1-3-presentations-reveal.html#our-turn-1",
+    "title": "Presentations",
+    "section": "Our turn",
+    "text": "Our turn\n\nLet’s continue building our a presentation together from hello-penguins-slides.qmd and showcase the fragments with .fragment and fragment-index=n."
   },
   {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#roadmap-to-fully-reproducible-scientific-manuscripts",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#roadmap-to-fully-reproducible-scientific-manuscripts",
-    "title": "Manuscripts",
-    "section": "Roadmap to fully reproducible scientific manuscripts",
-    "text": "Roadmap to fully reproducible scientific manuscripts\nthat are not just PDFs that are the outputs of a single qmd file\n\n An end-to-end scholarly publishing workflow that treats Jupyter and Quarto notebooks as a primary element of the scientific record.\n\n\n A publication process that elevates transparent and reproducible work by authors, where data and software, together with narrative, are documented, shared, and archived.\n\n\n New forms of credit to the wider research community, including research software engineers or rsearch software engineers."
+    "objectID": "1-3-presentations/1-3-presentations-reveal.html#quarto-presentation-formats",
+    "href": "1-3-presentations/1-3-presentations-reveal.html#quarto-presentation-formats",
+    "title": "Presentations",
+    "section": "Quarto presentation formats",
+    "text": "Quarto presentation formats\n\nrevealjs - essentially the replacement for xaringan, but with Pandoc-native syntax\nbeamer for LaTeX slides\nPowerPoint for when you have to collaborate via MS Office"
   },
   {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-can",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-can",
-    "title": "Manuscripts",
-    "section": "Quarto can…",
-    "text": "Quarto can…\n\n\nbe authored in your favorite code editor\nrender from qmd or Jupyter notebook to PDF, Word, HTML, etc.\nexecute code in Python, R, and more\napply journal styles to your outputs with Quarto extensions\npublish to GitHub Pages, Netlify, and more\norchestrate multiple inputs and outputs with embedded computing using a new Quarto project type: manuscript"
-  },
-  {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-manuscript",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#quarto-manuscript",
-    "title": "Manuscripts",
-    "section": "Quarto manuscript",
-    "text": "Quarto manuscript\nQuarto manuscripts, in addition to doing everything you can do with journal articles, can\n\nproduce manuscripts in multiple formats (including LaTeX or MS Word formats required by journals), and give readers easy access to all of the formats through a website\npublish computations from one or more notebooks alongside the manuscript, allowing readers to dive into your code and view it or interact with it in a virtual environment"
-  },
-  {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#getting-started",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#getting-started",
-    "title": "Manuscripts",
-    "section": "Getting started",
-    "text": "Getting started\n\nApproach 1: Start from scratch\n\nCreating a Quarto manuscript\n\nVS Code: In the Command Palette – Quarto: Create Project &gt; Manuscript Project\nquarto create project manuscript &lt;name&gt;\n\nAdd manuscript content\n\nApproach 2: Start with a sample from https://quarto.org/docs/manuscripts\n\n\n\n\n\n\n\nManuscripts ♥️ Git + GitHub\n\n\nTrack your project with Git and host on GitHub for easy publishing."
-  },
-  {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#a-finished-product",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#a-finished-product",
-    "title": "Manuscripts",
-    "section": "A finished product",
-    "text": "A finished product"
-  },
-  {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#multiple-formats-from-one-source",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#multiple-formats-from-one-source",
-    "title": "Manuscripts",
-    "section": "Multiple formats from one source",
-    "text": "Multiple formats from one source"
-  },
-  {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#multiple-formats-from-one-source-1",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#multiple-formats-from-one-source-1",
-    "title": "Manuscripts",
-    "section": "Multiple formats from one source",
-    "text": "Multiple formats from one source\nIn quarto.yml of the project:\n---\nformat:\n  html:\n    theme: cosmo\n    toc-location: left\n    comments: \n      hypothesis: true\n    citations-hover: true\n    crossrefs-hover: true\n  agu-pdf: default\n  docx: default\n  jats: default\n---"
-  },
-  {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter",
-    "title": "Manuscripts",
-    "section": "Rich front matter",
-    "text": "Rich front matter\nIn index.qmd of the project:\n---\ntitle: La Palma Earthquakes\nauthor:\n  - name: Steve Purves\n    orcid: 0000-0002-0760-5497\n    corresponding: true\n    email: steve@curvenote.com\n    roles:\n      - Investigation\n      - Project administration\n      - Software\n      - Visualization\n    affiliations:\n      - Curvenote\n  - name: Rowan Cockett\n    orcid: 0000-0002-7859-8394\n    corresponding: false\n    roles: []\n    affiliations:\n      - Curvenote\nlicense: CC BY-SA 4.0\nkeywords:\n  - La Palma\n  - Earthquakes\ndate: '2022-05-11'\nabstract: |\n  In September 2021, a significant jump in seismic activity on the island of La Palma (Canary Islands, Spain) signaled the start of a volcanic crisis that still continues at the time of writing. Earthquake data is continually collected and published by the Instituto Geográphico Nacional (IGN). We have created an accessible dataset from this and completed preliminary data analysis which shows seismicity originating at two distinct depths, consistent with the model of a two reservoir system feeding the currently very active volcano.\nkeypoints:\n  - You may specify 1 to 3 keypoints for this PDF template\n  - These keypoints are complete sentences and less than or equal to 140 characters\n  - 'They are specific to this PDF template, so they will not appear in other exports'\ncitation:\n  container-title: Notebooks Now!\ndraft: false\nbibliography: references.bib\necho: false\n---"
-  },
-  {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter-1",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter-1",
-    "title": "Manuscripts",
-    "section": "Rich front matter",
-    "text": "Rich front matter\nfrom source \\(\\rightarrow\\) only relevant / required metadata in manuscript:"
-  },
-  {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter-2",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#rich-front-matter-2",
-    "title": "Manuscripts",
-    "section": "Rich front matter",
-    "text": "Rich front matter\nfrom source \\(\\rightarrow\\) only relevant / required metadata in manuscript:"
-  },
-  {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#embedded-computations",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#embedded-computations",
-    "title": "Manuscripts",
-    "section": "Embedded computations",
-    "text": "Embedded computations"
-  },
-  {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#actually-dive-into-the-code",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#actually-dive-into-the-code",
-    "title": "Manuscripts",
-    "section": "Actually dive into the code",
-    "text": "Actually dive into the code\n\nWe’ve seen that you can peruse the code underlying the figures and tables in the manuscript\nWhat if you wanted to interact with the code – in a computational environment that’s just a click away and that has all the software and packages needed to reproduce the manuscript?"
-  },
-  {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#binder-with-quarto",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#binder-with-quarto",
-    "title": "Manuscripts",
-    "section": "Binder with Quarto",
-    "text": "Binder with Quarto\nwith quarto use binder:"
-  },
-  {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#binder-with-quarto-1",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#binder-with-quarto-1",
-    "title": "Manuscripts",
-    "section": "Binder with Quarto",
-    "text": "Binder with Quarto"
-  },
-  {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#learn-more",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#learn-more",
-    "title": "Manuscripts",
+    "objectID": "1-3-presentations/1-3-presentations-reveal.html#learn-more",
+    "href": "1-3-presentations/1-3-presentations-reveal.html#learn-more",
+    "title": "Presentations",
     "section": "Learn more",
-    "text": "Learn more\n\nquarto.org/docs/manuscripts"
+    "text": "Learn more\n\nquarto.org/docs/presentations"
   },
   {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#questions",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#questions",
-    "title": "Manuscripts",
+    "objectID": "1-3-presentations/1-3-presentations-reveal.html#questions",
+    "href": "1-3-presentations/1-3-presentations-reveal.html#questions",
+    "title": "Presentations",
     "section": "Questions",
-    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?"
+    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
   },
   {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#learning-more",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#learning-more",
-    "title": "Manuscripts",
-    "section": "Learning more",
-    "text": "Learning more\nhttps://quarto.org"
+    "objectID": "2-2-books/2-2-books-reveal.html#quarto-books",
+    "href": "2-2-books/2-2-books-reveal.html#quarto-books",
+    "title": "Books",
+    "section": "Quarto books",
+    "text": "Quarto books\n\nBooks are also essentially format: html + a Quarto Project\nBut a book is different than format: html in that it has multiple pages\nBooks and websites are very similar in that they associate multiple pages/resources into a connected resource\nBooks and websites are different in how they treat components: pages vs. cross-referencable chapters for website and books, respectively"
   },
   {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#follow-up-with",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#follow-up-with",
-    "title": "Manuscripts",
-    "section": "Follow up with…",
-    "text": "Follow up with…\nthe Quarto Blog: https://quarto.org/docs/blog"
+    "objectID": "2-2-books/2-2-books-reveal.html#our-turn",
+    "href": "2-2-books/2-2-books-reveal.html#our-turn",
+    "title": "Books",
+    "section": "Our turn",
+    "text": "Our turn\n\nLet’s build a book together from some of the documents we’ve created so far and highlight the following features of Quarto websites:\n\n_quarto.yml\nindex.qmd / landing page\nCross references\nSections\nAppendices"
   },
   {
-    "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#thank-you",
-    "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#thank-you",
-    "title": "Manuscripts",
-    "section": "Thank you!",
-    "text": "Thank you!\n🐘 https://fosstodon.org/@minecr\n☁️ @minecr.bsky.social\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
+    "objectID": "2-2-books/2-2-books-reveal.html#your-turn",
+    "href": "2-2-books/2-2-books-reveal.html#your-turn",
+    "title": "Books",
+    "section": "Your turn",
+    "text": "Your turn\n\nPick up where we left off and\n\nGive a title to your book.\nAdd a numbered figure and cross-reference it.\nAdd a numbered figure to another chapter, cross-reference it, and observe the numbering scheme.\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
-    "objectID": "1-1-hello/index.html",
-    "href": "1-1-hello/index.html",
-    "title": "Hello, Quarto!",
+    "objectID": "2-2-books/2-2-books-reveal.html#computations",
+    "href": "2-2-books/2-2-books-reveal.html#computations",
+    "title": "Books",
+    "section": "Computations",
+    "text": "Computations\nSame freeze and cache ideas for websites apply to books."
+  },
+  {
+    "objectID": "2-2-books/2-2-books-reveal.html#publishing",
+    "href": "2-2-books/2-2-books-reveal.html#publishing",
+    "title": "Books",
+    "section": "Publishing",
+    "text": "Publishing\nSame publishing options for websites apply to books as well."
+  },
+  {
+    "objectID": "2-2-books/2-2-books-reveal.html#learn-more",
+    "href": "2-2-books/2-2-books-reveal.html#learn-more",
+    "title": "Books",
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/books"
+  },
+  {
+    "objectID": "2-2-books/2-2-books-reveal.html#questions",
+    "href": "2-2-books/2-2-books-reveal.html#questions",
+    "title": "Books",
+    "section": "Questions",
+    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
+  },
+  {
+    "objectID": "1-4-dashboards/index.html",
+    "href": "1-4-dashboards/index.html",
+    "title": "Dashboards",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Part 1",
-      "Hello"
+      "Dashboards"
     ]
   },
   {
-    "objectID": "1-1-hello/index.html#slides",
-    "href": "1-1-hello/index.html#slides",
-    "title": "Hello, Quarto!",
+    "objectID": "1-4-dashboards/index.html#slides",
+    "href": "1-4-dashboards/index.html#slides",
+    "title": "Dashboards",
     "section": "",
     "text": "View slides in full screen",
     "crumbs": [
       "Part 1",
-      "Hello"
+      "Dashboards"
     ]
   },
   {
-    "objectID": "1-1-hello/index.html#exercises",
-    "href": "1-1-hello/index.html#exercises",
-    "title": "Hello, Quarto!",
+    "objectID": "1-4-dashboards/index.html#exercises",
+    "href": "1-4-dashboards/index.html#exercises",
+    "title": "Dashboards",
     "section": "Exercises",
     "text": "Exercises\nTo be posted.",
     "crumbs": [
       "Part 1",
-      "Hello"
+      "Dashboards"
     ]
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#components",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#components",
+    "title": "Dashboards",
+    "section": "Components",
+    "text": "Components\n\nMetadata: YAML\nText: Markdown, likely placed in cards\nCode: Executed via jupyter (or knitr), automatically placed in cards\n\n\nWeave it all together, and you have a beautiful, functional dashboard!"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#out-turn-dashing-through-the-snow",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#out-turn-dashing-through-the-snow",
+    "title": "Dashboards",
+    "section": "Out turn: Dashing through the snow",
+    "text": "Out turn: Dashing through the snow\n\nLet’s review the components of hello-penguins-dashboard.qmd."
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#notebook-dashboard",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#notebook-dashboard",
+    "title": "Dashboards",
+    "section": "Notebook ➝ Dashboard",
+    "text": "Notebook ➝ Dashboard\n\n\nhello-penguins-dashboard.qmd\n\n---\ntitle: Hello, penguins!\nformat: dashboard\n---\n\n# notebook content goes here..."
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#dashboard-components",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#dashboard-components",
+    "title": "Dashboards",
+    "section": "Dashboard Components",
+    "text": "Dashboard Components\n\nNavigation Bar and Pages — Icon, title, and author along with links to sub-pages (if more than one page is defined).\nSidebars, Rows & Columns, and Tabsets — Rows and columns using markdown heading (with optional attributes to control height, width, etc.). Sidebars for interactive inputs. Tabsets to further divide content.\nCards (Plots, Tables, Value Boxes, Content) — Cards are containers for cell outputs and free form markdown text. The content of cards typically maps to cells in your notebook or source document.\n\n\nAll of these components can be authored and customized within notebook UI or plain text qmd."
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#navigation-bar-and-pages",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#navigation-bar-and-pages",
+    "title": "Dashboards",
+    "section": "Navigation Bar and Pages",
+    "text": "Navigation Bar and Pages\n\n\n--- \ntitle: Hello, Penguins!\nformat: \n  dashboard:\n    logo: images/penguins-logo.png\n    nav-buttons:\n      - icon: github\n        href: https://github.com/mine-cetinkaya-rundel/quarto-scipy24-exercises\n---\n\n# Data\n\n# Analysis"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#sidebars-page-level",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#sidebars-page-level",
+    "title": "Dashboards",
+    "section": "Sidebars: Page Level",
+    "text": "Sidebars: Page Level\n\n\n---\ntitle: \"Sidebar\"\nformat: dashboard\n---\n    \n# Page 1\n\n## {.sidebar}\n\n```{python}\n```\n\n## Column \n\n```{python}\n```\n\n```{python}\n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#sidebars-global",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#sidebars-global",
+    "title": "Dashboards",
+    "section": "Sidebars: Global",
+    "text": "Sidebars: Global\n\n\n---\ntitle: \"Global Sidebar\"\nformat: dashboard\n---\n    \n# {.sidebar}\n\nSidebar content (e.g. inputs)\n\n# Plot\n\n```{python}\n```\n\n# Data\n\n```{python}\n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#layout-rows",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#layout-rows",
+    "title": "Dashboards",
+    "section": "Layout: Rows",
+    "text": "Layout: Rows\n\n\n---\ntitle: \"Focal (Top)\"\nformat: dashboard\n---\n    \n## Row {height=70%}\n\n```{python}\n```\n\n## Row {height=30%}\n\n```{python}\n```\n\n```{python}\n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#layout-columns",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#layout-columns",
+    "title": "Dashboards",
+    "section": "Layout: Columns",
+    "text": "Layout: Columns\n\n\n---\ntitle: \"Focal (Top)\"\nformat: \n  dashboard:\n    orientation: columns\n---\n    \n## Column {width=60%}\n\n```{python}\n```\n\n## Column {width=40%}\n\n```{python}\n```\n\n```{python}\n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#tabsets",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#tabsets",
+    "title": "Dashboards",
+    "section": "Tabsets",
+    "text": "Tabsets\n\n\n---\ntitle: \"Palmer Penguins\"\nformat: dashboard\n---\n    \n## Row\n\n```{python}\n```\n\n## Row {.tabset}\n\n```{python}\n#| title: Chart 2\n```\n\n```{python}\n#| title: Chart 3\n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#plots",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#plots",
+    "title": "Dashboards",
+    "section": "Plots",
+    "text": "Plots\n\n\nplotly\n```{python}\n#| title: GDP and Life Expectancy\nimport plotly.express as px\ndf = px.data.gapminder()\npx.scatter(\n  df, x=\"gdpPercap\", y=\"lifeExp\", \n  animation_frame=\"year\", animation_group=\"country\",\n  size=\"pop\", color=\"continent\", hover_name=\"country\", \n  facet_col=\"continent\", log_x=True, size_max=45, \n  range_x=[100,100000], range_y=[25,90]\n)\n```\n\n\n\n\n\nipyleaflet\n```{python}\n#| title: \"World Map\"\n#| padding: 0px\nfrom ipyleaflet import Map, basemaps, basemap_to_tiles\nMap(basemap=basemap_to_tiles(basemaps.OpenStreetMap.Mapnik),\n    center=(48.204793, 350.121558), zoom=2)\n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#component-tables",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#component-tables",
+    "title": "Dashboards",
+    "section": "Tables",
+    "text": "Tables\n\n\ntabulate\n```{python}\nfrom tabulate import tabulate\nfrom IPython.display import Markdown\nMarkdown(tabulate(penguins, showindex=False)}\n```\n\n\n\n\n\nitables\n```{python}\nfrom itables import show\nshow(penguins)\n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#value-box-component",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#value-box-component",
+    "title": "Dashboards",
+    "section": "Value Boxes",
+    "text": "Value Boxes\n\n\n## Row\n\n```{python}\n#| component: valuebox\n#| title: \"Current Price\"\ndict(icon = \"currency-dollar\",\n     color = \"secondary\",\n     value = get_price(data))\n```\n\n```{python}\n#| component: valuebox\n#| title: \"Change\"\nchange = get_change(data)\ndict(value = change['amount'],\n     icon = change['icon'],\n     color = change['color']) \n```"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#text-content",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#text-content",
+    "title": "Dashboards",
+    "section": "Text Content",
+    "text": "Text Content\n\n\n## Column\n\n```{python}\n#| title: Population\npx.area(df, x=\"year\", y=\"pop\", \n        color=\"continent\", \n        line_group=\"country\")\n```\n\n```{python}\n#| title: Life Expectancy\npx.line(df, x=\"year\", y=\"lifeExp\", \n        color=\"continent\", \n        line_group=\"country\")\n```\n\n::: {.card}\nGapminder combines data from multiple sources\ninto unique coherent time-series that can’t be\nfound elsewhere. Learn more about the Gampminder\ndataset at &lt;https://www.gapminder.org/data/&gt;.\n:::"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#expanding-cards",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#expanding-cards",
+    "title": "Dashboards",
+    "section": "Expanding Cards",
+    "text": "Expanding Cards\nCards provide an Expand button which appears at bottom right on hover:"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#dashboard-deployment",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#dashboard-deployment",
+    "title": "Dashboards",
+    "section": "Dashboard Deployment",
+    "text": "Dashboard Deployment\nDashboards are typically just static HTML pages so can be deployed to any web server or web host.\n\n\n\n\n\n\n\nStatic\nRendered a single time (e.g. when underlying data won’t ever change)\n\n\nScheduled\nRendered on a schedule (e.g. via cron job) to accommodate changing data.\n\n\nParameterized\nVariations of static or scheduled dashboards based on parameters.\n\n\nInteractive\nFully interactive dashboard using Shiny (requires a server for deployment)."
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#parameterized-dashboards",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#parameterized-dashboards",
+    "title": "Dashboards",
+    "section": "Parameterized Dashboards",
+    "text": "Parameterized Dashboards\n\n\n\n\nAdd a parameters tag to the first cell (based on papermill) :\n```{python}\n#| tags: [parameters]\nticker = \"BA\"\n```\nUse the -P command line option to vary the parameter:\nquarto render dashboard.qmd -P ticker:GOOG"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#interactive-dashboards",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#interactive-dashboards",
+    "title": "Dashboards",
+    "section": "Interactive Dashboards",
+    "text": "Interactive Dashboards\nhttps://quarto.org/docs/dashboards/interactivity/shiny-python/\n\n\n\nFor interactive exploration, some dashboards can benefit from a live Python backend\nTo do this with Quarto Dashboards, add interactive Shiny components\nDeploy with or without a server!"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#deployment-of-interactive-dashboards",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#deployment-of-interactive-dashboards",
+    "title": "Dashboards",
+    "section": "Deployment of Interactive Dashboards",
+    "text": "Deployment of Interactive Dashboards\n\n\nServer\n\nCloud\n\nshinyapps.io\nHuggingFace Spaces\nRoll your own\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (commercial)\nRoll your own\n\n\n\nServerless\nUsing Pyodide\n[Example]"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#learn-more",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#learn-more",
+    "title": "Dashboards",
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/dashboards"
+  },
+  {
+    "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#questions",
+    "href": "1-4-dashboards/1-4-dashboards-reveal.html#questions",
+    "title": "Dashboards",
+    "section": "Questions",
+    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
+  },
+  {
+    "objectID": "2-2-books/index.html",
+    "href": "2-2-books/index.html",
+    "title": "Books",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Part 2",
+      "Books"
+    ]
+  },
+  {
+    "objectID": "2-2-books/index.html#slides",
+    "href": "2-2-books/index.html#slides",
+    "title": "Books",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Part 2",
+      "Books"
+    ]
+  },
+  {
+    "objectID": "2-2-books/index.html#exercises",
+    "href": "2-2-books/index.html#exercises",
+    "title": "Books",
+    "section": "Exercises",
+    "text": "Exercises\nTo be posted.",
+    "crumbs": [
+      "Part 2",
+      "Books"
+    ]
+  },
+  {
+    "objectID": "1-3-presentations/index.html",
+    "href": "1-3-presentations/index.html",
+    "title": "Presentations",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Part 1",
+      "Presentations"
+    ]
+  },
+  {
+    "objectID": "1-3-presentations/index.html#slides",
+    "href": "1-3-presentations/index.html#slides",
+    "title": "Presentations",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Part 1",
+      "Presentations"
+    ]
+  },
+  {
+    "objectID": "1-3-presentations/index.html#exercises",
+    "href": "1-3-presentations/index.html#exercises",
+    "title": "Presentations",
+    "section": "Exercises",
+    "text": "Exercises\nTo be posted.",
+    "crumbs": [
+      "Part 1",
+      "Presentations"
+    ]
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#quarto-projects",
+    "href": "2-1-websites/2-1-websites-reveal.html#quarto-projects",
+    "title": "Websites and blogs",
+    "section": "Quarto projects",
+    "text": "Quarto projects\n\nQuarto projects have a _quarto.yml file\nThe type field in this file indicates the type of project:\n\ndefault: Collection of documents\nwebsite: Websites (and blogs)\nbooks: Books\nmanuscript: Journal manuscript with embedded computing and JATS bundle"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#components",
+    "href": "2-1-websites/2-1-websites-reveal.html#components",
+    "title": "Websites and blogs",
+    "section": "Components",
+    "text": "Components\n\n\nA Quarto Project is a directory that contains a file called _quarto.yml.\n\n\n\n\n\n\nThis is a Quarto Project.\nmy-folder/\n├── _quarto.yml\n├── my-document.ipynb\n\nThis is not.\nmy-folder/\n├── my-document.ipynb"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#quarto.yml",
+    "href": "2-1-websites/2-1-websites-reveal.html#quarto.yml",
+    "title": "Websites and blogs",
+    "section": "_quarto.yml",
+    "text": "_quarto.yml\nA YAML file with particular keys and values that Quarto recognizes. Unrecognized keys are ignored.\n\n\n_quarto.yml\n\nproject:\n  title: \"A Barebones Project\""
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#quarto.yml-1",
+    "href": "2-1-websites/2-1-websites-reveal.html#quarto.yml-1",
+    "title": "Websites and blogs",
+    "section": "_quarto.yml",
+    "text": "_quarto.yml\nA YAML file with particular keys and values that Quarto recognizes. Unrecognized keys are ignored.\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs\n\nwebsite:\n  page-navigation: true\n  title: \"Unlocking Dynamic Reproducible Documents\"\n  description: \"A Quarto Tutorial for Scientific Communication on Quarto at SciPy 2024\"\n\n  repo-url: https://github.com/mine-cetinkaya-rundel/quarto-scipy24\n  repo-actions: [edit, issue]\n\n  open-graph: true\n\n  sidebar:\n    background: \"#D1D9E3\"\n    logo: \"images/quarto-scipy24-site-logo.png\"\n    pinned: true\n    align: center\n    tools:\n      - icon: github\n        href: https://github.com/mine-cetinkaya-rundel/quarto-scipy24\n        text: GitHub repo\n      - icon: code-square\n        href: https://code.visualstudio.com/\n        text: VS Code\n\n    style: docked\n    search: true\n    collapse-level: 2\n    contents:\n      - href: index.qmd\n        text: Home\n      - href: pre-work.qmd\n        text: Pre-work\n      - section: Part 1\n        contents:\n          - href: 1-1-hello/index.qmd\n            text: Hello\n          - href: 1-2-documents/index.qmd\n            text: Documents\n          - href: 1-3-presentations/index.qmd\n            text: Presentations\n          - href: 1-4-dashboards/index.qmd\n            text: Dashboards\n      - section: Part 2\n        contents:\n          - href: 2-1-websites/index.qmd\n            text: Websites and blogs\n          - href: 2-2-books/index.qmd\n            text: Books\n          - href: 2-3-manuscripts/index.qmd\n            text: Manuscripts\n\n  page-footer:\n    right: \"This page is built with 💚 and [Quarto](https://quarto.org/).\"\n    left: \"&copy; Copyright 2024, Mine Çetinkaya-Rundel\"\n    background: \"#D1D9E3\" # Arylide Yellow\n\nformat:\n  html:\n    theme:\n      light: [cosmo, style/quarto-scipy24.scss]\n      dark: [cosmo, style/quarto-scipy24.scss, style/dark.scss]\n    linkcolor: \"#58779b\"\n    toc: true\n    code-copy: true\n    code-overflow: wrap\n    mainfont: \"Atkinson Hyperlegible\"\n\nexecute:\n  freeze: auto\n  echo: true"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#quarto-websites",
+    "href": "2-1-websites/2-1-websites-reveal.html#quarto-websites",
+    "title": "Websites and blogs",
+    "section": "Quarto websites",
+    "text": "Quarto websites\n\n\nWebsites are essentially format: html + a Quarto Project file\nBut a website is different than format: html in that it has multiple pages\nWebsites and books are very similar in that they associate multiple pages/resources into a connected resource\n\nIn books, you can cross-reference between pages (chapters), but (currently), you can’t cross-reference between pages in websites"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#our-turn",
+    "href": "2-1-websites/2-1-websites-reveal.html#our-turn",
+    "title": "Websites and blogs",
+    "section": "Our turn",
+    "text": "Our turn\n\nLet’s build a website that features a few of the notebooks we worked on and highlight the following features of Quarto websites:\n\nAdd a _quarto.yml\nCreate a landing page: index.qmd\nExplore navigation options: navbar, sidebar\nApply themes, including a light and dark theme toggle\nPublish to QuartoPub with quarto publish\nAn aspect of the workshop webpage that you fancy?"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#your-turn",
+    "href": "2-1-websites/2-1-websites-reveal.html#your-turn",
+    "title": "Websites and blogs",
+    "section": "Your turn",
+    "text": "Your turn\n\n\nAdd one more notebook that has at least one executable code cell and add it to the navigation list in _quarto.yml and render your site.\nAdd an about page, about.qmd, personalize it, and add it to the navigation list in _quarto.yml and render your site.\nRe-publish on QuartoPub with quarto publish.\n\n\n\n  \n    −\n    +\n \n 10:00"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#listings-1",
+    "href": "2-1-websites/2-1-websites-reveal.html#listings-1",
+    "title": "Websites and blogs",
+    "section": "Listings",
+    "text": "Listings\n\nListings enable you to automatically generate the contents of a page (or region of a page) from a list of Quarto documents or other custom data\nUseful for creating blogs, providing navigation for large numbers of documents, or any other scenario where you’d like the contents of a page to be automatically updated as documents are added, updated, and removed"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#blogs",
+    "href": "2-1-websites/2-1-websites-reveal.html#blogs",
+    "title": "Websites and blogs",
+    "section": "Blogs",
+    "text": "Blogs\n\nLet’s now add a blog component to our website:\n\nMove two of your notebook files into a new a folder called posts.\nCollect these notebooks in a new blog page using the listings feature.\n\nDon’t forget to make corresponding changes in your _quarto.yml file.\n\nExperiment with the style of listings and choose one you like."
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#when-should-code-be-re-run",
+    "href": "2-1-websites/2-1-websites-reveal.html#when-should-code-be-re-run",
+    "title": "Websites and blogs",
+    "section": "When should code be re-run?",
+    "text": "When should code be re-run?\n\n\nYou might have a reason to re-run all code in a Quarto website (every single cell in every single document) every time you render the website.\nBut, chances are, that’s not what you want.\n\nJust playing around styling – you probably don’t want to run the code again\nChanged some code in a document – you probably want to re-run the code in that document, but not necessarily others\nMade a big change affecting computations on many or all pages – you probably want to re-run all code\n\nfreeze and cache options give you fine control over these decisions"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#freeze",
+    "href": "2-1-websites/2-1-websites-reveal.html#freeze",
+    "title": "Websites and blogs",
+    "section": "Freeze",
+    "text": "Freeze\n\nThe freeze option controls when/if computational documents be re-rendered during a global project render:\n\nexecute:\n  freeze: true  # never re-render during project render\nexecute:\n  freeze: auto  # re-render only when source changes\nexecute:\n  freeze: false  # always re-render\n\nThe freeze option is typically added to a _metadata.yml file within a specific directory, affecting all files in that directory.\nFor blogs, set feeze in _metadata.yml at the root of the posts directory.\nYou can have it only within specific subdirectories for more complex sites."
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#freeze-and-jupyter-notebooks",
+    "href": "2-1-websites/2-1-websites-reveal.html#freeze-and-jupyter-notebooks",
+    "title": "Websites and blogs",
+    "section": "Freeze and Jupyter notebooks",
+    "text": "Freeze and Jupyter notebooks\n\nWhen rendering an .ipynb, Quarto will not execute the cells within the notebook by default, assuming that you have already executed them while editing the notebook\nTo execute the cells, pass the --execute flag to render:\n\n\n\nTerminal\n\nquarto render notebook.ipynb --execute\n\n\nOr specify this behavior within the notebook’s YAML front matter:\n\n---\nexecute:\n  enabled: true\n---"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#cache",
+    "href": "2-1-websites/2-1-websites-reveal.html#cache",
+    "title": "Websites and blogs",
+    "section": "Cache",
+    "text": "Cache\n\nCache stores the results of computations for a specific file\nCache invalidation is triggered by changes in chunk source code (or other cache attributes you’ve defined)\ncache can also be set at the chunk level, particularly useful for computationally expensive chunks"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#freeze-vs.-cache",
+    "href": "2-1-websites/2-1-websites-reveal.html#freeze-vs.-cache",
+    "title": "Websites and blogs",
+    "section": "Freeze vs. cache",
+    "text": "Freeze vs. cache\n\nFreeze option is typically set\n\nfor the whole website in _quarto.yml, or\nfor files within a directory in _metadata.yml in that directory\n\n\nexecute: \n  freeze: auto\n\nCache option is typically set for a given file or for individual chunk(s) in a file.\n\nexecute:\n  cache: true\nor\n\n```{python}\n1 + 1\n```\n\n2"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#quartopub",
+    "href": "2-1-websites/2-1-websites-reveal.html#quartopub",
+    "title": "Websites and blogs",
+    "section": "QuartoPub",
+    "text": "QuartoPub\n\nQuarto Pub is a free publishing service for content created with Quarto. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites.\nPublish with quarto publish:\n\n\n\nTerminal\n\nquarto publish quarto-pub\n\n\nGain a _publish.yml that is safe to check into version control."
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#other-venues",
+    "href": "2-1-websites/2-1-websites-reveal.html#other-venues",
+    "title": "Websites and blogs",
+    "section": "Other venues",
+    "text": "Other venues\n\nGitHub Pages\nPosit Connect\nNetlify\nMore venues"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#learn-more",
+    "href": "2-1-websites/2-1-websites-reveal.html#learn-more",
+    "title": "Websites and blogs",
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/websites"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#questions",
+    "href": "2-1-websites/2-1-websites-reveal.html#questions",
+    "title": "Websites and blogs",
+    "section": "Questions",
+    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
+  },
+  {
+    "objectID": "1-2-documents/index.html",
+    "href": "1-2-documents/index.html",
+    "title": "Documents",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Part 1",
+      "Documents"
+    ]
+  },
+  {
+    "objectID": "1-2-documents/index.html#slides",
+    "href": "1-2-documents/index.html#slides",
+    "title": "Documents",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Part 1",
+      "Documents"
+    ]
+  },
+  {
+    "objectID": "1-2-documents/index.html#exercises",
+    "href": "1-2-documents/index.html#exercises",
+    "title": "Documents",
+    "section": "Exercises",
+    "text": "Exercises\nTo be posted.",
+    "crumbs": [
+      "Part 1",
+      "Documents"
+    ]
+  },
+  {
+    "objectID": "2-3-manuscripts/index.html",
+    "href": "2-3-manuscripts/index.html",
+    "title": "Manuscripts",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Part 2",
+      "Manuscripts"
+    ]
+  },
+  {
+    "objectID": "2-3-manuscripts/index.html#slides",
+    "href": "2-3-manuscripts/index.html#slides",
+    "title": "Manuscripts",
+    "section": "",
+    "text": "View slides in full screen",
+    "crumbs": [
+      "Part 2",
+      "Manuscripts"
+    ]
+  },
+  {
+    "objectID": "2-3-manuscripts/index.html#exercises",
+    "href": "2-3-manuscripts/index.html#exercises",
+    "title": "Manuscripts",
+    "section": "Exercises",
+    "text": "Exercises\nTo be posted.",
+    "crumbs": [
+      "Part 2",
+      "Manuscripts"
+    ]
+  },
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Unlocking Dynamic Reproducible Documents",
+    "section": "",
+    "text": "Work in progress\n\n\n\nThis page and workshop materials are works in progress until the workshop date and time specified below. For latest version of the materials, please revisit when the workshop begins.\n🗓️ Date: July 8, 2024\n🕗 Time: 08:00 - 12:00 US/Pacific\n🏨 Location: Room 316",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#abstract",
+    "href": "index.html#abstract",
+    "title": "Unlocking Dynamic Reproducible Documents",
+    "section": "Abstract",
+    "text": "Abstract\nQuarto is an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and plain text markdown documents. Quarto provides data scientists with a seamless way to publish their work in a high-quality format that is reproducible, accessible, and shareable. With Quarto, researchers can turn their Jupyter Notebooks and literate plain text markdown documents into professional-looking publications in various formats. This workshop will demonstrate how Quarto enables data scientists to turn their work products into professional, high-quality documents, slides, websites, scientific manuscripts, and other shareable artifacts.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#overview",
+    "href": "index.html#overview",
+    "title": "Unlocking Dynamic Reproducible Documents",
+    "section": "Overview",
+    "text": "Overview\nSharing knowledge through writing is a critical aspect of scientific activity, including data science. It allows researchers to communicate their findings and insights to a broader audience, build upon existing work, and collaborate with others in their field. Quarto, an innovative, open-source scientific and technical publishing system compatible with Jupyter Notebooks and plain text markdown documents, provides data scientists with a seamless way to publish their work in a high-quality format that is easily accessible, shareable, and reproducible. With Quarto, researchers and data professionals can turn their notebooks into professional-looking publications in various formats, including web pages, books, slides, dashboards, and scientific manuscripts. This workshop will demonstrate how Quarto enables data scientists to turn their work products into professional, high-quality publications.\nThe learning outcomes for the workshop include:\n\nAuthor documents in plain text markdown or Jupyter notebooks with equations, citations, crossrefs, figure panels, callouts, and advanced layouts.\nLearn how to author content in IPython/Jupyter and the Quarto VS Code extension.\nLeverage Quarto for creating different types of publications, including webpages/blogs, slides, dashboards, books, websites, and scientific manuscripts.\nCustomize execution and content with a rich array of code cell options, filters, and extensions.\nHost websites and publications on platforms such as GitHub Pages, QuartoPub, and Netlify.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#schedule",
+    "href": "index.html#schedule",
+    "title": "Unlocking Dynamic Reproducible Documents",
+    "section": "Schedule",
+    "text": "Schedule\nTo be posted.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "index.html#instructor",
+    "href": "index.html#instructor",
+    "title": "Unlocking Dynamic Reproducible Documents",
+    "section": "Instructor",
+    "text": "Instructor\nMine Çetinkaya-Rundel is Professor of the Practice at Duke University and Developer Educator at Posit. Mine’s work focuses on innovation in statistics and data science pedagogy, with an emphasis on computing, reproducible research, student-centered learning, and open-source education as well as pedagogical approaches for enhancing retention of women and under-represented minorities in STEM. Mine is a Fellow of the ASA and Elected Member of the ISI as well as the winner of the 2021 Robert V. Hogg Award for For Excellence in Teaching Introductory Statistics.\n\n This work is licensed under a Creative Commons Attribution 4.0 International License.",
+    "crumbs": [
+      "Home"
+    ]
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#setup",
+    "href": "1-1-hello/1-1-hello-reveal.html#setup",
+    "title": "Hello, Quarto!",
+    "section": "Setup",
+    "text": "Setup\n\n1. Software: Download and install Python and Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.53: https://quarto.org/docs/get-started/\n\n2. Tools: Dowload and install VS Code and Jupyter and Quarto extensions.\n\nVS Code: https://code.visualstudio.com/\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter\n\n3. Exercises: Go to bit.ly/quarto-scipy24-exercises, click on “Use this template” then “Create a new repository”. Click on the green Code button and copy the URL of the repo.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then choose the (latest) Python version you have installed. Check the box for requirements.txt in the “Select dependencies to install” menu and hit OK."
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#code-of-conduct",
+    "href": "1-1-hello/1-1-hello-reveal.html#code-of-conduct",
+    "title": "Hello, Quarto!",
+    "section": "Code of Conduct",
+    "text": "Code of Conduct\nAttendees at SciPy 2024 are subject to the NumFOCUS Code of Conduct.\nBe kind to others. Do not insult or put down others. Behave professionally. Remember that harassment and sexist, racist, or exclusionary jokes are not appropriate for NumFOCUS.\nAll communication should be appropriate for a professional audience including people of many different backgrounds. Sexual language and imagery is not appropriate.\nNumFOCUS is dedicated to providing a harassment-free community for everyone, regardless of gender, sexual orientation, gender identity and expression, disability, physical appearance, body size, race, or religion. We do not tolerate harassment of community members in any form.\nThank you for helping make this a welcoming, friendly community for all.\n\n\nFor more info and reporting a code of conduct incident"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#about-me",
+    "href": "1-1-hello/1-1-hello-reveal.html#about-me",
+    "title": "Hello, Quarto!",
+    "section": "About me",
+    "text": "About me\n\n\n\nProfessor of the Practice\nDepartment of Statistical Science\nDuke University\nDeveloper Educator, Posit PBC\n\n\n\n\n\n\n\nMine Çetinkaya-Rundel\nmine-cr.com\n\n\nTeaching data analysis in computational notebooks for 10+ years\nTeaching and using Quarto for 3+ years"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#about-you",
+    "href": "1-1-hello/1-1-hello-reveal.html#about-you",
+    "title": "Hello, Quarto!",
+    "section": "About you",
+    "text": "About you\n\nPlease share with the person next to you…\n\nYour name\nYour professional affiliation\nWhat you hope to get out of this tutorial\n\n\n\n  \n    −\n    +\n \n 03:00"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#meeting-you-where-you-are",
+    "href": "1-1-hello/1-1-hello-reveal.html#meeting-you-where-you-are",
+    "title": "Hello, Quarto!",
+    "section": "Meeting you where you are",
+    "text": "Meeting you where you are\n\n\n\nThese materials are pitched at someone who:\n\nknows some Python + Markdown\nhas worked in VS Code and/or Jupyter Lab\nwants to learn about Quarto\n\n\n\n\nI’ll teach you\n\nMore Markdown\nNew Quarto formats\nNew Quarto projects"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#workshop-structure",
+    "href": "1-1-hello/1-1-hello-reveal.html#workshop-structure",
+    "title": "Hello, Quarto!",
+    "section": "Workshop structure",
+    "text": "Workshop structure\n\n\nMy turn\n\nLecture segments\nFeel free to just watch, take notes, browse docs, or tinker around with the code\n\n\n\nOur turn\n\nLecture segments + live coding\n(Optionally) follow along with live coding\n\n\n\n\nYour turn\n\nPractice exercises for you\nWork on your own or with the person next to you"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#getting-help",
+    "href": "1-1-hello/1-1-hello-reveal.html#getting-help",
+    "title": "Hello, Quarto!",
+    "section": "Getting help",
+    "text": "Getting help\n\nDuring my turn and your turn segments – raise your hand\nDuring our turn segments – also feel free to raise your hand for questions but if your question seems specific to your setup, I might come around and help during the next your turn break"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#setup-1",
+    "href": "1-1-hello/1-1-hello-reveal.html#setup-1",
+    "title": "Hello, Quarto!",
+    "section": "Setup",
+    "text": "Setup\n\n1. Software: Download and install Python and Quarto:\n\nPython 3: https://www.python.org/downloads/\nQuarto 1.5.53: https://quarto.org/docs/get-started/\n\n2. Tools: Dowload and install VS Code and Jupyter and Quarto extensions.\n\nVS Code: https://code.visualstudio.com/\nQuarto Extension: https://marketplace.visualstudio.com/items?itemName=quarto.quarto\nJupyter Extension: https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter\n\n3. Exercises: Go to bit.ly/quarto-scipy24-exercises, click on “Use this template” then “Create a new repository”. Click on the green Code button and copy the URL of the repo.\n4. Packages: Open VS Code. Under Start, click on Clone Git Repository, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to Python: Create Environment... and choose Venv, then choose the (latest) Python version you have installed. Check the box for requirements.txt in the “Select dependencies to install” menu and hit OK.\n\n\n\nLet’s get started!"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#quarto",
+    "href": "1-1-hello/1-1-hello-reveal.html#quarto",
+    "title": "Hello, Quarto!",
+    "section": "Quarto …",
+    "text": "Quarto …\nis an innovative, open-source scientific and technical publishing system compatible with Jupyter notebooks and all your favorite plain text markdown editors\n\nArtwork from “Hello, Quarto” keynote by Julia Lowndes and Mine Çetinkaya-Rundel, presented at RStudio Conference 2022. Illustrated by Allison Horst."
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#with-quarto",
+    "href": "1-1-hello/1-1-hello-reveal.html#with-quarto",
+    "title": "Hello, Quarto!",
+    "section": "With Quarto …",
+    "text": "With Quarto …\nyou can weave together narrative and code to produce elegantly formatted output as documents, web pages, blog posts, books and more, with…\n\n\nconsistent implementation of attractive and handy features across outputs: tabsets, code-folding, syntax highlighting, etc.\ndefaults that meet accessibility guidelines as well as features that enable good practices for producing accessible documents\nnative multi-lingual support for multiple languages like Python, R, Julia, Observable, and more via the Jupyter engine for executable code chunks"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#a-tour-of-quarto",
+    "href": "1-1-hello/1-1-hello-reveal.html#a-tour-of-quarto",
+    "title": "Hello, Quarto!",
+    "section": "A tour of Quarto",
+    "text": "A tour of Quarto\n\nSit back and enjoy! … or follow along with hello-penguins.qmd.\n\n\n\nRunning individual cells\nRendering a document\nEditing with source editor and visual editor\nInserting images and lightbox effect\nInserting tables\nCustomizing formats: pdf, docx, revealjs\nCustomizing format options: code-fold, toc\nCode cells: labels, alt-text, execution options (echo, warning)\nCross referencing figures and tables, with and without the visual editor\nConverting between Jupyter Notebooks and plain text markdown documents"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#revisit-what-is-quarto",
+    "href": "1-1-hello/1-1-hello-reveal.html#revisit-what-is-quarto",
+    "title": "Hello, Quarto!",
+    "section": "Revisit: What is Quarto?",
+    "text": "Revisit: What is Quarto?\nQuarto is a command line interface (CLI) that renders plain text formats (.qmd, .rmd, .md) OR mixed formats (.ipynb/Jupyter notebook) into static PDF/Word/HTML reports, books, websites, presentations and more.\n\n\nUsage:   quarto\nVersion: 1.5.53\n\nDescription:\n\n  Quarto CLI\n\nOptions:\n\n  -h, --help     - Show this help.                            \n  -V, --version  - Show the version number for this program.  \n\nCommands:\n\n  render     [input] [args...]     - Render files or projects to various document types.\n  preview    [file] [args...]      - Render and preview a document or website project.  \n  serve      [input]               - Serve a Shiny interactive document.                \n  create     [type] [commands...]  - Create a Quarto project or extension               \n  use        &lt;type&gt; [target]       - Automate document or project setup tasks.          \n  add        &lt;extension&gt;           - Add an extension to this folder or project         \n  update     [target...]           - Updates an extension or global dependency.         \n  remove     [target...]           - Removes an extension.                              \n  convert    &lt;input&gt;               - Convert documents to alternate representations.    \n  pandoc     [args...]             - Run the version of Pandoc embedded within Quarto.  \n  typst      [args...]             - Run the version of Typst embedded within Quarto.   \n  run        [script] [args...]    - Run a TypeScript, R, Python, or Lua script.        \n  install    [target...]           - Installs a global dependency (TinyTex or Chromium).\n  uninstall  [tool]                - Removes an extension.                              \n  tools                            - Display the status of Quarto installed dependencies\n  publish    [provider] [path]     - Publish a document or project to a provider.       \n  check      [target]              - Verify correct functioning of Quarto installation. \n  help       [command]             - Show this help or the help of a sub-command."
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#under-the-hood",
+    "href": "1-1-hello/1-1-hello-reveal.html#under-the-hood",
+    "title": "Hello, Quarto!",
+    "section": "Under the hood",
+    "text": "Under the hood\n\n\n\njupyter evaluates Python code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#under-the-hood-1",
+    "href": "1-1-hello/1-1-hello-reveal.html#under-the-hood-1",
+    "title": "Hello, Quarto!",
+    "section": "Under the hood",
+    "text": "Under the hood\nwith a wider lens…\n\n\n\njupyter or knitr evaluates Python, Julia, R, or Observable code and returns a .md file along with the evaluated code\nQuarto applies Lua filters + CSS/LaTeX which is then evaluated alongside the .md file by Pandoc and converted to a final output format"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#aside-lua-filters",
+    "href": "1-1-hello/1-1-hello-reveal.html#aside-lua-filters",
+    "title": "Hello, Quarto!",
+    "section": "Aside: Lua filters",
+    "text": "Aside: Lua filters\n\nHere is an example of a Lua filter that converts strong emphasis to small caps, from https://pandoc.org/lua-filters.html:\n\nreturn {\n  {\n    Strong = function (elem)\n      return pandoc.SmallCaps(elem.c)\n    end,\n  }\n}\n\n\nLua filters written by R/Python/Julia developers should be interchangeable between formats - not language specific!\n\n\n\n\nWe won’t go into the details of writing Lua filters in this workshop, and you don’t need to worry about learning about Lua filters unless you’re working on extending Quarto."
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#from-the-comfort-of-your-own-homeworkspace",
+    "href": "1-1-hello/1-1-hello-reveal.html#from-the-comfort-of-your-own-homeworkspace",
+    "title": "Hello, Quarto!",
+    "section": "From the comfort of your own homeworkspace",
+    "text": "From the comfort of your own homeworkspace"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#render-and-preview",
+    "href": "1-1-hello/1-1-hello-reveal.html#render-and-preview",
+    "title": "Hello, Quarto!",
+    "section": "Render and preview",
+    "text": "Render and preview\nin the Terminal in VS Code or JupyterLab\nRender to output formats:\n# ipynb notebook\nquarto render notebook.ipynb\nquarto render notebook.ipynb --to docx\n\n# plain text qmd\nquarto render notebook.qmd \nquarto render notebook.qmd --to pdf\nLive preview server (re-render on save):\n# ipynb notebook\nquarto preview notebook.ipynb\nquarto preview notebook.ipynb --to docx\n\n# plain text qmd\nquarto preview notebook.qmd \nquarto preview notebook.qmd --to pdf"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#render-and-preview-1",
+    "href": "1-1-hello/1-1-hello-reveal.html#render-and-preview-1",
+    "title": "Hello, Quarto!",
+    "section": "Render and preview",
+    "text": "Render and preview\nin the Editor in VS Code\n\nInstall and enable the Quarto extension\nClicking on Preview or Cmd + Shift + K"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#one-install-batteries-included",
+    "href": "1-1-hello/1-1-hello-reveal.html#one-install-batteries-included",
+    "title": "Hello, Quarto!",
+    "section": "One install, “Batteries included”",
+    "text": "One install, “Batteries included”\n\nQuarto comes “batteries included” straight out of the box:\n\nHTML reports and websites\nPDF reports\nMS Office (Word, Powerpoint)\nPresentations (Powerpoint, Beamer, revealjs)\nBooks\nManuscripts\n…\n\n\n\n\nAny language, exact same approach and syntax"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#many-quarto-formats",
+    "href": "1-1-hello/1-1-hello-reveal.html#many-quarto-formats",
+    "title": "Hello, Quarto!",
+    "section": "Many Quarto formats",
+    "text": "Many Quarto formats\n\n\n\n\n\n\n\nFeature\nQuarto\n\n\n\n\nBasic Formats\nhtml, pdf, docx, typst\n\n\nBeamer\nbeamer\n\n\nPowerPoint\npptx\n\n\nHTML Slides\nrevealjs\n\n\nAdvanced Layout\nQuarto Article Layout\n\n\nCross References\nQuarto Crossrefs\n\n\nWebsites & Blogs\nQuarto Websites, Quarto Blogs\n\n\nBooks\nQuarto Books\n\n\nInteractivity\nQuarto Interactive Documents\n\n\nJournal Articles\nJournal Articles\n\n\nDashboards\nQuarto Dashboards"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#your-turn",
+    "href": "1-1-hello/1-1-hello-reveal.html#your-turn",
+    "title": "Hello, Quarto!",
+    "section": "Your turn",
+    "text": "Your turn\n\nIn VS Code, open the hello-penquins.qmd file. Render the document to HTML.\n\nAdd an author field in the YAML and add your name.\nAdd some text and style it with bold, italics, etc. using the source editor as well as the visual editor.\nModify the figure to add units to the axis labels: grams for body weight and mm (milimeters) for flipper length. Render or preview the document and make sure the changes are reflected in the HTML output.\nChange the html theme to sketchy. See https://quarto.org/docs/output-formats/html-themes.html for documentation on HTML theming.\n\n\n\n  \n    −\n    +\n \n 05:00"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#a-pause",
+    "href": "1-1-hello/1-1-hello-reveal.html#a-pause",
+    "title": "Hello, Quarto!",
+    "section": "A pause",
+    "text": "A pause\n\nWhere does the name “Quarto” come from?\n\n\n\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Quarto"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#learn-more",
+    "href": "1-1-hello/1-1-hello-reveal.html#learn-more",
+    "title": "Hello, Quarto!",
+    "section": "Learn more",
+    "text": "Learn more\n\nquarto.org/docs/guide &gt; Authoring & Computations"
+  },
+  {
+    "objectID": "1-1-hello/1-1-hello-reveal.html#questions",
+    "href": "1-1-hello/1-1-hello-reveal.html#questions",
+    "title": "Hello, Quarto!",
+    "section": "Questions",
+    "text": "Questions\n\nAny questions / anything you’d like to review before we wrap up this module?\n\n\n\n\n\n🔗 bit.ly/quarto-scipy24"
   }
 ]

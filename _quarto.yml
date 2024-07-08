@@ -31,8 +31,8 @@ website:
     contents:
       - href: index.qmd
         text: Home
-      - href: pre-work.qmd
-        text: Pre-work
+      - href: setup.qmd
+        text: Setup
       - section: Part 1
         contents:
           - href: 1-1-hello/index.qmd

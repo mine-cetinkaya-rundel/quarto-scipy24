@@ -1,7 +1,3 @@
----
-title: "Pre-workshop instructions"
----
-
 **1. Software:** Download and install Python and Quarto:
 
 -   Python 3: <https://www.python.org/downloads/>
@@ -15,4 +11,4 @@ title: "Pre-workshop instructions"
 
 **3. Exercises:** Go to [`bit.ly/quarto-scipy24-exercises`](https://bit.ly/quarto-scipy24-exercises), click on "Use this template" then "Create a new repository". Click on the green *Code* button and copy the URL of the repo.
 
-**4. Packages:** Open VS Code. Under *Start*, click on *Clone Git Repository*, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to `Python: Create Environment...` and choose `Venv`, then Python 3.12.4. Check the box for `requirements.txt` in the "Select dependencies to install" menu and hit OK.
+**4. Packages:** Open VS Code. Under *Start*, click on *Clone Git Repository*, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to `Python: Create Environment...` and choose `Venv`, then choose the (latest) Python version you have installed. Check the box for `requirements.txt` in the "Select dependencies to install" menu and hit OK.

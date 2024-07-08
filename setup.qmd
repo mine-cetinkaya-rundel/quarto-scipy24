@@ -1,5 +1,7 @@
 ---
-title: "Pre-workshop instructions"
+title: Setup instructions
+aliases:
+  - pre-work.html
 ---
 
 {{< include 1-1-hello/_setup.qmd >}}

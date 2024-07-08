@@ -1,6 +1,6 @@
 ---
-title: "Unlocking Dynamic Reproducible Documents"
-subtitle: "A Quarto Tutorial for Scientific Communication"
+title: Unlocking Dynamic Reproducible Documents
+subtitle: A Quarto Tutorial for Scientific Communication
 ---
 
 ::: callout-warning
