@@ -21,20 +21,7 @@ filters:
 ## Setup {.smaller}
 
 ::: your-turn
-**1. Software:** Download and install Python and Quarto:
-
--   Python 3: <https://www.python.org/downloads/>
--   Quarto 1.5.53: <https://quarto.org/docs/get-started/>
-
-**2. Tools:** Dowload and install VS Code and Jupyter and Quarto extensions.
-
--   VS Code: <https://code.visualstudio.com/>
--   Quarto Extension: <https://marketplace.visualstudio.com/items?itemName=quarto.quarto>
--   Jupyter Extension: <https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter>
-
-**3. Exercises:** Go to [`bit.ly/quarto-scipy24-exercises`](https://bit.ly/quarto-scipy24-exercises), click on "Use this template" then "Create a new repository". Click on the green *Code* button and copy the URL of the repo.
-
-**4. Packages:** Open VS Code. Under *Start*, click on *Clone Git Repository*, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to `Python: Create Environment...` and choose `Venv`, then Python 3.12.4. Check the box for `requirements.txt` in the "Select dependencies to install" menu and hit OK.
+{{< include _setup.qmd >}}
 :::
 
 # Welcome
@@ -156,20 +143,7 @@ I'll teach you
 ## Setup {.smaller}
 
 ::: your-turn
-**1. Software:** Download and install Python and Quarto:
-
--   Python 3: <https://www.python.org/downloads/>
--   Quarto 1.5.53: <https://quarto.org/docs/get-started/>
-
-**2. Tools:** Dowload and install VS Code and Jupyter and Quarto extensions.
-
--   VS Code: <https://code.visualstudio.com/>
--   Quarto Extension: <https://marketplace.visualstudio.com/items?itemName=quarto.quarto>
--   Jupyter Extension: <https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter>
-
-**3. Exercises:** Go to [`bit.ly/quarto-scipy24-exercises`](https://bit.ly/quarto-scipy24-exercises), click on "Use this template" then "Create a new repository". Click on the green *Code* button and copy the URL of the repo.
-
-**4. Packages:** Open VS Code. Under *Start*, click on *Clone Git Repository*, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to `Python: Create Environment...` and choose `Venv`, then Python 3.12.4. Check the box for `requirements.txt` in the "Select dependencies to install" menu and hit OK.
+{{< include _setup.qmd >}}
 :::
 
 . . .
