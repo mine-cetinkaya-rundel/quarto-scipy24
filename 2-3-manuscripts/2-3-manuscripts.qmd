@@ -207,7 +207,7 @@ Quarto **manuscripts**, in addition to doing everything you can do with journal 
         -   VS Code: In the Command Palette -- Quarto: Create Project \> Manuscript Project
         -   `quarto create project manuscript <name>`
     -   Add manuscript content
--   Approach 2: Start with a sample from <https://quarto.org/docs/manuscripts>
+-   Approach 2: Start with a sample from <https://github.com/quarto-ext/manuscript-template-vscode>
 
 ::: callout-tip
 ## Manuscripts ♥️ Git + GitHub
@@ -218,7 +218,7 @@ Track your project with Git and host on GitHub for easy publishing.
 ## A finished product
 
 ```{=html}
-<iframe src="https://dragonstyle.github.io/submission-quarto-lite-r/" title="La Palma Earthquakes" width="1100px" height="600px"></iframe>
+<iframe src="https://quarto-ext.github.io/manuscript-template-vscode/" title="La Palma Earthquakes" width="1100px" height="600px"></iframe>
 ```
 ## Multiple formats from one source
 
@@ -302,9 +302,19 @@ from source $\rightarrow$ only relevant / required metadata in manuscript:
 
 ## Embedded computations
 
-```{=html}
-<script src="https://fast.wistia.com/embed/medias/hdesp8b7fc.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_hdesp8b7fc seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/hdesp8b7fc/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+- Perform computation in a labelled code cell in a notebook, in any language
+
+- Embed results of the computation with a link to the notebook with
+
+```markdown
+{{< embed name-of-notebook.qmd#fig-cell-label >}}
+{{< embed name-of-notebook.ipynd#tbl-cell-label >}}
 ```
+
+<br>
+
+See example at <https://github.com/quarto-ext/manuscript-template-vscode/blob/main/index.qmd>.
+
 # What's next?
 
 ## *Actually* dive into the code
