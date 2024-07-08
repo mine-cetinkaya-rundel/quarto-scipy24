@@ -33,7 +33,7 @@ website:
         text: Home
       - href: setup.qmd
         text: Setup
-      - section: Part 1
+      - section: Part 1 - Single documents
         contents:
           - href: 1-1-hello/index.qmd
             text: Hello
@@ -43,7 +43,7 @@ website:
             text: Presentations
           - href: 1-4-dashboards/index.qmd
             text: Dashboards
-      - section: Part 2
+      - section: Part 2 - Multiple documents
         contents:
           - href: 2-1-websites/index.qmd
             text: Websites and blogs
