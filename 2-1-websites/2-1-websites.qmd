@@ -175,7 +175,7 @@ Let's build a website that features a few of the notebooks we worked on and high
 -   Create a landing page: `index.qmd`
 -   Explore navigation options: `navbar`, `sidebar`
 -   Apply themes, including a light and dark theme toggle
--   Publish to GitHub Pages with `quarto publish`
+-   Publish to QuartoPub with `quarto publish`
 -   An aspect of the workshop webpage that you fancy?
 :::
 
@@ -184,7 +184,7 @@ Let's build a website that features a few of the notebooks we worked on and high
 ::: your-turn
 -   Add one more notebook that has at least one executable code cell and add it to the navigation list in `_quarto.yml` and render your site.
 -   Add an [about page](https://quarto.org/docs/websites/website-about.html), `about.qmd`, personalize it, and add it to the navigation list in `_quarto.yml` and render your site.
--   Re-publish on GitHub pages with `quarto publish`.
+-   Re-publish on QuartoPub with `quarto publish`.
 :::
 
 {{< countdown minutes=10 >}}
@@ -306,6 +306,27 @@ or
 
 1 + 1
 ```
+
+# Publishing
+
+## QuartoPub
+
+-   [Quarto Pub](https://quartopub.com/) is a free publishing service for content created with Quarto. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites.
+
+-   Publish with `quarto publish`:
+
+``` {.bash filename="Terminal"}
+quarto publish quarto-pub
+```
+
+-   Gain a `_publish.yml` that is safe to check into version control.
+
+## Other venues
+
+-   GitHub Pages
+-   Posit Connect
+-   Netlify
+-   [More venues](https://quarto.org/docs/publishing/other.html)
 
 # Wrap up
 
