@@ -323,14 +323,14 @@
     "href": "2-1-websites/2-1-websites-reveal.html#our-turn",
     "title": "Websites and blogs",
     "section": "Our turn",
-    "text": "Our turn\n\nLet’s build a website that features a few of the notebooks we worked on and highlight the following features of Quarto websites:\n\nAdd a _quarto.yml\nCreate a landing page: index.qmd\nExplore navigation options: navbar, sidebar\nApply themes, including a light and dark theme toggle\nPublish to GitHub Pages with quarto publish\nAn aspect of the workshop webpage that you fancy?"
+    "text": "Our turn\n\nLet’s build a website that features a few of the notebooks we worked on and highlight the following features of Quarto websites:\n\nAdd a _quarto.yml\nCreate a landing page: index.qmd\nExplore navigation options: navbar, sidebar\nApply themes, including a light and dark theme toggle\nPublish to QuartoPub with quarto publish\nAn aspect of the workshop webpage that you fancy?"
   },
   {
     "objectID": "2-1-websites/2-1-websites-reveal.html#your-turn",
     "href": "2-1-websites/2-1-websites-reveal.html#your-turn",
     "title": "Websites and blogs",
     "section": "Your turn",
-    "text": "Your turn\n\n\nAdd one more notebook that has at least one executable code cell and add it to the navigation list in _quarto.yml and render your site.\nAdd an about page, about.qmd, personalize it, and add it to the navigation list in _quarto.yml and render your site.\nRe-publish on GitHub pages with quarto publish.\n\n\n\n  \n    −\n    +\n \n 10:00"
+    "text": "Your turn\n\n\nAdd one more notebook that has at least one executable code cell and add it to the navigation list in _quarto.yml and render your site.\nAdd an about page, about.qmd, personalize it, and add it to the navigation list in _quarto.yml and render your site.\nRe-publish on QuartoPub with quarto publish.\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "2-1-websites/2-1-websites-reveal.html#listings-1",
@@ -380,6 +380,20 @@
     "title": "Websites and blogs",
     "section": "Freeze vs. cache",
     "text": "Freeze vs. cache\n\nFreeze option is typically set\n\nfor the whole website in _quarto.yml, or\nfor files within a directory in _metadata.yml in that directory\n\n\nexecute: \n  freeze: auto\n\nCache option is typically set for a given file or for individual chunk(s) in a file.\n\nexecute:\n  cache: true\nor\n\n```{python}\n1 + 1\n```\n\n2"
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#quartopub",
+    "href": "2-1-websites/2-1-websites-reveal.html#quartopub",
+    "title": "Websites and blogs",
+    "section": "QuartoPub",
+    "text": "QuartoPub\n\nQuarto Pub is a free publishing service for content created with Quarto. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites.\nPublish with quarto publish:\n\n\n\nTerminal\n\nquarto publish quarto-pub\n\n\nGain a _publish.yml that is safe to check into version control."
+  },
+  {
+    "objectID": "2-1-websites/2-1-websites-reveal.html#other-venues",
+    "href": "2-1-websites/2-1-websites-reveal.html#other-venues",
+    "title": "Websites and blogs",
+    "section": "Other venues",
+    "text": "Other venues\n\nGitHub Pages\nPosit Connect\nNetlify\nMore venues"
   },
   {
     "objectID": "2-1-websites/2-1-websites-reveal.html#learn-more",
@@ -663,28 +677,14 @@
     "href": "2-2-books/2-2-books-reveal.html#our-turn",
     "title": "Books",
     "section": "Our turn",
-    "text": "Our turn\n\nLet’s build a book together from all of the documents we’ve created so far and highlight the following features of Quarto websites:\n\n_quarto.yml\nindex.qmd / landing page / change landing page\nCallouts\nCross references\nUnnumbered chapters\nSections\nAppendices"
+    "text": "Our turn\n\nLet’s build a book together from some of the documents we’ve created so far and highlight the following features of Quarto websites:\n\n_quarto.yml\nindex.qmd / landing page / change landing page\nCross references\nSections\nAppendices"
   },
   {
     "objectID": "2-2-books/2-2-books-reveal.html#your-turn",
     "href": "2-2-books/2-2-books-reveal.html#your-turn",
     "title": "Books",
     "section": "Your turn",
-    "text": "Your turn\n\nPick up where we left off and\n\nGive a title to your book.\nAdd a numbered figure and cross-reference it.\nAdd a numbered figure to another chapter, cross-reference it, and observe the numbering scheme\n\n\n\n  \n    −\n    +\n \n 10:00"
-  },
-  {
-    "objectID": "2-2-books/2-2-books-reveal.html#quartopub",
-    "href": "2-2-books/2-2-books-reveal.html#quartopub",
-    "title": "Books",
-    "section": "QuartoPub",
-    "text": "QuartoPub\n\nQuarto Pub is a free publishing service for content created with Quarto. It is ideal for blogs, course or project websites, books, presentations, and personal hobby sites.\nPublish with quarto publish:\n\n\n\nTerminal\n\nquarto publish quarto-pub\n\n\nGain a _publish.yml that is safe to check into version control."
-  },
-  {
-    "objectID": "2-2-books/2-2-books-reveal.html#other-venues",
-    "href": "2-2-books/2-2-books-reveal.html#other-venues",
-    "title": "Books",
-    "section": "Other venues",
-    "text": "Other venues\n\nGitHub Pages\nPosit Connect\nNetlify\nMore venues"
+    "text": "Your turn\n\nPick up where we left off and\n\nGive a title to your book.\nAdd a numbered figure and cross-reference it.\nAdd a numbered figure to another chapter, cross-reference it, and observe the numbering scheme.\n\n\n\n  \n    −\n    +\n \n 10:00"
   },
   {
     "objectID": "2-2-books/2-2-books-reveal.html#computations",
@@ -694,8 +694,8 @@
     "text": "Computations\nSame freeze and cache ideas for websites apply to books."
   },
   {
-    "objectID": "2-2-books/2-2-books-reveal.html#publishing-1",
-    "href": "2-2-books/2-2-books-reveal.html#publishing-1",
+    "objectID": "2-2-books/2-2-books-reveal.html#publishing",
+    "href": "2-2-books/2-2-books-reveal.html#publishing",
     "title": "Books",
     "section": "Publishing",
     "text": "Publishing\nSame publishing options for websites apply to books as well."
