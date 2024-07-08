@@ -1,6 +1,6 @@
 ---
 title: Unlocking Dynamic Reproducible Documents
-subtitle: A Quarto Tutorial for Scientific Communication
+subtitle: A Quarto Tutorial for Scientific Communication at SciPy 2024
 ---
 
 🗓️ Date: July 8, 2024\
