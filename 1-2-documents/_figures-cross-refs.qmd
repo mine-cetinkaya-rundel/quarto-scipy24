@@ -1,0 +1,3 @@
+See @fig-blue-penguin for a cute blue penguin.
+
+![Blue penguin](images/blue-penguin.png){#fig-blue-penguin height=200px}

@@ -850,7 +850,7 @@
     "href": "1-2-documents/1-2-documents-reveal.html#components",
     "title": "Documents",
     "section": "Components",
-    "text": "Components\n\nMetadata: YAML\nText: Markdown\nCode: Executed via knitr or jupyter\n\n\nWeave it all together, and you have beautiful, powerful, and useful outputs!"
+    "text": "Components\n\nMetadata: YAML\nText: Markdown\nCode: Executed via jupyter (or knitr)\n\n\nWeave it all together, and you have beautiful, powerful, and useful outputs!"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#literate-programming",
@@ -899,7 +899,7 @@
     "href": "1-2-documents/1-2-documents-reveal.html#why-yaml",
     "title": "Documents",
     "section": "Why YAML?",
-    "text": "Why YAML?\nTo avoid manually typing out all the options, every time when rendering via the CLI:\n\nquarto render document.qmd --to html\n\n\n\nquarto render document.qmd --to html -M code-fold:true\n\n\n\nquarto render document.qmd --to html -M code-fold:true -P alpha:0.2 -P ratio:0.3"
+    "text": "Why YAML?\nTo avoid manually typing out all the options, every time when rendering via the CLI:\n\n\nDefine format\n\nquarto render document.qmd --to html\n\n\n\n\nDefine format and format options\n\nquarto render document.qmd --to html -M code-fold:true\n\n\n\n\nDefine format, format options, and values for parameters\n\nquarto render document.qmd --to html -M code-fold:true -P alpha:0.2 -P ratio:0.3"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#quarto-linting",
@@ -920,7 +920,7 @@
     "href": "1-2-documents/1-2-documents-reveal.html#your-turn",
     "title": "Documents",
     "section": "Your turn",
-    "text": "Your turn\n\n\nOpen hello-penguins.qmd in RStudio.\nTry Ctrl + space to see the available YAML options.\nTry out the tab-completion of any options you remember.\nYou can use the HTML reference as needed.\n\n\n\n  \n    −\n    +\n \n 03:00"
+    "text": "Your turn\n\n\nOpen hello-penguins.qmd in RStudio.\nTry Ctrl + space to see the available YAML options.\nTry out the tab-completion of any options you remember or use the HTML reference (https://quarto.org/docs/reference/formats/html.html) as needed.\n\n\n\n  \n    −\n    +\n \n 03:00"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#list-of-valid-yaml-fields",
@@ -928,6 +928,13 @@
     "title": "Documents",
     "section": "List of valid YAML fields",
     "text": "List of valid YAML fields\n\nMany YAML fields are common across various outputs\nBut also each output type has its own set of valid YAML fields and options\nDefinitive list: quarto.org/docs/reference/formats/html"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents-reveal.html#tldr",
+    "href": "1-2-documents/1-2-documents-reveal.html#tldr",
+    "title": "Documents",
+    "section": "TL;DR",
+    "text": "TL;DR\n\n\nPretty much everything you know about markdown formatting works with Quarto"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#text-formatting",
@@ -948,14 +955,14 @@
     "href": "1-2-documents/1-2-documents-reveal.html#links",
     "title": "Documents",
     "section": "Links",
-    "text": "Links\nThere are several types of “links” or hyperlinks.\n\n\nMarkdown syntax:\nYou can embed [named hyperlinks](https://quarto.org/),\ndirect urls like &lt;https://quarto.org/&gt;, and links to \n[other places](#quarto-anatomy) in \nthe document. \n\nThe syntax is similar for embedding an\ninline image: \n\n![Penguins playing with ball](images/penguins-quarto-ball.png).\n\nOutput:\nYou can embed named hyperlinks, direct urls like https://quarto.org/, and links to other places in the document.\nThe syntax is similar for embedding an inline image:\n."
+    "text": "Links\nSeveral types of links / hyperlinks:\n\n\nMarkdown syntax:\nYou can embed [named hyperlinks](https://quarto.org/),\ndirect urls like &lt;https://quarto.org/&gt;, and links to \n[other places](#quarto-anatomy) in \nthe document. \n\nThe syntax is similar for embedding an\ninline image: \n\n![Penguins playing with ball](images/penguins-quarto-ball.png).\n\nOutput:\nYou can embed named hyperlinks, direct urls like https://quarto.org/, and links to other places in the document.\nThe syntax is similar for embedding an inline image:\n."
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#lists",
     "href": "1-2-documents/1-2-documents-reveal.html#lists",
     "title": "Documents",
     "section": "Lists",
-    "text": "Lists\nUnordered list:\n\n\nMarkdown syntax:\n-   unordered list         \n    -   sub-item 1         \n    -   sub-item 1         \n        -   sub-sub-item 1\n\nOutput:\n\nunordered list\n\nsub-item 1\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\nOrdered list:\n\n\nMarkdown syntax:\n1. ordered list            \n2. item 2                  \n    i. sub-item 1          \n         A.  sub-sub-item 1\n\nOutput:\n\nordered list\n\nitem 2\n\nsub-item 1\n\nsub-sub-item 1"
+    "text": "Lists\nUnordered lists:\n\n\nMarkdown syntax:\n-   unordered list         \n    -   sub-item 1         \n    -   sub-item 1         \n        -   sub-sub-item 1\n\nOutput:\n\nunordered list\n\nsub-item 1\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\nOrdered lists:\n\n\nMarkdown syntax:\n1. ordered list            \n2. item 2                  \n    i. sub-item 1          \n         A.  sub-sub-item 1\n\nOutput:\n\nordered list\n\nitem 2\n\nsub-item 1\n\nsub-sub-item 1"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#quotes",
@@ -997,14 +1004,14 @@
     "href": "1-2-documents/1-2-documents-reveal.html#callouts",
     "title": "Documents",
     "section": "Callouts",
-    "text": "Callouts\n\n\nMarkdown syntax:\nThis is text is colored [red]{style=\"color:red;\"}.\n\nOutput:\nThis is text is colored red."
+    "text": "Callouts\n\n\nMarkdown syntax:\n::: callout-note\nNote that there are five types of callouts, including: \n`note`, `tip`, `warning`, `caution`, and `important`.\n:::\n\nOutput:\n\n\n\n\n\n\nNote\n\n\nNote that there are five types of callouts, including: note, tip, warning, caution, and important."
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#more-callouts",
     "href": "1-2-documents/1-2-documents-reveal.html#more-callouts",
     "title": "Documents",
     "section": "More callouts",
-    "text": "More callouts\n\n\n\n\n\n\nWarning\n\n\nCallouts provide a simple way to attract attention, for example, to this warning.\n\n\n\n\n\n\n\n\n\nImportant\n\n\nDanger, callouts will really improve your writing.\n\n\n\n\n\n\n\n\n\nCaution\n\n\nHere is something under construction.\n\n\n\n\n\n\n\n\n\nCaption\n\n\nTip with caption."
+    "text": "More callouts\n\n\n\n\n\n\nWarning\n\n\nCallouts provide a simple way to attract attention, for example, to this warning.\n\n\n\n\n\n\n\n\n\nImportant\n\n\nThis is important! Callouts will really improve your writing.\n\n\n\n\n\n\n\n\n\nCaution\n\n\nHere is something under construction.\n\n\n\n\n\n\n\n\n\nCaption\n\n\nTip with caption."
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#your-turn-2",
@@ -1053,7 +1060,7 @@
     "href": "1-2-documents/1-2-documents-reveal.html#code-1",
     "title": "Documents",
     "section": "Code",
-    "text": "Code\nIf you simply want code formatting but don’t want to execute the code:\n\nOption 1: Use 3x back ticks + the language ```python\n\n```python\npenguins.head()\n```\n\n\nOption 2: Add eval: false as chunk option\n\n\n```{python}\n#| eval: false\n\npenguins.head()\n```"
+    "text": "Code\nIf you simply want code formatting but don’t want to execute the code:\n\nOption 1: Use 3x back ticks + the language ```python\n\n```python\npenguins.head()\n```\n\n\nOption 2: Add eval: false as chunk option\n\n\n```{python}\n#| eval: false\npenguins.head()\n```"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#showing-and-hiding-code-with-echo",
@@ -1074,21 +1081,14 @@
     "href": "1-2-documents/1-2-documents-reveal.html#markdown-tables",
     "title": "Documents",
     "section": "Markdown tables",
-    "text": "Markdown tables\nMarkdown syntax:\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\n\nOutput:\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
+    "text": "Markdown tables\nMarkdown syntax:\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|   12  |  12  |    12   |    12  |\n|  123  |  123 |   123   |   123  |\n|    1  |    1 |     1   |     1  |\nOutput:\n\n\n\nRight\nLeft\nDefault\nCenter\n\n\n\n\n12\n12\n12\n12\n\n\n123\n123\n123\n123\n\n\n1\n1\n1\n1"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#grid-tables",
     "href": "1-2-documents/1-2-documents-reveal.html#grid-tables",
     "title": "Documents",
     "section": "Grid tables",
-    "text": "Grid tables\nMarkdown syntax:\n+---------------+---------------+--------------------+\n| Fruit         | Price         | Advantages         |\n+===============+===============+====================+\n| Bananas       | $1.34         | - built-in wrapper |\n|               |               | - bright color     |\n+---------------+---------------+--------------------+\n| Oranges       | $2.10         | - cures scurvy     |\n|               |               | - tasty            |\n+---------------+---------------+--------------------+\n\n: Sample grid table."
-  },
-  {
-    "objectID": "1-2-documents/1-2-documents-reveal.html#grid-tables-1",
-    "href": "1-2-documents/1-2-documents-reveal.html#grid-tables-1",
-    "title": "Documents",
-    "section": "Grid tables",
-    "text": "Grid tables\nOutput:\n\nSample grid table.\n\n\n\n\n\n\n\nFruit\nPrice\nAdvantages\n\n\n\n\nBananas\n$1.34\n\nbuilt-in wrapper\nbright color\n\n\n\nOranges\n$2.10\n\ncures scurvy\ntasty"
+    "text": "Grid tables\nMarkdown syntax:\n+---------------+---------------+--------------------+\n| Fruit         | Price         | Advantages         |\n+===============+===============+====================+\n| Bananas       | $1.34         | - built-in wrapper |\n|               |               | - bright color     |\n+---------------+---------------+--------------------+\n| Oranges       | $2.10         | - cures scurvy     |\n|               |               | - tasty            |\n+---------------+---------------+--------------------+\n\n: Sample grid table.\nOutput:\n\nSample grid table.\n\n\n\n\n\n\n\nFruit\nPrice\nAdvantages\n\n\n\n\nBananas\n$1.34\n\nbuilt-in wrapper\nbright color\n\n\n\nOranges\n$2.10\n\ncures scurvy\ntasty"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#grid-tables-alignment",
@@ -1116,56 +1116,42 @@
     "href": "1-2-documents/1-2-documents-reveal.html#tables-from-code-1",
     "title": "Documents",
     "section": "Tables from code",
-    "text": "Tables from code\nIf you want fancier tables, try the great_tables package and all that it offers!\n\n\nimport great_tables as gt\n\n(\n    gt.GT(penguins.head())\n    .tab_style(\n        style = [\n            gt.style.fill(color = \"pink\"),\n            gt.style.text(weight = \"italic\")\n        ],\n        locations = gt.loc.body(\n          columns= \"bill_length_mm\",\n          rows = list(penguins[penguins[\"bill_length_mm\"] &gt; 40].index)\n        )\n    )\n)\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\nAdelie\nTorgersen\n\n\n\n\n\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007"
+    "text": "Tables from code\nIf you want fancier tables, try the great_tables package and all that it offers!\n\n\nimport great_tables as gt\n\n(\n    gt.GT(penguins.head())\n    .tab_style(\n        style = [\n            gt.style.fill(color = \"pink\"),\n            gt.style.text(weight = \"italic\")\n        ],\n        locations = gt.loc.body(\n          columns= \"bill_length_mm\",\n          rows = lambda x: x[\"bill_length_mm\"] &gt; 40\n        )\n    )\n)\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\nAdelie\nTorgersen\n\n\n\n\n\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#markdown-figures",
     "href": "1-2-documents/1-2-documents-reveal.html#markdown-figures",
     "title": "Documents",
     "section": "Markdown figures",
-    "text": "Markdown figures\n![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png)\n\nPenguins playing with a Quarto ball"
+    "text": "Markdown figures\nMarkdown syntax:\n![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png)\nOutput:\n\nPenguins playing with a Quarto ball"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#markdown-figures-with-options",
     "href": "1-2-documents/1-2-documents-reveal.html#markdown-figures-with-options",
     "title": "Documents",
     "section": "Markdown figures with options",
-    "text": "Markdown figures with options\n\n\n![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png){fig-align=\"left\"}\n\n\n![](images/penguins-quarto-ball.png){fig-align=\"right\" fig-alt=\"Illustration of two penguins playing with a Quarto ball.\"}"
+    "text": "Markdown figures with options\nMarkdown syntax:\n![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png){fig-align=\"left\"}\nOutput:\n\nPenguins playing with a Quarto ball"
+  },
+  {
+    "objectID": "1-2-documents/1-2-documents-reveal.html#markdown-figures-with-options-1",
+    "href": "1-2-documents/1-2-documents-reveal.html#markdown-figures-with-options-1",
+    "title": "Documents",
+    "section": "Markdown figures with options",
+    "text": "Markdown figures with options\nMarkdown syntax:\n![](images/penguins-quarto-ball.png){height=\"100px\" fig-alt=\"Illustration of two penguins playing with a Quarto ball.\"}\nOutput:"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#subfigures",
     "href": "1-2-documents/1-2-documents-reveal.html#subfigures",
     "title": "Documents",
     "section": "Subfigures",
-    "text": "Subfigures\nMarkdown syntax:\n::: {#fig-penguins layout-ncol=2}\n\n![Blue penguin](images/blue-penguin.png){#fig-blue width=\"250px\"}\n\n![Orange penguin](images/orange-penguin.png){#fig-orange width=\"250px\"}\n\nTwo penguins\n\n:::"
-  },
-  {
-    "objectID": "1-2-documents/1-2-documents-reveal.html#subfigures-1",
-    "href": "1-2-documents/1-2-documents-reveal.html#subfigures-1",
-    "title": "Documents",
-    "section": "Subfigures",
-    "text": "Subfigures\nOutput:\n\n\n\n\n\n\n\n\n\n\n\n(a) Blue penguin\n\n\n\n\n\n\n\n\n\n\n\n(b) Orange penguin\n\n\n\n\n\n\n\nFigure 1: Two penguins"
+    "text": "Subfigures\nMarkdown syntax:\n::: {#fig-penguins layout-ncol=2}\n\n![Blue penguin](images/blue-penguin.png){#fig-blue height=\"150px\"}\n\n![Orange penguin](images/orange-penguin.png){#fig-orange height=\"150px\"}\n\nTwo penguins\n:::\nOutput:\n\n\n\n\n\n\n\n\n\n\n\n(a) Blue penguin\n\n\n\n\n\n\n\n\n\n\n\n(b) Orange penguin\n\n\n\n\n\n\n\nFigure 1: Two penguins"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#figure-divs",
     "href": "1-2-documents/1-2-documents-reveal.html#figure-divs",
     "title": "Documents",
     "section": "Figure divs",
-    "text": "Figure divs\nMarkdown syntax:\n::: {#fig-penguin}\n\n&lt;iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/q3uXXh1sHcI\"&gt;&lt;/iframe&gt;\n\nBaby penguin tries to make friends\n:::"
-  },
-  {
-    "objectID": "1-2-documents/1-2-documents-reveal.html#figure-divs-1",
-    "href": "1-2-documents/1-2-documents-reveal.html#figure-divs-1",
-    "title": "Documents",
-    "section": "Figure divs",
-    "text": "Figure divs\nOutput:\n\n\n\n\n\n\n\nFigure 2: Baby penguin tries to make friends\n\n\n\n\n\n\nLast paragraph in the div block is used as the figure caption."
-  },
-  {
-    "objectID": "1-2-documents/1-2-documents-reveal.html#finding-the-figures-to-include",
-    "href": "1-2-documents/1-2-documents-reveal.html#finding-the-figures-to-include",
-    "title": "Documents",
-    "section": "Finding the figures to include",
-    "text": "Finding the figures to include\nIn places like markdown, YAML, or the command line/shell/terminal, you’ll need to use absolute or relative file paths:\n\n\nAbsolute = BAD: \"/Users/mine/quarto-asa-nebraska\" - Whose computer will this work on?\n\n\n\n\nRelative = BETTER:\n\n\"../ = up one directory, ../../ = up two directories, etc.\n/.. or / = start from root directory of your current computer"
+    "text": "Figure divs\nMarkdown syntax:\n::: {#fig-penguin}\n&lt;iframe width=\"420\" height=\"237\" src=\"https://www.youtube.com/embed/q3uXXh1sHcI\"&gt;&lt;/iframe&gt;\n\nBaby penguin tries to make friends\n:::\nOutput:\n\n\n\n\n\n\n\nFigure 2: Baby penguin tries to make friends\n\n\n\n\n\n\n\n\n\nNote\n\n\nLast paragraph in the div block is the figure caption."
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#figures-from-code",
@@ -1186,14 +1172,14 @@
     "href": "1-2-documents/1-2-documents-reveal.html#figure-cross-references",
     "title": "Documents",
     "section": "Figure cross references",
-    "text": "Figure cross references\nThe presence of the caption (Blue penguin) and label (#fig-blue-penguin) make this figure referenceable:\n\n\nMarkdown syntax:\nSee @fig-blue-penguin for a cute blue penguin.\n![Blue penguin](images/blue-penguin.png){#fig-blue-penguin}\n\nOutput:\nSee Figure 3 for a cute blue penguin.\n\n\n\n\n\n\nFigure 3: Blue penguin"
+    "text": "Figure cross references\nThe presence of the caption (Blue penguin) and label (#fig-blue-penguin) make this figure referenceable:\nMarkdown syntax:\nSee @fig-blue-penguin for a cute blue penguin.\n\n![Blue penguin](images/blue-penguin.png){#fig-blue-penguin height=200px}\nOutput:\nSee Figure 3 for a cute blue penguin.\n\n\n\n\n\n\nFigure 3: Blue penguin"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#table-cross-references",
     "href": "1-2-documents/1-2-documents-reveal.html#table-cross-references",
     "title": "Documents",
     "section": "Table cross references",
-    "text": "Table cross references\nThe presence of the caption (A few penguins) and label (#tbl-penguins) make this table referenceable:\n\n\nMarkdown syntax:\nSee @tbl-penguins for data on a few penguins.\n\n```{python}\n#| label: tbl-penguins\n#| tbl-cap: A few penguins\n\ngt.GT(penguins.head())\n```\n\nOutput:\nSee Table 1 for data on a few penguins.\n\ngt.GT(penguins.head())\n\n\n\nTable 1: A few penguins\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\nAdelie\nTorgersen\n\n\n\n\n\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007"
+    "text": "Table cross references\nThe presence of the caption (A few penguins) and label (#tbl-penguins) make this table referenceable:\nMarkdown syntax:\nSee @tbl-penguins for data on a few penguins.\n\n```{python}\n#| label: tbl-penguins\n#| tbl-cap: A few penguins\ngt.GT(penguins.head())\n```\nOutput:\nSee Table 1 for data on a few penguins.\n\ngt.GT(penguins.head())\n\n\n\nTable 1: A few penguins\n\n\n\n\n\n\n\n\n\nspecies\nisland\nbill_length_mm\nbill_depth_mm\nflipper_length_mm\nbody_mass_g\nsex\nyear\n\n\n\n\nAdelie\nTorgersen\n39.1\n18.7\n181.0\n3750.0\nmale\n2007\n\n\nAdelie\nTorgersen\n39.5\n17.4\n186.0\n3800.0\nfemale\n2007\n\n\nAdelie\nTorgersen\n40.3\n18.0\n195.0\n3250.0\nfemale\n2007\n\n\nAdelie\nTorgersen\n\n\n\n\n\n2007\n\n\nAdelie\nTorgersen\n36.7\n19.3\n193.0\n3450.0\nfemale\n2007"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#your-turn-3",

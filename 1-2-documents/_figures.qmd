@@ -1,0 +1,1 @@
+![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png)

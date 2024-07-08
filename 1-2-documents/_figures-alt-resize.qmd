@@ -1,0 +1,1 @@
+![](images/penguins-quarto-ball.png){height="100px" fig-alt="Illustration of two penguins playing with a Quarto ball."}

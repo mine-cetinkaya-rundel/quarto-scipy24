@@ -1,0 +1,8 @@
+::: {#fig-penguins layout-ncol=2}
+
+![Blue penguin](images/blue-penguin.png){#fig-blue height="150px"}
+
+![Orange penguin](images/orange-penguin.png){#fig-orange height="150px"}
+
+Two penguins
+:::

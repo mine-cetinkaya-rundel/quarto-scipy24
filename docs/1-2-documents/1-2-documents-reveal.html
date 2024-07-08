@@ -58,44 +58,44 @@
         -khtml-user-select: none; -moz-user-select: none;
         -ms-user-select: none; user-select: none;
         padding: 0 4px; width: 4em;
-        color: #aaaaaa;
+        color: #97947a;
       }
-    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #97947a;  padding-left: 4px; }
     div.sourceCode
-      { color: #003b4f; background-color: #f1f3f5; }
+      { color: #f8f8f2; background-color: #2b2b2b; }
     @media screen {
     pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
     }
-    code span { color: #003b4f; } /* Normal */
-    code span.al { color: #ad0000; } /* Alert */
-    code span.an { color: #5e5e5e; } /* Annotation */
-    code span.at { color: #657422; } /* Attribute */
-    code span.bn { color: #ad0000; } /* BaseN */
-    code span.bu { } /* BuiltIn */
-    code span.cf { color: #003b4f; font-weight: bold; } /* ControlFlow */
-    code span.ch { color: #20794d; } /* Char */
-    code span.cn { color: #8f5902; } /* Constant */
-    code span.co { color: #5e5e5e; } /* Comment */
-    code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
-    code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
-    code span.dt { color: #ad0000; } /* DataType */
-    code span.dv { color: #ad0000; } /* DecVal */
-    code span.er { color: #ad0000; } /* Error */
-    code span.ex { } /* Extension */
-    code span.fl { color: #ad0000; } /* Float */
-    code span.fu { color: #4758ab; } /* Function */
-    code span.im { color: #00769e; } /* Import */
-    code span.in { color: #5e5e5e; } /* Information */
-    code span.kw { color: #003b4f; font-weight: bold; } /* Keyword */
-    code span.op { color: #5e5e5e; } /* Operator */
-    code span.ot { color: #003b4f; } /* Other */
-    code span.pp { color: #ad0000; } /* Preprocessor */
-    code span.sc { color: #5e5e5e; } /* SpecialChar */
-    code span.ss { color: #20794d; } /* SpecialString */
-    code span.st { color: #20794d; } /* String */
-    code span.va { color: #111111; } /* Variable */
-    code span.vs { color: #20794d; } /* VerbatimString */
-    code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+    code span { color: #f8f8f2; } /* Normal */
+    code span.al { color: #dcc6e0; } /* Alert */
+    code span.an { color: #d4d0ab; } /* Annotation */
+    code span.at { color: #ffd700; } /* Attribute */
+    code span.bn { color: #dcc6e0; } /* BaseN */
+    code span.bu { color: #f5ab35; } /* BuiltIn */
+    code span.cf { color: #ffa07a; } /* ControlFlow */
+    code span.ch { color: #abe338; } /* Char */
+    code span.cn { color: #ffa07a; } /* Constant */
+    code span.co { color: #d4d0ab; } /* Comment */
+    code span.cv { color: #d4d0ab; font-style: italic; } /* CommentVar */
+    code span.do { color: #d4d0ab; font-style: italic; } /* Documentation */
+    code span.dt { color: #dcc6e0; } /* DataType */
+    code span.dv { color: #dcc6e0; } /* DecVal */
+    code span.er { color: #dcc6e0; } /* Error */
+    code span.ex { color: #ffd700; } /* Extension */
+    code span.fl { color: #f5ab35; } /* Float */
+    code span.fu { color: #ffd700; } /* Function */
+    code span.im { color: #f8f8f2; } /* Import */
+    code span.in { color: #d4d0ab; } /* Information */
+    code span.kw { color: #ffa07a; } /* Keyword */
+    code span.op { color: #00e0e0; } /* Operator */
+    code span.ot { color: #ffa07a; } /* Other */
+    code span.pp { color: #dcc6e0; } /* Preprocessor */
+    code span.sc { color: #00e0e0; } /* SpecialChar */
+    code span.ss { color: #abe338; } /* SpecialString */
+    code span.st { color: #abe338; } /* String */
+    code span.va { color: #f5ab35; } /* Variable */
+    code span.vs { color: #abe338; } /* VerbatimString */
+    code span.wa { color: #d4d0ab; font-style: italic; } /* Warning */
   </style>
   <link rel="stylesheet" href="../site_libs/revealjs/dist/theme/quarto.css">
   <link href="../site_libs/revealjs/plugin/quarto-line-highlight/line-highlight.css" rel="stylesheet">
@@ -430,7 +430,7 @@ Mine Çetinkaya Rundel
 <ol type="1">
 <li><p>Metadata: YAML</p></li>
 <li><p>Text: Markdown</p></li>
-<li><p>Code: Executed via <code>knitr</code> or <code>jupyter</code></p></li>
+<li><p>Code: Executed via <code>jupyter</code> (or <code>knitr</code>)</p></li>
 </ol>
 <div class="fragment">
 <p><strong>Weave it all together</strong>, and you have beautiful, powerful, and useful outputs!</p>
@@ -439,7 +439,7 @@ Mine Çetinkaya Rundel
 <section id="literate-programming" class="slide level2 smaller">
 <h2>Literate programming</h2>
 <p>Literate programming is writing out the program logic in a human language with included (separated by a primitive markup) code snippets and macros.</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="co">---</span></span>
+<div class="sourceCode" id="cb1" data-code-line-numbers="|7|9-29"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb1-1"><a></a><span class="co">---</span></span>
 <span id="cb1-2"><a></a><span class="an">title:</span><span class="co"> plotnine demo</span></span>
 <span id="cb1-3"><a></a><span class="an">date:</span><span class="co"> 7/8/2024</span></span>
 <span id="cb1-4"><a></a><span class="an">format:</span><span class="co"> html</span></span>
@@ -558,14 +558,23 @@ Mine Çetinkaya Rundel
 <h2>Why YAML?</h2>
 <p>To avoid manually typing out all the options, every time when rendering via the CLI:</p>
 <div class="fragment">
+<ul>
+<li>Define format</li>
+</ul>
 <div class="sourceCode" id="cb14"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a></a><span class="ex">quarto</span> render document.qmd <span class="at">--to</span> html</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><br></p>
 </div>
 <div class="fragment">
+<ul>
+<li>Define format and format options</li>
+</ul>
 <div class="sourceCode" id="cb15"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb15-1"><a></a><span class="ex">quarto</span> render document.qmd <span class="at">--to</span> html <span class="at">-M</span> code-fold:true</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><br></p>
 </div>
 <div class="fragment">
+<ul>
+<li>Define format, format options, and values for parameters</li>
+</ul>
 <div class="sourceCode" id="cb16"><pre class="sourceCode numberSource bash number-lines code-with-copy"><code class="sourceCode bash"><span id="cb16-1"><a></a><span class="ex">quarto</span> render document.qmd <span class="at">--to</span> html <span class="at">-M</span> code-fold:true <span class="at">-P</span> alpha:0.2 <span class="at">-P</span> ratio:0.3</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
@@ -595,11 +604,10 @@ Mine Çetinkaya Rundel
 <ul>
 <li>Open <code>hello-penguins.qmd</code> in RStudio.</li>
 <li>Try <kbd><code>Ctrl + space</code></kbd> to see the available YAML options.</li>
-<li>Try out the tab-completion of any options you remember.</li>
-<li>You can use the <a href="https://quarto.org/docs/reference/formats/html.html">HTML reference</a> as needed.</li>
+<li>Try out the tab-completion of any options you remember or use the HTML reference (<a href="https://quarto.org/docs/reference/formats/html.html" class="uri">https://quarto.org/docs/reference/formats/html.html</a>) as needed.</li>
 </ul>
 </div>
-<div id="timer_fac67062de2faed821f839f82550d300f8f75c71" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_bc547d9f86258af8b99fa007f3a516e5fb1cfa35" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -614,11 +622,20 @@ Mine Çetinkaya Rundel
 <li><p>But also each output type has its own set of valid YAML fields and options</p></li>
 <li><p>Definitive list: <a href="https://quarto.org/docs/reference/formats/html.html">quarto.org/docs/reference/formats/html</a></p></li>
 </ul>
+<iframe width="1000" height="450" src="https://quarto.org/docs/reference/formats/html.html">
+</iframe>
 </section></section>
 <section>
 <section id="text" class="title-slide slide level1 center">
 <h1>Text</h1>
 
+</section>
+<section id="tldr" class="slide level2">
+<h2>TL;DR</h2>
+<p><br><br></p>
+<div class="hand">
+<p>Pretty much everything you know about markdown formatting works with Quarto</p>
+</div>
 </section>
 <section id="text-formatting" class="slide level2">
 <h2>Text Formatting</h2>
@@ -696,7 +713,7 @@ Mine Çetinkaya Rundel
 </section>
 <section id="links" class="slide level2 smaller">
 <h2>Links</h2>
-<p>There are several types of “links” or hyperlinks.</p>
+<p>Several types of links / hyperlinks:</p>
 <div class="columns">
 <div class="column fragment" style="width:60%;">
 <p><strong>Markdown syntax:</strong></p>
@@ -718,7 +735,7 @@ Mine Çetinkaya Rundel
 </section>
 <section id="lists" class="slide level2 smaller">
 <h2>Lists</h2>
-<p>Unordered list:</p>
+<p>Unordered lists:</p>
 <div class="columns">
 <div class="column fragment" data-fragment-index="1" style="width:50%;">
 <p><strong>Markdown syntax:</strong></p>
@@ -740,7 +757,7 @@ Mine Çetinkaya Rundel
 </ul></li>
 </ul>
 </div></div>
-<p>Ordered list:</p>
+<p>Ordered lists:</p>
 <div class="columns">
 <div class="column fragment" data-fragment-index="3" style="width:50%;">
 <p><strong>Markdown syntax:</strong></p>
@@ -826,7 +843,7 @@ Mine Çetinkaya Rundel
 <li>Follow the instructions in the document, then exchange one new thing you’ve learned with your neighbor.</li>
 </ul>
 </div>
-<div id="timer_fac67062de2faed821f839f82550d300f8f75c71" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_bc547d9f86258af8b99fa007f3a516e5fb1cfa35" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -839,10 +856,25 @@ Mine Çetinkaya Rundel
 <div class="columns">
 <div class="column fragment" style="width:50%;">
 <p><strong>Markdown syntax:</strong></p>
-<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a></a>This is text is colored <span class="co">[</span><span class="ot">red</span><span class="co">]</span>{style="color:red;"}.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb34"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb34-1"><a></a>::: callout-note</span>
+<span id="cb34-2"><a></a>Note that there are five types of callouts, including: </span>
+<span id="cb34-3"><a></a><span class="in">`note`</span>, <span class="in">`tip`</span>, <span class="in">`warning`</span>, <span class="in">`caution`</span>, and <span class="in">`important`</span>.</span>
+<span id="cb34-4"><a></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment" style="width:50%;">
 <p><strong>Output:</strong></p>
-<p>This is text is colored <span style="color:red;">red</span>.</p>
+<div class="callout callout-note callout-titled callout-style-default">
+<div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
+<div class="callout-content">
+<p>Note that there are five types of callouts, including: <code>note</code>, <code>tip</code>, <code>warning</code>, <code>caution</code>, and <code>important</code>.</p>
+</div>
+</div>
+</div>
 </div></div>
 </section>
 <section id="more-callouts" class="slide level2">
@@ -869,7 +901,7 @@ Mine Çetinkaya Rundel
 <p><strong>Important</strong></p>
 </div>
 <div class="callout-content">
-<p>Danger, callouts will really improve your writing.</p>
+<p>This is important! Callouts will really improve your writing.</p>
 </div>
 </div>
 </div>
@@ -911,7 +943,7 @@ Mine Çetinkaya Rundel
 <li>Change the format to PDF and re-render.</li>
 </ul>
 </div>
-<div id="timer_fac67062de2faed821f839f82550d300f8f75c71" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_bc547d9f86258af8b99fa007f3a516e5fb1cfa35" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
@@ -973,7 +1005,7 @@ Mine Çetinkaya Rundel
 <span id="cb37-8"><a></a></span>
 <span id="cb37-9"><a></a><span class="in">penguins["species"].unique()</span></span>
 <span id="cb37-10"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div id="penguins" class="cell-output cell-output-display" data-execution_count="1">
+<div id="penguins" class="cell-output cell-output-display" data-execution_count="13">
 <pre><code>array(['Adelie', 'Gentoo', 'Chinstrap'], dtype=object)</code></pre>
 </div>
 </div>
@@ -1008,12 +1040,11 @@ penguins.head()
 <ul>
 <li>Option 2: Add <code>eval: false</code> as chunk option</li>
 </ul>
-<div id="6a5b767a" class="cell" data-execution_count="2">
+<div id="44bb07ad" class="cell" data-execution_count="2">
 <div class="sourceCode cell-code" id="cb40"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb40-1"><a></a><span class="in">```{python}</span></span>
 <span id="cb40-2"><a></a><span class="in">#| eval: false</span></span>
-<span id="cb40-3"><a></a></span>
-<span id="cb40-4"><a></a><span class="in">penguins.head()</span></span>
-<span id="cb40-5"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb40-3"><a></a><span class="in">penguins.head()</span></span>
+<span id="cb40-4"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </div>
 </section>
@@ -1023,11 +1054,11 @@ penguins.head()
 <li><p>The <code>echo</code> option shows the code when set to <code>true</code> and hides it when set to <code>false</code>.</p></li>
 <li><p>If you want to both execute the code and return the full code including backticks (like in a teaching scenario) <code>echo: fenced</code> is your friend!</p></li>
 </ul>
-<div id="4fb1b78a" class="cell" data-execution_count="3">
+<div id="3125bae9" class="cell" data-execution_count="3">
 <div class="sourceCode cell-code" id="cb41"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb41-1"><a></a><span class="in">```{python}</span></span>
 <span id="cb41-2"><a></a><span class="in">1 + 1</span></span>
 <span id="cb41-3"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="2">
+<div class="cell-output cell-output-display" data-execution_count="14">
 <pre><code>2</code></pre>
 </div>
 </div>
@@ -1052,7 +1083,6 @@ penguins.head()
 <span id="cb43-3"><a></a>|   12  |  12  |    12   |    12  |</span>
 <span id="cb43-4"><a></a>|  123  |  123 |   123   |   123  |</span>
 <span id="cb43-5"><a></a>|    1  |    1 |     1   |     1  |</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="fragment">
 <p><strong>Output:</strong></p>
 <table class="caption-top">
 <thead>
@@ -1084,7 +1114,6 @@ penguins.head()
 </tr>
 </tbody>
 </table>
-</div>
 </section>
 <section id="grid-tables" class="slide level2">
 <h2>Grid tables</h2>
@@ -1100,16 +1129,13 @@ penguins.head()
 <span id="cb44-9"><a></a>+---------------+---------------+--------------------+</span>
 <span id="cb44-10"><a></a></span>
 <span id="cb44-11"><a></a>: Sample grid table.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="grid-tables-1" class="slide level2">
-<h2>Grid tables</h2>
 <p><strong>Output:</strong></p>
-<table class="caption-top" style="width:76%;">
+<table class="caption-top" style="width:74%;">
 <caption>Sample grid table.</caption>
 <colgroup>
 <col style="width: 22%">
 <col style="width: 22%">
-<col style="width: 31%">
+<col style="width: 29%">
 </colgroup>
 <thead>
 <tr class="header">
@@ -1143,18 +1169,18 @@ penguins.head()
 <ul>
 <li>Alignments can be specified as with pipe tables, by putting colons at the boundaries of the separator line after the header:</li>
 </ul>
-<pre><code>+---------------+---------------+--------------------+
-| Right         | Left          | Centered           |
-+==============:+:==============+:==================:+
-| Bananas       | $1.34         | built-in wrapper   |
-+---------------+---------------+--------------------+</code></pre>
+<div class="sourceCode" id="cb45"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb45-1"><a></a>+---------------+---------------+--------------------+</span>
+<span id="cb45-2"><a></a>| Right         | Left          | Centered           |</span>
+<span id="cb45-3"><a></a>+==============:+:==============+:==================:+</span>
+<span id="cb45-4"><a></a>| Bananas       | $1.34         | built-in wrapper   |</span>
+<span id="cb45-5"><a></a>+---------------+---------------+--------------------+</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="fragment">
 <ul>
 <li>For headerless tables, the colons go on the top line instead:</li>
 </ul>
-<pre><code>+--------------:+:--------------+:------------------:+
-| Right         | Left          | Centered           |
-+---------------+---------------+--------------------+</code></pre>
+<div class="sourceCode" id="cb46"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb46-1"><a></a>+--------------:+:--------------+:------------------:+</span>
+<span id="cb46-2"><a></a>| Right         | Left          | Centered           |</span>
+<span id="cb46-3"><a></a>+---------------+---------------+--------------------+</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
 </section>
 <section id="grid-tables-authoring" class="slide level2">
@@ -1168,9 +1194,9 @@ penguins.head()
 <h2>Tables from code</h2>
 <p>If you are using pandas to work with your data, you can convert a pandas DataFrame to an HTML table using the <code>DataFrame.to_html()</code> method:</p>
 <div class="scrolling">
-<div id="cc2408fb" class="cell" data-execution_count="4">
+<div id="16f34926" class="cell" data-execution_count="4">
 <div class="sourceCode cell-code" id="cb47"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb47-1"><a></a>penguins.to_html(index<span class="op">=</span><span class="va">False</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-display" data-execution_count="3">
+<div class="cell-output cell-output-display" data-execution_count="15">
 <table border="1" class="dataframe">
 
 <thead>
@@ -13609,7 +13635,7 @@ female
 <section id="tables-from-code-1" class="slide level2 smaller">
 <h2>Tables from code</h2>
 <p>If you want fancier tables, try the <strong>great_tables</strong> package and <a href="https://posit-dev.github.io/great-tables/">all that it offers</a>!</p>
-<div id="95583c98" class="cell columns column-output-location" data-execution_count="5">
+<div id="8396bf53" class="cell columns column-output-location" data-execution_count="5">
 <div class="column">
 <div class="sourceCode cell-code" id="cb48"><pre class="sourceCode numberSource python number-lines code-with-copy"><code class="sourceCode python"><span id="cb48-1"><a></a><span class="im">import</span> great_tables <span class="im">as</span> gt</span>
 <span id="cb48-2"><a></a></span>
@@ -13622,57 +13648,57 @@ female
 <span id="cb48-9"><a></a>        ],</span>
 <span id="cb48-10"><a></a>        locations <span class="op">=</span> gt.loc.body(</span>
 <span id="cb48-11"><a></a>          columns<span class="op">=</span> <span class="st">"bill_length_mm"</span>,</span>
-<span id="cb48-12"><a></a>          rows <span class="op">=</span> <span class="bu">list</span>(penguins[penguins[<span class="st">"bill_length_mm"</span>] <span class="op">&gt;</span> <span class="dv">40</span>].index)</span>
+<span id="cb48-12"><a></a>          rows <span class="op">=</span> <span class="kw">lambda</span> x: x[<span class="st">"bill_length_mm"</span>] <span class="op">&gt;</span> <span class="dv">40</span></span>
 <span id="cb48-13"><a></a>        )</span>
 <span id="cb48-14"><a></a>    )</span>
 <span id="cb48-15"><a></a>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div><div class="column fragment">
-<div class="cell-output cell-output-display" data-execution_count="4">
-<div id="dzdbkjyuuf" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div class="cell-output cell-output-display" data-execution_count="16">
+<div id="aelfyfcedx" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>
-#dzdbkjyuuf table {
+#aelfyfcedx table {
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
         }
 
-#dzdbkjyuuf thead, tbody, tfoot, tr, td, th { border-style: none; }
+#aelfyfcedx thead, tbody, tfoot, tr, td, th { border-style: none; }
  tr { background-color: transparent; }
-#dzdbkjyuuf p { margin: 0; padding: 0; }
- #dzdbkjyuuf .gt_table { display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; }
- #dzdbkjyuuf .gt_caption { padding-top: 4px; padding-bottom: 4px; }
- #dzdbkjyuuf .gt_title { color: #333333; font-size: 125%; font-weight: initial; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; border-bottom-color: #FFFFFF; border-bottom-width: 0; }
- #dzdbkjyuuf .gt_subtitle { color: #333333; font-size: 85%; font-weight: initial; padding-top: 3px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; border-top-color: #FFFFFF; border-top-width: 0; }
- #dzdbkjyuuf .gt_heading { background-color: #FFFFFF; text-align: center; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
- #dzdbkjyuuf .gt_bottom_border { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
- #dzdbkjyuuf .gt_col_headings { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
- #dzdbkjyuuf .gt_col_heading { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; }
- #dzdbkjyuuf .gt_column_spanner_outer { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; padding-top: 0; padding-bottom: 0; padding-left: 4px; padding-right: 4px; }
- #dzdbkjyuuf .gt_column_spanner_outer:first-child { padding-left: 0; }
- #dzdbkjyuuf .gt_column_spanner_outer:last-child { padding-right: 0; }
- #dzdbkjyuuf .gt_column_spanner { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; overflow-x: hidden; display: inline-block; width: 100%; }
- #dzdbkjyuuf .gt_spanner_row { border-bottom-style: hidden; }
- #dzdbkjyuuf .gt_group_heading { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; text-align: left; }
- #dzdbkjyuuf .gt_empty_group_heading { padding: 0.5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: middle; }
- #dzdbkjyuuf .gt_from_md> :first-child { margin-top: 0; }
- #dzdbkjyuuf .gt_from_md> :last-child { margin-bottom: 0; }
- #dzdbkjyuuf .gt_row { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; }
- #dzdbkjyuuf .gt_stub { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; }
- #dzdbkjyuuf .gt_stub_row_group { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; vertical-align: top; }
- #dzdbkjyuuf .gt_row_group_first td { border-top-width: 2px; }
- #dzdbkjyuuf .gt_row_group_first th { border-top-width: 2px; }
- #dzdbkjyuuf .gt_table_body { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
- #dzdbkjyuuf .gt_sourcenotes { color: #333333; background-color: #FFFFFF; border-bottom-style: none; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; }
- #dzdbkjyuuf .gt_sourcenote { font-size: 90%; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; text-align: left; }
- #dzdbkjyuuf .gt_left { text-align: left; }
- #dzdbkjyuuf .gt_center { text-align: center; }
- #dzdbkjyuuf .gt_right { text-align: right; font-variant-numeric: tabular-nums; }
- #dzdbkjyuuf .gt_font_normal { font-weight: normal; }
- #dzdbkjyuuf .gt_font_bold { font-weight: bold; }
- #dzdbkjyuuf .gt_font_italic { font-style: italic; }
- #dzdbkjyuuf .gt_super { font-size: 65%; }
- #dzdbkjyuuf .gt_footnote_marks { font-size: 75%; vertical-align: 0.4em; position: initial; }
- #dzdbkjyuuf .gt_asterisk { font-size: 100%; vertical-align: 0; }
+#aelfyfcedx p { margin: 0; padding: 0; }
+ #aelfyfcedx .gt_table { display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; }
+ #aelfyfcedx .gt_caption { padding-top: 4px; padding-bottom: 4px; }
+ #aelfyfcedx .gt_title { color: #333333; font-size: 125%; font-weight: initial; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; border-bottom-color: #FFFFFF; border-bottom-width: 0; }
+ #aelfyfcedx .gt_subtitle { color: #333333; font-size: 85%; font-weight: initial; padding-top: 3px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; border-top-color: #FFFFFF; border-top-width: 0; }
+ #aelfyfcedx .gt_heading { background-color: #FFFFFF; text-align: center; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
+ #aelfyfcedx .gt_bottom_border { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
+ #aelfyfcedx .gt_col_headings { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
+ #aelfyfcedx .gt_col_heading { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; }
+ #aelfyfcedx .gt_column_spanner_outer { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; padding-top: 0; padding-bottom: 0; padding-left: 4px; padding-right: 4px; }
+ #aelfyfcedx .gt_column_spanner_outer:first-child { padding-left: 0; }
+ #aelfyfcedx .gt_column_spanner_outer:last-child { padding-right: 0; }
+ #aelfyfcedx .gt_column_spanner { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; overflow-x: hidden; display: inline-block; width: 100%; }
+ #aelfyfcedx .gt_spanner_row { border-bottom-style: hidden; }
+ #aelfyfcedx .gt_group_heading { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; text-align: left; }
+ #aelfyfcedx .gt_empty_group_heading { padding: 0.5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: middle; }
+ #aelfyfcedx .gt_from_md> :first-child { margin-top: 0; }
+ #aelfyfcedx .gt_from_md> :last-child { margin-bottom: 0; }
+ #aelfyfcedx .gt_row { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; }
+ #aelfyfcedx .gt_stub { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; }
+ #aelfyfcedx .gt_stub_row_group { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; vertical-align: top; }
+ #aelfyfcedx .gt_row_group_first td { border-top-width: 2px; }
+ #aelfyfcedx .gt_row_group_first th { border-top-width: 2px; }
+ #aelfyfcedx .gt_table_body { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
+ #aelfyfcedx .gt_sourcenotes { color: #333333; background-color: #FFFFFF; border-bottom-style: none; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; }
+ #aelfyfcedx .gt_sourcenote { font-size: 90%; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; text-align: left; }
+ #aelfyfcedx .gt_left { text-align: left; }
+ #aelfyfcedx .gt_center { text-align: center; }
+ #aelfyfcedx .gt_right { text-align: right; font-variant-numeric: tabular-nums; }
+ #aelfyfcedx .gt_font_normal { font-weight: normal; }
+ #aelfyfcedx .gt_font_bold { font-weight: bold; }
+ #aelfyfcedx .gt_font_italic { font-style: italic; }
+ #aelfyfcedx .gt_super { font-size: 65%; }
+ #aelfyfcedx .gt_footnote_marks { font-size: 75%; vertical-align: 0.4em; position: initial; }
+ #aelfyfcedx .gt_asterisk { font-size: 100%; vertical-align: 0; }
  
 </style>
 
@@ -13756,39 +13782,36 @@ female
 </section>
 <section id="markdown-figures" class="slide level2">
 <h2>Markdown figures</h2>
-<pre><code>![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png)</code></pre>
+<p><strong>Markdown syntax:</strong></p>
+<div class="sourceCode" id="cb49"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb49-1"><a></a><span class="al">![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png)</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Output:</strong></p>
 
 <img data-src="images/penguins-quarto-ball.png" class="r-stretch quarto-figure-center"><p class="caption">Penguins playing with a Quarto ball</p></section>
 <section id="markdown-figures-with-options" class="slide level2">
 <h2>Markdown figures with options</h2>
-<div class="columns">
-<div class="column" style="width:50%;">
-<pre><code>![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png){fig-align="left"}</code></pre>
-<p><img data-src="images/penguins-quarto-ball.png"></p>
-</div><div class="column" style="width:50%;">
-<pre><code>![](images/penguins-quarto-ball.png){fig-align="right" fig-alt="Illustration of two penguins playing with a Quarto ball."}</code></pre>
-<div class="quarto-figure quarto-figure-right">
-<figure>
-<p><img data-src="images/penguins-quarto-ball.png" class="quarto-figure quarto-figure-right" alt="Illustration of two penguins playing with a Quarto ball."></p>
-</figure>
-</div>
-</div></div>
+<p><strong>Markdown syntax:</strong></p>
+<div class="sourceCode" id="cb50"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb50-1"><a></a><span class="al">![Penguins playing with a Quarto ball](images/penguins-quarto-ball.png)</span>{fig-align="left"}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Output:</strong></p>
+
+<img data-src="images/penguins-quarto-ball.png" class="r-stretch quarto-figure-left"><p class="caption">Penguins playing with a Quarto ball</p></section>
+<section id="markdown-figures-with-options-1" class="slide level2">
+<h2>Markdown figures with options</h2>
+<p><strong>Markdown syntax:</strong></p>
+<div class="sourceCode" id="cb51"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb51-1"><a></a><span class="al">![](images/penguins-quarto-ball.png)</span>{height="100px" fig-alt="Illustration of two penguins playing with a Quarto ball."}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><strong>Output:</strong></p>
+<p><img data-src="images/penguins-quarto-ball.png" alt="Illustration of two penguins playing with a Quarto ball." height="100"></p>
 </section>
 <section id="subfigures" class="slide level2">
 <h2>Subfigures</h2>
 <p><strong>Markdown syntax:</strong></p>
-<pre><code>::: {#fig-penguins layout-ncol=2}
-
-![Blue penguin](images/blue-penguin.png){#fig-blue width="250px"}
-
-![Orange penguin](images/orange-penguin.png){#fig-orange width="250px"}
-
-Two penguins
-
-:::</code></pre>
-</section>
-<section id="subfigures-1" class="slide level2">
-<h2>Subfigures</h2>
+<div class="sourceCode" id="cb52"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb52-1"><a></a>::: {#fig-penguins layout-ncol=2}</span>
+<span id="cb52-2"><a></a></span>
+<span id="cb52-3"><a></a><span class="al">![Blue penguin](images/blue-penguin.png)</span>{#fig-blue height="150px"}</span>
+<span id="cb52-4"><a></a></span>
+<span id="cb52-5"><a></a><span class="al">![Orange penguin](images/orange-penguin.png)</span>{#fig-orange height="150px"}</span>
+<span id="cb52-6"><a></a></span>
+<span id="cb52-7"><a></a>Two penguins</span>
+<span id="cb52-8"><a></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Output:</strong></p>
 <div id="fig-penguins" class="quarto-layout-panel">
 <figure class="quarto-float quarto-float-fig">
@@ -13798,7 +13821,7 @@ Two penguins
 <div id="fig-blue" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-subfloat-fig">
 <div aria-describedby="fig-blue-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="images/blue-penguin.png" data-ref-parent="fig-penguins" width="250">
+<img data-src="images/blue-penguin.png" data-ref-parent="fig-penguins" height="150">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-blue-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (a) Blue penguin
@@ -13807,12 +13830,12 @@ Two penguins
 </div>
 </div>
 <div class="quarto-layout-cell-subref quarto-layout-cell" data-ref-parent="fig-penguins" style="flex-basis: 50.0%;justify-content: flex-start;">
-<div id="fig-sleep" class="quarto-float quarto-figure quarto-figure-center">
+<div id="fig-orange" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-subfloat-fig">
-<div aria-describedby="fig-sleep-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="images/orange-penguin.png" data-ref-parent="fig-penguins" width="250">
+<div aria-describedby="fig-orange-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img data-src="images/orange-penguin.png" data-ref-parent="fig-penguins" height="150">
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-sleep-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-bottom quarto-subfloat-caption quarto-subfloat-fig" id="fig-orange-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 (b) Orange penguin
 </figcaption>
 </figure>
@@ -13829,56 +13852,40 @@ Figure&nbsp;1: Two penguins
 <section id="figure-divs" class="slide level2">
 <h2>Figure divs</h2>
 <p><strong>Markdown syntax:</strong></p>
-<div class="sourceCode" id="cb53"><pre class="sourceCode numberSource code number-lines code-with-copy"><code class="sourceCode"><span id="cb53-1"><a></a>::: {#fig-penguin}</span>
-<span id="cb53-2"><a></a></span>
-<span id="cb53-3"><a></a>&lt;iframe width="560" height="315" src="https://www.youtube.com/embed/q3uXXh1sHcI"&gt;&lt;/iframe&gt;</span>
-<span id="cb53-4"><a></a></span>
-<span id="cb53-5"><a></a>Baby penguin tries to make friends</span>
-<span id="cb53-6"><a></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</section>
-<section id="figure-divs-1" class="slide level2">
-<h2>Figure divs</h2>
+<div class="sourceCode" id="cb53"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb53-1"><a></a>::: {#fig-penguin}</span>
+<span id="cb53-2"><a></a>&lt;iframe width="420" height="237" src="https://www.youtube.com/embed/q3uXXh1sHcI"&gt;&lt;/iframe&gt;</span>
+<span id="cb53-3"><a></a></span>
+<span id="cb53-4"><a></a>Baby penguin tries to make friends</span>
+<span id="cb53-5"><a></a>:::</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Output:</strong></p>
-<div id="fig-penguin-youtube" class="quarto-float quarto-figure quarto-figure-center">
+<div id="fig-penguin" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-fig">
-<div aria-describedby="fig-penguin-youtube-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/q3uXXh1sHcI">
+<div aria-describedby="fig-penguin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<iframe width="420" height="237" src="https://www.youtube.com/embed/q3uXXh1sHcI">
 </iframe>
 </div>
-<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-penguin-youtube-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-penguin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;2: Baby penguin tries to make friends
 </figcaption>
 </figure>
 </div>
-<div class="callout callout-note no-icon callout-style-simple">
+<div class="callout callout-note callout-titled callout-style-default">
 <div class="callout-body">
+<div class="callout-title">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<p><strong>Note</strong></p>
+</div>
 <div class="callout-content">
-<p>Last paragraph in the div block is used as the figure caption.</p>
+<p>Last paragraph in the div block is the figure caption.</p>
 </div>
 </div>
-</div>
-</section>
-<section id="finding-the-figures-to-include" class="slide level2">
-<h2>Finding the figures to include</h2>
-<p>In places like markdown, YAML, or the command line/shell/terminal, you’ll need to use <strong>absolute</strong> or <strong>relative</strong> file paths:</p>
-<div class="fragment">
-<ul>
-<li>Absolute = BAD: <code>"/Users/mine/quarto-asa-nebraska"</code> - Whose computer will this work on?</li>
-</ul>
-</div>
-<div class="fragment">
-<ul>
-<li><p>Relative = BETTER:</p>
-<ul>
-<li><code>"../</code> = up one directory, <code>../../</code> = up two directories, etc.</li>
-<li><code>/..</code> or <code>/</code> = start from <code>root</code> directory of your current computer</li>
-</ul></li>
-</ul>
 </div>
 </section>
 <section id="figures-from-code" class="slide level2">
 <h2>Figures from code</h2>
-<div id="1cedbb56" class="cell" data-fig-asp="0.618" data-fig-width="6" data-execution_count="6">
+<div id="c70564f4" class="cell" data-fig-asp="0.618" data-fig-width="6" data-execution_count="6">
 <div class="sourceCode cell-code" id="cb54"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb54-1"><a></a><span class="in">```{python}</span></span>
 <span id="cb54-2"><a></a><span class="in">import plotnine as p9</span></span>
 <span id="cb54-3"><a></a></span>
@@ -13913,44 +13920,37 @@ Figure&nbsp;2: Baby penguin tries to make friends
 </ul></li>
 </ul>
 </section>
-<section id="figure-cross-references" class="slide level2 smaller">
+<section id="figure-cross-references" class="slide level2">
 <h2>Figure cross references</h2>
 <p>The presence of the caption (<code>Blue penguin</code>) and label (<code>#fig-blue-penguin</code>) make this figure referenceable:</p>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p><strong>Markdown syntax:</strong></p>
 <div class="sourceCode" id="cb55"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb55-1"><a></a>See @fig-blue-penguin for a cute blue penguin.</span>
-<span id="cb55-2"><a></a><span class="al">![Blue penguin](images/blue-penguin.png)</span>{#fig-blue-penguin}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column" style="width:50%;">
+<span id="cb55-2"><a></a></span>
+<span id="cb55-3"><a></a><span class="al">![Blue penguin](images/blue-penguin.png)</span>{#fig-blue-penguin height=200px}</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Output:</strong></p>
 <p>See <a href="#/figure-cross-references" class="quarto-xref">Figure&nbsp;3</a> for a cute blue penguin.</p>
-<div id="fig-blue-penguin" class="quarto-float quarto-figure quarto-figure-center" alt="A blue penguin">
+<div id="fig-blue-penguin" class="quarto-float quarto-figure quarto-figure-center">
 <figure class="quarto-float quarto-float-fig">
 <div aria-describedby="fig-blue-penguin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<img data-src="images/blue-penguin.png" alt="A blue penguin" width="200">
+<img data-src="images/blue-penguin.png" height="200">
 </div>
 <figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-blue-penguin-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
 Figure&nbsp;3: Blue penguin
 </figcaption>
 </figure>
 </div>
-</div></div>
 </section>
-<section id="table-cross-references" class="slide level2 smaller">
+<section id="table-cross-references" class="slide level2">
 <h2>Table cross references</h2>
 <p>The presence of the caption (<code>A few penguins</code>) and label (<code>#tbl-penguins</code>) make this table referenceable:</p>
-<div class="columns">
-<div class="column" style="width:50%;">
 <p><strong>Markdown syntax:</strong></p>
 <div class="sourceCode" id="cb56"><pre class="sourceCode numberSource markdown number-lines code-with-copy"><code class="sourceCode markdown"><span id="cb56-1"><a></a>See @tbl-penguins for data on a few penguins.</span>
 <span id="cb56-2"><a></a></span>
 <span id="cb56-3"><a></a><span class="in">```{python}</span></span>
 <span id="cb56-4"><a></a><span class="in">#| label: tbl-penguins</span></span>
 <span id="cb56-5"><a></a><span class="in">#| tbl-cap: A few penguins</span></span>
-<span id="cb56-6"><a></a></span>
-<span id="cb56-7"><a></a><span class="in">gt.GT(penguins.head())</span></span>
-<span id="cb56-8"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-</div><div class="column" style="width:50%;">
+<span id="cb56-6"><a></a><span class="in">gt.GT(penguins.head())</span></span>
+<span id="cb56-7"><a></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <p><strong>Output:</strong></p>
 <p>See <a href="#/table-cross-references" class="quarto-xref">Table&nbsp;1</a> for data on a few penguins.</p>
 <div class="cell" data-execution_count="7">
@@ -13961,52 +13961,52 @@ Figure&nbsp;3: Blue penguin
 Table&nbsp;1: A few penguins
 </figcaption>
 <div aria-describedby="tbl-penguins-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
-<div class="cell-output cell-output-display" data-execution_count="6">
-<div id="fvfxhznpdy" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
+<div class="cell-output cell-output-display" data-execution_count="18">
+<div id="cjfjvsswai" style="padding-left:0px;padding-right:0px;padding-top:10px;padding-bottom:10px;overflow-x:auto;overflow-y:auto;width:auto;height:auto;">
 <style>
-#fvfxhznpdy table {
+#cjfjvsswai table {
           font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Helvetica Neue', 'Fira Sans', 'Droid Sans', Arial, sans-serif;
           -webkit-font-smoothing: antialiased;
           -moz-osx-font-smoothing: grayscale;
         }
 
-#fvfxhznpdy thead, tbody, tfoot, tr, td, th { border-style: none; }
+#cjfjvsswai thead, tbody, tfoot, tr, td, th { border-style: none; }
  tr { background-color: transparent; }
-#fvfxhznpdy p { margin: 0; padding: 0; }
- #fvfxhznpdy .gt_table { display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; }
- #fvfxhznpdy .gt_caption { padding-top: 4px; padding-bottom: 4px; }
- #fvfxhznpdy .gt_title { color: #333333; font-size: 125%; font-weight: initial; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; border-bottom-color: #FFFFFF; border-bottom-width: 0; }
- #fvfxhznpdy .gt_subtitle { color: #333333; font-size: 85%; font-weight: initial; padding-top: 3px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; border-top-color: #FFFFFF; border-top-width: 0; }
- #fvfxhznpdy .gt_heading { background-color: #FFFFFF; text-align: center; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
- #fvfxhznpdy .gt_bottom_border { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
- #fvfxhznpdy .gt_col_headings { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
- #fvfxhznpdy .gt_col_heading { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; }
- #fvfxhznpdy .gt_column_spanner_outer { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; padding-top: 0; padding-bottom: 0; padding-left: 4px; padding-right: 4px; }
- #fvfxhznpdy .gt_column_spanner_outer:first-child { padding-left: 0; }
- #fvfxhznpdy .gt_column_spanner_outer:last-child { padding-right: 0; }
- #fvfxhznpdy .gt_column_spanner { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; overflow-x: hidden; display: inline-block; width: 100%; }
- #fvfxhznpdy .gt_spanner_row { border-bottom-style: hidden; }
- #fvfxhznpdy .gt_group_heading { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; text-align: left; }
- #fvfxhznpdy .gt_empty_group_heading { padding: 0.5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: middle; }
- #fvfxhznpdy .gt_from_md> :first-child { margin-top: 0; }
- #fvfxhznpdy .gt_from_md> :last-child { margin-bottom: 0; }
- #fvfxhznpdy .gt_row { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; }
- #fvfxhznpdy .gt_stub { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; }
- #fvfxhznpdy .gt_stub_row_group { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; vertical-align: top; }
- #fvfxhznpdy .gt_row_group_first td { border-top-width: 2px; }
- #fvfxhznpdy .gt_row_group_first th { border-top-width: 2px; }
- #fvfxhznpdy .gt_table_body { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
- #fvfxhznpdy .gt_sourcenotes { color: #333333; background-color: #FFFFFF; border-bottom-style: none; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; }
- #fvfxhznpdy .gt_sourcenote { font-size: 90%; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; text-align: left; }
- #fvfxhznpdy .gt_left { text-align: left; }
- #fvfxhznpdy .gt_center { text-align: center; }
- #fvfxhznpdy .gt_right { text-align: right; font-variant-numeric: tabular-nums; }
- #fvfxhznpdy .gt_font_normal { font-weight: normal; }
- #fvfxhznpdy .gt_font_bold { font-weight: bold; }
- #fvfxhznpdy .gt_font_italic { font-style: italic; }
- #fvfxhznpdy .gt_super { font-size: 65%; }
- #fvfxhznpdy .gt_footnote_marks { font-size: 75%; vertical-align: 0.4em; position: initial; }
- #fvfxhznpdy .gt_asterisk { font-size: 100%; vertical-align: 0; }
+#cjfjvsswai p { margin: 0; padding: 0; }
+ #cjfjvsswai .gt_table { display: table; border-collapse: collapse; line-height: normal; margin-left: auto; margin-right: auto; color: #333333; font-size: 16px; font-weight: normal; font-style: normal; background-color: #FFFFFF; width: auto; border-top-style: solid; border-top-width: 2px; border-top-color: #A8A8A8; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #A8A8A8; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; }
+ #cjfjvsswai .gt_caption { padding-top: 4px; padding-bottom: 4px; }
+ #cjfjvsswai .gt_title { color: #333333; font-size: 125%; font-weight: initial; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; border-bottom-color: #FFFFFF; border-bottom-width: 0; }
+ #cjfjvsswai .gt_subtitle { color: #333333; font-size: 85%; font-weight: initial; padding-top: 3px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; border-top-color: #FFFFFF; border-top-width: 0; }
+ #cjfjvsswai .gt_heading { background-color: #FFFFFF; text-align: center; border-bottom-color: #FFFFFF; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
+ #cjfjvsswai .gt_bottom_border { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
+ #cjfjvsswai .gt_col_headings { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; }
+ #cjfjvsswai .gt_col_heading { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; padding-left: 5px; padding-right: 5px; overflow-x: hidden; }
+ #cjfjvsswai .gt_column_spanner_outer { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: normal; text-transform: inherit; padding-top: 0; padding-bottom: 0; padding-left: 4px; padding-right: 4px; }
+ #cjfjvsswai .gt_column_spanner_outer:first-child { padding-left: 0; }
+ #cjfjvsswai .gt_column_spanner_outer:last-child { padding-right: 0; }
+ #cjfjvsswai .gt_column_spanner { border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: bottom; padding-top: 5px; padding-bottom: 5px; overflow-x: hidden; display: inline-block; width: 100%; }
+ #cjfjvsswai .gt_spanner_row { border-bottom-style: hidden; }
+ #cjfjvsswai .gt_group_heading { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; text-align: left; }
+ #cjfjvsswai .gt_empty_group_heading { padding: 0.5px; color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; vertical-align: middle; }
+ #cjfjvsswai .gt_from_md> :first-child { margin-top: 0; }
+ #cjfjvsswai .gt_from_md> :last-child { margin-bottom: 0; }
+ #cjfjvsswai .gt_row { padding-top: 8px; padding-bottom: 8px; padding-left: 5px; padding-right: 5px; margin: 10px; border-top-style: solid; border-top-width: 1px; border-top-color: #D3D3D3; border-left-style: none; border-left-width: 1px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 1px; border-right-color: #D3D3D3; vertical-align: middle; overflow-x: hidden; }
+ #cjfjvsswai .gt_stub { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; }
+ #cjfjvsswai .gt_stub_row_group { color: #333333; background-color: #FFFFFF; font-size: 100%; font-weight: initial; text-transform: inherit; border-right-style: solid; border-right-width: 2px; border-right-color: #D3D3D3; padding-left: 5px; padding-right: 5px; vertical-align: top; }
+ #cjfjvsswai .gt_row_group_first td { border-top-width: 2px; }
+ #cjfjvsswai .gt_row_group_first th { border-top-width: 2px; }
+ #cjfjvsswai .gt_table_body { border-top-style: solid; border-top-width: 2px; border-top-color: #D3D3D3; border-bottom-style: solid; border-bottom-width: 2px; border-bottom-color: #D3D3D3; }
+ #cjfjvsswai .gt_sourcenotes { color: #333333; background-color: #FFFFFF; border-bottom-style: none; border-bottom-width: 2px; border-bottom-color: #D3D3D3; border-left-style: none; border-left-width: 2px; border-left-color: #D3D3D3; border-right-style: none; border-right-width: 2px; border-right-color: #D3D3D3; }
+ #cjfjvsswai .gt_sourcenote { font-size: 90%; padding-top: 4px; padding-bottom: 4px; padding-left: 5px; padding-right: 5px; text-align: left; }
+ #cjfjvsswai .gt_left { text-align: left; }
+ #cjfjvsswai .gt_center { text-align: center; }
+ #cjfjvsswai .gt_right { text-align: right; font-variant-numeric: tabular-nums; }
+ #cjfjvsswai .gt_font_normal { font-weight: normal; }
+ #cjfjvsswai .gt_font_bold { font-weight: bold; }
+ #cjfjvsswai .gt_font_italic { font-style: italic; }
+ #cjfjvsswai .gt_super { font-size: 65%; }
+ #cjfjvsswai .gt_footnote_marks { font-size: 75%; vertical-align: 0.4em; position: initial; }
+ #cjfjvsswai .gt_asterisk { font-size: 100%; vertical-align: 0; }
  
 </style>
 
@@ -14085,7 +14085,6 @@ Table&nbsp;1: A few penguins
 </figure>
 </div>
 </div>
-</div></div>
 </section>
 <section id="your-turn-3" class="slide level2">
 <h2>Your turn</h2>
@@ -14095,7 +14094,7 @@ Table&nbsp;1: A few penguins
 <li>Follow the instructions in the document, then exchange one new thing you’ve learned with your neighbor.</li>
 </ul>
 </div>
-<div id="timer_fac67062de2faed821f839f82550d300f8f75c71" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
+<div id="timer_bc547d9f86258af8b99fa007f3a516e5fb1cfa35" class="countdown" data-warn-when="0" data-update-every="1" data-play-sound="false" data-blink-colon="false" data-start-immediately="false" tabindex="0" style="right: 0;bottom: 0;">
   <div class="countdown-controls">
     <button class="countdown-bump-down">−</button>
     <button class="countdown-bump-up">+</button>
