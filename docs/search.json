@@ -117,7 +117,7 @@
     "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#getting-started",
     "title": "Manuscripts",
     "section": "Getting started",
-    "text": "Getting started\n\nApproach 1: Start from scratch\n\nCreating a Quarto manuscript\n\nVS Code: In the Command Palette – Quarto: Create Project &gt; Manuscript Project\nquarto create project manuscript &lt;name&gt;\n\nAdd manuscript content\n\nApproach 2: Start with a sample from https://quarto.org/docs/manuscripts\n\n\n\n\n\n\n\nManuscripts ♥️ Git + GitHub\n\n\nTrack your project with Git and host on GitHub for easy publishing."
+    "text": "Getting started\n\nApproach 1: Start from scratch\n\nCreating a Quarto manuscript\n\nVS Code: In the Command Palette – Quarto: Create Project &gt; Manuscript Project\nquarto create project manuscript &lt;name&gt;\n\nAdd manuscript content\n\nApproach 2: Start with a sample from https://github.com/quarto-ext/manuscript-template-vscode\n\n\n\n\n\n\n\nManuscripts ♥️ Git + GitHub\n\n\nTrack your project with Git and host on GitHub for easy publishing."
   },
   {
     "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#a-finished-product",
@@ -166,7 +166,7 @@
     "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#embedded-computations",
     "title": "Manuscripts",
     "section": "Embedded computations",
-    "text": "Embedded computations"
+    "text": "Embedded computations\n\nPerform computation in a labelled code cell in a notebook, in any language\nEmbed results of the computation with a link to the notebook with\n\n{{&lt; embed name-of-notebook.qmd#fig-cell-label &gt;}}\n{{&lt; embed name-of-notebook.ipynd#tbl-cell-label &gt;}}\n\nSee example at https://github.com/quarto-ext/manuscript-template-vscode/blob/main/index.qmd."
   },
   {
     "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#actually-dive-into-the-code",
