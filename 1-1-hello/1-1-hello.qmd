@@ -32,15 +32,9 @@ filters:
 -   Quarto Extension: <https://marketplace.visualstudio.com/items?itemName=quarto.quarto>
 -   Jupyter Extension: <https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter>
 
-**3. Packages:** Install the following packages:
+**3. Exercises:** Go to [`bit.ly/quarto-scipy24-exercises`](https://bit.ly/quarto-scipy24-exercises), click on "Use this template" then "Create a new repository". Click on the green *Code* button and copy the URL of the repo.
 
-``` {.bash filename="Terminal"}
-python3 -m pip install tabulate pandas seaborn palmerpenguins great_tables plotnine jupyter
-```
-
-<!--
-**4. Exercises:** Go to [`bit.ly/quarto-scipy24-exercises`](https://bit.ly/quarto-scipy24-exercises), click on "Use this template" then "Create a new repository". Once your repository is created, clone it locally and navigate to the repo folder.
--->
+**4. Packages:** Open VS Code. Under *Start*, click on *Clone Git Repository*, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to `Python: Create Environment...` and choose `Venv`, then Python 3.12.4. Check the box for `requirements.txt` in the "Select dependencies to install" menu and hit OK.
 :::
 
 # Welcome
@@ -173,15 +167,9 @@ I'll teach you
 -   Quarto Extension: <https://marketplace.visualstudio.com/items?itemName=quarto.quarto>
 -   Jupyter Extension: <https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter>
 
-**3. Packages:** Install the following packages:
+**3. Exercises:** Go to [`bit.ly/quarto-scipy24-exercises`](https://bit.ly/quarto-scipy24-exercises), click on "Use this template" then "Create a new repository". Click on the green *Code* button and copy the URL of the repo.
 
-``` {.bash filename="Terminal"}
-python3 -m pip install tabulate pandas seaborn palmerpenguins great_tables plotnine jupyter
-```
-
-<!--
-**4. Exercises:** Go to [`bit.ly/quarto-scipy24-exercises`](https://bit.ly/quarto-scipy24-exercises), click on "Use this template" then "Create a new repository". Once your repository is created, clone it locally and navigate to the repo folder.
--->
+**4. Packages:** Open VS Code. Under *Start*, click on *Clone Git Repository*, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to `Python: Create Environment...` and choose `Venv`, then Python 3.12.4. Check the box for `requirements.txt` in the "Select dependencies to install" menu and hit OK.
 :::
 
 . . .

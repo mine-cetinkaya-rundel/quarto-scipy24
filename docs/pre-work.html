@@ -270,16 +270,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>Quarto Extension: <a href="https://marketplace.visualstudio.com/items?itemName=quarto.quarto" class="uri">https://marketplace.visualstudio.com/items?itemName=quarto.quarto</a></li>
 <li>Jupyter Extension: <a href="https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter" class="uri">https://marketplace.visualstudio.com/items?itemName=ms-toolsai.jupyter</a></li>
 </ul>
-<p><strong>3. Packages:</strong> Install the following packages:</p>
+<p><strong>3. Exercises:</strong> Go to <a href="https://bit.ly/quarto-scipy24-exercises"><code>bit.ly/quarto-scipy24-exercises</code></a>, click on “Use this template” then “Create a new repository”. Click on the green <em>Code</em> button and copy the URL of the repo.</p>
+<p><strong>4. Packages:</strong> Open VS Code. Under <em>Start</em>, click on <em>Clone Git Repository</em>, and paste the URL of the repo. Open the cloned project. In the Command Palette, go to <code>Python: Create Environment...</code> and choose <code>Venv</code>, then Python 3.12.4. Check the box for <code>requirements.txt</code> in the “Select dependencies to install” menu and hit OK.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The packages you need are as follows:</p>
 <div class="code-with-filename">
 <div class="code-with-filename-file">
-<pre><strong>Terminal</strong></pre>
+<pre><strong>requirements.txt</strong></pre>
 </div>
-<div class="sourceCode" id="cb1" data-filename="Terminal"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python3</span> <span class="at">-m</span> pip install tabulate pandas seaborn palmerpenguins great_tables plotnine jupyter</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<div class="sourceCode" id="cb1" data-filename="requirements.txt"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="va">great_tables</span><span class="op">=</span>=0.9.0</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="va">ipykernel</span><span class="op">=</span>=6.29.5</span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="va">jupyter</span><span class="op">=</span>=1.0.0</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="va">palmerpenguins</span><span class="op">=</span>=0.1.4</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="va">pandas</span><span class="op">=</span>=2.2.2</span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="va">plotnine</span><span class="op">=</span>=0.13.6</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </div>
-<!--
-**4. Exercises:** Go to [`bit.ly/quarto-scipy24-exercises`](https://bit.ly/quarto-scipy24-exercises), click on "Use this template" then "Create a new repository". Once your repository is created, clone it locally and navigate to the repo folder.
--->
+<p>If you have a different preferred way of managing your environment, you’re welcomed to do so. Just make sure you have these packages installed in order to be able to follow along with the examples.</p>
+</div>
+</div>
 
 
 
