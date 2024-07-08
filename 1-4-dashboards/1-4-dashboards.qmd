@@ -19,7 +19,7 @@ execute:
   echo: true
 ---
 
-# Anatomy of a Quarto presentation
+# Anatomy of a Quarto dashboard
 
 ## Components
 

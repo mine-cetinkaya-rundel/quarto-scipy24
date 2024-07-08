@@ -47,14 +47,14 @@
     "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#simplest",
     "title": "Manuscripts",
     "section": "Simplest",
-    "text": "Simplest\nCan run all code in a single file, and don’t mind running it over and over again with each edit.\n\n\n\n \n\n\n\n \n\n\n\n\n\n\ne.g. Data Science 101 - HW 1, Stat 101 - Final project, a blog post, a tutorial, a not-too-extensive consulting report, etc."
+    "text": "Simplest\nCan run all code in a single file, and don’t mind running it over and over again with each edit.\n\n\n\n \n\n\n\n \n\n\n\n\n\n\n\ne.g. Data Science 101 - HW 1, Stat 101 - Final project, a blog post, a tutorial, a not-too-extensive consulting report, etc."
   },
   {
     "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#simple",
     "href": "2-3-manuscripts/2-3-manuscripts-reveal.html#simple",
     "title": "Manuscripts",
     "section": "Simple",
-    "text": "Simple\nCan run all code in a single file, and don’t mind running it over and over again with each edit, and need an output that conforms to journal style.\n\n\n\n \n+ Quarto Journal Articles Extension\n\n\n\n \n\n\n\n or \n\n\nformatted with journal style\n\n\ne.g., a not-too-computational journal article."
+    "text": "Simple\nCan run all code in a single file, and don’t mind running it over and over again with each edit, and need an output that conforms to journal style.\n\n\n\n \n+ Quarto Journal Articles Extension\n\n\n\n \n\n\n\n or \n\n\nformatted with journal style\n\n\n\ne.g., a not-too-computational journal article."
   },
   {
     "objectID": "2-3-manuscripts/2-3-manuscripts-reveal.html#but-science-is-rarely-simple",
@@ -285,7 +285,7 @@
     "href": "1-2-documents/1-2-documents-reveal.html#quarto-linting",
     "title": "Documents",
     "section": "Quarto linting",
-    "text": "Quarto linting\nLint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.\n\n\n\n\n\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Lint_(software)"
+    "text": "Quarto linting\nLint, or a linter, is a static code analysis tool used to flag programming errors, bugs, stylistic errors and suspicious constructs.\n\n\n\n\n\n\n\n\n\n\nSource: https://en.wikipedia.org/wiki/Lint_(software)"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#quarto-yaml-intelligence",
@@ -341,14 +341,14 @@
     "href": "1-2-documents/1-2-documents-reveal.html#lists",
     "title": "Documents",
     "section": "Lists",
-    "text": "Lists\nUnordered lists:\n\n\nMarkdown syntax:\n-   unordered list         \n    -   sub-item 1         \n    -   sub-item 1         \n        -   sub-sub-item 1\n\nOutput:\n\nunordered list\n\nsub-item 1\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\nOrdered lists:\n\n\nMarkdown syntax:\n1. ordered list            \n2. item 2                  \n    i. sub-item 1          \n         A.  sub-sub-item 1\n\nOutput:\n\nordered list\n\nitem 2\n\nsub-item 1\n\nsub-sub-item 1"
+    "text": "Lists\nUnordered lists:\n\n\nMarkdown syntax:\n-   unordered list         \n    -   sub-item 1         \n    -   sub-item 1         \n        -   sub-sub-item 1\n\nOutput:\n\nunordered list\n\nsub-item 1\n\nsub-item 1\n\nsub-sub-item 1\n\n\n\n\n\nOrdered lists:\n\n\nMarkdown syntax:\n1. ordered list            \n2. item 2                  \n    i. sub-item 1          \n         A.  sub-sub-item 1\n\nOutput:\n\nordered list\n\nitem 2\n\nsub-item 1\n\nsub-sub-item 1"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#quotes",
     "href": "1-2-documents/1-2-documents-reveal.html#quotes",
     "title": "Documents",
     "section": "Quotes",
-    "text": "Quotes\n\n\nMarkdown syntax:\n&gt; Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. \n&gt;\n&gt; Donald Knuth, Literate Programming\n\nOutput:\n\nLet us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.\nDonald Knuth, Literate Programming\n\n\n\n\n“Literate Programming”, The Computer Journal 27 (1984), p. 97. (Reprinted in Literate Programming, 1992, p. 99.) Literate Programming (1984)"
+    "text": "Quotes\n\n\nMarkdown syntax:\n&gt; Let us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do. \n&gt;\n&gt; Donald Knuth, Literate Programming\n\nOutput:\n\nLet us change our traditional attitude to the construction of programs: Instead of imagining that our main task is to instruct a computer what to do, let us concentrate rather on explaining to human beings what we want a computer to do.\nDonald Knuth, Literate Programming\n\n\n\n\n\n“Literate Programming”, The Computer Journal 27 (1984), p. 97. (Reprinted in Literate Programming, 1992, p. 99.) Literate Programming (1984)"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#divs",
@@ -411,14 +411,14 @@
     "href": "1-2-documents/1-2-documents-reveal.html#inline-footnotes",
     "title": "Documents",
     "section": "Inline footnotes",
-    "text": "Inline footnotes\n\n\nMarkdown syntax:\nHere is an inline note.^[Inlines notes are easier to write,\nsince you don't have to pick an identifier and move down to\ntype the note.]\n\nOutput:\nHere is an inline note.1\n\nInlines notes are easier to write, since you don’t have to pick an identifier and move down to type the note."
+    "text": "Inline footnotes\n\n\nMarkdown syntax:\nHere is an inline note.^[Inlines notes are easier to write,\nsince you don't have to pick an identifier and move down to\ntype the note.]\n\nOutput:\nHere is an inline note.1\n\n\nInlines notes are easier to write, since you don’t have to pick an identifier and move down to type the note."
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#numbered-footnotes",
     "href": "1-2-documents/1-2-documents-reveal.html#numbered-footnotes",
     "title": "Documents",
     "section": "Numbered footnotes",
-    "text": "Numbered footnotes\n\n\nMarkdown syntax:\nHere is an footnore reference[^1]\n\n[^1]: This can be easy in some situations when you have a really long note or\ndon't want to inline complex outputs.\n\nOutput:\nHere is an footnore reference1\n\nThis can be easy in some situations when you have a really long note or don’t want to inline complex outputs."
+    "text": "Numbered footnotes\n\n\nMarkdown syntax:\nHere is an footnore reference[^1]\n\n[^1]: This can be easy in some situations when you have a really long note or\ndon't want to inline complex outputs.\n\nOutput:\nHere is an footnore reference1\n\n\nThis can be easy in some situations when you have a really long note or don’t want to inline complex outputs."
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#anatomy-of-a-code-chunk",
@@ -530,7 +530,7 @@
     "href": "1-2-documents/1-2-documents-reveal.html#figure-divs",
     "title": "Documents",
     "section": "Figure divs",
-    "text": "Figure divs\nMarkdown syntax:\n::: {#fig-penguin}\n&lt;iframe width=\"420\" height=\"237\" src=\"https://www.youtube.com/embed/q3uXXh1sHcI\"&gt;&lt;/iframe&gt;\n\nBaby penguin tries to make friends\n:::\nOutput:\n\n\n\n\n\n\n\nFigure 2: Baby penguin tries to make friends\n\n\n\n\n\n\n\n\n\nNote\n\n\nLast paragraph in the div block is the figure caption."
+    "text": "Figure divs\nMarkdown syntax:\n::: {#fig-penguin}\n&lt;iframe width=\"420\" height=\"237\" src=\"https://www.youtube.com/embed/q3uXXh1sHcI\"&gt;&lt;/iframe&gt;\n\nBaby penguin tries to make friends\n:::\nOutput:\n\n\n\n\n\n\n\nFigure 2: Baby penguin tries to make friends"
   },
   {
     "objectID": "1-2-documents/1-2-documents-reveal.html#figures-from-code",
@@ -820,14 +820,14 @@
     "href": "1-4-dashboards/1-4-dashboards-reveal.html#plots",
     "title": "Dashboards",
     "section": "Plots",
-    "text": "Plots\n\n\nplotly\n```{python}\n#| title: GDP and Life Expectancy\nimport plotly.express as px\ndf = px.data.gapminder()\npx.scatter(\n  df, x=\"gdpPercap\", y=\"lifeExp\", \n  animation_frame=\"year\", animation_group=\"country\",\n  size=\"pop\", color=\"continent\", hover_name=\"country\", \n  facet_col=\"continent\", log_x=True, size_max=45, \n  range_x=[100,100000], range_y=[25,90]\n)\n```\n\n\n\n\n\nipyleaflet\n```{python}\n#| title: \"World Map\"\n#| padding: 0px\nfrom ipyleaflet import Map, basemaps, basemap_to_tiles\nMap(basemap=basemap_to_tiles(basemaps.OpenStreetMap.Mapnik),\n    center=(48.204793, 350.121558), zoom=2)\n```"
+    "text": "Plots\n\n\nplotly\n```{python}\n#| title: GDP and Life Expectancy\nimport plotly.express as px\ndf = px.data.gapminder()\npx.scatter(\n  df, x=\"gdpPercap\", y=\"lifeExp\", \n  animation_frame=\"year\", animation_group=\"country\",\n  size=\"pop\", color=\"continent\", hover_name=\"country\", \n  facet_col=\"continent\", log_x=True, size_max=45, \n  range_x=[100,100000], range_y=[25,90]\n)\n```\n\n\n\n\n\n\nipyleaflet\n```{python}\n#| title: \"World Map\"\n#| padding: 0px\nfrom ipyleaflet import Map, basemaps, basemap_to_tiles\nMap(basemap=basemap_to_tiles(basemaps.OpenStreetMap.Mapnik),\n    center=(48.204793, 350.121558), zoom=2)\n```"
   },
   {
     "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#component-tables",
     "href": "1-4-dashboards/1-4-dashboards-reveal.html#component-tables",
     "title": "Dashboards",
     "section": "Tables",
-    "text": "Tables\n\n\ntabulate\n```{python}\nfrom tabulate import tabulate\nfrom IPython.display import Markdown\nMarkdown(tabulate(penguins, showindex=False)}\n```\n\n\n\n\n\nitables\n```{python}\nfrom itables import show\nshow(penguins)\n```"
+    "text": "Tables\n\n\ntabulate\n```{python}\nfrom tabulate import tabulate\nfrom IPython.display import Markdown\nMarkdown(tabulate(penguins, showindex=False)}\n```\n\n\n\n\n\n\nitables\n```{python}\nfrom itables import show\nshow(penguins)\n```"
   },
   {
     "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#value-box-component",
@@ -876,7 +876,7 @@
     "href": "1-4-dashboards/1-4-dashboards-reveal.html#deployment-of-interactive-dashboards",
     "title": "Dashboards",
     "section": "Deployment of Interactive Dashboards",
-    "text": "Deployment of Interactive Dashboards\n\n\nServer\n\nCloud\n\nshinyapps.io\nHuggingFace Spaces\nRoll your own\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (commercial)\nRoll your own\n\n\n\nServerless\nUsing Pyodide\n[Example]"
+    "text": "Deployment of Interactive Dashboards\n\n\nServer\n\nCloud\n\nshinyapps.io\nHuggingFace Spaces\nRoll your own\n\n\n\nOn-Prem\n\nShiny Server (open source)\nPosit Connect (commercial)\nRoll your own\n\n\n\n\nServerless\nUsing Pyodide\n[Example]"
   },
   {
     "objectID": "1-4-dashboards/1-4-dashboards-reveal.html#learn-more",
@@ -984,7 +984,7 @@
     "href": "2-1-websites/2-1-websites-reveal.html#quarto.yml-1",
     "title": "Websites and blogs",
     "section": "_quarto.yml",
-    "text": "_quarto.yml\nA YAML file with particular keys and values that Quarto recognizes. Unrecognized keys are ignored.\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs\n\nwebsite:\n  page-navigation: true\n  title: \"Unlocking Dynamic Reproducible Documents\"\n  description: \"A Quarto Tutorial for Scientific Communication on Quarto at SciPy 2024\"\n\n  repo-url: https://github.com/mine-cetinkaya-rundel/quarto-scipy24\n  repo-actions: [edit, issue]\n\n  open-graph: true\n\n  sidebar:\n    background: \"#D1D9E3\"\n    logo: \"images/quarto-scipy24-site-logo.png\"\n    pinned: true\n    align: center\n    tools:\n      - icon: github\n        href: https://github.com/mine-cetinkaya-rundel/quarto-scipy24\n        text: GitHub repo\n      - icon: code-square\n        href: https://code.visualstudio.com/\n        text: VS Code\n\n    style: docked\n    search: true\n    collapse-level: 2\n    contents:\n      - href: index.qmd\n        text: Home\n      - href: pre-work.qmd\n        text: Pre-work\n      - section: Part 1\n        contents:\n          - href: 1-1-hello/index.qmd\n            text: Hello\n          - href: 1-2-documents/index.qmd\n            text: Documents\n          - href: 1-3-presentations/index.qmd\n            text: Presentations\n          - href: 1-4-dashboards/index.qmd\n            text: Dashboards\n      - section: Part 2\n        contents:\n          - href: 2-1-websites/index.qmd\n            text: Websites and blogs\n          - href: 2-2-books/index.qmd\n            text: Books\n          - href: 2-3-manuscripts/index.qmd\n            text: Manuscripts\n\n  page-footer:\n    right: \"This page is built with 💚 and [Quarto](https://quarto.org/).\"\n    left: \"&copy; Copyright 2024, Mine Çetinkaya-Rundel\"\n    background: \"#D1D9E3\" # Arylide Yellow\n\nformat:\n  html:\n    theme:\n      light: [cosmo, style/quarto-scipy24.scss]\n      dark: [cosmo, style/quarto-scipy24.scss, style/dark.scss]\n    linkcolor: \"#58779b\"\n    toc: true\n    code-copy: true\n    code-overflow: wrap\n    mainfont: \"Atkinson Hyperlegible\"\n\nexecute:\n  freeze: auto\n  echo: true"
+    "text": "_quarto.yml\nA YAML file with particular keys and values that Quarto recognizes. Unrecognized keys are ignored.\n\n\n_quarto.yml\n\nproject:\n  type: website\n  output-dir: docs\n\nwebsite:\n  page-navigation: true\n  title: \"Unlocking Dynamic Reproducible Documents\"\n  description: \"A Quarto Tutorial for Scientific Communication on Quarto at SciPy 2024\"\n\n  repo-url: https://github.com/mine-cetinkaya-rundel/quarto-scipy24\n  repo-actions: [edit, issue]\n\n  open-graph: true\n\n  sidebar:\n    background: \"#D1D9E3\"\n    logo: \"images/quarto-scipy24-site-logo.png\"\n    pinned: true\n    align: center\n    tools:\n      - icon: github\n        href: https://github.com/mine-cetinkaya-rundel/quarto-scipy24\n        text: GitHub repo\n      - icon: code-square\n        href: https://code.visualstudio.com/\n        text: VS Code\n\n    style: docked\n    search: true\n    collapse-level: 2\n    contents:\n      - href: index.qmd\n        text: Home\n      - href: setup.qmd\n        text: Setup\n      - section: Part 1\n        contents:\n          - href: 1-1-hello/index.qmd\n            text: Hello\n          - href: 1-2-documents/index.qmd\n            text: Documents\n          - href: 1-3-presentations/index.qmd\n            text: Presentations\n          - href: 1-4-dashboards/index.qmd\n            text: Dashboards\n      - section: Part 2\n        contents:\n          - href: 2-1-websites/index.qmd\n            text: Websites and blogs\n          - href: 2-2-books/index.qmd\n            text: Books\n          - href: 2-3-manuscripts/index.qmd\n            text: Manuscripts\n\n  page-footer:\n    right: \"This page is built with 💚 and [Quarto](https://quarto.org/).\"\n    left: \"&copy; Copyright 2024, Mine Çetinkaya-Rundel\"\n    background: \"#D1D9E3\" # Arylide Yellow\n\nformat:\n  html:\n    theme:\n      light: [cosmo, style/quarto-scipy24.scss]\n      dark: [cosmo, style/quarto-scipy24.scss, style/dark.scss]\n    linkcolor: \"#58779b\"\n    toc: true\n    code-copy: true\n    code-overflow: wrap\n    mainfont: \"Atkinson Hyperlegible\"\n\nexecute:\n  freeze: auto\n  echo: true"
   },
   {
     "objectID": "2-1-websites/2-1-websites-reveal.html#quarto-websites",
@@ -1219,7 +1219,7 @@
     "href": "1-1-hello/1-1-hello-reveal.html#about-me",
     "title": "Hello, Quarto!",
     "section": "About me",
-    "text": "About me\n\n\n\nProfessor of the Practice\nDepartment of Statistical Science\nDuke University\nDeveloper Educator, Posit PBC\n\n\n\n\n\n\n\nMine Çetinkaya-Rundel\nmine-cr.com\n\n\nTeaching data analysis in computational notebooks for 10+ years\nTeaching and using Quarto for 3+ years"
+    "text": "About me\n\n\n\nProfessor of the Practice\nDepartment of Statistical Science\nDuke University\nDeveloper Educator, Posit PBC\n\n\n\n\n\n\n\nMine Çetinkaya-Rundel\nmine-cr.com\n\n\n\nTeaching data analysis in computational notebooks for 10+ years\nTeaching and using Quarto for 3+ years"
   },
   {
     "objectID": "1-1-hello/1-1-hello-reveal.html#about-you",

@@ -81,12 +81,10 @@ Let's continue building our a presentation together from `hello-penguins-slides.
 ## Learn more
 
 ::: {.center-align .large}
-[quarto.org/docs/presentations](https://quarto.org/docs/presentations/>)
+[quarto.org/docs/presentations](https://quarto.org/docs/presentations/%3E)
 :::
 
-```{=html}
 <iframe src="https://quarto.org/docs/presentations" width="100%" height="500" style="border:2px solid #123233;" title="Quarto Presentations"></iframe>
-```
 
 ## Questions
 
